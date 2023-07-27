@@ -44,5 +44,3 @@ where cl.Cod_Cidade = 322 and Cod_Estado = 'PI'
 
 
 
---311
---335

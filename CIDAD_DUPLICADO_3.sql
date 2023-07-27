@@ -37,15 +37,6 @@ order by cd.Codigo
 --PASSO 2
 
 declare @cod int = (select max(codigo) from cidad)
---1057
---rollback
-
---USE TESTE;  
---GO  
---ALTER TABLE dbo.BAIRR
---NOCHECK CONSTRAINT FK_BAIRR_CIDAD;  
---GO  
-
 
 begin tran
 UPDATE cd

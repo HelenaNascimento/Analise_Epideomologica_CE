@@ -1,5 +1,6 @@
 
 --Localizar Coluna --
+
 SELECT
     T.name AS Tabela,
     C.name AS Coluna

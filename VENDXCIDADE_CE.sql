@@ -5,13 +5,13 @@ select
 		cd.Cod_estado,
 		cd.Descricao,
 		count(cl.codigo) as Qtd_Cliente
-		--count(cd.Codigo) as Qtd_Cidade
+
 	from ENXES es 
 		inner join VENDE vd on es.cod_vendedor = vd.codigo
 		inner join super su on vd.cod_supervisor = su.codigo
 		inner join clien cl on es.cod_client = cl.codigo 
 		inner join CIDAD as cd on cl.cod_cidade = cd.codigo and cl.Cod_Estado = cd.Cod_Estado		
---		inner join NFSCB cb on es.cod_estabe = cb.cod_estabe and vd.Codigo = cb.cod_vendedor and  cl.codigo = cb.Cod_Cliente 
+
 
 where
 	es.cod_estabe = 1 and 
