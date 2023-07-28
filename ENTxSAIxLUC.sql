@@ -3,14 +3,13 @@ select distinct
 	pr.Descri as Descricao,
 	Ent_Sai = 'Entrada',
 	format(ecb.Dat_Entrada, 'd', 'en-gb') as Dat_Movi,
-	sum(eit.Qtd_Pedido) as Qtd_Pedido,
+	eit.Qtd_PedFat as Qtd,
 	format (eit.Prc_UniFat, 'c', 'pt-br') as Prc_Uni_Ent,
-	cast(eit.Per_DescItem as decimal(8,2)) as Desconto,
+	cast(eit.Per_DescItem as decimal (10,2)) as Perc,
 	Format (eit.Vlr_TotItem, 'c', 'pt-br') as Vlr_Total,
 	'/' as '/',
-	Vlr_UntLiq =  '--------------',
---	LucroApr = '--------------',
-	Qtd_Bonif = '000'
+	--Vlr_UntLiq =  '--------------',
+	eit.Qtd_BonFat
 	from  PRODU pr
 		inner join PRXES es on pr.codigo = es.Cod_Produt 
 		inner join NFEIT eit on es.cod_estabe = eit.cod_estabe and es.cod_produt = eit.cod_produto
@@ -18,6 +17,7 @@ select distinct
 where
 	es.cod_estabe= 1 and
 	pr.cod_fabricante = 832 and
+	pr.codigo=16549 and
 	ecb.dat_entrada >= '20230101' and
 	ecb.dat_entrada <= '20230131'
 
@@ -29,7 +29,9 @@ group by
 	eit.Prc_UniFat,
 	eit.Per_DescItem,
 	eit.Vlr_TotItem,
-	eit.Qtd_Pedido
+	eit.Qtd_Pedido,
+	eit.Qtd_BonFat,
+	eit.Qtd_PedFat
 
 
 union all 
@@ -40,11 +42,12 @@ select distinct
 	'Saída',
 	format(scb.Dat_Emissao, 'd', 'en-gb'),
 	Qtd_Venda = (sit.Qtd_Produto - sit.Qtd_Bonificacao),
-	format (sit.Prc_Unitario, 'c', 'pr-br')Prc_Unitario,
+	format((sit.Vlr_LiqItem/(sit.Qtd_Produto - sit.Qtd_Bonificacao)), 'c', 'pt-br'),
+	--format (sit.Prc_Unitario, 'c', 'pr-br')Prc_Unitario,
 	cast(sit.Per_Descon as decimal(10,2)) as Per_Descon,
 	format (sit.Vlr_LiqItem, 'c', 'pr-br' )as Vlr_LiqUnit,
 	'/' as '/',
-	format((sit.Vlr_LiqItem/(sit.Qtd_Produto - sit.Qtd_Bonificacao)), 'c', 'pt-br'),
+	
 	sit.Qtd_Bonificacao
 	from PRODU pr 
 		inner join PRXES es on pr.codigo = es.Cod_Produt 
@@ -53,6 +56,7 @@ select distinct
 where
 	es.cod_estabe= 1 and
 	pr.cod_fabricante= 832 and
+	pr.codigo=16549 and
 	scb.Dat_Emissao >= '20230101' and
 	scb.Dat_Emissao <= '20230131'
 
