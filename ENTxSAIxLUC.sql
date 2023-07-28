@@ -17,9 +17,9 @@ select distinct
 where
 	es.cod_estabe= 1 and
 	pr.cod_fabricante = 832 and
-	pr.codigo=16549 and
-	ecb.dat_entrada >= '20230101' and
-	ecb.dat_entrada <= '20230131'
+--	pr.codigo=16549 and
+	ecb.dat_entrada >= '20230201' and
+	ecb.dat_entrada <= '20230228'
 
 group by 	
 	cod_produt, 
@@ -56,9 +56,9 @@ select distinct
 where
 	es.cod_estabe= 1 and
 	pr.cod_fabricante= 832 and
-	pr.codigo=16549 and
-	scb.Dat_Emissao >= '20230101' and
-	scb.Dat_Emissao <= '20230131'
+--	pr.codigo=16549 and
+	scb.Dat_Emissao >= '20230201' and
+	scb.Dat_Emissao <= '20230228'
 
 group by 	
 	cod_produt, 
