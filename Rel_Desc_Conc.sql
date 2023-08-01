@@ -1,4 +1,4 @@
-
+declare @yy int = 2018
 
 select distinct
     cl.Razao_Social,
@@ -18,7 +18,7 @@ select distinct
         inner join CTREC ct on bx.Cod_Estabe  = ct.Cod_Estabe and bx.[Status] = ct.[Status] and bx.Cod_Documento = ct.Cod_Documento 
         inner join CLIEN cl on ct.Cod_Cliente = cl.Codigo
 where ct.cod_estabe = 1
-    and DATEPART(year, Dat_Emissao) = 2022 
+    and DATEPART(year, Dat_Emissao) = @yy 
     and Vlr_DescConced > '0.0'
 
 union all
@@ -40,7 +40,7 @@ select
 	from CTREC ct
 		inner join CLIEN cl on ct.Cod_Cliente = cl.Codigo
 where ct.cod_estabe = 1
-   and DATEPART(year, Dat_Emissao) = 2022 
+   and DATEPART(year, Dat_Emissao) = @yy  
     and Vlr_DescConced > '0.0'
     and ct.[Status] = 'A'
 
