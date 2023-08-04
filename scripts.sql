@@ -538,3 +538,4 @@ WHERE
 ORDER BY
     T.name ASC
 	
+exec PR_RetornaItensNF 1, 423741,'1', 'S'
