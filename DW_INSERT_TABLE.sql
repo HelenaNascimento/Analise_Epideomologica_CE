@@ -1,0 +1,29 @@
+
+INSERT INTO TESTE_DW.dbo.CLIENTE (IdCli, DesCli, Telefone, UF, Cidade, Bairro, Pessoa, TipCons, LicSaude, ValLicSaude, Anvisa, ValAnvisa, CRF_CRM, ValCRF, AlvFunc, ValAlv, Limite_Credito,  Dat_UltComp, Dat_LimCreAtu, Vlr_LimCreAnt, Total_Debito, Suframa, Cod_RamoAtividade)
+SELECT 
+    Codigo,
+    Razao_Social,
+    Fone1,
+    Cod_Estado,
+    Cod_Cidade,
+    cod_Bairro,
+    Pessoa,
+    Tipo_Consumidor,
+    Licenca_Saude,
+    Val_LicSau,
+    Num_Anvisa,
+    Val_Anvisa,
+    Num_RegCrm,
+    Val_CerReg,
+    Num_AlvFun,
+    Val_AlvFun,
+    Limite_Credito  
+    Data_UltimaFatura, 
+    Dat_LimCreAtu, 
+    Vlr_LimCreAnt, 
+    Total_Debito, 
+    Inscricao_SUFRAMA,
+    Cod_RamoAtividade
+    FROM TESTE.DBO.CLIEN 
+where bloqueado = 0 
+and Motivo_Bloqueio = ''
