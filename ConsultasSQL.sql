@@ -11,3 +11,10 @@ WHERE
     C.NAME LIKE '%Desc%'
 ORDER BY
     T.name ASC
+
+
+select * from V_VENDE
+where codigo = 564
+
+select * from Vende
+where codigo = 564

@@ -1,5 +1,7 @@
 USE TESTE_DW
 
+
+
 CREATE TABLE CLIENTE (
     IdCli INT PRIMARY KEY,
     DesCli VARCHAR(200),
@@ -27,3 +29,4 @@ CREATE TABLE CLIENTE (
     Cod_RamoAtividade VARCHAR (100)
     
 )
+

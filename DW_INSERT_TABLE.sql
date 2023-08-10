@@ -1,8 +1,35 @@
+--select * from CLIENTE
 
-INSERT INTO TESTE_DW.dbo.CLIENTE (IdCli, DesCli, Telefone, UF, Cidade, Bairro, Pessoa, TipCons, LicSaude, ValLicSaude, Anvisa, ValAnvisa, CRF_CRM, ValCRF, AlvFunc, ValAlv, Limite_Credito,  Dat_UltComp, Dat_LimCreAtu, Vlr_LimCreAnt, Total_Debito, Suframa, Cod_RamoAtividade)
+
+INSERT INTO TESTE_DW.dbo.CLIENTE (
+IdCli, 
+DesCli, 
+Dat_Cadastro,
+Telefone, 
+UF, 
+Cidade, 
+Bairro, 
+Pessoa, 
+TipCons, 
+LicSaude, 
+ValLicSaude, 
+Anvisa, 
+ValAnvisa, 
+CRF_CRM, 
+ValCRF, 
+AlvFunc, 
+ValAlv, 
+Limite_Credito,  
+Dat_UltComp, 
+Dat_LimCreAtu, 
+Vlr_LimCreAnt, 
+Total_Debito, 
+Suframa, 
+Cod_RamoAtividade)
 SELECT 
     Codigo,
     Razao_Social,
+	Data_Cadastro,
     Fone1,
     Cod_Estado,
     Cod_Cidade,
@@ -17,7 +44,7 @@ SELECT
     Val_CerReg,
     Num_AlvFun,
     Val_AlvFun,
-    Limite_Credito  
+    Limite_Credito,  
     Data_UltimaFatura, 
     Dat_LimCreAtu, 
     Vlr_LimCreAnt, 
