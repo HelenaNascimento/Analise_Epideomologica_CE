@@ -16,7 +16,7 @@ select
 where
 	es.cod_estabe = 1 and 
 	cl.bloqueado = 0 and
-	vd.nome_guerra like 'CE%' and
+	vd.nome_guerra like '%Herla%' and
 	vd.Bloqueado = 0 and
 	vd.cod_tipvenbas = 'EXT' and
 	vd.flg_export = 1 and

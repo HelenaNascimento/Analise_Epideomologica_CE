@@ -1,6 +1,7 @@
 select 
     pr.codigo,
     pr.descri,
+    fb.Fantasia,
     es.Qtd_Dispon,
     format(pr.Prc_Fabric18, 'c', 'pt-br') as 'Preço Fabrica',
     ppr.Per_Descon,
@@ -13,8 +14,10 @@ select
     from PRODU pr
         INNER JOIN PRXES es on pr.codigo = es.cod_produt
         INNER JOIN PCXPR ppr on pr.codigo = ppr.Cod_Produt
+        INNER JOIN FABRI fb on pr.Cod_Fabricante = fb.Codigo
 where es.cod_estabe = 1
     and ppr.Id_PolCom = 2854
+   -- and fb.codigo in (158, 1022)
     and es.Flg_Bloqueado = 0
     and es.Flg_BlqVen = 0
     and es.Flg_BlqCmp = 0
@@ -24,7 +27,9 @@ order by pr.codigo
 
 --Eurofarma
 --Essity
---01 
+--OL 001 
+-- Cod: 2662
 
 --Outro
---02
+--OL 002
+-- cod: 2854
