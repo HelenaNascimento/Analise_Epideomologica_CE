@@ -4,7 +4,7 @@ select distinct
     fb.Fantasia,
     es.Qtd_Dispon,
     format(pr.Prc_Fabric18, 'c', 'pt-br') as 'Preço Fabrica',
-    ppr.Per_Descon,
+    convert (decimal (10,2), ppr.Per_Descon) as Per_Descon,
     Prec_Final =  format((Prc_Fabric18 - (Prc_Fabric18 * (Per_Descon/100))), 'c', 'pt-br')
 /*
     Des_Esca = 
@@ -21,8 +21,8 @@ select distinct
         INNER JOIN POCOM pc on ppr.Id_PolCom = pc.Id_PolCom
         INNER JOIN PCXES pes on pc.Id_PolCom = pes.Id_PolCom and es.Cod_Estabe = pes.Cod_Estabe
 where es.cod_estabe = 1
-    and ppr.Id_PolCom in (2662 ) 
-    and fb.codigo in (158, 1022)
+    and ppr.Id_PolCom in (2854) 
+    and fb.codigo in (321)
     and es.Flg_Bloqueado = 0
     and es.Flg_BlqVen = 0
     and es.Flg_BlqCmp = 0
