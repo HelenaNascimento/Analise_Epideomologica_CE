@@ -1,6 +1,7 @@
 select distinct
     pr.codigo,
     pr.descri,
+    pr.cod_ean,
     fb.Fantasia,
     es.Qtd_Dispon,
     format(pr.Prc_Fabric18, 'c', 'pt-br') as 'Preço Fabrica',
@@ -22,7 +23,7 @@ select distinct
         INNER JOIN PCXES pes on pc.Id_PolCom = pes.Id_PolCom and es.Cod_Estabe = pes.Cod_Estabe
 where es.cod_estabe = 1
     and ppr.Id_PolCom in (2854) 
-    and fb.codigo in (321)
+    and fb.codigo in (33)
     and es.Flg_Bloqueado = 0
     and es.Flg_BlqVen = 0
     and es.Flg_BlqCmp = 0

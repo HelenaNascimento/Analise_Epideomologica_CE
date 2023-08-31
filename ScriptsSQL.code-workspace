@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "BI",
+			"path": "../../BI/BI"
+		},
+		{
+			"name": "learn",
+			"path": "../../HelpTI/learn"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "learn"
+	}
+}
