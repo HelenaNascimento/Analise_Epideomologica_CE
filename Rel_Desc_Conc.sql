@@ -1,25 +1,29 @@
-declare @yy int = 2018
+declare @yy int = 2023, @mm int = 08
 
 select distinct
     cl.Razao_Social,
     cl.Cgc_Cpf,
     ct.Num_Documento,
-    format(ct.Dat_Emissao, 'd', 'en-gb') as DatEmissao,
+    'Data' =
+        CASE
+            WHEN  ct.Transacao > Dat_Emissao then  format(ct.Transacao, 'd', 'en-gb')
+            WHEN  ct.Transacao <= Dat_Emissao then  format(Dat_Emissao, 'd', 'en-gb')
+    end,
     ct.Par_Documento,
     ct.[Status],
-    format(ct.Vlr_Documento, 'c', 'pt-br') as VlrDocumento,
-    format(ct.Vlr_DescConced, 'c', 'pt-br') as VlrDescontoConcedido,
-    format(bx.Vlr_Desconto, 'c', 'pt-br') as VlrDesconto,
-    format(bx.Vlr_Juros, 'c', 'pt-br') as VlrJuros,
+    convert(decimal (10,2), (ct.Vlr_Documento)) as VlrDocumento,
+    convert(decimal (10,2), ct.Vlr_DescConced) as VlrDescontoConcedido,
+    convert(decimal (10,2), bx.Vlr_Juros) as VlrJuros,
     bx.Qtd_DiasAtraso,
     ct.Per_MulAtrPag,
-    format(((ct.Vlr_Documento - ct.Vlr_DescConced ) + (bx.Vlr_Juros - bx.Vlr_Desconto)), 'c', 'pt-br') as ValorFinal
+    convert(decimal (10,2), ((ct.Vlr_Documento - ct.Vlr_DescConced ) + (bx.Vlr_Juros - bx.Vlr_Desconto))) as ValorFinal
     from BXREC bx
         inner join CTREC ct on bx.Cod_Estabe  = ct.Cod_Estabe and bx.[Status] = ct.[Status] and bx.Cod_Documento = ct.Cod_Documento 
         inner join CLIEN cl on ct.Cod_Cliente = cl.Codigo
 where ct.cod_estabe = 1
-    and DATEPART(year, Dat_Emissao) = @yy 
-    and Vlr_DescConced > '0.0'
+    and ct.Transacao >= '20230108' 
+    and Vlr_DescConced > 0
+
 
 union all
 
@@ -27,22 +31,28 @@ select
 	cl.Razao_Social,
     cl.Cgc_Cpf,
     ct.Num_Documento,
-    format(ct.Dat_Emissao, 'd', 'en-gb') as DatEmissao,
+    'Data' =
+    CASE
+        WHEN  ct.Transacao > Dat_Emissao then  format(ct.Transacao, 'd', 'en-gb')
+        WHEN  ct.Transacao <= Dat_Emissao then  format(Dat_Emissao, 'd', 'en-gb')
+    end,
     ct.Par_Documento,
     ct.[Status],
-    format(ct.Vlr_Documento, 'c', 'pt-br') as VlrDocumento,
-    format(ct.Vlr_DescConced, 'c', 'pt-br') as VlrDescontoConcedido,
-	'0.0', 
+    convert(decimal (10,2), ct.Vlr_Documento) as VlrDocumento,
+    convert(decimal (10,2), ct.Vlr_DescConced) as VlrDescontoConcedido,
+	--'0.0', 
     '0.0', 
     0, 
     0, 
-    format((ct.Vlr_Documento - ct.Vlr_DescConced ), 'c', 'pr-br') 
+    convert(decimal (10,2), (ct.Vlr_Documento - ct.Vlr_DescConced ))
 	from CTREC ct
 		inner join CLIEN cl on ct.Cod_Cliente = cl.Codigo
 where ct.cod_estabe = 1
-   and DATEPART(year, Dat_Emissao) = @yy  
-    and Vlr_DescConced > '0.0'
+    and ct.Transacao >= '20230108' 
+    and Vlr_DescConced > 0
     and ct.[Status] = 'A'
 
-order by  ct.Num_Documento, ct.Par_Documento
+order by  [Data] --, ct.Num_Documento, ct.Par_Documento
+
+
 
