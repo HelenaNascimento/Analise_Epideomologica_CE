@@ -21,7 +21,12 @@
                                                             WHEN convert(decimal(10,2), EIT.Prc_Unitario) = '0.00' THEN (SELECT TOP 1 
                                                                                                                                 format (Prc_Unitario, 'c', 'pt-br')
                                                                                                                                 FROM NFEIT 
-                                                                                                                            WHERE COD_ESTABE = 1 AND Dat_Entrada NOT IN (SELECT top 1 MAX(Dat_Entrada) FROM NFEIT WHERE COD_ESTABE = 1))
+                                                                                                                                    inner join NFECB  on NFEIT.Cod_Estabe = NFECB.Cod_Estabe 
+                                                                                                                                        and NFEIT.Protocolo = NFECB.Protocolo                                                                                                                                   
+                                                                                                                            WHERE NFECB.COD_ESTABE = 1 
+                                                                                                                            AND Dat_Entrada NOT IN (SELECT MAX(Dat_Entrada) 
+                                                                                                                                                        FROM NFECB 
+                                                                                                                                                    WHERE  Prc_Unitario = 0))
                                                         END
                         END,
         Prc_Medio = CASE
