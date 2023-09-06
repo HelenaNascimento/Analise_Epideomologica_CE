@@ -13,7 +13,9 @@
         pr.Descri,
         pr.Unidade_Venda as Unidade_Venda,
         fb.Fantasia,
-        Prc_Entrada = CASE
+        format(Prc_UltEnt, 'c', 'pt-br') as Prc_Entrada,
+        /*
+         CASE
                             WHEN convert(decimal (10,2), Prc_UltEnt) > '0.00' THEN format(Prc_UltEnt, 'c', 'pt-br')
                             WHEN convert (decimal (10,2), Prc_UltEnt) = '0.00'THEN 
                                                         CASE 
@@ -29,6 +31,8 @@
                                                                                                                                                     WHERE  Prc_Unitario = 0))
                                                         END
                         END,
+
+        */
         Prc_Medio = CASE
                         WHEN convert(decimal(10,2),Prc_CusMedPra) > '0.00' THEN format(Prc_CusMedPra, 'c', 'pt-br') 
                         WHEN convert(decimal(10,2),Prc_CusMedPra) = '0.00' THEN format(EIT.Prc_Unitario, 'c', 'pt-br')  
