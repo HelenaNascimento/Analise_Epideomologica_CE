@@ -11,14 +11,16 @@
 
     SELECT DISTINCT
         PR.CODIGO,
-        PR.DESCRI,
+        PR.DESCRI, 
         PR.UNIDADE_VENDA,
         FB.FANTASIA,
         PRC_UNITARIO = CASE
                         WHEN CONVERT(DECIMAL(10,2), NE.PRC_UNITARIO) > '0.00' THEN format(NE.PRC_UNITARIO, 'c', 'pt-br')
-                        WHEN CONVERT(DECIMAL(10,2), NE.PRC_UNITARIO) = '0.00' THEN (SELECT top 1 FORMAT(PRC_UNITARIO, 'c', 'pt-br') as PRC_UNITARIO
-                                                                                        FROM NFEIT 
-                                                                                    WHERE DAT_ENTRADA not in (SELECT top 1 MAX(DAT_ENTRADA) FROM NFEIT )
+                        WHEN CONVERT(DECIMAL(10,2), NE.PRC_UNITARIO) = '0.00' THEN (SELECT TOP 1 FORMAT(PRC_UNITARIO, 'c', 'pt-br') as PRC_UNITARIO
+																							FROM NFEIT 
+																						WHERE Dat_Movimento not in (SELECT MAX(Dat_Entrada) FROM NFECB ) 
+																						AND COD_ESTABE = 1
+																						AND CONVERT(DECIMAL (10,2), Prc_Unitario) > 0.00
                                                                                     ) --format(NE.PRC_UNITARIO, 'c', 'pt-br')
                     END,
         PRC_MEDIO = CASE
@@ -29,8 +31,8 @@
         Total = CASE
                     WHEN convert (decimal(10,2), Prc_CusMedPra) > '0.00' THEN format((Qtd_Fisico * Prc_CusMedPra), 'c', 'pt-br') 
                     WHEN convert (decimal(10,2), Prc_CusMedPra) = '0.00' THEN format((Qtd_Fisico * NE.Prc_Unitario), 'c', 'pt-br')
-                END,
-        MAX(DAT_ENTRADA) AS DAT_ENTRADA
+                END
+--        MAX(DAT_ENTRADA) AS DAT_ENTRADA
         FROM PRODU PR
             INNER JOIN PRXES PS ON PR.CODIGO = PS.COD_PRODUT 
             INNER JOIN FABRI FB ON PR.COD_FABRICANTE = FB.CODIGO
@@ -42,22 +44,16 @@
     AND PS.FLG_BLOQUEADO = 0
     AND PR.FLAG_IMPRCLASSIF1 <> 'N' 
     AND PR.CODIGO = 15231
-    AND 
-        (PRC_UNITARIO IS NOT NULL 
-            OR CONVERT(DECIMAL (10,2), Prc_Unitario) > 0.00)
+    AND PRC_UNITARIO IS NOT NULL 
+    AND CONVERT(DECIMAL (10,2), Prc_Unitario) > 0.00
 
     GROUP BY 
+		PS.QTD_FISICO,
         PR.CODIGO,
         PR.DESCRI,
         PR.UNIDADE_VENDA,
         FB.FANTASIA,
         PRC_UNITARIO,
         Prc_CusMedPra,
-        DAT_ENTRADA,
-        PS.QTD_FISICO
-
-    
-SELECT TOP 1 FORMAT(PRC_UNITARIO, 'c', 'pt-br') as PRC_UNITARIO
-    FROM NFEIT 
-WHERE Dat_Movimento not in (SELECT MAX(Dat_Entrada) FROM NFECB ) 
-    AND Cod_Estabe = 1
+        DAT_ENTRADA
+        
