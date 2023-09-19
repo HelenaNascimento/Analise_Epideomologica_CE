@@ -135,3 +135,5 @@
                     Cod_TabCom <> es.Cod_TabCom)
         COMMIT TRAN
     GO
+
+--Tabela Produto
