@@ -297,3 +297,208 @@ CREATE TABLE PRPREC (
 		Per_LucMin	 numeric
 		)
 */
+
+-- Tabela Politica X Operador X Vendedor X Supervisor
+
+/*
+
+CREATE TABLE POLXVEND (
+	IdPvd INT PRIMARY KEY IDENTITY,
+	Codigo int,
+	Id_PolCom  int,
+	Per_VrbPedAtivo decimal (10,2),
+	Per_VrbPedReceptivo decimal (10,2),
+	Per_VrbPedMovel decimal (10,2),
+	Per_VrbPedEletronico decimal (10,2),
+	Per_VrbPedWeb decimal (10,2),
+	Per_VrbPedHospitalar decimal (10,2),
+	Per_VrbPedCotacao decimal (10,2),
+	Flg_BlqDebVrbSup bit,
+	flg_Oper bit,
+	flg_vende bit, 
+	flg_sup bit
+	)
+
+GO
+*/
+
+-- Tabela Politica por Cliente
+/*
+CREATE TABLE [TESTE_DW].DBO.PCXCL (
+			Id_PolCom INT,
+			Cod_Client INT,	
+			Qtd_PrzMax INT,	
+			Per_Descon NUMERIC,	
+			Per_DscVis NUMERIC,	
+			CodAnt INT,	
+			NovoCodigo INT)
+GO
+*/
+
+--Tabela Politica X Grp de Clientes
+
+/*CREATE TABLE [TESTE_DW].DBO.PCXGC (
+			Id_PolCom INT,
+			Cod_Client INT,	
+			Qtd_PrzMax INT,	
+			Per_Descon NUMERIC,	
+			Per_DscVis NUMERIC,	
+			CodAnt INT,	
+			NovoCodigo INT)
+GO
+*/
+
+--Tabela Politica X UF
+/*
+CREATE TABLE [TESTE_DW].DBO.PCXUF (
+			Id_PolCom INT,
+			Cod_Uf char(2),	
+			Qtd_PrzMax INT,	
+			Per_Descon NUMERIC,	
+			Per_DscVis NUMERIC)
+
+GO
+*/
+
+--Tabela Política X Fabricante
+
+/*
+CREATE TABLE [TESTE_DW].DBO.PCXFB (
+			Id_PolCom INT,
+			Cod_Fabric INT,	
+			Qtd_PrzMax INT,	
+			Per_Descon NUMERIC,	
+			Per_DscVis NUMERIC)
+
+GO
+*/
+
+--Tabela Policita
+/*
+
+	CREATE TABLE [TESTE_DW].DBO.POCOM (
+		Id_PolCom	int			
+	,	Cod_PolCom	varchar	(	25	)
+	,	Des_Detalhada	varchar	(	120	)
+	,	Dat_Inicio	smalldatetime			
+	,	Dat_Termino	smalldatetime			
+	,	Bloqueado	bit			
+	,	Qtd_Minimo	smallint
+	,	Vlr_Minimo	numeric			
+	,	Per_Desconto	numeric			
+	,	Qtd_PrzMax	smallint
+	,	Cod_TipPrz	char	(	1	)
+	,	Cod_TabPrc	int			
+	,	Cod_TabPrz	int			
+	,	Cod_TabComVdr	int			
+	,	Cod_TabComOpe	int			
+	,	Usuario	varchar	(	35	)
+	,	Transacao	smalldatetime			
+	,	Flg_Televendas	bit			
+	,	Flg_Cfv	bit			
+	,	Flg_PedEle	bit			
+	,	Flg_Web	bit			
+	,	Qtd_IteMin	int			
+	,	Per_DscCom	numeric	(	9	)
+	,	Per_DscFin	numeric	(	9	)
+	,	Per_RedComVdr	numeric	(	9	)
+	,	Per_RedComOpe	numeric	(	9	)
+	,	Flg_NegDsc	bit			
+	,	Flg_BlqCli	bit			
+	,	Flg_Balcao	bit			
+	,	Flg_ExcCla	bit			
+	,	Flg_ExcFab	bit			
+	,	Flg_NaoSugDscItePdv	bit			
+	,	Dat_Cadastro	smalldatetime			
+	,	Per_DscAutPrc	numeric	(	9	)
+	,	Per_AcrAutPrc	numeric	(	9	)
+	,	Flg_PrcVenPrpPrz	bit			
+	,	Per_CorPrcVenPrpPrz	numeric	(	9	)
+	,	Flg_BlqVerba	bit			
+	,	Flg_BlqPolDifItePdv	bit			
+	,	Flg_BlqPolDifCabPdv	bit			
+	,	Flg_MarkupCusCom	bit			
+	,	Tip_RatBon	varchar	(	1	)
+	,	Per_DscComVis	numeric	(	9	)
+	,	Per_DscFinVis	numeric	(	9	)
+	,	Flg_SugDscGlbPdv	bit			
+	,	Tip_PolCom	varchar	(	3	)
+	,	Flg_DbqUsoVrbPdv	bit			
+	,	Flg_GerVrbPdv	bit			
+	,	Tip_VrbPdv	varchar	(	1	)
+	,	Flg_SugPrzCli	bit
+	,	Controle_Saldo	varchar	(	1	)
+	,	Flg_AcuVrbPos	bit			
+	,	Flg_AcuVrbNeg	bit			
+	,	Flg_CtrPdvVrbVdr	bit			
+	,	Flg_CtrPdvVrbOpe	bit			
+	,	Per_ComAtvVdr	numeric	(	9	)
+	,	Per_ComPasVdr	numeric	(	9	)
+	,	Per_ComAtvOpe	numeric	(	9	)
+	,	Per_ComPasOpe	numeric	(	9	)
+	,	Obs_PolCom	text
+	,	Flg_UsaTabPrcCadCli	bit			
+	,	Dat_Criacao	datetime			
+	)
+
+	GO
+*/
+
+--Tabela Politica x Prazo
+/*
+CREATE TABLE TESTE_DW.DBO.PCXPZ (Id_PolCom INT,
+	Cod_TabPrz INT,
+	Vlr_MinPdv NUMERIC)
+GO
+*/
+
+-- Política X Produto
+/*
+
+CREATE TABLE TESTE_DW.DBO.PCXPR (
+		Id_PolCom	int			
+	,	Cod_Produt	int			
+	,	Qtd_Minimo	int			
+	,	Qtd_PrzMax	int			
+	,	Per_Descon	numeric			
+	,	Per_DscVis	numeric			
+	,	Qtd_Min2	int			
+	,	Per_Dsc2	numeric			
+	,	Qtd_Min3	int			
+	,	Per_Dsc3	numeric			
+	,	Qtd_Min4	int			
+	,	Per_Dsc4	numeric			
+	,	Qtd_Min5	int			
+	,	Per_Dsc5	numeric			
+	,	Prc_Promoc	numeric			
+	,	Per_DscVis2	numeric			
+	,	Per_DscVis3	numeric			
+	,	Per_DscVis4	numeric			
+	,	Per_DscVis5	numeric			
+	,	Qtd_Maximo	int			
+	,	Qtd_Max2	int			
+	,	Qtd_Max3	int			
+	,	Qtd_Max4	int			
+	,	Qtd_Max5	int			
+	,	Tip_Sai	varchar	(1)
+	,	Per_Bonifi	numeric			
+	,	Per_MkpPrdVis	numeric			
+	,	Per_MkpPrdPrz	numeric			
+	,	IndEstabeMkp	int			
+	,	IndPrcCusBasMkp	int			
+
+	)
+GO
+*/
+
+-- Tabela PCXPL
+/*
+CREATE TABLE TESTE_DW.DBO.PCXPL ( Id_PolCom int , Cod_Produt int , Cod_Lote varchar(20) )
+GO
+*/
+
+--Tabela PCXCP
+/*
+CREATE TABLE TESTE_DW.DBO.PCXCP ( Id_PolCom INT, Cod_Classi VARCHAR (7), Qtd_PrzMax INT, Per_Descon NUMERIC, Per_DscVis NUMERIC)
+GO
+*/

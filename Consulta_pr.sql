@@ -66,7 +66,7 @@
     AND PXS.Qtd_Fisico > 0
     AND PXS.Flg_Bloqueado = 0
     AND PR.Flag_ImprClassif1 <> 'N'
-    AND PR.CODIGO = 15231
+    AND PR.CODIGO IN (22219, 22276, 22274, 22277, 22264)
 
     GROUP BY   
         pr.Codigo,
