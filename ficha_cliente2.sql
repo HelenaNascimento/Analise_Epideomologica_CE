@@ -6,7 +6,7 @@ select
 	cb.num_nota,
 	FORMAT(cb.Dat_Emissao, 'd') as Dat_Emissao,
 	FORMAT(ct.dat_vencimento, 'd') as Dat_vencimento,
-	IsNull(Format(ct.dat_quitacao, 'd'), 'N�oPago') as dat_quitacao,
+	IsNull(Format(ct.dat_quitacao, 'd'), 'NaoPago') as dat_quitacao,
 	Dias_Atraso =  case
 		when cast((dat_quitacao - Dat_vencimento)as int) is not null then cast((dat_quitacao - Dat_vencimento)as int)
 		when cast((dat_quitacao - Dat_vencimento)as int) is null then cast((getdate() - Dat_vencimento)as int)
