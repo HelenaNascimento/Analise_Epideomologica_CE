@@ -1,25 +1,14 @@
-DECLARE 
-	@Prod int, 
-	@Qtd_at int, 
-	@Tt_Ent int, 
-	@Tt_Sai int, 
-	@DatIni datetime,
-	@datf datetime,
-	@dat1 datetime = '20230401',
-	@dat2 datetime = '20230930',
-	@Estab int = 1
+DECLARE @Prod INT, 
+        @Qtd_at INT, 
+        @Data DATE,
+        @dat1 DATE = '2023-04-01',
+        @dat2 DATE = '2023-09-30',
+        @Estab INT = 1;
 
-Declare CodProdut CURSOR FOR
-		SELECT COD_PRODUT 
-		FROM PRSLD
-		WHERE 
-			COD_ESTABE = 1 AND 
-			Dat_Movime >= '20230401' AND
-			Dat_Movime <= '20230930' AND
-			EXISTS (
-			SELECT DISTINCT COD_PRODUT
-			FROM PREAN
-			WHERE COD_EAN IN (
+DECLARE CodProdut CURSOR FOR
+SELECT DISTINCT COD_PRODUT
+FROM PREAN
+WHERE COD_EAN IN (
 			'7891317000066'  ,'7891317000110' ,'7891317000127' ,'7891317000509' ,'7891317000530' ,'7891317001056' ,'7891317001063' ,'7891317001070' ,'7891317001414' ,'7891317001421' ,'7891317001438' ,'7891317001476' ,'7891317001483' ,'7891317001513'
 			,'7891317001568' ,'7891317001636' ,'7891317001872' ,'7891317001926' ,'7891317002022' ,'7891317002190' ,'7891317002442' ,'7891317002459' ,'7891317002497' ,'7891317002503' ,'7891317002572' ,'7891317002596' ,'7891317002602' ,'7891317002688'
 			,'7891317002695' ,'7891317002954' ,'7891317003050' ,'7891317003487' ,'7891317003494' ,'7891317003630' ,'7891317003647' ,'7891317004286' ,'7891317004293' ,'7891317004316' ,'7891317004323' ,'7891317004330' ,'7891317004347' ,'7891317004354'
@@ -38,74 +27,40 @@ Declare CodProdut CURSOR FOR
 			,'7891317469283' ,'7891317472009' ,'7891317472122' ,'7891317472139' ,'7891317473648' ,'7891317473679' ,'7891317473709' ,'7891317476465' ,'7891317476526' ,'7891317477271' ,'7891317477301' ,'7891317477592' ,'7891317477608' ,'7891317478766'
 			,'7891317478810' ,'7891317481629' ,'7891317481636' ,'7891317482541' ,'7891317484262' ,'7891317484330' ,'7891317484408' ,'7891317487386' ,'7891317488352' ,'7891317488390' ,'7891317488833' ,'7891317489328' ,'7891317489366' ,'7891317489403'
 			,'7891317490003' ,'7891317496388' ,'7891317496753' ,'7898146826768'
-			))
+);
 
-OPEN CodProdut
+OPEN CodProdut;
 
-FETCH NEXT FROM CodProdut INTO @Prod
-
+FETCH NEXT FROM CodProdut INTO @Prod;
 WHILE @@FETCH_STATUS = 0
+BEGIN
+    DECLARE d_prsld CURSOR FOR 
+    SELECT TOP 1 
+        Cod_Produt,
+        Qtd_SldAtu,
+        Dat_Movime
+    FROM PRSLD
+    WHERE 
+        COD_ESTABE = @Estab AND 
+        Cod_Produt = @Prod AND
+        Dat_Movime < @dat1 
+    ORDER BY Dat_Movime DESC;
 
-	BEGIN
-		DECLARE QTD_ANT CURSOR FOR 
-			select top 1 
-					Qtd_SldAtu, 
-					Dat_Movime 
-				from PRSLD
-				where 
-					Cod_Estabe = @Estab AND
-					Cod_Produt =  @Prod AND
-					Qtd_SldAtu > 0 AND
-					Dat_Movime <  @dat1
-				order by Dat_Movime desc
-		OPEN QTD_ANT
-		FETCH NEXT FROM QTD_ANT INTO @Qtd_at, @DatIni 
-		WHILE @@FETCH_STATUS = 0
-		BEGIN
-	
-			DECLARE Datas CURSOR FOR
-						SELECT 
-							Max(Dat_Movime) as Datas, 
-							sum(Qtd_EntCom + Qtd_EntDev + Qtd_EntOut + Qtd_EntTrf) as Ent,
-							sum(Qtd_SaiVen + Qtd_SaiDev + Qtd_SaiOut + Qtd_SaiTrf) as Sai
-						FROM PRSLD
-						WHERE 
-							Cod_Estabe = @Estab AND
-							Dat_Movime >= @dat1 AND
-							Dat_Movime <= @dat2 AND
-							Cod_Produt = @Prod
-						
-			OPEN Datas
-			FETCH NEXT FROM Datas INTO @datf, @Tt_Ent, @Tt_Sai
+    OPEN d_prsld;
 
-			WHILE @@FETCH_STATUS = 0
-				BEGIN
+    FETCH NEXT FROM d_prsld INTO @Prod, @Qtd_at, @Data;
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+        -- Aqui você pode fazer algo com os dados encontrados
+        PRINT CAST(@Prod AS NVARCHAR(255)) + ',' + CAST(@Qtd_at AS NVARCHAR(255)) + ',' + CAST(@Data AS NVARCHAR(255)) + ',' ;
+        FETCH NEXT FROM d_prsld INTO @Prod, @Qtd_at, @Data;
+    END;
 
-					SELECT 
-						@Prod as Produto, 
-						@DatIni as Dat_Estoq_Ant, 
-						@Qtd_at as Estoq_Ant, 
-						@datf as Ult_Movimentacao, 
-						@Tt_Ent as Total_Entrada, 
-						Total_Saida = 
-								Case 
-									when @Tt_Sai < 0 then (@Tt_Sai * -1) 
-									when @Tt_Sai = 0 then @Tt_Sai
-									when @Tt_Sai > 0 then (@Tt_Sai * -1) 
-								end,
-						Estoque_Final = ((@Tt_Ent + @Qtd_at) - @Tt_Sai)
-				
-				FETCH NEXT FROM Datas INTO @datf, @Tt_Ent, @Tt_Sai
-				
-				END
-		CLOSE Datas
-		DEALLOCATE Datas
+    CLOSE d_prsld;
+    DEALLOCATE d_prsld;
 
-	FETCH NEXT FROM QTD_ANT INTO @Qtd_at, @DatIni 
-	END
-	CLOSE QTD_ANT
-	DEALLOCATE QTD_ANT
-FETCH NEXT FROM CodProdut INTO @Prod
-END
-CLOSE CodProdut
-DEALLOCATE CodProdut
+    FETCH NEXT FROM CodProdut INTO @Prod;
+END;
+
+CLOSE CodProdut;
+DEALLOCATE CodProdut;
