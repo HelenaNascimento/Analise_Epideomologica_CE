@@ -14,6 +14,7 @@ select
 	Num_Documento,
 	Cod_Documento,
 	ct.Par_Documento,
+	cl.codigo,
 	cl.Cgc_Cpf,
 	cl.Razao_Social,
 	cd.Descricao as Cidade,
