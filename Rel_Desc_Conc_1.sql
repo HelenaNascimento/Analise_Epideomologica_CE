@@ -26,8 +26,8 @@ select
 							Qtd_DiasAtraso
 						from bxrec where cod_Estabe = 1) bx on ct.cod_estabe = bx.Cod_Estabe and ct.cod_Documento = bx.cod_Documento
 where ct.cod_estabe = 1
-    and ct.Transacao >= '20180101' 
-	and ct.Transacao < '20190101' 
+    and ct.Transacao >= '20230101' 
+	--and ct.Transacao < '20190101' 
 	--and ct.usuario = 'DENICE'
     and Vlr_DescConced > 0
     and ct.[Status] <> 'C'
