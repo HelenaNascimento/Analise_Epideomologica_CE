@@ -1,0 +1,9 @@
+USE DMD
+GO
+
+
+SELECT DISTINCT
+	Cod_ClaTri AS 'ProductTaxCode'
+	  FROM PRXES
+
+
