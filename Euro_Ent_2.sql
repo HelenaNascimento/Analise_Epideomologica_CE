@@ -3,6 +3,7 @@ DECLARE
 	@CodEan NVARCHAR(15), 
 	@Codig int, 
 	@Descr varchar(50), 
+	@PrUni  varchar(12),
 	@QtdPed int, 
 	@PrcAtu varchar(12), 
 	@VlrCom varchar(12), 
@@ -18,14 +19,15 @@ FETCH NEXT FROM CursorProd INTO @Prod
 WHILE @@FETCH_STATUS = 0
 BEGIN
 	DECLARE ENT_EURO cursor for
-	select 
+	select top 1
 	cod_ean,
 	codigo,
 	descricao,
-	SUM(it.Qtd_Pedido) AS Qtd_Vendas,
-	convert(decimal (10,2),(ES.prc_venda)) as Prc_Venda_Atual,
-	convert(decimal (10,2), (SUM(prc_unitario) * SUM(it.Qtd_Pedido))) as Valor_Total_Compra,
-	convert(decimal (10,2),((SUM(it.prc_unitario) / count(cb.protocolo)))) AS Vlr_Médio_Compra
+	format(prc_unitario, 'c', 'pt-br') as prc_unitario,
+	SUM(it.Qtd_Pedido) AS Qtd_Pedido,
+	format((ES.prc_venda), 'c', 'pt-br') as Prc_Venda_Atual,
+	Format((SUM(prc_unitario) * SUM(it.Qtd_Pedido)), 'c', 'pt-br') as Valor_Total_Compra,
+	format(((SUM(it.prc_unitario) / count(cb.protocolo))), 'c', 'pt-br') AS Vlr_Médio_Compra
 	from PRODU PR
 		Inner join PRXES ES ON PR.CODIGO = ES.COD_PRODUT
 		inner join NFEIT IT ON PR.CODIGO = IT.Cod_Produto AND ES.COD_ESTABE = IT.COD_ESTABE 
@@ -40,16 +42,17 @@ BEGIN
 		cod_ean,
 		codigo,
 		descricao,
+		prc_unitario,
 		ES.prc_venda
-	order by 2
+	order by 2 desc 
 
 	OPEN ENT_EURO;
-	FETCH NEXT FROM ENT_EURO INTO @CodEan, @Codig, @Descr, @QtdPed, @PrcAtu, @VlrCom, @VlrMed;
+	FETCH NEXT FROM ENT_EURO INTO @CodEan, @Codig, @Descr, @PrUni, @QtdPed, @PrcAtu, @VlrCom, @VlrMed;
     WHILE @@FETCH_STATUS = 0
     BEGIN
 
-	PRINT CAST(@CodEan AS NVARCHAR(255)) + ',' + CAST(@Codig AS NVARCHAR(255)) + ',' + CAST(@Descr AS VARCHAR(255)) + ',' + CAST(@QtdPed AS NVARCHAR(255)) + ',' + CAST(@PrcAtu AS NVARCHAR(255)) + ',' + CAST(@VlrCom AS NVARCHAR(255)) + ',' + CAST(@VlrMed AS NVARCHAR(255));
-	FETCH NEXT FROM ENT_EURO INTO @CodEan, @Codig, @Descr, @QtdPed, @PrcAtu, @VlrCom, @VlrMed;
+	PRINT CAST(@PrUni AS NVARCHAR(255));
+	FETCH NEXT FROM ENT_EURO INTO @CodEan, @Codig, @Descr, @PrUni, @QtdPed, @PrcAtu, @VlrCom, @VlrMed;
 
 	END;
 	CLOSE ENT_EURO
