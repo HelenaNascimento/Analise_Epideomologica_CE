@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Integer, String
 from werkzeug.security import generate_password_hash, check_password_hash
 import pyodbc as bd
+import pandas as pd
 import random
 import string
 
@@ -20,7 +21,7 @@ app.config['MAIL_DEFAULT_SENDER'] = 'silvania@novadistribuidorane.com.br'
 
 mail = Mail(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://sa:senha@1234@NOVACE-TI\DEV/TESTE?driver=ODBC+Driver+17+for+SQL+Server'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://sa:senha1234@NOVACE-TI\DEV/TESTE?driver=ODBC+Driver+17+for+SQL+Server'
 
 db = SQLAlchemy(app)
 
@@ -51,9 +52,8 @@ def send_email(user_email, username, password):
 
 class MyView(db.Model):
     __tablename__ = 'SANDOZ_OL2'  # Nome da tabela no banco de dados
-    __table_args__ = {'schema': 'TESTE'}  # Nome do esquema no banco de dados, opcional se for 'dbo'
-    # Defina os campos da view como colunas do modelo
-    CODIGO     = db.Column(db.Integer)
+
+    CODIGO     = db.Column(db.Integer, primary_key = True)
     COD_EAN    = db.Column(db.String(13))
     DESCRICAO  = db.Column(db.String(80))
     Lis        = db.Column(db.String(5))
@@ -73,6 +73,7 @@ class MyView(db.Model):
     DESC       = db.Column(db.String(80))
     L_LIQ      = db.Column(db.String(42))
     Est_Dispo  = db.Column(db.String(4))
+  
 
 @app.route('/')
 def index():
@@ -88,7 +89,7 @@ def login():
         if user and check_password_hash(user.password, password):
             # Login bem-sucedido
             flash('Login bem-sucedido!', 'success')
-            return redirect(url_for('index'))
+            return redirect(url_for('dashboard'))
         else:
             # Login falhou
             flash('Credenciais inválidas. Tente novamente.', 'danger')
@@ -124,8 +125,11 @@ def cadastro():
 
 @app.route('/dashboard')
 def dashboard():
+    print(str(MyView.query))  # Adicione esta linha
     dados_da_view = MyView.query.all()  # Ou use query.filter para condições específicas
+    print(dados_da_view)  # Adicione esta linha
     return render_template('dashboard.html', dados=dados_da_view)
 
 if __name__ == '__main__':
+
     app.run(debug=True)

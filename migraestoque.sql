@@ -1,4 +1,6 @@
 SELECT DISTINCT 
+count(codigo)
+/*
 	CODIGO,
 	REF_FABRICANTE,
 	COD_EAN AS EAN13,
@@ -16,15 +18,15 @@ SELECT DISTINCT
 	convert(decimal(20,2), PES_EMBCMP) as PES_EMBCMP,
 	IsNull(QTD_EMBPALETE, 0) as Latro,
 	IsNull(QTD_CAMPALETE, 0) as Camadas,
-	COD_EANEMBCMP as DUM14
+	COD_EANEMBCMP as DUM14 */
 	FROM PRODU PR
 		INNER JOIN PRXES ES ON PR.CODIGO = ES.COD_PRODUT
 	WHERE COD_ESTABE = 1
-		AND PESO > 1
+		--AND PESO > 1
 		AND flag_ImprClassif1 <> 'N'
 		AND es.Flg_Bloqueado = 0
 		AND es.Flg_BlqCmp = 0
 		AND es.Flg_BlqVen = 0
-		and ref_fabricante is not null
-		and alt_embcmp > 0
+		--and ref_fabricante is not null
+		--and alt_embcmp > 0
 	--	and qtd_embpalete > 0
