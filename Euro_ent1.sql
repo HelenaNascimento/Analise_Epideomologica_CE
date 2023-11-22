@@ -1,3 +1,37 @@
+/*
+CREATE TABLE EURO_ENT (
+	COD_EAN varchar(13) NOT NULL,
+	COD_PROD INT,
+	DESCRICAO VARCHAR(50),
+	QTD_PEDIDO int,
+	PRC_ATU decimal(20,2),
+	VLR_COMP decimal(20,2),
+	VLR_MED decimal(20,2),
+	Cust_Med decimal(20,2))
+
+
+
+SELECT 
+	COD_EAN,
+	COD_PROD,
+	DESCRICAO,
+	QTD_PEDIDO,
+	format(PRC_ATU, 'c', 'pt-br') as PRC_ATU,
+	format(vlr_comp, 'c', 'pt-br') as Vlr_Compr,
+	format(cust_med, 'c', 'pt-br') as cust_med
+
+	FROM EURO_ENT
+
+DROP TABLE EURO_ENT
+
+SELECT Prc_CusMed, Dat_UltCompra FROM PRXES
+WHERE Cod_Produt = 26
+ORDER BY Dat_UltCompra DESC
+
+*/
+
+
+
 DECLARE 
 	@Prod int,
 	@CodEan varchar(13), 
