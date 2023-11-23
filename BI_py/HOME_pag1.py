@@ -1,9 +1,6 @@
-import streamlit as st #https://extras.streamlit.app/
+import streamlit as st #https://docs.streamlit.io/
 import pyodbc as bd
 import pandas as pd
-#import flask as fk
-
-
 
 server = 'NOVACE-TI\DEV'
 username = 'sa'
@@ -13,12 +10,20 @@ database = 'TESTE'
 cnxn = bd.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
 
-query = "select * from SANDOZ_OL2"
-
 st.set_page_config(layout="wide")
 
-df = pd.read_sql(query, cnxn)
 
-st.title('Dados do SQL Server')
-st.dataframe(df.style.format({'Est.Dispo': '{:.0f}'}))
 
+st.sidebar.title('Menu')
+
+opcao = st.sidebar.selectbox('Opção: ',  ['Tabela', 'Deashboard'])
+
+if opcao == 'Tabela' :
+
+    query = "select * from SANDOZ_OL2" 
+    df = pd.read_sql(query, cnxn)
+    st.title('Dados do SQL Server')
+    st.dataframe(df.style.format({'Est.Dispo': '{:.0f}'}))
+
+elif opcao == 'Deashboard' :
+    st.title('Deash')
