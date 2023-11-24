@@ -16,8 +16,6 @@ VlrBasDscVen = FORMAT(Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_Re
 VlrBasDsc = FORMAT(Sum(it.Vlr_LiqItem-it.Vlr_RecSbt-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0)), 'c', 'pt-br'),
 VlrVen1 = FORMAT(Sum((it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0))*(1-IsNull(it.Per_DescontoFin,0)/100)), 'c', 'pt-br'),
 VlrVen2 = FORMAT(Sum((it.Vlr_LiqItem-it.Vlr_RecSbt-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0))*(1-IsNull(it.Per_DescontoFin,0)/100)), 'c', 'pt-br'),
-VlrVen3 = FORMAT(Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0)), 'c', 'pt-br'),
-VlrVen4 =FORMAT(Sum(it.Vlr_LiqItem-it.Vlr_RecSbt-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0)), 'c', 'pt-br'),
 cb.Dat_Emissao
 FROM NFSCB cb 
 	INNER JOIN NFSIT it ON ((cb.Cod_Estabe = it.Cod_Estabe) AND 
