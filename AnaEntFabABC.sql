@@ -10,7 +10,7 @@ order by 3
 
 --drop view AnaEntFabABC
 
-create view AnaEntFabABC as
+create view vw_AnaEntFabABC as
 select 
 	distinct
 	pr.Cod_Fabricante,
