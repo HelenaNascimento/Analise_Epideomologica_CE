@@ -43,11 +43,12 @@ BEGIN
 					left join FABRI FB  ON PR.Cod_Fabricante = FB.Codigo
 				 WHERE ES.Cod_Estabe = 1
 				AND CB.status NOT IN ('A', 'C')
+				
 				AND PR.Codigo = @CProd
 				--AND pr.Cod_Fabricante in (158,319,123,321,588,338,33,237,164,1022)
 				AND cb.Dat_Entrada >= '20230101'
 				AND cb.Dat_Entrada <= '20231031'
-
+				AND Tip_NF <> 'D'
 				group by
 					pr.Cod_Fabricante,
 					FB.Fantasia,
