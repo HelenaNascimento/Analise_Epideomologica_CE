@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "192.168.100.6",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "INFARMA",
+            "database": "DMD",
+            "username": "sainfarma",
+            "password": "SAInfarma2022@"
+        }
+    ]
+}
