@@ -8,7 +8,7 @@ sum(QtdVen) as QtdVen,
 sum(VlrFatVen) as VlrFatVen,
 sum(VlrBasDscVen) as VlrBasDscVen
 from AnaSaiFabABC
-where Cod_Fabricante = 319
+where Cod_Fabricante = 588
 AND dat_emissao >='20231101'
 AND dat_emissao <='20231130'
 group BY
