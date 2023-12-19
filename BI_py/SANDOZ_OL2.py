@@ -1,4 +1,4 @@
-import streamlit as st #https://extras.streamlit.app/
+import streamlit as st #https://extras.streamlit.app/ / https://cheat-sheet.streamlit.app/
 import pyodbc as bd
 import pandas as pd
 
