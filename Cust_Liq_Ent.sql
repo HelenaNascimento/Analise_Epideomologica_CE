@@ -24,7 +24,7 @@
                                              and it.Cod_Produto = ev.Cod_Produto and it.Cod_Lote = ev.Cod_Lote
                                              and it.Qtd_Pedido  = ev.Qtd_Pedido 
                      Where it.Cod_Estabe = 1 --Estabelecimento
-                       and it.Protocolo = 106900 --Protocolo
-                       and it.Cod_Produto = 14411 -- Cod Produto
-                       and it.Cod_Lote = 200423 -- Cod Lote
-                       and it.Num_SeqIte = 1 --Seq do Produto na Nota
+                       and it.Protocolo = 111591 --Protocolo
+                       and it.Cod_Produto = 43 -- Cod Produto
+                       and it.Cod_Lote = 850548 -- Cod Lote
+                       and it.Num_SeqIte = 8 --Seq do Produto na Nota

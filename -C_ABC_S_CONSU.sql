@@ -45,7 +45,7 @@ FROM NFSCB cb
    left join POCOM PC on it.Id_PolCom = pc.Id_PolCom
    left join FABRI FB on pr.Cod_Fabricante = fb.codigo
 WHERE cb.Cod_Estabe = 1
-AND pr.Cod_Fabricante = 588 --in (158,319,123,321,588,338,33,237,164,1022)
+AND pr.Cod_Fabricante = 237 --in (158,319,123,321,588,338,33,237,164,1022)
 AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
 AND cb.Dat_Emissao >= '20231101' 
 AND cb.Dat_Emissao <= '20231130'
