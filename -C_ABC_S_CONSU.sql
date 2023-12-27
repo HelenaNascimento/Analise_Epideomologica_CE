@@ -24,13 +24,12 @@ order by 3
 
 SELECT 
 DISTINCT
-pr.Cod_Fabricante, 
-fb.Fantasia,
+--pr.Cod_Fabricante, 
+--fb.Fantasia,
 pr.cod_ean,
 pr.codigo,
 pr.descricao,
 pc.Cod_PolCom,
---cb.dat_emissao,
 QtdVen = Sum(it.Qtd_Produto+it.Qtd_Bonificacao),    
 VlrFatVen =  Sum(it.Vlr_LiqItem-it.Vlr_RecSbt),
 VlrBasDscVen = Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0)),
@@ -45,7 +44,7 @@ FROM NFSCB cb
    left join POCOM PC on it.Id_PolCom = pc.Id_PolCom
    left join FABRI FB on pr.Cod_Fabricante = fb.codigo
 WHERE cb.Cod_Estabe = 1
-AND pr.Cod_Fabricante = 237 --in (158,319,123,321,588,338,33,237,164,1022)
+AND pr.Cod_Fabricante = 1022 --in (158,319,123,321,588,338,33,237,164,1022)
 AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
 AND cb.Dat_Emissao >= '20231101' 
 AND cb.Dat_Emissao <= '20231130'
@@ -56,3 +55,5 @@ pr.cod_ean,
 pr.codigo,
 pr.descricao,
 pc.Cod_PolCom
+
+order by 3

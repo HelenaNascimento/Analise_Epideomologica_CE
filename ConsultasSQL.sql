@@ -56,10 +56,27 @@ group by
     es.Prc_CusMedCom
 order by it.Cod_Produto
 */
-
+/*
 select ean.Cod_EAN 
     from PREAN ean
         inner join PRXES es on ean.Cod_Produt = es.Cod_Produt
 where  
     es.Cod_Estabe = 1
     and ean.Cod_Produt = 4959  
+*/
+
+select 
+    distinct
+    IT.COD_CFO
+    from NFECB CB
+        inner join  NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
+        inner join PRODU PR ON IT.COD_PRODUTO = PR.CODIGO
+where CB.cod_estabe = 1
+    and CB.Dat_Entrada = '20230101'
+    and CB.DAT_ENTRADA = '20231130'
+    and CB.Cod_EmiFornec = 233
+   -- AND pr.Cod_Fabricante = 237
+
+
+    --237
+    --233
