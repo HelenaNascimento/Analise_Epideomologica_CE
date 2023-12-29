@@ -16,7 +16,8 @@ declare
 @codEstab int = 1,
 @DatIn smalldatetime = '20230101',
 @DatFim smalldatetime= '20231130',
-@CFABR int = 1022
+@CFABR int = 1022,
+@CFORN int = 1022
 
 SELECT
 		PRD.Cod_Fabricante,
@@ -36,29 +37,33 @@ SELECT
 		INNER  JOIN (SELECT 
 						Cod_Produto, 
 						sum(Qtd_PedFat) as Qtd_PedFat, 
-						IT.Cod_Estabe  
+						IT.Cod_Estabe,
+						cb.Cod_EmiFornec  
 						FROM NFEIT IT
 							inner join NFECB CB ON IT.Cod_Estabe = CB.Cod_Estabe AND IT.Protocolo = CB.Protocolo
 					WHERE IT.Cod_Estabe = @codEstab
 					and cb.Dat_Entrada >= @DatIn
 					and cb.Dat_Entrada <= @DatFim
+					and Cod_EmiFornec = @CFORN
 					and IT.Cod_Cfo in (1910, 2910)
-					group by Cod_Produto, IT.Cod_Estabe  ) eit1 on PES.Cod_Estabe = eit1.Cod_Estabe and PES.Cod_Produt = eit1.Cod_Produto
+					group by Cod_Produto, IT.Cod_Estabe, cb.Cod_EmiFornec) eit1 on PES.Cod_Estabe = eit1.Cod_Estabe and PES.Cod_Produt = eit1.Cod_Produto
 					
 		INNER JOIN (SELECT 
 						Cod_Produto, 
 						sum(Qtd_PedFat) as Qtd_PedFat, 
-						IT.Cod_Estabe  
+						IT.Cod_Estabe,
+						cb.Cod_EmiFornec    
 						FROM NFEIT IT
 							inner join NFECB CB ON IT.Cod_Estabe = CB.Cod_Estabe AND IT.Protocolo = CB.Protocolo
 					WHERE IT.Cod_Estabe = @codEstab
 					
 					and cb.Dat_Entrada >= @DatIn
 					and cb.Dat_Entrada <= @DatFim
+					and Cod_EmiFornec = @CFORN
 					and IT.Cod_Cfo in (2102, 2403, 2404)
-					group by Cod_Produto, IT.Cod_Estabe) eit2 on PES.Cod_Estabe = eit2.Cod_Estabe and PES.Cod_Produt = eit2.Cod_Produto
+					group by Cod_Produto, IT.Cod_Estabe, cb.Cod_EmiFornec ) eit2 on PES.Cod_Estabe = eit2.Cod_Estabe and PES.Cod_Produt = eit2.Cod_Produto
 	where 
-	pes.Cod_Estabe = @codEstab
+	(eit1.Cod_EmiFornec = @CFORN or eit2.Cod_EmiFornec = @CFORN)
 	and PRD.Cod_Fabricante = @CFABR
 	
 

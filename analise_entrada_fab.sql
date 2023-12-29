@@ -6,7 +6,7 @@ Select
 where cod_estabe = 1  
     and Dat_Entrada >= '20230101'
     and Dat_Entrada <= '20231130'
-    and Cod_EmiFornec = 336
+    and Cod_EmiFornec = 349
     and Tip_NF <> 'D'
     and Status NOT IN ('A', 'C')
 
