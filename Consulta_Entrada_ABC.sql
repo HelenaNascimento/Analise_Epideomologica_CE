@@ -23,8 +23,8 @@ SELECT
     ES.Prc_Fabric,
     ES.Prc_CusMedCom,
     ES.Prc_UltEnt   
-    FROM PROD_2023.dbo.PRODU PR
-        INNER JOIN PROD_2023.dbo.PRXES ES ON PR.CODIGO = ES.COD_PRODUT
+    FROM DMD.dbo.PRODU PR
+        INNER JOIN DMD.dbo.PRXES ES ON PR.CODIGO = ES.COD_PRODUT
 WHERE 
     ES.COD_ESTABE = @CESTA
 AND PR.COD_FABRICANTE = @CFABR
@@ -37,8 +37,8 @@ BEGIN
 
         SELECT
             sum(it.Qtd_PedFat) as Qtd_PedFat  
-            FROM PROD_2023.dbo.NFECB CB
-                INNER JOIN PROD_2023.dbo.NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
+            FROM DMD.dbo.NFECB CB
+                INNER JOIN DMD.dbo.NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
         WHERE 
             CB.COD_ESTABE = @CESTA
         AND CB.DAT_ENTRADA >= '20230101'
@@ -56,8 +56,8 @@ BEGIN
                     top 1
                     Prc_Unitario ,
                     DAT_ENTRADA 
-                    FROM PROD_2023.dbo.NFECB CB
-                        INNER JOIN PROD_2023.dbo.NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
+                    FROM DMD.dbo.NFECB CB
+                        INNER JOIN DMD.dbo.NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
                 WHERE 
                     CB.COD_ESTABE = @CESTA
                 AND CB.DAT_ENTRADA >= '20230101'
@@ -66,15 +66,15 @@ BEGIN
                 AND IT.COD_PRODUTO = @CPROD
                 AND IT.Cod_Cfo in (2102, 2403, 2404)
                 order by 2 desc
-                OPEN PRCFAT;
+                OPEN PRCFAT;                   
                 FETCH NEXT FROM PRCFAT INTO @PPED, @DATENT 
                 WHILE @@FETCH_STATUS = 0
                 BEGIN
                     DECLARE QTDBON CURSOR FOR
                         SELECT
                             ISNULL(sum(it.Qtd_PedFat), 0)
-                            FROM PROD_2023.dbo.NFECB CB
-                                INNER JOIN PROD_2023.dbo.NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
+                            FROM DMD.dbo.NFECB CB
+                                INNER JOIN DMD.dbo.NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
                         WHERE 
                             CB.COD_ESTABE = @CESTA
                         AND CB.DAT_ENTRADA >= '20230101'
@@ -92,8 +92,8 @@ BEGIN
                             top 1
                             Prc_Unitario,
                             DAT_ENTRADA  
-                            FROM PROD_2023.dbo.NFECB CB
-                                INNER JOIN PROD_2023.dbo.NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
+                            FROM DMD.dbo.NFECB CB
+                                INNER JOIN DMD.dbo.NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
                         WHERE 
                             CB.COD_ESTABE = @CESTA
                         AND CB.DAT_ENTRADA >= '20230101'
