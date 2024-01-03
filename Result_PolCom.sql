@@ -1,0 +1,12 @@
+/*select TOP 1 * 
+    from NFSIT IT
+        INNER JOIN NFSCB CB ON IT.COD_ESTABE = CB.COD_ESTABE AND IT.SER_NOTA = CB.SER_NOTA AND IT.NUM_NOTA = CB.NUM_NOTA
+        INNER JOIN PCXPR PP ON IT.COD_PRODUT = PP.COD_PRODUT
+WHERE IT.COD_ESTABE = 1
+    AND CB.DAT_EMISSAO >= '20230101'
+    AND CB.DAT_EMISSAO <= '20231130'
+    AND IT.*/
+
+ select * from RTXCT
+ where  cod_regtri in (88, 89) and
+    (Alq_icmIntReg = 19 or alq_icmExtLoc = 19)
