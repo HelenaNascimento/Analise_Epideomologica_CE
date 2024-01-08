@@ -373,7 +373,7 @@ CREATE TABLE [TESTE_DW].DBO.PCXFB (
 GO
 */
 
---Tabela Policita
+--Tabela Politita
 /*
 
 	CREATE TABLE [TESTE_DW].DBO.POCOM (

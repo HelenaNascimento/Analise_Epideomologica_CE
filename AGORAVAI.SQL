@@ -1,14 +1,34 @@
 
-ROLLBACK
+SELECT  
+    CODIGO,
+    COD_EAN,
+    PRC_VENDA,
+    PRC_FABRIC18,
+    PRC_FABRIC20,
+    IT.PF_20
+    FROM PRODU PR
+        INNER JOIN PRXES ES ON PR.CODIGO = ES.COD_PRODUT
+        INNER JOIN ABCIT IT ON COD_EAN = IT.EAN
+WHERE COD_ESTABE = 1
+    AND Prc_MaxCon20 = 0
+    AND IT.Isn_TabABC = 5
+    AND PRC_VENDA > PRC_FABRIC18
+    AND PRC_VENDA = IT.PF_20
+    AND TIPO = 'R'
+    AND Cod_Fabricante <> 33;
 
-BEGIN
-UPDATE ES
-SET Prc_Venda = PF_20,
-    Prc_Fabric = PF_20,
-    Prc_MaxCon = PMC_20
-from PRXES ES 
-    INNER JOIN PRODU PR ON ES.Cod_Produt = PR.Codigo
-    INNER JOIN ABCIT IT ON PR.Cod_EAN = IT.EAN
-where Cod_Estabe = 1
-    and cod_produt = 10795
-    and pr.Prc_Fabric18 = IT.PF_18
+COMMIT
+
+BEGIN TRAN
+UPDATE PR
+    SET Prc_MaxCon20 = IT.PMC_20
+    FROM PRODU PR
+        INNER JOIN PRXES ES ON PR.CODIGO = ES.COD_PRODUT
+        INNER JOIN ABCIT IT ON COD_EAN = IT.EAN
+WHERE COD_ESTABE = 1
+    AND Prc_MaxCon20 = 0
+    AND IT.Isn_TabABC = 5
+    AND PRC_VENDA > PRC_FABRIC18
+    AND PRC_VENDA = IT.PF_20
+    AND TIPO = 'R'
+    AND Cod_Fabricante <> 33

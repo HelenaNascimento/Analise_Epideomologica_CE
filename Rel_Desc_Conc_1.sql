@@ -1,3 +1,4 @@
+
 select 
 	distinct
 	cl.Razao_Social,

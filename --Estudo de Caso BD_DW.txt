@@ -1,0 +1,64 @@
+--NFECB
+--Data entrada
+--Codigo Fornecedor / Cliente / Transportadora
+--Protocolo
+--Estabelecimento
+--Vlr Total
+--CFOP / Tip Nota / Mov Estoque
+--Serie / Número da Nota
+
+--NFEIT
+--Codigo Produto
+--Qtd Faturada
+--Lote / Data Fabric / Data Venci
+--Valor Unitário do Item
+--Valor Total do Item
+--Controle de Preço
+
+--PAGCT
+--Numero da Nota
+--Codigo
+--Vencimento
+--Valor
+--Status
+--Desconto
+--Número
+
+--PRODU
+--CÓDIGO
+--DESCRICAO
+--TIPO
+--CLASS ABC
+--FABRICANTE
+--COD_EAN
+--CONTROLE DE PREÇO
+--CONTROLE DE VENDA
+--GRUPO DE PRECO
+--LISTA
+--Prc_UltimaEntrada (Somente com Compra de Mercadoria, Bonificação não alimenta esse campo)
+--Prc_Venda
+
+--PRXES
+--Cod_Produt
+--Cod_Estabe
+--Qtd_Fisico
+--Qtd_Transicao
+--Qtd_avaria
+--Qtd_Reserva
+--Qtd_Quarentena
+--Qtd_Disponivel
+--Prc_Fabric20
+
+--PRLTL
+--Cod_Produt
+--Cod_Lote
+--Cod_Dep
+--Num_Rua
+--Num_Col
+--Num_Niv
+--Num_Apt
+--Qtd_EmbFec
+--Dat_Venc
+--Dat_Entrada
+--Qtd_SolPra
+--Qtd
