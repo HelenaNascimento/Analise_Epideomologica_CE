@@ -2,8 +2,8 @@
 declare
 @codEstab int = 1,
 @DatIn smalldatetime = '20230101',
-@DatFim smalldatetime= '20231130',
-@CFABR int = 349,
+@DatFim smalldatetime= '20231231',
+@CFABR int = 164,
 @CProd int,
 @PrcUlt decimal(20,2),
 @Dat_Ent smalldatetime
