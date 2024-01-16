@@ -10,9 +10,14 @@ declare
 	@DatComp smalldatetime
 
 	Declare CursorProd CURSOR FOR 
-		SELECT DISTINCT Codigo 
+		SELECT 
+			top 1
+			Codigo,
+			Prc_Fabric20,
+			Prc_UltEnt 
 		FROM PRODU
-		WHERE Cod_Fabricante = @CodFab
+			inner join PRXE
+		WHERE Cod_Fabricante = 1 @CodFab
 
 	OPEN CursorProd
 
