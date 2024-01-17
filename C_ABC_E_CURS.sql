@@ -1,8 +1,8 @@
 declare 
 	@codEstab int = 1,
-	@CodFab int = 349,
+	@CodFab int = 158,
 	@DatIn smalldatetime = '20230101',
-	@DatFim smalldatetime = '20231130',
+	@DatFim smalldatetime = '20231231',
 	@CodProd int, -- = 21165,
 	@CodEAN varchar(14),
 	@Fabri varchar(50),
@@ -10,9 +10,14 @@ declare
 	@DatComp smalldatetime
 
 	Declare CursorProd CURSOR FOR 
-		SELECT DISTINCT Codigo 
+		SELECT 
+			top 1
+			Codigo,
+			Prc_Fabric20,
+			Prc_UltEnt 
 		FROM PRODU
-		WHERE Cod_Fabricante = @CodFab
+			inner join PRXE
+		WHERE Cod_Fabricante = 1 @CodFab
 
 	OPEN CursorProd
 
