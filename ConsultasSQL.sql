@@ -65,18 +65,39 @@ where
     and ean.Cod_Produt = 4959  
 */
 
-select 
-    distinct
-    IT.COD_CFO
-    from NFECB CB
-        inner join  NFEIT IT ON CB.COD_ESTABE = IT.COD_ESTABE AND CB.PROTOCOLO = IT.PROTOCOLO
-        inner join PRODU PR ON IT.COD_PRODUTO = PR.CODIGO
-where CB.cod_estabe = 1
-    and CB.Dat_Entrada = '20230101'
-    and CB.DAT_ENTRADA = '20231130'
-    and CB.Cod_EmiFornec = 233
-   -- AND pr.Cod_Fabricante = 237
-
-
-    --237
-    --233
+SELECT 
+	DISTINCT
+	Cod_Fabricante,
+	FB.Fantasia,
+	pr.Codigo,
+	Descri,
+	PR.Cod_EAN,
+	ES.Prc_CusMedCom,
+	LOT.Cod_Lote,
+	LOT.Dat_Fabric,
+	LOT.Dat_Vencim,
+	sum(LOT.Qtd_Saldo) as Qtd_Saldo,
+	status = case
+            when pr.Flag_ImprClassif1 = 'N' THEN 'Fora de Linha'
+            else 'Estoque'
+		end
+	FROM PROD_2023.dbo.PRODU PR
+		inner join PROD_2023.dbo.PRLOT LOT ON PR.Codigo = LOT.Cod_Produt
+		inner join PROD_2023.dbo.PRXES ES on pr.codigo = es.Cod_Produt and lot.cod_estabe = es.Cod_Estabe
+	    left join PROD_2023.dbo.FABRI FB on pr.Cod_Fabricante = fb.Codigo
+	WHERE
+	lot.Cod_Estabe = 1
+	--and PR.Cod_EAN LIKE'7%'
+	--and LOT.Qtd_Saldo > 0
+group by
+	Cod_Fabricante,
+	FB.Fantasia,
+	pr.Codigo,
+	Descri,
+	PR.Cod_EAN,
+	LOT.Cod_Lote,
+	ES.Prc_CusMedCom,
+	LOT.Dat_Fabric,
+	LOT.Dat_Vencim,
+	LOT.Qtd_Solicitado,
+	pr.Flag_ImprClassif1
