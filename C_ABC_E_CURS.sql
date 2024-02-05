@@ -1,7 +1,7 @@
 declare 
 	@codEstab int = 1,
 	@CodFab int = 158,
-	@DatIn smalldatetime = '20230101',
+	@DatIn smalldatetime = '20200101',
 	@DatFim smalldatetime = '20231231',
 	@CodProd int, -- = 21165,
 	@CodEAN varchar(14),
@@ -10,14 +10,11 @@ declare
 	@DatComp smalldatetime
 
 	Declare CursorProd CURSOR FOR 
+	
 		SELECT 
-			top 1
-			Codigo,
-			Prc_Fabric20,
-			Prc_UltEnt 
-		FROM PRODU
-			inner join PRXE
-		WHERE Cod_Fabricante = 1 @CodFab
+			Codigo
+		FROM PRODU PR
+		WHERE Cod_Fabricante = @CodFab
 
 	OPEN CursorProd
 
@@ -25,7 +22,7 @@ declare
 	WHILE @@FETCH_STATUS = 0
 	BEGIN
 		DECLARE Curv_ABC_ENT cursor for
-				SELECT top 1 
+				SELECT top 1
 					IT.Cod_Estabe, 
 					it.Cod_Produto, 
 					Prc_Unitario,

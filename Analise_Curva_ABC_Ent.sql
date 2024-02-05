@@ -26,7 +26,7 @@ SELECT
 		PRD.Cod_EAN,
 		PRD.Descri,
 		Prc_UltEnt,
-		eit2.Qtd_PedFat as Qtd_Ent_Comp,
+		--eit2.Qtd_PedFat as Qtd_Ent_Comp,
 		eit1.Qtd_PedFat as Qtd_Ent_BONI,
 		Prc_Fabric,
 		Prc_Venda,
@@ -34,7 +34,7 @@ SELECT
 	FROM PRODU PRD
 		INNER JOIN PRXES PES ON PRD.Codigo = PES.Cod_Produt
 		INNER JOIN FABRI FB ON PRD.Cod_Fabricante = FB.Codigo 
-		INNER JOIN (SELECT 
+		/*INNER JOIN (SELECT 
 						Cod_Produto, 
 						sum(Qtd_PedFat) as Qtd_PedFat, 
 						IT.Cod_Estabe,
@@ -45,10 +45,10 @@ SELECT
 					
 					and cb.Dat_Entrada >= @DatIn
 					and cb.Dat_Entrada <= @DatFim
-					and Cod_EmiFornec in (1, 164,341,348, 852)
+					--and Cod_EmiFornec in (1, 164,341,348, 852)
 					and IT.Cod_Cfo in (2102, 2403, 2404)
 					group by Cod_Produto, IT.Cod_Estabe, cb.Cod_EmiFornec ) eit2 on PES.Cod_Estabe = eit2.Cod_Estabe and PES.Cod_Produt = eit2.Cod_Produto
-		LEFT JOIN (SELECT 
+		*/INNER JOIN (SELECT 
 				Cod_Produto, 
 				sum(Qtd_PedFat) as Qtd_PedFat, 
 				IT.Cod_Estabe,
@@ -58,13 +58,13 @@ SELECT
 			WHERE IT.Cod_Estabe = @codEstab
 			and cb.Dat_Entrada >= @DatIn
 			and cb.Dat_Entrada <= @DatFim
-			and Cod_EmiFornec in (1, 164,341,348, 852)
+			--and Cod_EmiFornec in (1, 164,341,348, 852)
 			and IT.Cod_Cfo in (1910, 2910)
 			group by Cod_Produto, IT.Cod_Estabe, cb.Cod_EmiFornec) eit1 on PES.Cod_Estabe = eit1.Cod_Estabe and PES.Cod_Produt = eit1.Cod_Produto
 			
 	where 
 	--(eit1.Cod_EmiFornec in (1, 164,341,348, 852) or eit2.Cod_EmiFornec in (1, 164,341,348, 852))
-	PRD.Cod_Fabricante = 164
+	PRD.Cod_Fabricante = 158
 	
 
 order by 3
