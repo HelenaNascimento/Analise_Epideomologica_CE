@@ -26,11 +26,11 @@ FROM NFSCB cb
    left join POCOM PC on it.Id_PolCom = pc.Id_PolCom
    left join FABRI FB on pr.Cod_Fabricante = fb.codigo
 WHERE cb.Cod_Estabe = 1
-AND pr.Cod_Fabricante = 123 --in (158,319,123,321,588,338,33,237,164,1022)
+AND pr.Cod_Fabricante = 338 --in (158,319,123,321,588,338,33,237,164,1022)
 AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
 --AND pc.Cod_PolCom = 'CE - 0000'
-AND cb.Dat_Emissao >= '20231201' 
-AND cb.Dat_Emissao <= '20231231'
+AND cb.Dat_Emissao >= '20230201' 
+AND cb.Dat_Emissao <= '20230228'
 Group by 
 --pr.Cod_Fabricante, 
 --fb.Fantasia,
