@@ -29,8 +29,8 @@ WHERE cb.Cod_Estabe = 1
 AND pr.Cod_Fabricante = 338 --in (158,319,123,321,588,338,33,237,164,1022)
 AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
 --AND pc.Cod_PolCom = 'CE - 0000'
-AND cb.Dat_Emissao >= '20230201' 
-AND cb.Dat_Emissao <= '20230228'
+AND cb.Dat_Emissao >= '20230601' 
+AND cb.Dat_Emissao <= '20230628'
 Group by 
 --pr.Cod_Fabricante, 
 --fb.Fantasia,

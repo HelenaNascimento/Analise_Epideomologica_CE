@@ -2,8 +2,8 @@
 DECLARE 
 	@CodProd INT, 
 	@Cod_Estabe int = 1,
-	@Dat_Ini smalldatetime  = '20230501',
-	@Dat_fim smalldatetime = '20230531',
+	@Dat_Ini smalldatetime  = '20230901',
+	@Dat_fim smalldatetime = '20230930',
 	@Dt_Alt smalldatetime,
 	@Prc_Pr numeric (20,2),
 	@CM numeric (20,2)
