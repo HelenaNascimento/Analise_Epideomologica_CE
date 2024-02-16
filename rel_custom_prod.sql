@@ -8,7 +8,7 @@ declare
 	@PCMED numeric (20,2),
 	@PRVEND numeric (20,2),
 	@PRCULTENT numeric(20,2),
-	@Dat_Ini smalldatetime  = '20230101',
+	@Dat_Ini smalldatetime  = '20231201',
 	@Dat_fim smalldatetime = '20231231',
 	@QTD_SALD INT,
 	@DATA smalldatetime
@@ -16,20 +16,20 @@ declare
 	PRINT 'Código' + ';' + 'Descrição' + ';' + 'Fantasia' + ';' + 'Custo_Médio' + ';' + 'Prc_Venda' + ';' + 'Prc_UltEntrada' + ';' + 'Qtd_Estoque'
 
 	Declare C_Prod CURSOR FOR 
-
-			SELECT 
-				p.Codigo, 
-				p.Descricao as Des_Produt, 
-				p.Unidade_Venda, 
+		SELECT 
+				pr.Codigo,
+				pr.Descricao as Des_Produt, 
+				pr.Unidade_Venda, 
 				fb.Fantasia as Des_Fabric
-			From PRXES pr, PRODU p, FABRI fb 
-			Where pr.Cod_Estabe = 1 
-			And pr.Cod_Produt = p.Codigo 
-			And p.Cod_Fabricante = fb.Codigo 
-			AND p.Flag_ImprClassif1 <> 'N' 
-			AND ((p.Dat_Cadastro <= '20231231') OR (p.Dat_Cadastro IS NULL) OR (p.Dat_Cadastro = '')) 
-			AND ((pr.Dat_PrcAtual <= '20231231') OR (Pr.Dat_PrcAtual IS NULL) OR (Pr.Dat_PrcAtual = '')) 
-			ORDER BY 2
+			From PRXES es 
+				inner join PRODU pr on es.Cod_Produt = pr.Codigo
+				left join FABRI fb on pr.Cod_Fabricante = fb.Codigo
+			Where es.Cod_Estabe = 1 
+			AND pr.Flag_ImprClassif1 <> 'N' 
+			AND ((pr.Dat_Cadastro <= '20231231') OR (pr.Dat_Cadastro IS NULL) OR (pr.Dat_Cadastro = '')) 
+			AND ((es.Dat_PrcAtual <= getdate()) OR (es.Dat_PrcAtual IS NULL) OR (es.Dat_PrcAtual = '')) 
+			--and pr.codigo = 558
+			ORDER BY 1
 	OPEN C_Prod
 
 	FETCH NEXT FROM C_Prod INTO @CPROD, @DESC, @UNVEND, @FANT
@@ -45,8 +45,8 @@ declare
 		FROM PRSLD 
 		WHERE Cod_Estabe = 1
 		AND Cod_Produt = @CPROD
-		--AND Dat_Movime >= @Dat_Ini 
-		AND Dat_Movime <= @Dat_fim
+		AND Dat_Movime >= '20231201'
+		AND Dat_Movime <= '20231231'
 		AND Qtd_SldPra > 0
 		order by 3 desc
 
@@ -95,7 +95,7 @@ declare
     WHILE @@FETCH_STATUS = 0
 	BEGIN
 			
-			PRINT CAST(@CODI AS NVARCHAR(10)) + ';' + CAST(@DESC AS VARCHAR(80)) + ';' + CAST(@FANT AS VARCHAR(80)) + ';' + CAST(@PCMED AS NVARCHAR(20)) + ';' + CAST(@PRVEND AS NVARCHAR(20)) + ';' + CAST(@PRCULTENT AS NVARCHAR(20)) + ';' + CAST(@QTD_SALD AS NVARCHAR(20))
+			PRINT CAST(REPLACE(@CODI, '0', 5) AS NVARCHAR(10)) + ';' + CAST(RTRIM(LTRIM(@DESC)) AS VARCHAR(80)) + ';' + CAST(@FANT AS VARCHAR(80)) + ';' + CAST(@PCMED AS NVARCHAR(20)) + ';' + CAST(@PRVEND AS NVARCHAR(20)) + ';' + CAST(@PRCULTENT AS NVARCHAR(20)) + ';' + CAST(@QTD_SALD AS NVARCHAR(20))
 			
 			FETCH NEXT FROM Curv_ABC_ENT INTO @codEstab, @CODI, @PRCULTENT, @Dat_fim;
 			END;
