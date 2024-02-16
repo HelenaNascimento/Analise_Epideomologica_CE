@@ -5,21 +5,15 @@
 		},
 		{
 			"name": "BI",
-			"path": "../../BI/BI"
+			"path": "../BI/BI"
 		},
 		{
-			"name": "learn",
-			"path": "../../HelpTI/learn"
+			"path": "../HelpDesk"
 		},
 		{
-			"path": "../../Jupyter"
-		},
-		{
-			"name": "HelpDesk",
-			"path": "../../HelpDesk/HelpDesk"
+			"name": "SisPat-1",
+			"path": "../../../../media/technical/Elements/Workspace/SisPat/SisPat-1"
 		}
 	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "learn"
-	}
+	"settings": {}
 }
