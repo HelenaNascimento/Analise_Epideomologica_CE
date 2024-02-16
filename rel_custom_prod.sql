@@ -29,7 +29,7 @@ declare
 			AND p.Flag_ImprClassif1 <> 'N' 
 			AND ((p.Dat_Cadastro <= '20231231') OR (p.Dat_Cadastro IS NULL) OR (p.Dat_Cadastro = '')) 
 			AND ((pr.Dat_PrcAtual <= '20231231') OR (Pr.Dat_PrcAtual IS NULL) OR (Pr.Dat_PrcAtual = '')) 
-			ORDER BY 1 
+			ORDER BY 2
 	OPEN C_Prod
 
 	FETCH NEXT FROM C_Prod INTO @CPROD, @DESC, @UNVEND, @FANT
