@@ -28,6 +28,7 @@ declare
 			AND pr.Flag_ImprClassif1 <> 'N' 
 			AND ((pr.Dat_Cadastro <= '20231231') OR (pr.Dat_Cadastro IS NULL) OR (pr.Dat_Cadastro = '')) 
 			AND ((es.Dat_PrcAtual <= getdate()) OR (es.Dat_PrcAtual IS NULL) OR (es.Dat_PrcAtual = '')) 
+			AND pr. = 'R'
 			--and pr.codigo = 558
 			ORDER BY 1
 	OPEN C_Prod

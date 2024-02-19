@@ -6,8 +6,8 @@ SELECT
 		INNER JOIN PRODU PR ON IT.Cod_Produto = PR.Codigo
 WHERE 
  IT.Cod_Estabe = 1
- AND Cod_Fabricante = 338
- AND CB.DAT_ENTRADA >= '20230101'
+ AND Cod_Fabricante = 588
+ AND CB.DAT_ENTRADA >= '20231201'
  AND CB.DAT_ENTRADA <= '20231231'
  AND IT.Cod_Cfo in (2102, 2403, 2404) 
 

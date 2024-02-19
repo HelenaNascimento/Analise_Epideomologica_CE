@@ -4,9 +4,9 @@
 declare 
 	@ANO varchar(4) = '2023',
 	@MES varchar(2) = '01',
-	@FB int = 338,
+	@FB int = 588,
 	@CEst int = 1,
-	@OP int = 4
+	@OP int = 1
 
 
 	
@@ -43,7 +43,7 @@ IF @OP = 2 (
 				pr.cod_ean,
 				pr.descricao,
 				pc.Cod_PolCom,
-				Auxiliar = concat(pc.Cod_PolCom, '-', pr.codigo),
+				--Auxiliar = concat(pc.Cod_PolCom, '-', pr.codigo),
 				QtdVen = Sum(it.Qtd_Produto+it.Qtd_Bonificacao),    
 				VlrBasDscVen = Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0))
 			FROM NFSCB cb 
@@ -81,9 +81,10 @@ IF @OP = 3 (
 				left join POCOM PC on it.Id_PolCom = pc.Id_PolCom
 				left join FABRI FB on pr.Cod_Fabricante = fb.codigo
 			WHERE cb.Cod_Estabe = 1
-			AND pr.Cod_Fabricante = 338
+			AND pr.Cod_Fabricante = @FB
 			AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
-			AND month(cb.Dat_Emissao) = '01'
+			AND year(cb.Dat_Emissao) = @ANO
+			AND month(cb.Dat_Emissao) = @MES
 			Group by 
 			pc.Cod_PolCom
 
@@ -103,8 +104,9 @@ IF @OP = 4 (
 				INNER JOIN PRODU pr on it.Cod_Produto = pr.Codigo 
 				left join POCOM PC on it.Id_PolCom = pc.Id_PolCom
 				left join FABRI FB on pr.Cod_Fabricante = fb.codigo
-			WHERE cb.Cod_Estabe = @CEst
+			WHERE cb.Cod_Estabe = 1
 			AND pr.Cod_Fabricante = @FB
 			AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
+			AND year(cb.Dat_Emissao) = @ANO
 			AND month(cb.Dat_Emissao) = @MES
 			);
