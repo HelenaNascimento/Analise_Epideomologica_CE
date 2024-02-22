@@ -11,3 +11,12 @@ inner join NFeCB cb on
             it.Cod_Estabe = cb.Cod_Estabe 
             and cb.protocolo = it.protocolo
 where it.Cod_Estabe = 1 and Cod_Produto = 10234 and cb.Dat_Entrada >= '20240213'
+
+
+select * from FS_R0205
+
+
+update FS_R0205
+SET Cod_Estabe = 1
+
+

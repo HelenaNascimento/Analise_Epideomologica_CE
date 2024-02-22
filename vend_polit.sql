@@ -3,10 +3,10 @@
 
 declare 
 	@ANO varchar(4) = '2023',
-	@MES varchar(2) = '01',
-	@FB int = 588,
+	@MES varchar(2) = '03',
+	@FB int = 17,
 	@CEst int = 1,
-	@OP int = 1
+	@OP int = 3
 
 
 	
