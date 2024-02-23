@@ -2,7 +2,7 @@ declare
 	@codEstab int = 1,
 	@CodFab int = 17,
 	@DatIn smalldatetime = '20200401',
-	@DatFim smalldatetime = '20230331',
+	@DatFim smalldatetime = '20231231',
 	@CodProd int, -- = 21165,
 	@CodEAN varchar(14),
 	@Fabri varchar(50),

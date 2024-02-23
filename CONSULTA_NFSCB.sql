@@ -1,0 +1,2 @@
+select  * from NFSCB
+WHERE COD_ESTABE = 1 AND DAT_EMISSAO >= '20240223'

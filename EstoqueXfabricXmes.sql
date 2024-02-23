@@ -1,35 +1,39 @@
-SELECT
-	PR.CODIGO,
-	SUM(IT.Qtd_PedFat) AS QTD_Compra
-	FROM NFEIT IT
-		INNER JOIN NFECB CB ON IT.Cod_Estabe = CB.Cod_Estabe AND IT.PROTOCOLO = CB.PROTOCOLO 
-		INNER JOIN PRODU PR ON IT.Cod_Produto = PR.Codigo
-WHERE 
- IT.Cod_Estabe = 1
- AND Cod_Fabricante = 17
- AND CB.DAT_ENTRADA >= '20230301'
- AND CB.DAT_ENTRADA <= '20230331'
- AND IT.Cod_Cfo in (2102, 2403, 2404) 
+declare 
+	@ANO varchar(4) = '2023',
+	@MES varchar(2) = '12',
+	@FB int = 17,
+	@CEst int = 1,
+	@OP int = 2
 
-GROUP BY
-	PR.CODIGO
+if @OP = 1 (
+			SELECT
+				PR.CODIGO,
+				SUM(IT.Qtd_PedFat) AS QTD_Compra
+				FROM NFEIT IT
+					INNER JOIN NFECB CB ON IT.Cod_Estabe = CB.Cod_Estabe AND IT.PROTOCOLO = CB.PROTOCOLO 
+					INNER JOIN PRODU PR ON IT.Cod_Produto = PR.Codigo
+			WHERE 
+			IT.Cod_Estabe = @CEst
+			AND Cod_Fabricante = @FB
+			AND year(CB.DAT_ENTRADA) = @ANO
+--			AND month(CB.DAT_ENTRADA) = @MES
+			AND IT.Cod_Cfo in (2102, 2403, 2404) 
 
-ORDER BY 1
+			GROUP BY
+				PR.CODIGO);
+if @OP = 2 (
+			SELECT 
+				PR.CODIGO,
+				SUM(IT.Qtd_PedFat) AS QTD_BONI
+				FROM NFEIT IT
+					INNER JOIN NFECB CB ON IT.Cod_Estabe = CB.Cod_Estabe AND IT.PROTOCOLO = CB.PROTOCOLO 
+					INNER JOIN PRODU PR ON IT.Cod_Produto = PR.Codigo
+			WHERE 
+						IT.Cod_Estabe = @CEst
+						AND Cod_Fabricante = @FB
+						AND year(CB.DAT_ENTRADA) = @ANO
+						--AND month(CB.DAT_ENTRADA) = @MES
+			AND IT.Cod_Cfo in (1910, 2910)
 
-SELECT 
-	PR.CODIGO,
-	SUM(IT.Qtd_PedFat) AS QTD_BONI
-	FROM NFEIT IT
-		INNER JOIN NFECB CB ON IT.Cod_Estabe = CB.Cod_Estabe AND IT.PROTOCOLO = CB.PROTOCOLO 
-		INNER JOIN PRODU PR ON IT.Cod_Produto = PR.Codigo
-WHERE 
- IT.Cod_Estabe = 1
- AND Cod_Fabricante = 17
- AND CB.DAT_ENTRADA >= '20230601'
- AND CB.DAT_ENTRADA <= '20230630'
- AND IT.Cod_Cfo in (1910, 2910)
-
-GROUP BY
-	PR.CODIGO
-
-ORDER BY 1
+			GROUP BY
+				PR.CODIGO);
