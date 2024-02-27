@@ -2,11 +2,12 @@
 --Variáveis Globais:
 
 declare 
-	@ANO varchar(4) = '2023',
-	@MES varchar(2) = '12',
-	@FB int = 17,
+	@ANO varchar(4) = '2024',
+	@MES varchar(2) = '01',
+	@FB int = 1022,
 	@CEst int = 1,
 	@OP int = 3
+
 
 
 	
@@ -29,7 +30,7 @@ IF @OP = 1 (
 	AND pr.Cod_Fabricante = @FB
 	AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
 	AND year(cb.Dat_Emissao) = @ANO
-	--AND month(cb.Dat_Emissao) = @MES
+	AND month(cb.Dat_Emissao) = @MES
 
 );
 
@@ -57,7 +58,7 @@ IF @OP = 2 (
 			AND pr.Cod_Fabricante = @FB
 			AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
 			AND year(cb.Dat_Emissao) = @ANO
---			AND month(cb.Dat_Emissao) = @MES
+			AND month(cb.Dat_Emissao) = @MES
 			Group by 
 			pr.cod_ean,
 			pr.codigo,
@@ -84,7 +85,7 @@ IF @OP = 3 (
 			AND pr.Cod_Fabricante = @FB
 			AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
 			AND year(cb.Dat_Emissao) = @ANO
-		--	AND month(cb.Dat_Emissao) = @MES
+			AND month(cb.Dat_Emissao) = @MES
 			Group by 
 			pc.Cod_PolCom
 
