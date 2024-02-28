@@ -1,74 +1,112 @@
---código do produto
---descrição
---unidade de venda
---Fabricante
---prec da ultima entrada
---Prc Médio
---Prc Venda
---Qtd Físico
---format(((Qtd_Fisico - (Qtd_Quaren + Qtd_Reserv)) * Prc_CusMedPra), 'c', 'pt-br') as  'Total'
-
-SELECT DISTINCT 
-    pr.Codigo,
-    pr.Descri,
-    pr.Unidade_Venda as Unidade_Venda,
-    fb.Fantasia,
-    Prc_Entrada = CASE
-                        WHEN convert(decimal (10,2), Prc_UltEnt) > '0.00' THEN format(Prc_UltEnt, 'c', 'pt-br')
-                        WHEN convert (decimal (10,2), Prc_UltEnt) = '0.00'THEN 
-                                                    CASE 
-                                                        WHEN convert(decimal(10,2), EIT.Prc_Unitario) > '0.00' THEN format(EIT.Prc_Unitario, 'c', 'pt-br')
-                                                        WHEN convert(decimal(10,2), EIT.Prc_Unitario) = '0.00' THEN (SELECT TOP 1 
-																															format (Prc_Unitario, 'c', 'pt-br')
-																															FROM NFEIT 
-																														WHERE COD_ESTABE = 1 AND Dat_Entrada NOT IN (SELECT top 1 MAX(Dat_Entrada) FROM NFEIT WHERE COD_ESTABE = 1))
-													END
-                    END,
-    Prc_Medio = CASE
-                    WHEN convert(decimal(10,2),Prc_CusMedPra) > '0.00' THEN format(Prc_CusMedPra, 'c', 'pt-br') 
-                    WHEN convert(decimal(10,2),Prc_CusMedPra) = '0.00' THEN format(EIT.Prc_Unitario, 'c', 'pt-br')  
-                    
-                END,
-    PXS.Qtd_Fisico,
-    Total = CASE
-                WHEN convert (decimal(10,2), Prc_CusMedPra) > '0.00' THEN format((Qtd_Fisico * Prc_CusMedPra), 'c', 'pt-br') 
-                WHEN convert (decimal(10,2), Prc_CusMedPra) = '0.00' THEN format((Qtd_Fisico * EIT.Prc_Unitario), 'c', 'pt-br')
-            END
-    FROM PRXES PXS 
-        INNER JOIN PRODU PR ON pxs.Cod_Produt = pr.Codigo
-        INNER JOIN FABRI FB ON pr.Cod_Fabricante = FB.Codigo
-        LEFT JOIN (SELECT 
-                    CB.COD_ESTABE, 
-                    IT.COD_PRODUTO , 
-                    max(CB.Dat_Entrada) as Dat_Entrada, 
-                    IT.Prc_Unitario
-                    FROM NFECB CB 
-                        INNER JOIN NFEIT IT ON CB.Cod_Estabe = IT.Cod_Estabe AND CB.Protocolo = it.Protocolo
-                    where cb.Cod_Estabe = 1 
-                    GROUP BY 
-						CB.COD_ESTABE, 
-						IT.COD_PRODUTO , 
-						IT.Prc_Unitario
-                    ) as EIT on PXS.Cod_Estabe = EIT.COD_ESTABE AND PXS.Cod_Produt = EIT.Cod_Produto
-WHERE
-    PXS.Cod_Estabe = 1
-AND PXS.Qtd_Fisico > 0
-AND PXS.Flg_Bloqueado = 0
-AND PR.Flag_ImprClassif1 <> 'N'
-AND PR.CODIGO = 15231
+DECLARE 
+	@CEAN varchar(14),
+	@CEAN1 varchar(14),
+	@CEAN2 varchar(14),
+	@CPROD1 int,
+	@DESC1 varchar(50),
+	@CESTA int = 1,
+	@CPROD2 int,
+	@DESC2 varchar(50),
+	@QTDSDL1 BIGINT, 
+	@DATMOV1 SMALLDATETIME,
+	@QTDSDL2 BIGINT, 
+	@DATMOV2 SMALLDATETIME,
+	@DAT_CAD SMALLDATETIME
 
 
-GROUP BY   
-    pr.Codigo,
-    pr.Descri,
-    pr.Unidade_Venda,
-    fb.Fantasia,
-    PXS.Qtd_Fisico,
-	Prc_UltEnt,
-	Prc_Unitario,
-	Prc_CusMedPra,
-	Qtd_Quaren,
-	Qtd_Reserv,
-	eit.Dat_Entrada
+DECLARE CODEAN CURSOR FOR
+	SELECT 
+		P1.Cod_EAN
+	FROM PROD_2022.dbo.PREAN P1
+		INNER JOIN PROD_2023.dbo.PREAN P2 ON P1.Cod_EAN = P2.Cod_EAN AND P1.Cod_Produt <> P2.Cod_Produt
+		INNER JOIN PROD_2023.dbo.PRXES ES2 ON  P2.Cod_Produt = ES2.Cod_Produt
+	WHERE 
+		ES2.Cod_Estabe = 1
+		and P1.Cod_EAN > '0'
 
-ORDER BY PR.Codigo
+	OPEN CODEAN
+
+	FETCH NEXT FROM CODEAN INTO @CEAN
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+
+		DECLARE PRD22 CURSOR FOR
+
+		SELECT 
+			TOP 1
+			P1.Codigo,
+			P1.Descricao,
+			P1.Dat_Cadastro,
+			SD1.Qtd_SldAtu,
+			MAX(SD1.Dat_Movime),
+			PR1.Cod_EAN
+			FROM PROD_2022.dbo.PRODU P1
+				INNER JOIN PROD_2022.dbo.PREAN PR1 ON P1.Codigo = PR1.Cod_Produt
+				INNER JOIN PROD_2022.dbo.PRXES ES1 ON P1.Codigo = ES1.Cod_Produt
+				INNER JOIN PROD_2022.dbo.PRSLD SD1 ON ES1.COD_ESTABE = SD1.Cod_Estabe AND ES1.Cod_Produt = SD1.Cod_Produt
+		WHERE 
+			PR1.Cod_EAN = @CEAN
+			--PR1.Cod_Produt = 86
+			AND SD1.Dat_Movime > '20221220'
+		GROUP BY
+			P1.Codigo,
+			P1.Descricao,
+			P1.Dat_Cadastro,
+			SD1.Qtd_SldAtu,
+			PR1.Cod_EAN
+		ORDER BY 3 
+	
+
+		OPEN PRD22;
+		FETCH NEXT FROM PRD22 INTO @CPROD1, @DESC1, @DAT_CAD,  @QTDSDL1, @DATMOV1, @CEAN1;
+	WHILE @@FETCH_STATUS = 0
+		BEGIN 
+			DECLARE PRO23 CURSOR FOR
+			select 	TOP 1
+				P2.Codigo,
+				P2.Descricao,
+				SD2.Qtd_SldAtu,
+				SD2.Dat_Movime,
+				PR2.Cod_EAN
+				FROM PROD_2023.dbo.PRODU P2
+					INNER JOIN PROD_2023.dbo.PREAN PR2 ON P2.Codigo = PR2.Cod_Produt
+					INNER JOIN PROD_2023.dbo.PRXES ES2 ON P2.Codigo = ES2.Cod_Produt
+					INNER JOIN PROD_2023.dbo.PRSLD SD2 ON ES2.COD_ESTABE = SD2.Cod_Estabe AND ES2.Cod_Produt = SD2.Cod_Produt
+			WHERE
+				ES2.Cod_Estabe = 1
+				AND PR2.Cod_EAN = @CEAN1
+				AND SD2.Dat_Movime > '20221230' 
+			group by 
+				P2.Codigo,
+				P2.Descricao,
+				SD2.Qtd_SldAtu,
+				PR2.Cod_EAN,
+				SD2.Dat_Movime
+
+		
+
+			OPEN PRO23;
+			FETCH NEXT FROM PRO23 INTO @CPROD2, @DESC2, @QTDSDL2, @DATMOV2, @CEAN2;
+					WHILE @@FETCH_STATUS = 0
+
+						BEGIN 
+			
+						PRINT '|0200|'  + CAST(@CPROD2 AS NVARCHAR(5)) + '|' + CAST(@DESC2 AS VARCHAR(80)) + '|' + CAST(@QTDSDL2 AS NVARCHAR(20)) + '|' + CAST(@CEAN2 AS NVARCHAR(14))	
+						PRINT '|0205|' + CAST(@DESC1 AS VARCHAR(80)) + '|' + CAST(replace(convert(varchar, @DAT_CAD, 103),'/', '') AS NVARCHAR(20)) + '|' + CAST('01012023' AS NVARCHAR(14)) + '|' + CAST(@CPROD1 AS NVARCHAR(5)) 
+						
+						FETCH NEXT FROM PRO23 INTO @CPROD2, @DESC2, @QTDSDL2, @DATMOV2, @CEAN2;
+
+						END;
+
+		CLOSE PRO23
+		DEALLOCATE PRO23
+		FETCH NEXT FROM PRD22 INTO @CPROD1, @DESC1, @DAT_CAD,  @QTDSDL1, @DATMOV1, @CEAN1;
+		END;
+		
+	CLOSE PRD22
+	DEALLOCATE PRD22
+	FETCH NEXT FROM CODEAN INTO @CEAN
+	END;
+
+CLOSE CODEAN
+DEALLOCATE CODEAN
