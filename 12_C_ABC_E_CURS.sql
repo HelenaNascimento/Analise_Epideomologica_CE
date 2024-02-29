@@ -1,9 +1,9 @@
 declare 
 	@codEstab int = 1,
-	@CodFab int = 276,
+	@CodFab int = 319,
 	@DatIn smalldatetime = '20200401',
 	@DatFim smalldatetime = '20240131',
-	@CodProd int, -- = 21165,
+	@CodProd int = 16210,
 	@CodEAN varchar(14),
 	@Fabri varchar(50),
 	@PrcUnit decimal(20,2),
