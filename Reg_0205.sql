@@ -1,3 +1,18 @@
+
+/*CREATE TABLE PRODXUNI (
+		ANT_EAN varchar(14), 
+		POS_EAN varchar(14), 
+		ANT_CODIGO INT, 
+		POS_CODIGO INT, 
+		ANT_DESC varchar(50),
+		POS_DESC varchar(50), 
+		DATA_INICIAL varchar(11)
+)
+*/
+
+--DELETE FROM PRODXUNI
+
+
 DECLARE 
 	@CEAN varchar(14),
 	@CEAN1 varchar(14),
@@ -46,7 +61,7 @@ DECLARE CODEAN CURSOR FOR
 				INNER JOIN PROD_2022.dbo.PRSLD SD1 ON ES1.COD_ESTABE = SD1.Cod_Estabe AND ES1.Cod_Produt = SD1.Cod_Produt
 		WHERE 
 			PR1.Cod_EAN = @CEAN
-			--PR1.Cod_Produt = 86
+			AND ES1.Cod_Estabe = 0
 			AND SD1.Dat_Movime > '20221220'
 		GROUP BY
 			P1.Codigo,
@@ -90,9 +105,8 @@ DECLARE CODEAN CURSOR FOR
 					WHILE @@FETCH_STATUS = 0
 
 						BEGIN 
-			
-						PRINT '|0200|'  + CAST(@CPROD2 AS NVARCHAR(5)) + '|' + CAST(@DESC2 AS VARCHAR(80)) + '|' + CAST(@QTDSDL2 AS NVARCHAR(20)) + '|' + CAST(@CEAN2 AS NVARCHAR(14))	
-						PRINT '|0205|' + CAST(@DESC1 AS VARCHAR(80)) + '|' + CAST(replace(convert(varchar, @DAT_CAD, 103),'/', '') AS NVARCHAR(20)) + '|' + CAST('01012023' AS NVARCHAR(14)) + '|' + CAST(@CPROD1 AS NVARCHAR(5)) 
+						--INSERT INTO PRODXUNI
+						PRINT  CAST(@CEAN1  AS NVARCHAR(14)) + ';' + CAST(@CEAN2  AS NVARCHAR(14)) + ';' + CAST(@CPROD1  AS NVARCHAR(5)) + ';' + CAST(@CPROD2  AS NVARCHAR(5)) + ';' + CAST(@DESC1  AS VARCHAR(80)) + ';' + CAST(@DESC2  AS VARCHAR(80)) + ';' + CAST((convert(varchar, @DAT_CAD, 103)) AS NVARCHAR(20))
 						
 						FETCH NEXT FROM PRO23 INTO @CPROD2, @DESC2, @QTDSDL2, @DATMOV2, @CEAN2;
 
