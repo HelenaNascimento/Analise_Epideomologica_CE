@@ -1,6 +1,6 @@
 declare 
 	@codEstab int = 1,
-	@CodFab int = 134,
+	@CodFab int = 164,
 	@DatIn smalldatetime = '20200401',
 	@DatFim smalldatetime = '20240229',
 	@CodProd int, --= 16210,
