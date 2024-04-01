@@ -81,14 +81,15 @@ SELECT
             when pr.Flag_ImprClassif1 = 'N' THEN 'Fora de Linha'
             else 'Estoque'
 		end
-	FROM PROD_2023.dbo.PRODU PR
-		inner join PROD_2023.dbo.PRLOT LOT ON PR.Codigo = LOT.Cod_Produt
-		inner join PROD_2023.dbo.PRXES ES on pr.codigo = es.Cod_Produt and lot.cod_estabe = es.Cod_Estabe
-	    left join PROD_2023.dbo.FABRI FB on pr.Cod_Fabricante = fb.Codigo
+	FROM PRODU PR
+		inner join PRLOT LOT ON PR.Codigo = LOT.Cod_Produt
+		inner join PRXES ES on pr.codigo = es.Cod_Produt and lot.cod_estabe = es.Cod_Estabe
+	    left join FABRI FB on pr.Cod_Fabricante = fb.Codigo
 	WHERE
 	lot.Cod_Estabe = 1
 	--and PR.Cod_EAN LIKE'7%'
 	--and LOT.Qtd_Saldo > 0
+	and Cod_Fabricante = 319
 group by
 	Cod_Fabricante,
 	FB.Fantasia,

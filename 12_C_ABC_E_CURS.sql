@@ -1,8 +1,8 @@
 declare 
 	@codEstab int = 1,
-	@CodFab int = 164,
+	@CodFab int = 280,
 	@DatIn smalldatetime = '20200401',
-	@DatFim smalldatetime = '20240229',
+	@DatFim smalldatetime = '20230228',
 	@CodProd int, --= 16210,
 	@CodEAN varchar(14),
 	@Fabri varchar(50),
