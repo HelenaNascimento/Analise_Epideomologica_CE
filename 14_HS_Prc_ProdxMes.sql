@@ -2,7 +2,7 @@ DECLARE
 	@CodProd INT, 
 	@Cod_Estabe int = 1,
 	@Dat_Ini smalldatetime  = '20230101',
-	@Dat_fim smalldatetime = '20230228',
+	@Dat_fim smalldatetime = '20240331',
 	@Dt_Alt smalldatetime,
 	@Prc_Pr numeric (20,2),
 	@CM numeric (20,2)
@@ -14,7 +14,7 @@ Declare Cod_Produ Cursor for
 		FROM PRODU PR
 			INNER JOIN PRXES ES on PR.CODIGO = ES.COD_PRODUT  
 	WHERE ES.Cod_Estabe = @Cod_Estabe
-		AND PR.Cod_Fabricante = 280
+		AND PR.Cod_Fabricante = 338
 	order by 1
 
 OPEN Cod_Produ

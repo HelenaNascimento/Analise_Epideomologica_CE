@@ -3,11 +3,11 @@
 
 
 declare 
-	@ANO varchar(4) = '2023',
-	@MES varchar(2) = '02',
-	@FB int = 280,
+	@ANO varchar(4) = '2024',
+	@MES varchar(2) = '03',
+	@FB int = 338,
 	@CEst int = 1,
-	@OP int = 1
+	@OP int = 4
 
 IF @OP = 1 (
 -- Cabeçalho:
