@@ -1,0 +1,18 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[DASH_ENTRA_S_SAIDA]    Script Date: 11/04/2024 17:05:26 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE VIEW [dbo].[DASH_ENTRA_S_SAIDA] AS
+SELECT 
+	*
+FROM VW_ENTRA_S_SAIDA
+WHERE total_Saida = 0
+GO
+
+

@@ -1,0 +1,15 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_FAK_FIN]    Script Date: 11/04/2024 17:31:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE VIEW [dbo].[VW_FAK_FIN] AS
+SELECT * FROM FAKE_FIN
+GO
+
+

@@ -1,0 +1,18 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_FBXES]    Script Date: 11/04/2024 17:32:19 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [dbo].[VW_FBXES] AS
+SELECT *
+FROM PROD_2023.dbo.FBXES 
+WHERE Cod_Estabe = 1
+GO
+
+
