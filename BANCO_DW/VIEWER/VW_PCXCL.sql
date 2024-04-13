@@ -1,0 +1,20 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_PCXCL]    Script Date: 13/04/2024 16:30:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [dbo].[VW_PCXCL] AS
+SELECT PCL.*
+FROM PROD_2023.dbo.PCXCL PCL
+	INNER JOIN PROD_2023.dbo.PCXES ES ON PCL.Id_PolCom = ES.Id_PolCom
+WHERE 
+	Cod_Estabe = 1
+GO
+
+

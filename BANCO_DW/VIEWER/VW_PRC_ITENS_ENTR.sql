@@ -1,0 +1,21 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_PRC_ITENS_ENTR]    Script Date: 13/04/2024 16:46:43 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+CREATE   VIEW [dbo].[VW_PRC_ITENS_ENTR] AS
+SELECT 
+*
+FROM dw_prod.dbo.FAKE_PRCULTENT
+
+GO
+
+

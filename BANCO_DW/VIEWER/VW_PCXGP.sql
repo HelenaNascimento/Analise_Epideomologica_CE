@@ -1,0 +1,20 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_PCXGP]    Script Date: 13/04/2024 16:35:49 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [dbo].[VW_PCXGP] AS
+SELECT  PGP.*
+FROM PROD_2023.dbo.PCXGP PGP
+	INNER JOIN PROD_2023.dbo.PCXES ES ON PGP.Id_PolCom = ES.Id_PolCom
+WHERE 
+	Cod_Estabe = 1
+GO
+
+

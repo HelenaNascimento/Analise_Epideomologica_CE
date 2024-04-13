@@ -1,0 +1,18 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_TPOPE]    Script Date: 13/04/2024 17:00:07 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [dbo].[VW_TPOPE] AS
+
+SELECT * FROM PROD_2023.dbo.TPOPE
+
+GO
+
+

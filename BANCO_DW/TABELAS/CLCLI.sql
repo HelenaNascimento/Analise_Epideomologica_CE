@@ -1,0 +1,24 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  Table [dbo].[CLCLI]    Script Date: 13/04/2024 17:05:55 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[CLCLI](
+	[Codigo] [int] NOT NULL,
+	[Descricao] [varchar](50) NOT NULL,
+	[Des_Cor] [varchar](15) NOT NULL,
+	[Vlr_FaiIni] [numeric](18, 4) NOT NULL,
+	[Vlr_FaiFin] [numeric](18, 4) NOT NULL,
+ CONSTRAINT [PK_CLCLI] PRIMARY KEY CLUSTERED 
+(
+	[Codigo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 80, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

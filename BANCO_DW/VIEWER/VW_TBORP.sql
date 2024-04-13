@@ -1,0 +1,18 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_TBORP]    Script Date: 13/04/2024 16:50:52 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [dbo].[VW_TBORP] AS
+
+SELECT * FROM PROD_2023.dbo.TBORP
+
+GO
+
+

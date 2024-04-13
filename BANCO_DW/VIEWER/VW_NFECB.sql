@@ -1,0 +1,20 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_NFECB]    Script Date: 13/04/2024 16:28:45 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE VIEW [dbo].[VW_NFECB] AS
+
+SELECT 
+*	FROM PROD_2023.dbo.NFECB
+WHERE COD_ESTABE = 1 
+GO
+
+

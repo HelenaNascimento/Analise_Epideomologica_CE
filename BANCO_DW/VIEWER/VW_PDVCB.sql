@@ -1,0 +1,38 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[VW_PDVCB]    Script Date: 13/04/2024 16:43:57 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+CREATE VIEW [dbo].[VW_PDVCB] AS
+
+SELECT 
+DISTINCT 
+	VlrBasDscVen = Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0))
+	,year(cb.Dat_Emissao) as ANO
+	,month(cb.Dat_Emissao) as MES
+FROM PROD_2023.DBO.NFSCB cb 
+	INNER JOIN PROD_2023.DBO.NFSIT it ON ((cb.Cod_Estabe = it.Cod_Estabe) AND 
+															(cb.Ser_Nota = it.Ser_Nota) AND 
+															(cb.Num_Nota = it.Num_Nota)) 
+	INNER JOIN PROD_2023.DBO.PRODU pr on it.Cod_Produto = pr.Codigo 
+	left join PROD_2023.DBO.POCOM PC on it.Id_PolCom = pc.Id_PolCom
+	left join PROD_2023.DBO.FABRI FB on pr.Cod_Fabricante = fb.codigo
+WHERE cb.Cod_Estabe = 1
+AND (cb.Status = 'F' and cb.Tip_Saida = 'V') 
+AND year(cb.Dat_Emissao) >= '2023'
+AND month(cb.Dat_Emissao) >= '01'
+
+group by cb.Dat_Emissao
+
+
+GO
+
+

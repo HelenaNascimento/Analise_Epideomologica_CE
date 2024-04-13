@@ -1,0 +1,49 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  Table [dbo].[DIADC]    Script Date: 13/04/2024 17:13:32 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DIADC](
+	[Id_DclImp] [int] NOT NULL,
+	[Num_Adicao] [smallint] NOT NULL,
+	[Des_Fabric] [varchar](60) NULL,
+	[Cod_NCM] [varchar](8) NULL,
+	[Cod_NBM] [varchar](10) NULL,
+	[Vlr_MerConVen] [numeric](18, 5) NULL,
+	[Qtd_PesLiq] [numeric](18, 5) NULL,
+	[Vlr_FreRat] [numeric](18, 4) NULL,
+	[Vlr_SegRat] [numeric](18, 4) NULL,
+ CONSTRAINT [PK_DIADC] PRIMARY KEY CLUSTERED 
+(
+	[Id_DclImp] ASC,
+	[Num_Adicao] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[DIADC] ADD  DEFAULT ((0)) FOR [Vlr_MerConVen]
+GO
+
+ALTER TABLE [dbo].[DIADC] ADD  DEFAULT ((0)) FOR [Qtd_PesLiq]
+GO
+
+ALTER TABLE [dbo].[DIADC] ADD  DEFAULT ((0)) FOR [Vlr_FreRat]
+GO
+
+ALTER TABLE [dbo].[DIADC] ADD  DEFAULT ((0)) FOR [Vlr_SegRat]
+GO
+
+ALTER TABLE [dbo].[DIADC]  WITH CHECK ADD  CONSTRAINT [FK_DIADC_DCIMP] FOREIGN KEY([Id_DclImp])
+REFERENCES [dbo].[DCIMP] ([Id_DclImp])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE [dbo].[DIADC] CHECK CONSTRAINT [FK_DIADC_DCIMP]
+GO
+
+
