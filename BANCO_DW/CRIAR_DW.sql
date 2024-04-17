@@ -11,7 +11,7 @@ If Exists (Select 0 From dbo.sysobjects Where id = object_id(N'[dbo].[TBAUDNEW_E
 Go
 
 Declare @DW_BI Sysname;
-Set @DW_BI = DB_NAME() + '_AUDIT';
+Set @DW_BI = DW + '_BI';
 
 If Not Exists (Select 0 From sys.databases Where name = @DW_BI)
 Begin
@@ -34,7 +34,7 @@ End;
 Go
 
 Declare @DW_BI Sysname;
-Set @DW_BI = DB_NAME() + '_AUDIT';
+Set @DW_BI = DW + '_BI';
 
 Declare @Cmd NVarchar(Max);
 Set @Cmd = N'Use [' + @DW_BI + ']
@@ -98,7 +98,7 @@ Exec (@Cmd);
 Go
 
 Declare @DW_BI Sysname;
-Set @DW_BI = DB_NAME() + '_AUDIT';
+Set @DW_BI = DW + '_BI';
 Declare @Cmd Nvarchar(Max);
 Set @Cmd = 'Create Synonym TBAUDNEW FOR ['+@DW_BI+'].dbo.TBAUDNEW';
 
@@ -110,7 +110,7 @@ Go
 
 
 Declare @DW_BI Sysname;
-Set @DW_BI = DB_NAME() + '_AUDIT';
+Set @DW_BI = DW + '_BI';
 Declare @Cmd Nvarchar(Max);
 Set @Cmd = 'Create Synonym TBAUDNEW_EXC FOR ['+@DW_BI+'].dbo.TBAUDNEW_EXC';
 
@@ -121,7 +121,7 @@ Exec(@Cmd);
 Go
 
 Declare @DW_BI Sysname;
-Set @DW_BI = DB_NAME() + '_AUDIT';
+Set @DW_BI = DW + '_BI';
 Declare @Cmd Nvarchar(Max);
 Set @Cmd = 'Create Synonym TBAUDNEW_SPID FOR ['+@DW_BI+'].dbo.TBAUDNEW_SPID';
 
@@ -131,11 +131,11 @@ If Exists (Select 0 From sys.synonyms Where name = 'TBAUDNEW_SPID')
 Exec(@Cmd);
 Go
 
-If Exists (Select 0 From dbo.sysobjects Where id = object_id(N'[dbo].[PR_CriaTR_AuditNew]') And objectproperty(id, N'IsProcedure') = 1)
-	Drop Procedure dbo.PR_CriaTR_AuditNew
+If Exists (Select 0 From dbo.sysobjects Where id = object_id(N'[dbo].[PR_BI]') And objectproperty(id, N'IsProcedure') = 1)
+	Drop Procedure dbo.PR_CriaTR_BINew
 Go
 
-Create Procedure dbo.PR_CriaTR_AuditNew @Tabela Varchar(128), @ApenasAtualizaExistente Bit = 0
+Create Procedure dbo.PR_CriaTR_BINew @Tabela Varchar(128), @ApenasAtualizaExistente Bit = 0
 As
 Begin
 	Set Nocount On;
@@ -235,7 +235,7 @@ Begin
 		Left Join Inserted i On ($$CONDICAO_JUNCAO$$)
 		Cross Apply
 		(Values
-			$$COLUNAS_AUDITAVEIS$$
+			$$COLUNAS_BIAVEIS$$
 		) t (Coluna, Valor_Antigo, Valor_Novo)
 		Where Not Exists ((Select Valor_Antigo Intersect Select Valor_Novo))
 		And (NullIf(Valor_Antigo, '''') Is Not Null Or NullIf(Valor_Novo, '''') Is Not Null);
@@ -258,7 +258,7 @@ End';
     Set @cmdCriacaoTrigger = Replace(@cmdCriacaoTrigger,'$$COLUNASATRIBUIDASSEPARADASPORVIRGULAINSERT$$',@ColunasAtribuidasSeparadasPorVirgulaInsert);
     Set @cmdCriacaoTrigger = Replace(@cmdCriacaoTrigger,'$$COLUNASATRIBUIDASSEPARADASPORVIRGULADELETE$$',@ColunasAtribuidasSeparadasPorVirgulaDelete);
     Set @cmdCriacaoTrigger = Replace(@cmdCriacaoTrigger,'$$CONDICAO_JUNCAO$$',@CondicaoJuncao);
-    Set @cmdCriacaoTrigger = Replace(@cmdCriacaoTrigger,'$$COLUNAS_AUDITAVEIS$$',@colunas);
+    Set @cmdCriacaoTrigger = Replace(@cmdCriacaoTrigger,'$$COLUNAS_BIAVEIS$$',@colunas);
  
     If @ApenasAtualizaExistente = 1
     Begin
@@ -296,6 +296,7 @@ if not Exists(Select 1 From TBAUDNEW_EXC Where Des_tabela = 'USUAR' And Des_colu
 
 if not Exists(Select 1 From TBAUDNEW_EXC Where Des_tabela = 'PARAM' And Des_coluna = 'DatUltAtuModExt')
 	Insert Into dbo.TBAUDNEW_EXC (Des_tabela, Des_coluna) values ('PARAM', 'DatUltAtuModExt')	
+
 
 
 
