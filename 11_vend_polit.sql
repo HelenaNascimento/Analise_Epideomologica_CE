@@ -5,7 +5,7 @@
 declare 
 	@ANO varchar(4) = '2024',
 	@MES varchar(2) = '04',
-	@FB int = 319,
+	@FB int = 636,
 	@CEst int = 1,
 	@OP int = 3
 
