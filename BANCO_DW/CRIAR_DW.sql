@@ -36,6 +36,8 @@ Go
 Declare @DW_BI Sysname;
 Set @DW_BI = DW + '_BI';
 
+-- Criar as tabelas:
+
 Declare @Cmd NVarchar(Max);
 Set @Cmd = N'Use [' + @DW_BI + ']
 If Not Exists (Select 0 From dbo.sysobjects Where id = object_id(N''[dbo].[TBAUDNEW]'') And OBJECTPROPERTY(id, N''isTable'') = 1)
@@ -94,6 +96,9 @@ GRANT INSERT On dbo.TBAUDNEW to guest;
 GRANT SELECT On dbo.TBAUDNEW_EXC to guest;
 GRANT SELECT On dbo.TBAUDNEW_SPID to guest;
 ';
+
+--Alimentar as tabelas:
+
 Exec (@Cmd);
 Go
 
