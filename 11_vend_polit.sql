@@ -1,13 +1,11 @@
 
 --Variáveis Globais:
-
-
 declare 
 	@ANO varchar(4) = '2024',
 	@MES varchar(2) = '04',
-	@FB int = 134,
+	@FB int = 1022,
 	@CEst int = 1,
-	@OP int = 3
+	@OP int = 1
 
 
 IF @OP = 1 (
