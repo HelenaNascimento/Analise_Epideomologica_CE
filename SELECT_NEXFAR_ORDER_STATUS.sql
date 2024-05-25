@@ -18,7 +18,7 @@ SELECT DISTINCT
 						AND CB.COD_ESTABE = NF.COD_ESTABE 
 						AND CB.Cod_NumNfsIni = NF.Num_Nota 
 						AND nf.Ser_Nota = '1'
-    WHERE CB.Cod_PedCli like '129524926819688';
+    WHERE CB.Cod_PedCli like '137887796142492';
 
 
 --select top 10 * fROM DMD.dbo.PDVCB CB
