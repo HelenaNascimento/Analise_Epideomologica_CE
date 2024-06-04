@@ -87,7 +87,7 @@ SELECT
 	    left join FABRI FB on pr.Cod_Fabricante = fb.Codigo
 	WHERE
 	lot.Cod_Estabe = 1
-    and Dat_Vencim >= '20240401'
+    and Dat_Vencim >= '20240501'
 	--and PR.Cod_EAN LIKE'7%'
 	--and LOT.Qtd_Saldo > 0
 	and Cod_Fabricante = 319
