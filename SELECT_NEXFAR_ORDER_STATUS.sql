@@ -1,24 +1,30 @@
 SELECT DISTINCT
-	CB.Numero AS 'orderExternalId',
-    CB.Numero AS 'transientOrderExternalId', 
-    CB.Cod_PedCli AS 'orderNexfarId',
-    CB.Cod_Cliente AS 'clientId',
-    CL.Cgc_Cpf AS 'cnpj', 
-    CB.Cod_Vendedor AS 'sellerId', 
+	pdv.Numero  AS 'orderExternalId',
+	pde.Cod_PedCli AS 'orderNexfarId',
+	pde.Num_PedVen AS 'transientOrderExternalId',
+    pde.Cod_Client AS 'clientId',
+    pde.Num_Cnpj AS 'cnpj', 
+    pdv.Cod_Vendedor AS 'sellerId', 
     CASE 
-		WHEN CB.Status1 = 'P' THEN 'RECEIVED_BY_DISTRIBUTOR' 
-		WHEN CB.Status1 = 'C' THEN 'CANCELED' 
-		WHEN CB.Status1 = 'D' and NF.Ret_CStat = 100 and NF.Dat_Saida is null THEN 'BILLED' 
-		WHEN CB.Status1 = 'D' and NF.Ret_CStat = 100 and NF.Dat_Saida IS NOT NULL THEN 'IN_TRANSIT'
-    END AS 'status', 
-    CB.Dat_Pedido AS 'orderDate'
-    FROM DMD.dbo.PDVCB CB
-        INNER JOIN DMD.dbo.CLIEN CL ON CB.Cod_Cliente = CL.Codigo
-		LEFT JOIN DMD.dbo.NFSCB NF ON  CL.CODIGO = NF.Cod_Cliente 
-						AND CB.COD_ESTABE = NF.COD_ESTABE 
-						AND CB.Cod_NumNfsIni = NF.Num_Nota 
-						AND nf.Ser_Nota = '1'
-    WHERE CB.Cod_PedCli like '137887796142492';
-
-
---select top 10 * fROM DMD.dbo.PDVCB CB
+		WHEN pdv.Status1 = 'P' THEN 'RECEIVED_BY_DISTRIBUTOR' 
+		WHEN (pdv.Status1 = 'C' OR (pde.Num_PedVen = 0 AND pdv.Numero IS NULL)) THEN 'CANCELED' 
+		WHEN pdv.Status1 = 'D' AND NF.Ret_CStat = 100 AND NF.Dat_Saida IS NULL THEN 'BILLED' 
+		WHEN pdv.Status1 = 'D' AND NF.Ret_CStat = 100 AND NF.Dat_Saida IS NOT NULL AND Dat_RetEnt IS NULL THEN 'IN_TRANSIT'
+    WHEN pdv.Status1 = 'D' AND NF.Ret_CStat = 100 AND NF.Dat_Saida IS NOT NULL AND Dat_RetEnt IS NOT NULL THEN 'DELIVERED'
+    END AS 'status',
+    CASE 
+		WHEN pdv.Status1 = 'D' AND NF.Ret_CStat = 100 AND NF.Dat_Saida IS NULL AND (SUM(pdit.Qtd_Pedido) > SUM(pit.Qtd_ImpFat)) THEN 'PARCIALMENTE FATURADO' 
+		ELSE NULL
+    END AS 'statusLabel',
+    CAST(pde.Dat_LeiPed AS DATE) AS 'orderDate',
+    CAST(pdv.Hor_Fatura AS DATE) AS 'billingDate'
+    FROM PDECB pde
+    	LEFT JOIN PDVCB pdv ON pde.Cod_Estabe = pdv.Cod_Estabe AND pde.Cod_PedCli = pdv.Cod_PedCli
+    	INNER JOIN PDEIT pdit on pde.Cod_Estabe = pdit.Cod_Estabe and pde.Cod_PedCli = pdit.Cod_PedCli
+		LEFT OUTER JOIN PDVIT pit on pdv.Cod_Estabe = pit.Cod_Estabe and pdv.Numero = pit.Cod_Pedido and pdit.Cod_Produt = pit.Cod_Produto
+		LEFT JOIN NFSCB NF ON  pde.Cod_Client = NF.Cod_Cliente 
+						AND pdv.COD_ESTABE = NF.COD_ESTABE 
+						AND pdv.Cod_NumNfsIni = NF.Num_Nota 
+						AND NF.Ser_Nota = '1'
+    WHERE pde.Cod_PedCli in ('')
+    GROUP BY pdv.Numero, pde.Cod_PedCli, pde.Num_PedVen, pde.Cod_Client, pde.Num_Cnpj, pdv.Cod_Vendedor, pdv.Status1, NF.Ret_CStat, NF.Dat_Saida,pde.Dat_LeiPed, pdv.Hor_Fatura;
