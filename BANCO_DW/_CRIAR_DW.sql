@@ -2,9 +2,9 @@
 EXEC sp_addlinkedserver 
    @server = 'RemoteServerName',  -- Nome do servidor vinculado
    @srvproduct = '',             -- Pode ser deixado vazio para SQL Server
-   @provider = 'SQLNCLI',        -- Provedor OLE DB para SQL Server
+   @provider = 'MSOLEDBSQL19',        -- Provedor OLE DB para SQL Server
    @datasrc = '192.168.100.6,1433', -- Endereço IP público do servidor remoto e a porta
-   @catalog = 'DMD';  -- Nome do banco de dados remoto
+   @catalog = 'DMD';  -- Nome do banco de dados remoto / RemoteDatabaseName
 
 -- Adicionando informações de segurança
 EXEC sp_addlinkedsrvlogin 
