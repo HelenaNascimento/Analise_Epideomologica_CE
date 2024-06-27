@@ -1,0 +1,34 @@
+USE [DW_PROD]
+GO
+
+/****** Object:  View [dbo].[DASH_TIMESTRAL_VXPRODUTOS]    Script Date: 27/06/2024 13:30:29 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE VIEW [dbo].[DASH_TIMESTRAL_VXPRODUTOS] AS
+SELECT 
+	distinct
+	CODIGO,
+	Descri,
+	SUM(QTD_VENDAS) AS QTD_VENDAS,
+	SUM(VLR_VENDA) AS VLR_VENDAS,
+	SUM(M_VENDAS) as M_VENDAS,
+	dias,
+	Mes,
+	Ano
+FROM [VW_TIMESTRAL_TOPPRODUTOS]
+
+group by 
+	CODIGO,
+	Descri,
+	dias,
+	Mes,
+	Ano
+GO
+
+
