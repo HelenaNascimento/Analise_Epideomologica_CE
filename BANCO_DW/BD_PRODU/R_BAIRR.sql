@@ -1,0 +1,42 @@
+USE [PROD_2023]
+GO
+
+/****** Object:  Table [dbo].[R_BAIRR]    Script Date: 28/06/2024 10:28:24 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[R_BAIRR](
+	[Cod_Estado] [char](2) NOT NULL,
+	[Cod_Cidade] [int] NOT NULL,
+	[Codigo] [int] NOT NULL,
+	[Descricao] [varchar](20) NULL,
+	[Cod_MacroReg] [int] NULL,
+	[Cod_MicroReg] [int] NULL,
+	[Flg_Excluido] [bit] NULL,
+	[Versao] [bigint] NOT NULL,
+ CONSTRAINT [PK_R_BAIRR] PRIMARY KEY CLUSTERED 
+(
+	[Cod_Estado] ASC,
+	[Cod_Cidade] ASC,
+	[Codigo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 80, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[R_BAIRR] ADD  CONSTRAINT [DF_R_BAIRR_Flg_Excluido]  DEFAULT ((0)) FOR [Flg_Excluido]
+GO
+
+ALTER TABLE [dbo].[R_BAIRR] ADD  CONSTRAINT [DF_R_BAIRR_Versao]  DEFAULT ((0)) FOR [Versao]
+GO
+
+ALTER TABLE [dbo].[R_BAIRR]  WITH NOCHECK ADD  CONSTRAINT [FK_R_BAIRR_CIDAD] FOREIGN KEY([Cod_Estado], [Cod_Cidade])
+REFERENCES [dbo].[CIDAD] ([Cod_Estado], [Codigo])
+GO
+
+ALTER TABLE [dbo].[R_BAIRR] CHECK CONSTRAINT [FK_R_BAIRR_CIDAD]
+GO
+
+
