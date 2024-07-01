@@ -1,14 +1,14 @@
-USE [PROD_2023]
+USE BD_DW
 GO
 
-/****** Object:  Table [dbo].[ENXES]    Script Date: 28/06/2024 08:51:57 ******/
+/****** Object:  Table [dbo].[R_ENXES]    Script Date: 28/06/2024 08:51:57 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[ENXES](
+CREATE TABLE [dbo].[R_ENXES](
 	[Num_CgcCpf] [varchar](14) NOT NULL,
 	[Cod_Estabe] [int] NOT NULL,
 	[Cod_RegTri] [int] NULL,
@@ -67,7 +67,7 @@ CREATE TABLE [dbo].[ENXES](
 	[Qtd_PrzMax] [int] NULL,
 	[Cod_OpeSai] [varchar](3) NULL,
 	[Cod_Comprador] [int] NULL,
- CONSTRAINT [PK_ENXES] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_R_ENXES] PRIMARY KEY CLUSTERED 
 (
 	[Cod_Estabe] ASC,
 	[Num_CgcCpf] ASC,
@@ -76,91 +76,91 @@ CREATE TABLE [dbo].[ENXES](
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_RegTri]  DEFAULT ((0)) FOR [Cod_RegTri]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_RegTri]  DEFAULT ((0)) FOR [Cod_RegTri]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_AgeCob]  DEFAULT ((0)) FOR [Cod_AgeCob]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_AgeCob]  DEFAULT ((0)) FOR [Cod_AgeCob]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_Transp]  DEFAULT ((0)) FOR [Cod_Transp]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_Transp]  DEFAULT ((0)) FOR [Cod_Transp]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_Rota]  DEFAULT ((0)) FOR [Cod_Rota]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_Rota]  DEFAULT ((0)) FOR [Cod_Rota]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Num_SeqArqPdc]  DEFAULT ((0)) FOR [Num_SeqArqPdc]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Num_SeqArqPdc]  DEFAULT ((0)) FOR [Num_SeqArqPdc]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Vlr_UltimaFatura]  DEFAULT ((0)) FOR [Vlr_UltimaFatura]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Vlr_UltimaFatura]  DEFAULT ((0)) FOR [Vlr_UltimaFatura]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_Padrao]  DEFAULT ((0)) FOR [Flg_Padrao]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_Padrao]  DEFAULT ((0)) FOR [Flg_Padrao]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Per_ParticFat]  DEFAULT ((0)) FOR [Per_ParticFat]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Per_ParticFat]  DEFAULT ((0)) FOR [Per_ParticFat]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_NaoContribuinteIcm]  DEFAULT ((0)) FOR [Flg_NaoContribuinteIcm]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_NaoContribuinteIcm]  DEFAULT ((0)) FOR [Flg_NaoContribuinteIcm]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Per_Frete]  DEFAULT ((0)) FOR [Per_Frete]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Per_Frete]  DEFAULT ((0)) FOR [Per_Frete]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Vlr_Minimo]  DEFAULT ((0)) FOR [Vlr_Minimo]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Vlr_Minimo]  DEFAULT ((0)) FOR [Vlr_Minimo]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Per_ComAtoEnt]  DEFAULT ((0)) FOR [Per_ComAtoEnt]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Per_ComAtoEnt]  DEFAULT ((0)) FOR [Per_ComAtoEnt]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_PriFat]  DEFAULT ((0)) FOR [Flg_PriFat]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_PriFat]  DEFAULT ((0)) FOR [Flg_PriFat]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_Coleta]  DEFAULT ((0)) FOR [Flg_Coleta]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_Coleta]  DEFAULT ((0)) FOR [Flg_Coleta]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_CalFreVlrMer]  DEFAULT ((0)) FOR [Flg_CalFreVlrMer]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_CalFreVlrMer]  DEFAULT ((0)) FOR [Flg_CalFreVlrMer]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  DEFAULT ((0)) FOR [Cod_Client]
+ALTER TABLE [dbo].[R_ENXES] ADD  DEFAULT ((0)) FOR [Cod_Client]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  DEFAULT ((0)) FOR [Cod_CadFor]
+ALTER TABLE [dbo].[R_ENXES] ADD  DEFAULT ((0)) FOR [Cod_CadFor]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  DEFAULT ((0)) FOR [Cod_CadTra]
+ALTER TABLE [dbo].[R_ENXES] ADD  DEFAULT ((0)) FOR [Cod_CadTra]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_DscIcmDesoneNotFis]  DEFAULT ((0)) FOR [Flg_DscIcmDesoneNotFis]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_DscIcmDesoneNotFis]  DEFAULT ((0)) FOR [Flg_DscIcmDesoneNotFis]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_BlqEmbDscItePrcUni]  DEFAULT ((0)) FOR [Flg_BlqEmbDscItePrcUni]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_BlqEmbDscItePrcUni]  DEFAULT ((0)) FOR [Flg_BlqEmbDscItePrcUni]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_BlqIncSbtPrc]  DEFAULT ((0)) FOR [Flg_BlqIncSbtPrc]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_BlqIncSbtPrc]  DEFAULT ((0)) FOR [Flg_BlqIncSbtPrc]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_BlqIncSbtPriDup]  DEFAULT ((0)) FOR [Flg_BlqIncSbtPriDup]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_BlqIncSbtPriDup]  DEFAULT ((0)) FOR [Flg_BlqIncSbtPriDup]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_BlqFecVlrPdvNfsSbtEmb]  DEFAULT ((0)) FOR [Flg_BlqFecVlrPdvNfsSbtEmb]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_BlqFecVlrPdvNfsSbtEmb]  DEFAULT ((0)) FOR [Flg_BlqFecVlrPdvNfsSbtEmb]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_ImpSbtEmbPrc]  DEFAULT ((0)) FOR [Flg_ImpSbtEmbPrc]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_ImpSbtEmbPrc]  DEFAULT ((0)) FOR [Flg_ImpSbtEmbPrc]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_InfXmlSbtEmbPrc]  DEFAULT ((0)) FOR [Flg_InfXmlSbtEmbPrc]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Flg_InfXmlSbtEmbPrc]  DEFAULT ((0)) FOR [Flg_InfXmlSbtEmbPrc]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_TabPrc]  DEFAULT ((0)) FOR [Cod_TabPrc]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_TabPrc]  DEFAULT ((0)) FOR [Cod_TabPrc]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_TabPrz]  DEFAULT ((0)) FOR [Cod_TabPrz]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_TabPrz]  DEFAULT ((0)) FOR [Cod_TabPrz]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Qtd_PrzMax]  DEFAULT ((0)) FOR [Qtd_PrzMax]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Qtd_PrzMax]  DEFAULT ((0)) FOR [Qtd_PrzMax]
 GO
 
-ALTER TABLE [dbo].[ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_Comprador]  DEFAULT ((0)) FOR [Cod_Comprador]
+ALTER TABLE [dbo].[R_ENXES] ADD  CONSTRAINT [DF_ENXES_Cod_Comprador]  DEFAULT ((0)) FOR [Cod_Comprador]
 GO
 
 

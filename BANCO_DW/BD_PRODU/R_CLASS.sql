@@ -1,0 +1,32 @@
+USE BD_DW
+GO
+
+/****** Object:  Table [dbo].[CLASS]    Script Date: 01/07/2024 16:08:12 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[R_CLASS](
+	[Codigo] [varchar](7) NOT NULL,
+	[Descricao] [varchar](25) NULL,
+	[Nivel] [int] NULL,
+	[CodAnt] [int] NULL,
+	[NovoCodigo] [int] NULL,
+	[Flg_BlqCtrDocClaPrd] [bit] NULL,
+	[Cod_EnqIpi] [varchar](3) NULL,
+ CONSTRAINT [PK_CLASS] PRIMARY KEY CLUSTERED 
+(
+	[Codigo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 80, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[R_CLASS] ADD  CONSTRAINT [DF_CLASS_Nivel]  DEFAULT (0) FOR [Nivel]
+GO
+
+ALTER TABLE [dbo].[R_CLASS] ADD  CONSTRAINT [DF_CLASS_Flg_BlqCtrDocClaPrd]  DEFAULT ((0)) FOR [Flg_BlqCtrDocClaPrd]
+GO
+
+
