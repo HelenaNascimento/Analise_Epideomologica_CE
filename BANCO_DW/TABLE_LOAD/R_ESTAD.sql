@@ -1,0 +1,20 @@
+
+INSERT INTO [R_ESTAD]([Codigo]
+      ,[Descricao]
+      ,[_Credenciamento]
+      ,[_Flg_RegSubsTrib]
+      ,[Per_DscTri]
+      ,[ObservacaoNF]
+      ,[Obs2_NF]
+      ,[Obs3_NF]
+      ,[Cod_Ibge])
+SELECT [Codigo]
+      ,[Descricao]
+      ,[_Credenciamento]
+      ,[_Flg_RegSubsTrib]
+      ,[Per_DscTri]
+      ,[ObservacaoNF]
+      ,[Obs2_NF]
+      ,[Obs3_NF]
+      ,[Cod_Ibge]
+  FROM PROD_2023.[dbo].ESTAD

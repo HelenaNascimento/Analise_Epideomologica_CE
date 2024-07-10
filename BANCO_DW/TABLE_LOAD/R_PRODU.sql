@@ -1,0 +1,33 @@
+INSERT INTO R_PRODU ([Codigo], 	[Descricao],[Des_Resumi], [Ref_Fabricante], [Cod_EAN], [Peso], [Unidade_Venda], [Qtd_Embalagem], [Cod_AbcFar], [Validade], [Cod_PrdExt],
+					[Localizacao], [Dat_Cadastro], [Dat_UltVenda], [Cod_Fabricante], [Cod_Divisao], [Cod_Classif], [Cod_SubBas], [Sta_AbcValFat], [Sta_AbcUniVen], [Per_ParticFat],
+					[Flag_ImprClassif1], [Ctrl_Preco], [Ctrl_Venda], [Cod_GrpPrc], [Tip_Por344], [Tip_LisPis], [Cod_ClaFis], [Prc_Tabela], [Prc_CusLiqPla], [Prc_Pmz], [Cod_Promocao],
+					[Cod_PlaRegTri], [Per_PlaRedCreIcm], [Per_PlaRepIcm], [Per_PlaCreIcm], [Per_PlaDebIcm], [Per_PlaRebate], [Per_PlaAgrega], [Per_PlaDesc1], [Per_PlaDesc2], [Per_PlaBonific],
+					[Flg_PlaFatPrcLiq], [Per_PlaIpi], [Per_PlaDesFin], [Per_PlaCusFre], [Per_PlaDesOpe], [Per_PlaDesFre], [Per_PlaDesCom], [Per_PlaDesPis], [Per_PlaDesCof], [Per_PlaDesIrpj],
+					[Per_PlaDesConSoc], [Per_PlaDesIcms], [Per_PlaMarRes], [Per_PlaMarOpe], [Per_PlaMarFin], [Vlr_PlaPrcVen], [Dias_PlaFinanc], [Taxa_PlaFinanc], [Des_PrdDet], [Reg_MS],
+					[H_DatPrcAtu], [H_PrcVen], [H_PrcVen1], [H_PrcVen2], [H_PrcVen3], [H_DatPrcAnt], [H_PrcVen1Ant], [H_PrcVen2Ant], [H_PrcVen3Ant], [H_PrcTab], [H_PerRepIcm], [H_PerDsc1],
+					[H_PerDsc2], [H_PerOutDsc], [H_PerCreIcm], [H_PerRedBasCalDeb], [H_PerAgrDebIcm], [H_PerDebIcm], [H_PerIpi], [H_PerFrete], [H_PerDspFin], [H_PerOutDsp], [H_PrcCusLiqEnt],
+					[H_PerMrg1], [H_PerMrg2], [H_PerMrg3], [H_PerRedBasCalCre], [Dat_PrcUltBal], [Per_ComVnd], [Qtd_SldAntBal], [Qtd_SldPosBal], [Cod_SubBas2], [Cod_SubBas3], [Cod_SubBas4],
+					[Qtd_UndVen], [Des_FormaFarmac], [Des_NomGen], [Des_UndVen], [Usuario], [Transacao], [Mrg_PrcVenConFin1], [Mrg_PrcVenConFin2], [Mrg_PrcVenConFin3], [Qtd_FraVen],
+					[Per_Markup], [Prc_FabAnt], [Dat_PrcFabAnt], [Prc_MaxConAnt], [Cod_CtrUsu], [Des_PrdRef], [Edi_Pra], [Edi_Dep], [Per_BonAutOrc], [Prc_Minimo], [Descri], [Aprese], [Cod_RefPrati],
+					[Lrg_Emb], [Alt_Emb], [Prf_Emb], [Vol_Emb], [Flg_PolComercMax], [Flg_PrzComercMax], [Und_EmbCmp], [Lrg_EmbCmp], [Alt_EmbCmp], [Prf_EmbCmp], [Pes_EmbCmp], [Qtd_EmbPalete], [Qtd_CamPalete],
+					[Cod_EanEmbCmp], [Flg_IncFis], [Tipo], [Tip_Prd], [Sub_TipPrd], [Dat_VctRegMS], [Flg_Servic], [Flg_ExpWeb], [Des_NomImgWeb], [Des_InfImgWeb], [Per_Ipi], [Prc_RefFpb],
+					[Prc_RefFpbAnt], [Dat_PrcRefFpb], [Dat_PrcRefFpbAnt], [Prc_Fabric12], [Prc_MaxCon12], [Prc_Fabric17], [Prc_MaxCon17], [Prc_Fabric18], [Prc_MaxCon18], [Prc_Fabric19], [Prc_MaxCon19],
+					[CodAnt], [NovoCodigo], [Sta_AbcAcesso], [Num_SeqBal], [Qtd_SldPraAntBal], [Qtd_SldPraPosBal], [Cod_FCI], [Per_FCI], [Cod_NcmExt], [Flg_Generico], [Cod_GuiFar], [Flg_PesoKg],
+					[Cod_CEST], [Prc_Fabric175], [Prc_MaxCon175], [Prc_Fabric20], [Prc_MaxCon20], [Des_MtvIseRegMS], [Ref_Detalhe], [Sta_AbcUniVenFab], [Sta_AbcValFatFab], [Flg_ImpEtqGon],
+					[Cod_GrpDesPrd], [Prc_Fabric21], [Prc_MaxCon21], [Prc_Fabric22], [Prc_MaxCon22], [Prc_Fabric195], [Prc_MaxCon195], [Prc_Fabric205], [Prc_MaxCon205])
+SELECT 	[Codigo], [Descricao], [Des_Resumi], [Ref_Fabricante], [Cod_EAN], [Peso], [Unidade_Venda], [Qtd_Embalagem], [Cod_AbcFar], [Validade], [Cod_PrdExt], [Localizacao], [Dat_Cadastro], [Dat_UltVenda],
+		[Cod_Fabricante], [Cod_Divisao], [Cod_Classif], [Cod_SubBas], ES.[Sta_AbcValFat], ES.[Sta_AbcUniVen], ES.[Per_ParticFat], [Flag_ImprClassif1], [Ctrl_Preco], [Ctrl_Venda], [Cod_GrpPrc], [Tip_Por344],
+		[Tip_LisPis], [Cod_ClaFis], ES.[Prc_Tabela], ES.[Prc_CusLiqPla], ES.[Prc_Pmz], ES.[Cod_Promocao], [Cod_PlaRegTri], [Per_PlaRedCreIcm], ES.[Per_PlaRepIcm], ES.[Per_PlaCreIcm], ES.[Per_PlaDebIcm], ES.[Per_PlaRebate],
+		ES.[Per_PlaAgrega], ES.[Per_PlaDesc1], ES.[Per_PlaDesc2], ES.[Per_PlaBonific], ES.[Flg_PlaFatPrcLiq], ES.[Per_PlaIpi], ES.[Per_PlaDesFin], ES.[Per_PlaCusFre], ES.[Per_PlaDesOpe], ES.[Per_PlaDesFre], ES.[Per_PlaDesCom],
+		ES.[Per_PlaDesPis], ES.[Per_PlaDesCof], ES.[Per_PlaDesIrpj], ES.[Per_PlaDesConSoc], ES.[Per_PlaDesIcms], ES.[Per_PlaMarRes], ES.[Per_PlaMarOpe], ES.[Per_PlaMarFin], ES.[Vlr_PlaPrcVen], ES.[Dias_PlaFinanc], ES.[Taxa_PlaFinanc],
+		[Des_PrdDet], [Reg_MS], [H_DatPrcAtu], [H_PrcVen], [H_PrcVen1], [H_PrcVen2], [H_PrcVen3], [H_DatPrcAnt], [H_PrcVen1Ant], [H_PrcVen2Ant], [H_PrcVen3Ant], [H_PrcTab], [H_PerRepIcm], [H_PerDsc1], [H_PerDsc2], [H_PerOutDsc], [H_PerCreIcm], 
+		[H_PerRedBasCalDeb], [H_PerAgrDebIcm], [H_PerDebIcm], [H_PerIpi], [H_PerFrete], [H_PerDspFin], [H_PerOutDsp], [H_PrcCusLiqEnt], [H_PerMrg1], [H_PerMrg2], [H_PerMrg3], [H_PerRedBasCalCre], [Dat_PrcUltBal], [Per_ComVnd], [Qtd_SldAntBal],
+		[Qtd_SldPosBal], [Cod_SubBas2], [Cod_SubBas3], [Cod_SubBas4], [Qtd_UndVen], [Des_FormaFarmac], [Des_NomGen], [Des_UndVen], PR.[Usuario], PR.[Transacao], [Mrg_PrcVenConFin1], [Mrg_PrcVenConFin2], [Mrg_PrcVenConFin3], [Qtd_FraVen], [Per_Markup],
+		[Prc_FabAnt], [Dat_PrcFabAnt], [Prc_MaxConAnt], [Cod_CtrUsu], [Des_PrdRef], [Edi_Pra], [Edi_Dep], [Per_BonAutOrc], [Prc_Minimo], [Descri], [Aprese], [Cod_RefPrati], [Lrg_Emb], [Alt_Emb], [Prf_Emb], [Vol_Emb], [Flg_PolComercMax], [Flg_PrzComercMax],
+		[Und_EmbCmp], [Lrg_EmbCmp], [Alt_EmbCmp], [Prf_EmbCmp], [Pes_EmbCmp], [Qtd_EmbPalete], [Qtd_CamPalete], [Cod_EanEmbCmp], [Flg_IncFis], [Tipo], [Tip_Prd], [Sub_TipPrd], [Dat_VctRegMS], [Flg_Servic], [Flg_ExpWeb], [Des_NomImgWeb], [Des_InfImgWeb],
+		[Per_Ipi], [Prc_RefFpb], [Prc_RefFpbAnt], [Dat_PrcRefFpb], [Dat_PrcRefFpbAnt], [Prc_Fabric12], [Prc_MaxCon12], [Prc_Fabric17], [Prc_MaxCon17], [Prc_Fabric18], [Prc_MaxCon18], [Prc_Fabric19], [Prc_MaxCon19], [CodAnt], [NovoCodigo], ES.[Sta_AbcAcesso], 
+		[Num_SeqBal], [Qtd_SldPraAntBal], [Qtd_SldPraPosBal], [Cod_FCI] [varchar], [Per_FCI] [numeric], [Cod_NcmExt], [Flg_Generico], [Cod_GuiFar], [Flg_PesoKg], [Cod_CEST], [Prc_Fabric175], [Prc_MaxCon175], [Prc_Fabric20], [Prc_MaxCon20], [Des_MtvIseRegMS],
+		[Ref_Detalhe], ES.[Sta_AbcUniVenFab], ES.[Sta_AbcValFatFab], [Flg_ImpEtqGon], [Cod_GrpDesPrd], [Prc_Fabric21], [Prc_MaxCon21], [Prc_Fabric22], [Prc_MaxCon22], [Prc_Fabric195], [Prc_MaxCon195], [Prc_Fabric205], [Prc_MaxCon205]
+	FROM PROD_2023.dbo.PRODU PR
+		inner join PROD_2023.dbo.PRXES ES ON PR.CODIGO = ES.Cod_Produt
+WHERE ES.Cod_Estabe = 1

@@ -11,7 +11,6 @@ DECLARE @BD_DW int = (SELECT COUNT(NUMERO) FROM BD_DW.dbo.R_PDVCB),
 
 BEGIN TRY
 	BEGIN TRANSACTION;
-	IF @BD_DW < @BD_REMOTE
 	BEGIN
 		INSERT INTO BD_DW.dbo.R_PDVCB ([Numero], [Cod_PedCli] ,[Tip_Pedido],[Cod_Cliente],[Cod_RegTri],[Cod_Vendedor],[Id_PolCom],[Cod_Prz],[Cod_Rota],[Status1],[Status2],[Dat_Pedido],[Hor_ConferIni],[Hor_ConferFim],[Hor_DbqFin],
 							[Hor_DbqLic],[Hor_DbqRnt],[Hor_Entrada],[Hor_Saida],[Hor_Liberacao],[Hor_Fatura],[Hor_Fechamento],[Hor_Cancel],[Hor_ImpEtq],[Hor_Prenota],[Cod_FunSeparador],[Cod_FunEmbalador],[Cod_FunConferidor],
@@ -24,7 +23,6 @@ BEGIN TRY
 			AND [Numero] NOT IN (SELECT [Numero] FROM BD_DW.dbo.R_PDVCB)
 	END
 
-	IF @BD_DW = @BD_REMOTE_1
 	BEGIN 
 		UPDATE R_CB 
 		SET  
@@ -103,7 +101,7 @@ BEGIN TRY
 		OR R_CB.[Nom_UsuDesbloqRnt] <> CB.[Nom_UsuDesbloqRnt]
 		OR R_CB.[C_VlrPedido]  <> CB.[C_VlrPedido])
 	END
-			COMMIT TRANSACTION;
+	COMMIT TRANSACTION;
 END TRY
 BEGIN CATCH
 
