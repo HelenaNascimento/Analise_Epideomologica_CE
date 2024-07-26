@@ -1,0 +1,38 @@
+SELECT 
+	distinct
+	RM.Codigo,
+	RM.Descricao,
+	CL.Cod_GrpCli,
+	GR.Des_GrpCli
+FROM ENXES ES 
+	JOIN CLIEN CL ON ES.Cod_Client = CL.Codigo
+	JOIN RMATV RM ON CL.Cod_RamoAtividade = RM.Codigo
+	JOIN GRCLI GR ON CL.Cod_GrpCli = GR.Cod_GrpCli
+WHERE
+	ES.Cod_Estabe = 3
+AND CL.Bloqueado = 0
+AND cl.Cod_GrpCli in (10, 21, 22, 27, 32, 37, 39, 49, 72, 75, 79, 85, 86, 87, 89, 97, 98, 105, 111, 117, 126, 160, 172, 176, 177, 186, 197, 201, 202, 205, 211, 218, 235, 240, 266, 294, 317,
+331, 347, 370, 384, 385, 430, 438, 517, 528, 532, 7, 38, 46, 51, 59, 62, 64, 65, 78, 93, 94, 100, 106, 107, 114, 115, 116, 119, 120, 131, 136, 137, 147, 150, 152, 156, 158,
+161, 167, 178, 181, 182, 183, 184, 188, 192, 193, 198, 200, 204, 207, 209, 219, 221, 223, 225, 226, 227, 230, 274, 288, 346, 349, 355, 402, 412, 431, 451, 461, 472, 474,
+493, 531, 533, 23, 41, 44, 47, 50, 53, 73, 88, 92, 103, 104, 112, 118, 124, 127, 132, 133, 138, 141, 149, 154, 164, 173, 179, 185, 187, 191, 194, 196, 210, 212, 214, 216, 220,
+228, 232, 233, 238, 246, 256, 260, 265, 287, 293, 351, 354, 378, 386, 389, 406, 415, 429, 439, 448, 460, 473, 476, 514, 519, 521, 523, 529, 530, 535, 536, 2212, 6, 9, 16, 17, 31,
+48, 55, 58, 69, 81, 90, 95, 99, 102, 113, 129, 130, 135, 145, 146, 159, 163, 165, 180, 239, 270, 272, 290, 480, 509, 1, 12, 28, 29, 43, 63, 96, 122, 162, 166, 171, 234, 252, 379, 516)
+order by 1, 3, 4
+
+SELECT 
+	distinct
+	CL.Cod_GrpCli,
+	GR.Des_GrpCli,
+	count(CL.codigo)
+FROM ENXES ES 
+	JOIN CLIEN CL ON ES.Cod_Client = CL.Codigo
+	JOIN RMATV RM ON CL.Cod_RamoAtividade = RM.Codigo
+	JOIN GRCLI GR ON CL.Cod_GrpCli = GR.Cod_GrpCli
+WHERE
+	ES.Cod_Estabe = 3
+AND CL.Bloqueado = 0
+
+group by
+	CL.Cod_GrpCli,
+	GR.Des_GrpCli
+order by 3, 1
