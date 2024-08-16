@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos do YouTube com API</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        iframe {
+            width: 30%;
+            height: 45vh;
+            margin: 1%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="videos"></div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+        function authenticate() {
+            return gapi.auth2.getAuthInstance()
+                .signIn({scope: "https://www.googleapis.com/auth/youtube.force-ssl"})
+                .then(function() { console.log("Sign-in successful"); },
+                      function(err) { console.error("Error signing in", err); });
+        }
+        function loadClient() {
+            gapi.client.setApiKey("YOUR_API_KEY");
+            return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+                .then(function() { console.log("GAPI client loaded for API"); },
+                      function(err) { console.error("Error loading GAPI client for API", err); });
+        }
+        function execute() {
+            return gapi.client.youtube.playlistItems.list({
+                "part": "snippet",
+                "maxResults": 6,
+                "playlistId": "YOUR_PLAYLIST_ID"
+            }).then(function(response) {
+                // Handle the results here (response.result has the parsed body).
+                console.log("Response", response);
+                const videos = response.result.items;
+                let videosHTML = '';
+                videos.forEach(video => {
+                    videosHTML += `<iframe src="https://www.youtube.com/embed/${video.snippet.resourceId.videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                });
+                document.getElementById('videos').innerHTML = videosHTML;
+            },
+            function(err) { console.error("Execute error", err); });
+        }
+        gapi.load("client:auth2", function() {
+            gapi.auth2.init({client_id: "YOUR_CLIENT_ID"});
+        });
+    </script>
+    <button onclick="authenticate().then(loadClient)">Autenticar e Carregar</button>
+    <button onclick="execute()">Carregar Vídeos</button>
+</body>
+</html>
