@@ -2,10 +2,10 @@ SELECT
 	CL.CODIGO as CODIGO_CLIENTE,
 	CL.RAZAO_SOCIAL,
 	CL.Cgc_Cpf as CNPJ,
-	Format(Limite_Credito, 'c', 'pt-br') as Limite_Credito,
-	Format(Total_Debito, 'c',  'pt-br') as Total_Debito,
-	Atraso_MedAtu,
-	Prz.Qtd_Med_Praz,
+	IsNull(Format(Limite_Credito, 'c', 'pt-br'), 0) as Limite_Credito,
+	IsNull(Format(Total_Debito, 'c',  'pt-br'), 0) as Total_Debito,
+	IsNull(Atraso_MedAtu, 0) as Atraso_MedAtu,
+	IsNull(Prz.Qtd_Med_Praz,0) as Qtd_Med_Praz,
 	format(sum(ct.Vlr_Documento), 'c', 'pt-br') AS 'Valor_Documento'
 FROM CLIEN CL
 	JOIN ENXES ES ON CL.CODIGO = ES.Cod_Client 
@@ -14,7 +14,7 @@ FROM CLIEN CL
 		on es.cod_estabe = prz.Cod_Estabe and cl.codigo = PRZ.cod_cliente
 WHERE
 	ES.Cod_Estabe = 4
-AND CT.Status = 'A'
+AND CL.bloqueado = 0
 AND CT.Dat_Vencimento <= GETDATE()
 GROUP BY
 	CL.CODIGO,
