@@ -13,6 +13,7 @@ select distinct
     ct.[Status],
     convert(decimal (10,2), (ct.Vlr_Documento)) as VlrDocumento,
     convert(decimal (10,2), ct.Vlr_DescConced) as VlrDescontoConcedido,
+    CONVERT(DECIMAL(10,2),ct.Vlr_DspFin) as Desconto,
     convert(decimal (10,2), bx.Vlr_Juros) as VlrJuros,
     bx.Qtd_DiasAtraso,
     ct.Per_MulAtrPag,
