@@ -12,13 +12,13 @@ SELECT DISTINCT
         '80'
     END 'clientTaxCode',
     CASE WHEN PRXES.Cod_Estabe = 0 THEN
-        CONCAT('40_', PRXES.Cod_ClaTri)
+        CONCAT('85', PRXES.Cod_ClaTri) 
     WHEN PRXES.Cod_Estabe = 1 THEN
-        CONCAT('60_', PRXES.Cod_ClaTri)
+        CONCAT('88', PRXES.Cod_ClaTri)
     WHEN PRXES.Cod_Estabe = 3 THEN
-        CONCAT('36_', PRXES.Cod_ClaTri)
+        CONCAT('87', PRXES.Cod_ClaTri) 
     WHEN PRXES.Cod_Estabe = 4 THEN
-        CONCAT('80_', PRXES.Cod_ClaTri)
+        CONCAT('80', PRXES.Cod_ClaTri)
     END 'productTaxCode',
     CASE WHEN PRXES.Cod_ClaTri IN ('FG', 'FGR', 'FGR2') THEN
         'PMC'

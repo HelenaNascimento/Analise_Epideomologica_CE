@@ -1,0 +1,16 @@
+SELECT 
+	DISTINCT
+	PR.COD_EAN as EAN,
+	PR.CODIGO as CODIGO,
+	DESCRICAO,
+	Cod_ClaFis AS NCM,
+	COD_CEST AS CEST,
+	Cod_ClaTri AS Clatri
+	FROM PRXES ES
+		JOIN PRODU PR ON ES.COD_PRODUT = CODIGO
+WHERE ES.COD_ESTABE = 4
+AND Flg_Bloqueado = 0
+AND (Dat_UltCompra >='20240101'
+AND Dat_UltCompra <= getdate() -1
+OR Dat_UltVenda >= '20240101'
+AND Dat_UltVenda <=GETDATE() -1)

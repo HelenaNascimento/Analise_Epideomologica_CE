@@ -13,11 +13,20 @@ select
     ct.Par_Documento,
     ct.[Status],
     CONVERT(DECIMAL(10,2), ct.Vlr_Documento) as VlrDocumento,
-    CONVERT(DECIMAL(10,2),ct.Vlr_DescConced) as VlrDescontoConcedido,
+    CONVERT(DECIMAL(10,2),ct.Vlr_DescConced) as Desconto_Financeiro,
+	ISNULL(CONVERT(DECIMAL(10,2), ct.Per_DescFinanc), 0) as Desconto_Comercial,
 	IsNull(bx.Vlr_Juros, 0) as VlrJuros,
     IsNull(bx.Qtd_DiasAtraso, 0) as Qtd_DiasAtraso,
-	(ct.Vlr_Documento - ct.Vlr_DescConced ) as '(Vlr_Doc - Vlr_DescCon)',
-	IsNull(format(((ct.Vlr_Documento + Isnull(bx.Vlr_Juros, 0)) - (ct.Vlr_DescConced)), 'c', 'pt-br'), 0) as ValorFinal
+    '(Vlr_Doc - Vlr_DescCon)' =
+                        CASE
+                            WHEN IsNull(bx.Qtd_DiasAtraso, 0) > 0 THEN ISNULL((ct.Vlr_Documento - ct.Vlr_DescConced), 0)
+                        	WHEN IsNull(bx.Qtd_DiasAtraso, 0) = 0 THEN ISNULL((ct.Vlr_Documento - ct.Vlr_DescConced)-((ct.Vlr_Documento - ct.Vlr_DescConced) * (ct.Per_DescFinanc/100) ), 0)
+                        END,
+	ValorFinal =
+                        CASE
+                            WHEN IsNull(bx.Qtd_DiasAtraso, 0) > 0 THEN  IsNull(format(((ct.Vlr_Documento - ct.Vlr_DescConced) + Isnull(bx.Vlr_Juros, 0)), 'c', 'pt-br'), 0)
+                            WHEN IsNull(bx.Qtd_DiasAtraso, 0) = 0 THEN  IsNull(format(((((ct.Vlr_Documento - ct.Vlr_DescConced)-((ct.Vlr_Documento - ct.Vlr_DescConced) * (ct.Per_DescFinanc/100) )) + Isnull(bx.Vlr_Juros, 0)) ), 'c', 'pt-br'), 0)
+                        END
 	from CTREC ct
 		left outer join CLIEN cl on ct.Cod_Cliente = cl.Codigo
 		left outer join (select 
@@ -29,7 +38,7 @@ select
 where ct.cod_estabe = 1
     and year(ct.Transacao) = '2024' 
 	and month(ct.Transacao) <= month(getdate()) -1
-    and Vlr_DescConced > 0
+    and (Vlr_DescConced > 0 or ct.Per_DescFinanc > 0)
     and ct.[Status] <> 'C'
 
 order by Data_Transacao
