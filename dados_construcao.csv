@@ -1,0 +1,2401 @@
+Ano,Trimestre,Cidade,Tipo de Imóvel,Material Utilizado,Quantidade (m³),Valor Material (R$),Área Construída (m²)
+2019,Q1,Cidade A,Residencial,Barra Metal,23,17549,89
+2019,Q1,Cidade A,Residencial,Madeira,52,6500,59
+2019,Q1,Cidade A,Residencial,Pedra Britada,50,33800,93
+2019,Q1,Cidade A,Residencial,Fio Algodão,10,7100,157
+2019,Q1,Cidade A,Residencial,Cimento,79,76235,143
+2019,Q1,Cidade A,Residencial,Tecido,44,15576,70
+2019,Q1,Cidade A,Residencial,Papel,98,33320,199
+2019,Q1,Cidade A,Residencial,Poliéster,58,13746,79
+2019,Q1,Cidade A,Residencial,Couro,91,53144,84
+2019,Q1,Cidade A,Residencial,Areia,47,38305,65
+2019,Q1,Cidade A,Comercial,Barra Metal,77,71148,117
+2019,Q1,Cidade A,Comercial,Madeira,52,9568,103
+2019,Q1,Cidade A,Comercial,Pedra Britada,40,7480,55
+2019,Q1,Cidade A,Comercial,Fio Algodão,59,45666,88
+2019,Q1,Cidade A,Comercial,Cimento,33,29238,67
+2019,Q1,Cidade A,Comercial,Tecido,69,27669,143
+2019,Q1,Cidade A,Comercial,Papel,19,4066,169
+2019,Q1,Cidade A,Comercial,Poliéster,35,21770,117
+2019,Q1,Cidade A,Comercial,Couro,50,45200,111
+2019,Q1,Cidade A,Comercial,Areia,11,6061,125
+2019,Q1,Cidade A,Industrial,Barra Metal,42,18270,199
+2019,Q1,Cidade A,Industrial,Madeira,97,87882,89
+2019,Q1,Cidade A,Industrial,Pedra Britada,38,14516,137
+2019,Q1,Cidade A,Industrial,Fio Algodão,58,34916,179
+2019,Q1,Cidade A,Industrial,Cimento,16,4560,87
+2019,Q1,Cidade A,Industrial,Tecido,65,44135,57
+2019,Q1,Cidade A,Industrial,Papel,75,65775,175
+2019,Q1,Cidade A,Industrial,Poliéster,59,18054,180
+2019,Q1,Cidade A,Industrial,Couro,42,13608,90
+2019,Q1,Cidade A,Industrial,Areia,70,14630,77
+2019,Q1,Cidade B,Residencial,Barra Metal,26,15938,83
+2019,Q1,Cidade B,Residencial,Madeira,66,26730,115
+2019,Q1,Cidade B,Residencial,Pedra Britada,60,28500,161
+2019,Q1,Cidade B,Residencial,Fio Algodão,68,57528,160
+2019,Q1,Cidade B,Residencial,Cimento,48,43872,120
+2019,Q1,Cidade B,Residencial,Tecido,98,33614,188
+2019,Q1,Cidade B,Residencial,Papel,65,35685,106
+2019,Q1,Cidade B,Residencial,Poliéster,82,65518,190
+2019,Q1,Cidade B,Residencial,Couro,28,15960,141
+2019,Q1,Cidade B,Residencial,Areia,39,19344,72
+2019,Q1,Cidade B,Comercial,Barra Metal,33,31977,118
+2019,Q1,Cidade B,Comercial,Madeira,93,28737,84
+2019,Q1,Cidade B,Comercial,Pedra Britada,55,21230,89
+2019,Q1,Cidade B,Comercial,Fio Algodão,81,38475,129
+2019,Q1,Cidade B,Comercial,Cimento,90,81720,179
+2019,Q1,Cidade B,Comercial,Tecido,75,61125,88
+2019,Q1,Cidade B,Comercial,Papel,95,58140,180
+2019,Q1,Cidade B,Comercial,Poliéster,75,71100,63
+2019,Q1,Cidade B,Comercial,Couro,81,35559,128
+2019,Q1,Cidade B,Comercial,Areia,51,48501,149
+2019,Q1,Cidade B,Industrial,Barra Metal,38,20178,180
+2019,Q1,Cidade B,Industrial,Madeira,17,13277,189
+2019,Q1,Cidade B,Industrial,Pedra Britada,57,6441,146
+2019,Q1,Cidade B,Industrial,Fio Algodão,28,5376,194
+2019,Q1,Cidade B,Industrial,Cimento,40,29960,91
+2019,Q1,Cidade B,Industrial,Tecido,24,22728,69
+2019,Q1,Cidade B,Industrial,Papel,28,8932,50
+2019,Q1,Cidade B,Industrial,Poliéster,79,72680,163
+2019,Q1,Cidade B,Industrial,Couro,12,3720,85
+2019,Q1,Cidade B,Industrial,Areia,95,95000,130
+2019,Q1,Cidade C,Residencial,Barra Metal,23,4807,120
+2019,Q1,Cidade C,Residencial,Madeira,65,58630,197
+2019,Q1,Cidade C,Residencial,Pedra Britada,48,22704,87
+2019,Q1,Cidade C,Residencial,Fio Algodão,40,9520,131
+2019,Q1,Cidade C,Residencial,Cimento,23,14536,119
+2019,Q1,Cidade C,Residencial,Tecido,79,44872,154
+2019,Q1,Cidade C,Residencial,Papel,76,37088,191
+2019,Q1,Cidade C,Residencial,Poliéster,25,15000,146
+2019,Q1,Cidade C,Residencial,Couro,57,19323,152
+2019,Q1,Cidade C,Residencial,Areia,33,7260,192
+2019,Q1,Cidade C,Comercial,Barra Metal,87,43500,89
+2019,Q1,Cidade C,Comercial,Madeira,24,17808,135
+2019,Q1,Cidade C,Comercial,Pedra Britada,57,56829,190
+2019,Q1,Cidade C,Comercial,Fio Algodão,32,18272,87
+2019,Q1,Cidade C,Comercial,Cimento,38,20178,115
+2019,Q1,Cidade C,Comercial,Tecido,16,6640,193
+2019,Q1,Cidade C,Comercial,Papel,50,38550,114
+2019,Q1,Cidade C,Comercial,Poliéster,94,20868,158
+2019,Q1,Cidade C,Comercial,Couro,31,22196,52
+2019,Q1,Cidade C,Comercial,Areia,51,11475,117
+2019,Q1,Cidade C,Industrial,Barra Metal,53,28567,143
+2019,Q1,Cidade C,Industrial,Madeira,75,65100,64
+2019,Q1,Cidade C,Industrial,Pedra Britada,51,23409,180
+2019,Q1,Cidade C,Industrial,Fio Algodão,38,17290,112
+2019,Q1,Cidade C,Industrial,Cimento,67,37185,157
+2019,Q1,Cidade C,Industrial,Tecido,13,9295,152
+2019,Q1,Cidade C,Industrial,Papel,17,2023,141
+2019,Q1,Cidade C,Industrial,Poliéster,54,41256,148
+2019,Q1,Cidade C,Industrial,Couro,69,51129,112
+2019,Q1,Cidade C,Industrial,Areia,62,11222,75
+2019,Q1,Cidade D,Residencial,Barra Metal,38,31806,165
+2019,Q1,Cidade D,Residencial,Madeira,54,16794,169
+2019,Q1,Cidade D,Residencial,Pedra Britada,62,16430,52
+2019,Q1,Cidade D,Residencial,Fio Algodão,67,13400,70
+2019,Q1,Cidade D,Residencial,Cimento,74,28490,77
+2019,Q1,Cidade D,Residencial,Tecido,43,17845,150
+2019,Q1,Cidade D,Residencial,Papel,88,40216,141
+2019,Q1,Cidade D,Residencial,Poliéster,58,23084,184
+2019,Q1,Cidade D,Residencial,Couro,10,8120,183
+2019,Q1,Cidade D,Residencial,Areia,62,28272,66
+2019,Q1,Cidade D,Comercial,Barra Metal,45,17100,145
+2019,Q1,Cidade D,Comercial,Madeira,82,61582,103
+2019,Q1,Cidade D,Comercial,Pedra Britada,29,18908,77
+2019,Q1,Cidade D,Comercial,Fio Algodão,47,30691,62
+2019,Q1,Cidade D,Comercial,Cimento,23,22471,160
+2019,Q1,Cidade D,Comercial,Tecido,29,9599,183
+2019,Q1,Cidade D,Comercial,Papel,99,15741,113
+2019,Q1,Cidade D,Comercial,Poliéster,55,33605,156
+2019,Q1,Cidade D,Comercial,Couro,57,53751,200
+2019,Q1,Cidade D,Comercial,Areia,85,60775,86
+2019,Q1,Cidade D,Industrial,Barra Metal,26,17212,67
+2019,Q1,Cidade D,Industrial,Madeira,33,4059,172
+2019,Q1,Cidade D,Industrial,Pedra Britada,15,9765,80
+2019,Q1,Cidade D,Industrial,Fio Algodão,66,34452,56
+2019,Q1,Cidade D,Industrial,Cimento,72,55368,118
+2019,Q1,Cidade D,Industrial,Tecido,50,33500,88
+2019,Q1,Cidade D,Industrial,Papel,32,12096,121
+2019,Q1,Cidade D,Industrial,Poliéster,71,39334,193
+2019,Q1,Cidade D,Industrial,Couro,15,11175,167
+2019,Q1,Cidade D,Industrial,Areia,65,62530,74
+2019,Q1,Cidade E,Residencial,Barra Metal,31,27962,103
+2019,Q1,Cidade E,Residencial,Madeira,48,47040,155
+2019,Q1,Cidade E,Residencial,Pedra Britada,80,13680,155
+2019,Q1,Cidade E,Residencial,Fio Algodão,13,7098,150
+2019,Q1,Cidade E,Residencial,Cimento,60,40260,91
+2019,Q1,Cidade E,Residencial,Tecido,37,7252,154
+2019,Q1,Cidade E,Residencial,Papel,64,41920,66
+2019,Q1,Cidade E,Residencial,Poliéster,78,13416,56
+2019,Q1,Cidade E,Residencial,Couro,26,7488,185
+2019,Q1,Cidade E,Residencial,Areia,47,8601,73
+2019,Q1,Cidade E,Comercial,Barra Metal,54,16362,114
+2019,Q1,Cidade E,Comercial,Madeira,89,31417,85
+2019,Q1,Cidade E,Comercial,Pedra Britada,20,12700,169
+2019,Q1,Cidade E,Comercial,Fio Algodão,22,8668,54
+2019,Q1,Cidade E,Comercial,Cimento,97,60625,54
+2019,Q1,Cidade E,Comercial,Tecido,84,66444,194
+2019,Q1,Cidade E,Comercial,Papel,72,44928,84
+2019,Q1,Cidade E,Comercial,Poliéster,79,37920,110
+2019,Q1,Cidade E,Comercial,Couro,90,86850,56
+2019,Q1,Cidade E,Comercial,Areia,86,31046,80
+2019,Q1,Cidade E,Industrial,Barra Metal,17,5916,198
+2019,Q1,Cidade E,Industrial,Madeira,39,9594,143
+2019,Q1,Cidade E,Industrial,Pedra Britada,93,54777,118
+2019,Q1,Cidade E,Industrial,Fio Algodão,38,17974,160
+2019,Q1,Cidade E,Industrial,Cimento,27,23436,95
+2019,Q1,Cidade E,Industrial,Tecido,15,8640,169
+2019,Q1,Cidade E,Industrial,Papel,98,27342,177
+2019,Q1,Cidade E,Industrial,Poliéster,68,45356,197
+2019,Q1,Cidade E,Industrial,Couro,79,9243,111
+2019,Q1,Cidade E,Industrial,Areia,76,51224,54
+2019,Q2,Cidade A,Residencial,Barra Metal,13,12493,181
+2019,Q2,Cidade A,Residencial,Madeira,10,3860,108
+2019,Q2,Cidade A,Residencial,Pedra Britada,82,79950,86
+2019,Q2,Cidade A,Residencial,Fio Algodão,80,29280,68
+2019,Q2,Cidade A,Residencial,Cimento,88,15312,151
+2019,Q2,Cidade A,Residencial,Tecido,83,10209,55
+2019,Q2,Cidade A,Residencial,Papel,50,22250,173
+2019,Q2,Cidade A,Residencial,Poliéster,30,6330,105
+2019,Q2,Cidade A,Residencial,Couro,59,55047,113
+2019,Q2,Cidade A,Residencial,Areia,28,24472,157
+2019,Q2,Cidade A,Comercial,Barra Metal,64,53568,197
+2019,Q2,Cidade A,Comercial,Madeira,69,48852,185
+2019,Q2,Cidade A,Comercial,Pedra Britada,60,49920,184
+2019,Q2,Cidade A,Comercial,Fio Algodão,42,9450,82
+2019,Q2,Cidade A,Comercial,Cimento,88,48488,149
+2019,Q2,Cidade A,Comercial,Tecido,38,36176,82
+2019,Q2,Cidade A,Comercial,Papel,65,14950,62
+2019,Q2,Cidade A,Comercial,Poliéster,50,37600,111
+2019,Q2,Cidade A,Comercial,Couro,89,52510,55
+2019,Q2,Cidade A,Comercial,Areia,30,24840,76
+2019,Q2,Cidade A,Industrial,Barra Metal,60,35580,189
+2019,Q2,Cidade A,Industrial,Madeira,25,10550,91
+2019,Q2,Cidade A,Industrial,Pedra Britada,32,9152,74
+2019,Q2,Cidade A,Industrial,Fio Algodão,39,13533,145
+2019,Q2,Cidade A,Industrial,Cimento,72,68616,95
+2019,Q2,Cidade A,Industrial,Tecido,64,57152,165
+2019,Q2,Cidade A,Industrial,Papel,74,16058,135
+2019,Q2,Cidade A,Industrial,Poliéster,77,76076,55
+2019,Q2,Cidade A,Industrial,Couro,76,8512,197
+2019,Q2,Cidade A,Industrial,Areia,38,22078,120
+2019,Q2,Cidade B,Residencial,Barra Metal,78,19344,184
+2019,Q2,Cidade B,Residencial,Madeira,73,20294,130
+2019,Q2,Cidade B,Residencial,Pedra Britada,41,25174,83
+2019,Q2,Cidade B,Residencial,Fio Algodão,51,21012,154
+2019,Q2,Cidade B,Residencial,Cimento,90,22050,107
+2019,Q2,Cidade B,Residencial,Tecido,38,35226,181
+2019,Q2,Cidade B,Residencial,Papel,67,10117,144
+2019,Q2,Cidade B,Residencial,Poliéster,12,9420,69
+2019,Q2,Cidade B,Residencial,Couro,87,66729,125
+2019,Q2,Cidade B,Residencial,Areia,21,17136,172
+2019,Q2,Cidade B,Comercial,Barra Metal,20,19660,99
+2019,Q2,Cidade B,Comercial,Madeira,51,8364,120
+2019,Q2,Cidade B,Comercial,Pedra Britada,11,6380,66
+2019,Q2,Cidade B,Comercial,Fio Algodão,74,17612,102
+2019,Q2,Cidade B,Comercial,Cimento,62,14508,148
+2019,Q2,Cidade B,Comercial,Tecido,87,66468,99
+2019,Q2,Cidade B,Comercial,Papel,15,12270,72
+2019,Q2,Cidade B,Comercial,Poliéster,45,6345,178
+2019,Q2,Cidade B,Comercial,Couro,12,8784,101
+2019,Q2,Cidade B,Comercial,Areia,87,77952,164
+2019,Q2,Cidade B,Industrial,Barra Metal,47,9917,158
+2019,Q2,Cidade B,Industrial,Madeira,94,33840,58
+2019,Q2,Cidade B,Industrial,Pedra Britada,72,8064,151
+2019,Q2,Cidade B,Industrial,Fio Algodão,56,54264,153
+2019,Q2,Cidade B,Industrial,Cimento,70,49770,147
+2019,Q2,Cidade B,Industrial,Tecido,28,19740,139
+2019,Q2,Cidade B,Industrial,Papel,71,62267,61
+2019,Q2,Cidade B,Industrial,Poliéster,72,16056,157
+2019,Q2,Cidade B,Industrial,Couro,77,47355,102
+2019,Q2,Cidade B,Industrial,Areia,89,57494,118
+2019,Q2,Cidade C,Residencial,Barra Metal,39,12987,193
+2019,Q2,Cidade C,Residencial,Madeira,60,59220,153
+2019,Q2,Cidade C,Residencial,Pedra Britada,56,13216,165
+2019,Q2,Cidade C,Residencial,Fio Algodão,22,20482,54
+2019,Q2,Cidade C,Residencial,Cimento,97,15229,57
+2019,Q2,Cidade C,Residencial,Tecido,19,2128,162
+2019,Q2,Cidade C,Residencial,Papel,91,21658,86
+2019,Q2,Cidade C,Residencial,Poliéster,78,69654,199
+2019,Q2,Cidade C,Residencial,Couro,77,39501,123
+2019,Q2,Cidade C,Residencial,Areia,34,26758,141
+2019,Q2,Cidade C,Comercial,Barra Metal,21,14217,107
+2019,Q2,Cidade C,Comercial,Madeira,47,30080,174
+2019,Q2,Cidade C,Comercial,Pedra Britada,49,33075,106
+2019,Q2,Cidade C,Comercial,Fio Algodão,66,7656,192
+2019,Q2,Cidade C,Comercial,Cimento,29,20126,147
+2019,Q2,Cidade C,Comercial,Tecido,98,40474,147
+2019,Q2,Cidade C,Comercial,Papel,83,52207,79
+2019,Q2,Cidade C,Comercial,Poliéster,28,5768,196
+2019,Q2,Cidade C,Comercial,Couro,83,33200,165
+2019,Q2,Cidade C,Comercial,Areia,60,43680,153
+2019,Q2,Cidade C,Industrial,Barra Metal,58,29638,124
+2019,Q2,Cidade C,Industrial,Madeira,100,15800,81
+2019,Q2,Cidade C,Industrial,Pedra Britada,56,36120,80
+2019,Q2,Cidade C,Industrial,Fio Algodão,21,2541,63
+2019,Q2,Cidade C,Industrial,Cimento,81,38070,101
+2019,Q2,Cidade C,Industrial,Tecido,60,11640,149
+2019,Q2,Cidade C,Industrial,Papel,15,7470,64
+2019,Q2,Cidade C,Industrial,Poliéster,80,59440,82
+2019,Q2,Cidade C,Industrial,Couro,61,41297,101
+2019,Q2,Cidade C,Industrial,Areia,45,39060,81
+2019,Q2,Cidade D,Residencial,Barra Metal,24,6264,166
+2019,Q2,Cidade D,Residencial,Madeira,22,21912,51
+2019,Q2,Cidade D,Residencial,Pedra Britada,77,17556,170
+2019,Q2,Cidade D,Residencial,Fio Algodão,39,20163,115
+2019,Q2,Cidade D,Residencial,Cimento,57,54777,200
+2019,Q2,Cidade D,Residencial,Tecido,95,62700,116
+2019,Q2,Cidade D,Residencial,Papel,12,4128,118
+2019,Q2,Cidade D,Residencial,Poliéster,96,15264,93
+2019,Q2,Cidade D,Residencial,Couro,86,74648,194
+2019,Q2,Cidade D,Residencial,Areia,75,47475,56
+2019,Q2,Cidade D,Comercial,Barra Metal,87,30972,176
+2019,Q2,Cidade D,Comercial,Madeira,48,33888,110
+2019,Q2,Cidade D,Comercial,Pedra Britada,78,27768,162
+2019,Q2,Cidade D,Comercial,Fio Algodão,48,28176,62
+2019,Q2,Cidade D,Comercial,Cimento,46,13616,169
+2019,Q2,Cidade D,Comercial,Tecido,19,9177,146
+2019,Q2,Cidade D,Comercial,Papel,21,13566,186
+2019,Q2,Cidade D,Comercial,Poliéster,76,62168,181
+2019,Q2,Cidade D,Comercial,Couro,51,44217,112
+2019,Q2,Cidade D,Comercial,Areia,33,24288,125
+2019,Q2,Cidade D,Industrial,Barra Metal,82,27716,66
+2019,Q2,Cidade D,Industrial,Madeira,30,28170,107
+2019,Q2,Cidade D,Industrial,Pedra Britada,25,16225,68
+2019,Q2,Cidade D,Industrial,Fio Algodão,64,28480,140
+2019,Q2,Cidade D,Industrial,Cimento,46,10902,85
+2019,Q2,Cidade D,Industrial,Tecido,28,19432,122
+2019,Q2,Cidade D,Industrial,Papel,87,66120,160
+2019,Q2,Cidade D,Industrial,Poliéster,72,61056,122
+2019,Q2,Cidade D,Industrial,Couro,63,30744,83
+2019,Q2,Cidade D,Industrial,Areia,100,29100,137
+2019,Q2,Cidade E,Residencial,Barra Metal,18,14346,120
+2019,Q2,Cidade E,Residencial,Madeira,65,14820,80
+2019,Q2,Cidade E,Residencial,Pedra Britada,63,42462,101
+2019,Q2,Cidade E,Residencial,Fio Algodão,51,44472,191
+2019,Q2,Cidade E,Residencial,Cimento,43,17888,122
+2019,Q2,Cidade E,Residencial,Tecido,61,49532,104
+2019,Q2,Cidade E,Residencial,Papel,87,42978,115
+2019,Q2,Cidade E,Residencial,Poliéster,81,14499,108
+2019,Q2,Cidade E,Residencial,Couro,33,31350,102
+2019,Q2,Cidade E,Residencial,Areia,84,81816,140
+2019,Q2,Cidade E,Comercial,Barra Metal,59,36816,177
+2019,Q2,Cidade E,Comercial,Madeira,35,32655,161
+2019,Q2,Cidade E,Comercial,Pedra Britada,56,14560,137
+2019,Q2,Cidade E,Comercial,Fio Algodão,75,52050,119
+2019,Q2,Cidade E,Comercial,Cimento,72,25488,180
+2019,Q2,Cidade E,Comercial,Tecido,48,35904,86
+2019,Q2,Cidade E,Comercial,Papel,35,8365,144
+2019,Q2,Cidade E,Comercial,Poliéster,30,3450,63
+2019,Q2,Cidade E,Comercial,Couro,34,14892,121
+2019,Q2,Cidade E,Comercial,Areia,46,20102,107
+2019,Q2,Cidade E,Industrial,Barra Metal,49,32536,162
+2019,Q2,Cidade E,Industrial,Madeira,24,2592,65
+2019,Q2,Cidade E,Industrial,Pedra Britada,31,17360,173
+2019,Q2,Cidade E,Industrial,Fio Algodão,66,41250,133
+2019,Q2,Cidade E,Industrial,Cimento,23,8970,191
+2019,Q2,Cidade E,Industrial,Tecido,50,15500,117
+2019,Q2,Cidade E,Industrial,Papel,59,55342,59
+2019,Q2,Cidade E,Industrial,Poliéster,25,4075,75
+2019,Q2,Cidade E,Industrial,Couro,40,34880,149
+2019,Q2,Cidade E,Industrial,Areia,17,8109,161
+2019,Q3,Cidade A,Residencial,Barra Metal,57,50673,135
+2019,Q3,Cidade A,Residencial,Madeira,26,14170,152
+2019,Q3,Cidade A,Residencial,Pedra Britada,39,26130,108
+2019,Q3,Cidade A,Residencial,Fio Algodão,31,13423,108
+2019,Q3,Cidade A,Residencial,Cimento,20,3580,75
+2019,Q3,Cidade A,Residencial,Tecido,62,42966,93
+2019,Q3,Cidade A,Residencial,Papel,28,16044,147
+2019,Q3,Cidade A,Residencial,Poliéster,53,41764,84
+2019,Q3,Cidade A,Residencial,Couro,24,10824,89
+2019,Q3,Cidade A,Residencial,Areia,33,15642,145
+2019,Q3,Cidade A,Comercial,Barra Metal,19,2432,148
+2019,Q3,Cidade A,Comercial,Madeira,62,10602,154
+2019,Q3,Cidade A,Comercial,Pedra Britada,86,67854,141
+2019,Q3,Cidade A,Comercial,Fio Algodão,93,31527,127
+2019,Q3,Cidade A,Comercial,Cimento,27,5697,79
+2019,Q3,Cidade A,Comercial,Tecido,73,37011,111
+2019,Q3,Cidade A,Comercial,Papel,57,56943,58
+2019,Q3,Cidade A,Comercial,Poliéster,62,6510,126
+2019,Q3,Cidade A,Comercial,Couro,34,18564,96
+2019,Q3,Cidade A,Comercial,Areia,96,42144,123
+2019,Q3,Cidade A,Industrial,Barra Metal,36,35928,99
+2019,Q3,Cidade A,Industrial,Madeira,49,30037,90
+2019,Q3,Cidade A,Industrial,Pedra Britada,92,15272,188
+2019,Q3,Cidade A,Industrial,Fio Algodão,57,6897,130
+2019,Q3,Cidade A,Industrial,Cimento,69,31533,126
+2019,Q3,Cidade A,Industrial,Tecido,16,8656,87
+2019,Q3,Cidade A,Industrial,Papel,82,76670,128
+2019,Q3,Cidade A,Industrial,Poliéster,81,74682,132
+2019,Q3,Cidade A,Industrial,Couro,83,80842,114
+2019,Q3,Cidade A,Industrial,Areia,95,59850,109
+2019,Q3,Cidade B,Residencial,Barra Metal,17,14280,195
+2019,Q3,Cidade B,Residencial,Madeira,48,19728,61
+2019,Q3,Cidade B,Residencial,Pedra Britada,74,30192,90
+2019,Q3,Cidade B,Residencial,Fio Algodão,99,45639,177
+2019,Q3,Cidade B,Residencial,Cimento,17,8568,127
+2019,Q3,Cidade B,Residencial,Tecido,33,31383,175
+2019,Q3,Cidade B,Residencial,Papel,62,10850,163
+2019,Q3,Cidade B,Residencial,Poliéster,70,29610,121
+2019,Q3,Cidade B,Residencial,Couro,45,9810,76
+2019,Q3,Cidade B,Residencial,Areia,45,42705,89
+2019,Q3,Cidade B,Comercial,Barra Metal,96,34560,54
+2019,Q3,Cidade B,Comercial,Madeira,27,19467,65
+2019,Q3,Cidade B,Comercial,Pedra Britada,37,3922,156
+2019,Q3,Cidade B,Comercial,Fio Algodão,46,31280,152
+2019,Q3,Cidade B,Comercial,Cimento,69,57546,171
+2019,Q3,Cidade B,Comercial,Tecido,78,26988,130
+2019,Q3,Cidade B,Comercial,Papel,71,55522,113
+2019,Q3,Cidade B,Comercial,Poliéster,19,5282,154
+2019,Q3,Cidade B,Comercial,Couro,98,82908,151
+2019,Q3,Cidade B,Comercial,Areia,22,16126,104
+2019,Q3,Cidade B,Industrial,Barra Metal,54,41742,167
+2019,Q3,Cidade B,Industrial,Madeira,15,4485,145
+2019,Q3,Cidade B,Industrial,Pedra Britada,12,4644,171
+2019,Q3,Cidade B,Industrial,Fio Algodão,75,44175,82
+2019,Q3,Cidade B,Industrial,Cimento,40,12080,89
+2019,Q3,Cidade B,Industrial,Tecido,46,40572,192
+2019,Q3,Cidade B,Industrial,Papel,91,29757,68
+2019,Q3,Cidade B,Industrial,Poliéster,47,37929,123
+2019,Q3,Cidade B,Industrial,Couro,50,9000,108
+2019,Q3,Cidade B,Industrial,Areia,15,12465,107
+2019,Q3,Cidade C,Residencial,Barra Metal,75,32400,59
+2019,Q3,Cidade C,Residencial,Madeira,48,29904,59
+2019,Q3,Cidade C,Residencial,Pedra Britada,37,35779,82
+2019,Q3,Cidade C,Residencial,Fio Algodão,49,9996,171
+2019,Q3,Cidade C,Residencial,Cimento,78,38376,193
+2019,Q3,Cidade C,Residencial,Tecido,41,23329,80
+2019,Q3,Cidade C,Residencial,Papel,35,20195,122
+2019,Q3,Cidade C,Residencial,Poliéster,27,11664,109
+2019,Q3,Cidade C,Residencial,Couro,68,20808,120
+2019,Q3,Cidade C,Residencial,Areia,51,7344,102
+2019,Q3,Cidade C,Comercial,Barra Metal,10,9300,60
+2019,Q3,Cidade C,Comercial,Madeira,54,52218,52
+2019,Q3,Cidade C,Comercial,Pedra Britada,50,39800,57
+2019,Q3,Cidade C,Comercial,Fio Algodão,71,19170,144
+2019,Q3,Cidade C,Comercial,Cimento,90,15300,56
+2019,Q3,Cidade C,Comercial,Tecido,11,10604,119
+2019,Q3,Cidade C,Comercial,Papel,55,21780,69
+2019,Q3,Cidade C,Comercial,Poliéster,82,13530,169
+2019,Q3,Cidade C,Comercial,Couro,84,25032,96
+2019,Q3,Cidade C,Comercial,Areia,63,24192,146
+2019,Q3,Cidade C,Industrial,Barra Metal,96,90816,190
+2019,Q3,Cidade C,Industrial,Madeira,100,75800,188
+2019,Q3,Cidade C,Industrial,Pedra Britada,44,12892,71
+2019,Q3,Cidade C,Industrial,Fio Algodão,58,25636,160
+2019,Q3,Cidade C,Industrial,Cimento,98,15680,177
+2019,Q3,Cidade C,Industrial,Tecido,60,36060,137
+2019,Q3,Cidade C,Industrial,Papel,68,67524,87
+2019,Q3,Cidade C,Industrial,Poliéster,19,5529,106
+2019,Q3,Cidade C,Industrial,Couro,44,43868,160
+2019,Q3,Cidade C,Industrial,Areia,36,4932,194
+2019,Q3,Cidade D,Residencial,Barra Metal,47,17766,83
+2019,Q3,Cidade D,Residencial,Madeira,83,35441,93
+2019,Q3,Cidade D,Residencial,Pedra Britada,87,78213,52
+2019,Q3,Cidade D,Residencial,Fio Algodão,43,24854,146
+2019,Q3,Cidade D,Residencial,Cimento,70,68110,58
+2019,Q3,Cidade D,Residencial,Tecido,75,66750,174
+2019,Q3,Cidade D,Residencial,Papel,91,15834,176
+2019,Q3,Cidade D,Residencial,Poliéster,91,25662,70
+2019,Q3,Cidade D,Residencial,Couro,84,59052,128
+2019,Q3,Cidade D,Residencial,Areia,65,39390,71
+2019,Q3,Cidade D,Comercial,Barra Metal,51,35955,151
+2019,Q3,Cidade D,Comercial,Madeira,22,16126,86
+2019,Q3,Cidade D,Comercial,Pedra Britada,70,44100,65
+2019,Q3,Cidade D,Comercial,Fio Algodão,72,12168,111
+2019,Q3,Cidade D,Comercial,Cimento,46,6348,63
+2019,Q3,Cidade D,Comercial,Tecido,91,85176,81
+2019,Q3,Cidade D,Comercial,Papel,15,14400,55
+2019,Q3,Cidade D,Comercial,Poliéster,81,25110,127
+2019,Q3,Cidade D,Comercial,Couro,50,5400,129
+2019,Q3,Cidade D,Comercial,Areia,64,60992,126
+2019,Q3,Cidade D,Industrial,Barra Metal,31,27311,88
+2019,Q3,Cidade D,Industrial,Madeira,40,4560,165
+2019,Q3,Cidade D,Industrial,Pedra Britada,31,11997,142
+2019,Q3,Cidade D,Industrial,Fio Algodão,72,29160,50
+2019,Q3,Cidade D,Industrial,Cimento,30,16470,112
+2019,Q3,Cidade D,Industrial,Tecido,45,26280,140
+2019,Q3,Cidade D,Industrial,Papel,24,22968,193
+2019,Q3,Cidade D,Industrial,Poliéster,19,3040,91
+2019,Q3,Cidade D,Industrial,Couro,26,20540,97
+2019,Q3,Cidade D,Industrial,Areia,38,20938,51
+2019,Q3,Cidade E,Residencial,Barra Metal,22,5962,109
+2019,Q3,Cidade E,Residencial,Madeira,70,34300,95
+2019,Q3,Cidade E,Residencial,Pedra Britada,32,26368,139
+2019,Q3,Cidade E,Residencial,Fio Algodão,33,27324,114
+2019,Q3,Cidade E,Residencial,Cimento,51,34323,131
+2019,Q3,Cidade E,Residencial,Tecido,58,6554,133
+2019,Q3,Cidade E,Residencial,Papel,87,37758,192
+2019,Q3,Cidade E,Residencial,Poliéster,62,44764,71
+2019,Q3,Cidade E,Residencial,Couro,24,14904,197
+2019,Q3,Cidade E,Residencial,Areia,30,23040,56
+2019,Q3,Cidade E,Comercial,Barra Metal,20,10380,119
+2019,Q3,Cidade E,Comercial,Madeira,23,13294,104
+2019,Q3,Cidade E,Comercial,Pedra Britada,98,83594,141
+2019,Q3,Cidade E,Comercial,Fio Algodão,45,21600,183
+2019,Q3,Cidade E,Comercial,Cimento,95,28595,67
+2019,Q3,Cidade E,Comercial,Tecido,64,40640,113
+2019,Q3,Cidade E,Comercial,Papel,10,8150,173
+2019,Q3,Cidade E,Comercial,Poliéster,86,56330,147
+2019,Q3,Cidade E,Comercial,Couro,72,63576,196
+2019,Q3,Cidade E,Comercial,Areia,30,16020,118
+2019,Q3,Cidade E,Industrial,Barra Metal,50,32800,173
+2019,Q3,Cidade E,Industrial,Madeira,71,15833,161
+2019,Q3,Cidade E,Industrial,Pedra Britada,69,23529,196
+2019,Q3,Cidade E,Industrial,Fio Algodão,29,4698,169
+2019,Q3,Cidade E,Industrial,Cimento,33,31944,98
+2019,Q3,Cidade E,Industrial,Tecido,49,26117,166
+2019,Q3,Cidade E,Industrial,Papel,23,11822,125
+2019,Q3,Cidade E,Industrial,Poliéster,73,36865,177
+2019,Q3,Cidade E,Industrial,Couro,88,38456,56
+2019,Q3,Cidade E,Industrial,Areia,77,22715,179
+2019,Q4,Cidade A,Residencial,Barra Metal,88,38016,76
+2019,Q4,Cidade A,Residencial,Madeira,58,38512,59
+2019,Q4,Cidade A,Residencial,Pedra Britada,96,85344,183
+2019,Q4,Cidade A,Residencial,Fio Algodão,26,6708,57
+2019,Q4,Cidade A,Residencial,Cimento,29,15225,168
+2019,Q4,Cidade A,Residencial,Tecido,47,29281,107
+2019,Q4,Cidade A,Residencial,Papel,30,9930,90
+2019,Q4,Cidade A,Residencial,Poliéster,82,62894,53
+2019,Q4,Cidade A,Residencial,Couro,23,13754,58
+2019,Q4,Cidade A,Residencial,Areia,96,19104,199
+2019,Q4,Cidade A,Comercial,Barra Metal,13,1898,157
+2019,Q4,Cidade A,Comercial,Madeira,25,23075,77
+2019,Q4,Cidade A,Comercial,Pedra Britada,62,33480,120
+2019,Q4,Cidade A,Comercial,Fio Algodão,64,38144,126
+2019,Q4,Cidade A,Comercial,Cimento,78,40716,89
+2019,Q4,Cidade A,Comercial,Tecido,86,20898,184
+2019,Q4,Cidade A,Comercial,Papel,39,7215,114
+2019,Q4,Cidade A,Comercial,Poliéster,85,58310,165
+2019,Q4,Cidade A,Comercial,Couro,62,29326,85
+2019,Q4,Cidade A,Comercial,Areia,84,71484,135
+2019,Q4,Cidade A,Industrial,Barra Metal,89,45924,169
+2019,Q4,Cidade A,Industrial,Madeira,69,6900,65
+2019,Q4,Cidade A,Industrial,Pedra Britada,32,20512,195
+2019,Q4,Cidade A,Industrial,Fio Algodão,33,6699,104
+2019,Q4,Cidade A,Industrial,Cimento,52,48984,96
+2019,Q4,Cidade A,Industrial,Tecido,40,29760,175
+2019,Q4,Cidade A,Industrial,Papel,77,26257,75
+2019,Q4,Cidade A,Industrial,Poliéster,24,17904,165
+2019,Q4,Cidade A,Industrial,Couro,37,3996,95
+2019,Q4,Cidade A,Industrial,Areia,45,28125,170
+2019,Q4,Cidade B,Residencial,Barra Metal,18,6876,162
+2019,Q4,Cidade B,Residencial,Madeira,47,34028,86
+2019,Q4,Cidade B,Residencial,Pedra Britada,94,19928,107
+2019,Q4,Cidade B,Residencial,Fio Algodão,12,4908,112
+2019,Q4,Cidade B,Residencial,Cimento,68,44404,194
+2019,Q4,Cidade B,Residencial,Tecido,72,11880,127
+2019,Q4,Cidade B,Residencial,Papel,12,2112,86
+2019,Q4,Cidade B,Residencial,Poliéster,74,58312,157
+2019,Q4,Cidade B,Residencial,Couro,13,3822,82
+2019,Q4,Cidade B,Residencial,Areia,51,26877,161
+2019,Q4,Cidade B,Comercial,Barra Metal,86,78432,105
+2019,Q4,Cidade B,Comercial,Madeira,89,78142,185
+2019,Q4,Cidade B,Comercial,Pedra Britada,37,26899,99
+2019,Q4,Cidade B,Comercial,Fio Algodão,19,10830,153
+2019,Q4,Cidade B,Comercial,Cimento,65,31005,93
+2019,Q4,Cidade B,Comercial,Tecido,79,60672,109
+2019,Q4,Cidade B,Comercial,Papel,74,33892,187
+2019,Q4,Cidade B,Comercial,Poliéster,89,33464,51
+2019,Q4,Cidade B,Comercial,Couro,92,45632,85
+2019,Q4,Cidade B,Comercial,Areia,61,53192,82
+2019,Q4,Cidade B,Industrial,Barra Metal,90,18360,101
+2019,Q4,Cidade B,Industrial,Madeira,43,38829,74
+2019,Q4,Cidade B,Industrial,Pedra Britada,67,42411,143
+2019,Q4,Cidade B,Industrial,Fio Algodão,58,49474,124
+2019,Q4,Cidade B,Industrial,Cimento,53,5671,146
+2019,Q4,Cidade B,Industrial,Tecido,48,40224,193
+2019,Q4,Cidade B,Industrial,Papel,41,18901,68
+2019,Q4,Cidade B,Industrial,Poliéster,46,38870,64
+2019,Q4,Cidade B,Industrial,Couro,26,14950,128
+2019,Q4,Cidade B,Industrial,Areia,48,5952,148
+2019,Q4,Cidade C,Residencial,Barra Metal,91,82628,126
+2019,Q4,Cidade C,Residencial,Madeira,45,17145,136
+2019,Q4,Cidade C,Residencial,Pedra Britada,24,18336,60
+2019,Q4,Cidade C,Residencial,Fio Algodão,21,8127,172
+2019,Q4,Cidade C,Residencial,Cimento,89,76896,189
+2019,Q4,Cidade C,Residencial,Tecido,76,68628,149
+2019,Q4,Cidade C,Residencial,Papel,29,15312,108
+2019,Q4,Cidade C,Residencial,Poliéster,45,16920,154
+2019,Q4,Cidade C,Residencial,Couro,15,14655,103
+2019,Q4,Cidade C,Residencial,Areia,24,6288,167
+2019,Q4,Cidade C,Comercial,Barra Metal,60,55440,160
+2019,Q4,Cidade C,Comercial,Madeira,41,17507,156
+2019,Q4,Cidade C,Comercial,Pedra Britada,41,29397,180
+2019,Q4,Cidade C,Comercial,Fio Algodão,20,4540,177
+2019,Q4,Cidade C,Comercial,Cimento,31,6200,115
+2019,Q4,Cidade C,Comercial,Tecido,72,44136,76
+2019,Q4,Cidade C,Comercial,Papel,46,8418,176
+2019,Q4,Cidade C,Comercial,Poliéster,68,15368,169
+2019,Q4,Cidade C,Comercial,Couro,99,89298,81
+2019,Q4,Cidade C,Comercial,Areia,32,21536,190
+2019,Q4,Cidade C,Industrial,Barra Metal,59,56876,100
+2019,Q4,Cidade C,Industrial,Madeira,100,91300,55
+2019,Q4,Cidade C,Industrial,Pedra Britada,29,3567,130
+2019,Q4,Cidade C,Industrial,Fio Algodão,95,53390,96
+2019,Q4,Cidade C,Industrial,Cimento,95,57570,87
+2019,Q4,Cidade C,Industrial,Tecido,84,70728,121
+2019,Q4,Cidade C,Industrial,Papel,85,9520,129
+2019,Q4,Cidade C,Industrial,Poliéster,60,13320,94
+2019,Q4,Cidade C,Industrial,Couro,60,40380,138
+2019,Q4,Cidade C,Industrial,Areia,19,4731,101
+2019,Q4,Cidade D,Residencial,Barra Metal,75,39600,179
+2019,Q4,Cidade D,Residencial,Madeira,24,8976,116
+2019,Q4,Cidade D,Residencial,Pedra Britada,23,21919,79
+2019,Q4,Cidade D,Residencial,Fio Algodão,65,23465,191
+2019,Q4,Cidade D,Residencial,Cimento,70,10150,65
+2019,Q4,Cidade D,Residencial,Tecido,96,90528,90
+2019,Q4,Cidade D,Residencial,Papel,33,23793,115
+2019,Q4,Cidade D,Residencial,Poliéster,27,7641,145
+2019,Q4,Cidade D,Residencial,Couro,48,42816,71
+2019,Q4,Cidade D,Residencial,Areia,26,11986,143
+2019,Q4,Cidade D,Comercial,Barra Metal,83,28054,169
+2019,Q4,Cidade D,Comercial,Madeira,99,62469,188
+2019,Q4,Cidade D,Comercial,Pedra Britada,90,23220,64
+2019,Q4,Cidade D,Comercial,Fio Algodão,48,47712,154
+2019,Q4,Cidade D,Comercial,Cimento,56,50512,58
+2019,Q4,Cidade D,Comercial,Tecido,84,65184,126
+2019,Q4,Cidade D,Comercial,Papel,25,10925,183
+2019,Q4,Cidade D,Comercial,Poliéster,43,16254,106
+2019,Q4,Cidade D,Comercial,Couro,37,14726,90
+2019,Q4,Cidade D,Comercial,Areia,76,19988,189
+2019,Q4,Cidade D,Industrial,Barra Metal,14,1596,122
+2019,Q4,Cidade D,Industrial,Madeira,58,46690,166
+2019,Q4,Cidade D,Industrial,Pedra Britada,85,11475,147
+2019,Q4,Cidade D,Industrial,Fio Algodão,25,8625,91
+2019,Q4,Cidade D,Industrial,Cimento,34,9724,192
+2019,Q4,Cidade D,Industrial,Tecido,86,15996,135
+2019,Q4,Cidade D,Industrial,Papel,64,49344,137
+2019,Q4,Cidade D,Industrial,Poliéster,76,38456,62
+2019,Q4,Cidade D,Industrial,Couro,45,41355,130
+2019,Q4,Cidade D,Industrial,Areia,38,9234,54
+2019,Q4,Cidade E,Residencial,Barra Metal,78,57096,151
+2019,Q4,Cidade E,Residencial,Madeira,41,16482,90
+2019,Q4,Cidade E,Residencial,Pedra Britada,57,19380,82
+2019,Q4,Cidade E,Residencial,Fio Algodão,29,13717,109
+2019,Q4,Cidade E,Residencial,Cimento,52,49764,174
+2019,Q4,Cidade E,Residencial,Tecido,92,14260,65
+2019,Q4,Cidade E,Residencial,Papel,86,17458,82
+2019,Q4,Cidade E,Residencial,Poliéster,90,42570,172
+2019,Q4,Cidade E,Residencial,Couro,97,75078,119
+2019,Q4,Cidade E,Residencial,Areia,58,9802,118
+2019,Q4,Cidade E,Comercial,Barra Metal,34,21862,159
+2019,Q4,Cidade E,Comercial,Madeira,47,32712,62
+2019,Q4,Cidade E,Comercial,Pedra Britada,46,23230,187
+2019,Q4,Cidade E,Comercial,Fio Algodão,61,47214,163
+2019,Q4,Cidade E,Comercial,Cimento,83,20169,62
+2019,Q4,Cidade E,Comercial,Tecido,29,24041,200
+2019,Q4,Cidade E,Comercial,Papel,49,14700,67
+2019,Q4,Cidade E,Comercial,Poliéster,25,3050,105
+2019,Q4,Cidade E,Comercial,Couro,13,4251,132
+2019,Q4,Cidade E,Comercial,Areia,47,11421,197
+2019,Q4,Cidade E,Industrial,Barra Metal,58,43906,115
+2019,Q4,Cidade E,Industrial,Madeira,77,49203,107
+2019,Q4,Cidade E,Industrial,Pedra Britada,46,41170,159
+2019,Q4,Cidade E,Industrial,Fio Algodão,95,9595,124
+2019,Q4,Cidade E,Industrial,Cimento,47,19975,60
+2019,Q4,Cidade E,Industrial,Tecido,64,62592,119
+2019,Q4,Cidade E,Industrial,Papel,59,31270,173
+2019,Q4,Cidade E,Industrial,Poliéster,63,47817,79
+2019,Q4,Cidade E,Industrial,Couro,85,25160,53
+2019,Q4,Cidade E,Industrial,Areia,22,16192,193
+2020,Q1,Cidade A,Residencial,Barra Metal,37,26973,54
+2020,Q1,Cidade A,Residencial,Madeira,91,9828,188
+2020,Q1,Cidade A,Residencial,Pedra Britada,32,4160,153
+2020,Q1,Cidade A,Residencial,Fio Algodão,52,12688,180
+2020,Q1,Cidade A,Residencial,Cimento,50,29400,128
+2020,Q1,Cidade A,Residencial,Tecido,79,17301,142
+2020,Q1,Cidade A,Residencial,Papel,80,52480,91
+2020,Q1,Cidade A,Residencial,Poliéster,41,38171,95
+2020,Q1,Cidade A,Residencial,Couro,79,53246,116
+2020,Q1,Cidade A,Residencial,Areia,41,27675,179
+2020,Q1,Cidade A,Comercial,Barra Metal,64,12160,81
+2020,Q1,Cidade A,Comercial,Madeira,19,5206,140
+2020,Q1,Cidade A,Comercial,Pedra Britada,54,52218,150
+2020,Q1,Cidade A,Comercial,Fio Algodão,75,52050,184
+2020,Q1,Cidade A,Comercial,Cimento,32,22656,181
+2020,Q1,Cidade A,Comercial,Tecido,53,26235,160
+2020,Q1,Cidade A,Comercial,Papel,76,12084,140
+2020,Q1,Cidade A,Comercial,Poliéster,32,7008,56
+2020,Q1,Cidade A,Comercial,Couro,46,13478,78
+2020,Q1,Cidade A,Comercial,Areia,15,14640,173
+2020,Q1,Cidade A,Industrial,Barra Metal,30,4170,159
+2020,Q1,Cidade A,Industrial,Madeira,30,11520,164
+2020,Q1,Cidade A,Industrial,Pedra Britada,18,15012,198
+2020,Q1,Cidade A,Industrial,Fio Algodão,32,12896,144
+2020,Q1,Cidade A,Industrial,Cimento,52,45708,192
+2020,Q1,Cidade A,Industrial,Tecido,81,71442,113
+2020,Q1,Cidade A,Industrial,Papel,37,22200,167
+2020,Q1,Cidade A,Industrial,Poliéster,88,23496,192
+2020,Q1,Cidade A,Industrial,Couro,25,15700,73
+2020,Q1,Cidade A,Industrial,Areia,10,7580,141
+2020,Q1,Cidade B,Residencial,Barra Metal,14,5670,76
+2020,Q1,Cidade B,Residencial,Madeira,69,36915,95
+2020,Q1,Cidade B,Residencial,Pedra Britada,42,28434,133
+2020,Q1,Cidade B,Residencial,Fio Algodão,15,2400,130
+2020,Q1,Cidade B,Residencial,Cimento,75,13200,63
+2020,Q1,Cidade B,Residencial,Tecido,84,45360,82
+2020,Q1,Cidade B,Residencial,Papel,72,52488,71
+2020,Q1,Cidade B,Residencial,Poliéster,50,11550,194
+2020,Q1,Cidade B,Residencial,Couro,94,37882,105
+2020,Q1,Cidade B,Residencial,Areia,44,11968,136
+2020,Q1,Cidade B,Comercial,Barra Metal,59,25960,198
+2020,Q1,Cidade B,Comercial,Madeira,31,29853,72
+2020,Q1,Cidade B,Comercial,Pedra Britada,76,71440,180
+2020,Q1,Cidade B,Comercial,Fio Algodão,74,48396,60
+2020,Q1,Cidade B,Comercial,Cimento,13,7423,124
+2020,Q1,Cidade B,Comercial,Tecido,74,64898,105
+2020,Q1,Cidade B,Comercial,Papel,36,33804,74
+2020,Q1,Cidade B,Comercial,Poliéster,45,21960,124
+2020,Q1,Cidade B,Comercial,Couro,85,60775,137
+2020,Q1,Cidade B,Comercial,Areia,39,19422,194
+2020,Q1,Cidade B,Industrial,Barra Metal,83,54946,171
+2020,Q1,Cidade B,Industrial,Madeira,47,27119,90
+2020,Q1,Cidade B,Industrial,Pedra Britada,42,5376,77
+2020,Q1,Cidade B,Industrial,Fio Algodão,30,11100,55
+2020,Q1,Cidade B,Industrial,Cimento,33,32604,74
+2020,Q1,Cidade B,Industrial,Tecido,18,2916,108
+2020,Q1,Cidade B,Industrial,Papel,68,48824,82
+2020,Q1,Cidade B,Industrial,Poliéster,41,11685,138
+2020,Q1,Cidade B,Industrial,Couro,53,14999,142
+2020,Q1,Cidade B,Industrial,Areia,12,2856,161
+2020,Q1,Cidade C,Residencial,Barra Metal,29,15515,114
+2020,Q1,Cidade C,Residencial,Madeira,25,11875,114
+2020,Q1,Cidade C,Residencial,Pedra Britada,50,12100,109
+2020,Q1,Cidade C,Residencial,Fio Algodão,29,14442,198
+2020,Q1,Cidade C,Residencial,Cimento,31,30411,102
+2020,Q1,Cidade C,Residencial,Tecido,94,23594,88
+2020,Q1,Cidade C,Residencial,Papel,66,60258,159
+2020,Q1,Cidade C,Residencial,Poliéster,30,5460,66
+2020,Q1,Cidade C,Residencial,Couro,38,9272,183
+2020,Q1,Cidade C,Residencial,Areia,54,15282,86
+2020,Q1,Cidade C,Comercial,Barra Metal,95,34295,84
+2020,Q1,Cidade C,Comercial,Madeira,43,42183,87
+2020,Q1,Cidade C,Comercial,Pedra Britada,83,61088,157
+2020,Q1,Cidade C,Comercial,Fio Algodão,29,14210,145
+2020,Q1,Cidade C,Comercial,Cimento,32,27936,98
+2020,Q1,Cidade C,Comercial,Tecido,44,17072,146
+2020,Q1,Cidade C,Comercial,Papel,91,34853,178
+2020,Q1,Cidade C,Comercial,Poliéster,47,12643,138
+2020,Q1,Cidade C,Comercial,Couro,83,78684,160
+2020,Q1,Cidade C,Comercial,Areia,69,15801,196
+2020,Q1,Cidade C,Industrial,Barra Metal,52,28496,176
+2020,Q1,Cidade C,Industrial,Madeira,14,8400,101
+2020,Q1,Cidade C,Industrial,Pedra Britada,37,27972,188
+2020,Q1,Cidade C,Industrial,Fio Algodão,50,22650,118
+2020,Q1,Cidade C,Industrial,Cimento,68,13940,95
+2020,Q1,Cidade C,Industrial,Tecido,29,16124,148
+2020,Q1,Cidade C,Industrial,Papel,44,29612,187
+2020,Q1,Cidade C,Industrial,Poliéster,14,8050,165
+2020,Q1,Cidade C,Industrial,Couro,42,24780,69
+2020,Q1,Cidade C,Industrial,Areia,95,72105,53
+2020,Q1,Cidade D,Residencial,Barra Metal,20,9940,131
+2020,Q1,Cidade D,Residencial,Madeira,52,41860,178
+2020,Q1,Cidade D,Residencial,Pedra Britada,12,7584,143
+2020,Q1,Cidade D,Residencial,Fio Algodão,74,8362,68
+2020,Q1,Cidade D,Residencial,Cimento,71,17111,138
+2020,Q1,Cidade D,Residencial,Tecido,20,19820,52
+2020,Q1,Cidade D,Residencial,Papel,75,38250,88
+2020,Q1,Cidade D,Residencial,Poliéster,44,20900,139
+2020,Q1,Cidade D,Residencial,Couro,42,30198,128
+2020,Q1,Cidade D,Residencial,Areia,66,63360,158
+2020,Q1,Cidade D,Comercial,Barra Metal,43,12599,146
+2020,Q1,Cidade D,Comercial,Madeira,44,19404,183
+2020,Q1,Cidade D,Comercial,Pedra Britada,55,46365,67
+2020,Q1,Cidade D,Comercial,Fio Algodão,54,42606,152
+2020,Q1,Cidade D,Comercial,Cimento,26,20020,79
+2020,Q1,Cidade D,Comercial,Tecido,72,61344,60
+2020,Q1,Cidade D,Comercial,Papel,58,25114,86
+2020,Q1,Cidade D,Comercial,Poliéster,74,38702,170
+2020,Q1,Cidade D,Comercial,Couro,48,38448,167
+2020,Q1,Cidade D,Comercial,Areia,48,17616,120
+2020,Q1,Cidade D,Industrial,Barra Metal,39,36855,175
+2020,Q1,Cidade D,Industrial,Madeira,29,5104,182
+2020,Q1,Cidade D,Industrial,Pedra Britada,82,54038,115
+2020,Q1,Cidade D,Industrial,Fio Algodão,32,9088,94
+2020,Q1,Cidade D,Industrial,Cimento,30,4830,58
+2020,Q1,Cidade D,Industrial,Tecido,43,15523,57
+2020,Q1,Cidade D,Industrial,Papel,88,52360,140
+2020,Q1,Cidade D,Industrial,Poliéster,30,14340,91
+2020,Q1,Cidade D,Industrial,Couro,49,36407,180
+2020,Q1,Cidade D,Industrial,Areia,52,47216,121
+2020,Q1,Cidade E,Residencial,Barra Metal,80,36800,165
+2020,Q1,Cidade E,Residencial,Madeira,69,53613,106
+2020,Q1,Cidade E,Residencial,Pedra Britada,80,22400,129
+2020,Q1,Cidade E,Residencial,Fio Algodão,94,87044,196
+2020,Q1,Cidade E,Residencial,Cimento,49,10192,174
+2020,Q1,Cidade E,Residencial,Tecido,52,32708,158
+2020,Q1,Cidade E,Residencial,Papel,14,2604,94
+2020,Q1,Cidade E,Residencial,Poliéster,88,10912,166
+2020,Q1,Cidade E,Residencial,Couro,39,19149,116
+2020,Q1,Cidade E,Residencial,Areia,88,39424,55
+2020,Q1,Cidade E,Comercial,Barra Metal,55,15950,81
+2020,Q1,Cidade E,Comercial,Madeira,31,19964,113
+2020,Q1,Cidade E,Comercial,Pedra Britada,92,42964,142
+2020,Q1,Cidade E,Comercial,Fio Algodão,88,75504,108
+2020,Q1,Cidade E,Comercial,Cimento,100,58900,112
+2020,Q1,Cidade E,Comercial,Tecido,80,46320,65
+2020,Q1,Cidade E,Comercial,Papel,80,26400,194
+2020,Q1,Cidade E,Comercial,Poliéster,51,8976,184
+2020,Q1,Cidade E,Comercial,Couro,13,10647,109
+2020,Q1,Cidade E,Comercial,Areia,69,42090,90
+2020,Q1,Cidade E,Industrial,Barra Metal,90,72270,170
+2020,Q1,Cidade E,Industrial,Madeira,27,21006,85
+2020,Q1,Cidade E,Industrial,Pedra Britada,73,72416,162
+2020,Q1,Cidade E,Industrial,Fio Algodão,63,20790,116
+2020,Q1,Cidade E,Industrial,Cimento,88,31504,126
+2020,Q1,Cidade E,Industrial,Tecido,51,25245,187
+2020,Q1,Cidade E,Industrial,Papel,34,4284,137
+2020,Q1,Cidade E,Industrial,Poliéster,72,52632,81
+2020,Q1,Cidade E,Industrial,Couro,11,1309,83
+2020,Q1,Cidade E,Industrial,Areia,64,9344,92
+2020,Q2,Cidade A,Residencial,Barra Metal,64,53760,96
+2020,Q2,Cidade A,Residencial,Madeira,66,19140,52
+2020,Q2,Cidade A,Residencial,Pedra Britada,54,21546,122
+2020,Q2,Cidade A,Residencial,Fio Algodão,83,74783,170
+2020,Q2,Cidade A,Residencial,Cimento,35,31045,57
+2020,Q2,Cidade A,Residencial,Tecido,14,1834,197
+2020,Q2,Cidade A,Residencial,Papel,76,39064,174
+2020,Q2,Cidade A,Residencial,Poliéster,82,19024,152
+2020,Q2,Cidade A,Residencial,Couro,29,19662,139
+2020,Q2,Cidade A,Residencial,Areia,98,57722,151
+2020,Q2,Cidade A,Comercial,Barra Metal,66,15312,172
+2020,Q2,Cidade A,Comercial,Madeira,13,2639,181
+2020,Q2,Cidade A,Comercial,Pedra Britada,47,8178,96
+2020,Q2,Cidade A,Comercial,Fio Algodão,71,67521,61
+2020,Q2,Cidade A,Comercial,Cimento,39,12753,99
+2020,Q2,Cidade A,Comercial,Tecido,55,26015,171
+2020,Q2,Cidade A,Comercial,Papel,44,4752,128
+2020,Q2,Cidade A,Comercial,Poliéster,30,16410,119
+2020,Q2,Cidade A,Comercial,Couro,77,58751,116
+2020,Q2,Cidade A,Comercial,Areia,25,20125,119
+2020,Q2,Cidade A,Industrial,Barra Metal,93,11439,61
+2020,Q2,Cidade A,Industrial,Madeira,79,25122,110
+2020,Q2,Cidade A,Industrial,Pedra Britada,88,65384,192
+2020,Q2,Cidade A,Industrial,Fio Algodão,90,47880,171
+2020,Q2,Cidade A,Industrial,Cimento,95,45600,81
+2020,Q2,Cidade A,Industrial,Tecido,42,20370,73
+2020,Q2,Cidade A,Industrial,Papel,55,26895,63
+2020,Q2,Cidade A,Industrial,Poliéster,91,17017,138
+2020,Q2,Cidade A,Industrial,Couro,15,1860,73
+2020,Q2,Cidade A,Industrial,Areia,59,22361,66
+2020,Q2,Cidade B,Residencial,Barra Metal,31,28768,106
+2020,Q2,Cidade B,Residencial,Madeira,61,32330,154
+2020,Q2,Cidade B,Residencial,Pedra Britada,48,35376,98
+2020,Q2,Cidade B,Residencial,Fio Algodão,94,70688,193
+2020,Q2,Cidade B,Residencial,Cimento,24,4296,188
+2020,Q2,Cidade B,Residencial,Tecido,23,21873,145
+2020,Q2,Cidade B,Residencial,Papel,63,61614,126
+2020,Q2,Cidade B,Residencial,Poliéster,15,12870,96
+2020,Q2,Cidade B,Residencial,Couro,29,12064,54
+2020,Q2,Cidade B,Residencial,Areia,83,39342,74
+2020,Q2,Cidade B,Comercial,Barra Metal,81,52488,169
+2020,Q2,Cidade B,Comercial,Madeira,48,18384,52
+2020,Q2,Cidade B,Comercial,Pedra Britada,61,16348,181
+2020,Q2,Cidade B,Comercial,Fio Algodão,80,36880,169
+2020,Q2,Cidade B,Comercial,Cimento,64,33920,81
+2020,Q2,Cidade B,Comercial,Tecido,98,95354,81
+2020,Q2,Cidade B,Comercial,Papel,80,30160,123
+2020,Q2,Cidade B,Comercial,Poliéster,12,5112,108
+2020,Q2,Cidade B,Comercial,Couro,66,40194,186
+2020,Q2,Cidade B,Comercial,Areia,94,29516,110
+2020,Q2,Cidade B,Industrial,Barra Metal,77,20097,160
+2020,Q2,Cidade B,Industrial,Madeira,50,15250,198
+2020,Q2,Cidade B,Industrial,Pedra Britada,25,3275,69
+2020,Q2,Cidade B,Industrial,Fio Algodão,68,40256,158
+2020,Q2,Cidade B,Industrial,Cimento,24,22296,189
+2020,Q2,Cidade B,Industrial,Tecido,92,72404,197
+2020,Q2,Cidade B,Industrial,Papel,61,35441,168
+2020,Q2,Cidade B,Industrial,Poliéster,69,41952,115
+2020,Q2,Cidade B,Industrial,Couro,37,20535,128
+2020,Q2,Cidade B,Industrial,Areia,89,12816,68
+2020,Q2,Cidade C,Residencial,Barra Metal,57,54720,149
+2020,Q2,Cidade C,Residencial,Madeira,96,20448,67
+2020,Q2,Cidade C,Residencial,Pedra Britada,11,9977,52
+2020,Q2,Cidade C,Residencial,Fio Algodão,18,17334,65
+2020,Q2,Cidade C,Residencial,Cimento,58,51272,128
+2020,Q2,Cidade C,Residencial,Tecido,45,14760,100
+2020,Q2,Cidade C,Residencial,Papel,21,7497,61
+2020,Q2,Cidade C,Residencial,Poliéster,22,9438,105
+2020,Q2,Cidade C,Residencial,Couro,56,52248,120
+2020,Q2,Cidade C,Residencial,Areia,99,72567,127
+2020,Q2,Cidade C,Comercial,Barra Metal,27,25893,104
+2020,Q2,Cidade C,Comercial,Madeira,74,11248,126
+2020,Q2,Cidade C,Comercial,Pedra Britada,40,15360,109
+2020,Q2,Cidade C,Comercial,Fio Algodão,77,65681,73
+2020,Q2,Cidade C,Comercial,Cimento,44,29172,79
+2020,Q2,Cidade C,Comercial,Tecido,70,7000,141
+2020,Q2,Cidade C,Comercial,Papel,27,4779,62
+2020,Q2,Cidade C,Comercial,Poliéster,33,22605,172
+2020,Q2,Cidade C,Comercial,Couro,84,82320,169
+2020,Q2,Cidade C,Comercial,Areia,55,14685,86
+2020,Q2,Cidade C,Industrial,Barra Metal,75,68325,140
+2020,Q2,Cidade C,Industrial,Madeira,13,6487,91
+2020,Q2,Cidade C,Industrial,Pedra Britada,30,22110,179
+2020,Q2,Cidade C,Industrial,Fio Algodão,98,57918,72
+2020,Q2,Cidade C,Industrial,Cimento,59,11800,161
+2020,Q2,Cidade C,Industrial,Tecido,64,29312,104
+2020,Q2,Cidade C,Industrial,Papel,36,24696,162
+2020,Q2,Cidade C,Industrial,Poliéster,81,46494,54
+2020,Q2,Cidade C,Industrial,Couro,10,9190,190
+2020,Q2,Cidade C,Industrial,Areia,90,57960,122
+2020,Q2,Cidade D,Residencial,Barra Metal,33,25146,56
+2020,Q2,Cidade D,Residencial,Madeira,74,32560,144
+2020,Q2,Cidade D,Residencial,Pedra Britada,59,26668,137
+2020,Q2,Cidade D,Residencial,Fio Algodão,22,12056,179
+2020,Q2,Cidade D,Residencial,Cimento,74,10952,115
+2020,Q2,Cidade D,Residencial,Tecido,21,14343,188
+2020,Q2,Cidade D,Residencial,Papel,68,23596,184
+2020,Q2,Cidade D,Residencial,Poliéster,52,49556,181
+2020,Q2,Cidade D,Residencial,Couro,30,22170,183
+2020,Q2,Cidade D,Residencial,Areia,12,10740,57
+2020,Q2,Cidade D,Comercial,Barra Metal,17,10013,139
+2020,Q2,Cidade D,Comercial,Madeira,83,80178,83
+2020,Q2,Cidade D,Comercial,Pedra Britada,93,73191,193
+2020,Q2,Cidade D,Comercial,Fio Algodão,56,23128,84
+2020,Q2,Cidade D,Comercial,Cimento,96,44736,184
+2020,Q2,Cidade D,Comercial,Tecido,62,47988,51
+2020,Q2,Cidade D,Comercial,Papel,31,4681,148
+2020,Q2,Cidade D,Comercial,Poliéster,74,30118,136
+2020,Q2,Cidade D,Comercial,Couro,28,22876,99
+2020,Q2,Cidade D,Comercial,Areia,65,22945,115
+2020,Q2,Cidade D,Industrial,Barra Metal,40,5800,131
+2020,Q2,Cidade D,Industrial,Madeira,27,6399,106
+2020,Q2,Cidade D,Industrial,Pedra Britada,46,6532,66
+2020,Q2,Cidade D,Industrial,Fio Algodão,62,29574,75
+2020,Q2,Cidade D,Industrial,Cimento,97,16199,112
+2020,Q2,Cidade D,Industrial,Tecido,99,85140,161
+2020,Q2,Cidade D,Industrial,Papel,87,71949,196
+2020,Q2,Cidade D,Industrial,Poliéster,13,2158,116
+2020,Q2,Cidade D,Industrial,Couro,23,17411,187
+2020,Q2,Cidade D,Industrial,Areia,12,2184,94
+2020,Q2,Cidade E,Residencial,Barra Metal,48,35184,191
+2020,Q2,Cidade E,Residencial,Madeira,82,15826,193
+2020,Q2,Cidade E,Residencial,Pedra Britada,91,82537,188
+2020,Q2,Cidade E,Residencial,Fio Algodão,13,10686,78
+2020,Q2,Cidade E,Residencial,Cimento,43,9503,75
+2020,Q2,Cidade E,Residencial,Tecido,11,9537,175
+2020,Q2,Cidade E,Residencial,Papel,74,49358,68
+2020,Q2,Cidade E,Residencial,Poliéster,78,68016,153
+2020,Q2,Cidade E,Residencial,Couro,89,10858,74
+2020,Q2,Cidade E,Residencial,Areia,64,18496,188
+2020,Q2,Cidade E,Comercial,Barra Metal,87,38106,170
+2020,Q2,Cidade E,Comercial,Madeira,32,14272,52
+2020,Q2,Cidade E,Comercial,Pedra Britada,56,52808,147
+2020,Q2,Cidade E,Comercial,Fio Algodão,86,43688,65
+2020,Q2,Cidade E,Comercial,Cimento,89,32752,109
+2020,Q2,Cidade E,Comercial,Tecido,84,14028,86
+2020,Q2,Cidade E,Comercial,Papel,33,18480,150
+2020,Q2,Cidade E,Comercial,Poliéster,77,26642,159
+2020,Q2,Cidade E,Comercial,Couro,54,24246,107
+2020,Q2,Cidade E,Comercial,Areia,73,41026,168
+2020,Q2,Cidade E,Industrial,Barra Metal,11,3520,165
+2020,Q2,Cidade E,Industrial,Madeira,99,98505,161
+2020,Q2,Cidade E,Industrial,Pedra Britada,24,7992,165
+2020,Q2,Cidade E,Industrial,Fio Algodão,29,5858,199
+2020,Q2,Cidade E,Industrial,Cimento,39,5109,126
+2020,Q2,Cidade E,Industrial,Tecido,22,13772,193
+2020,Q2,Cidade E,Industrial,Papel,31,29977,68
+2020,Q2,Cidade E,Industrial,Poliéster,53,25758,168
+2020,Q2,Cidade E,Industrial,Couro,98,21952,86
+2020,Q2,Cidade E,Industrial,Areia,82,37146,133
+2020,Q3,Cidade A,Residencial,Barra Metal,44,4840,143
+2020,Q3,Cidade A,Residencial,Madeira,49,28910,73
+2020,Q3,Cidade A,Residencial,Pedra Britada,24,10344,85
+2020,Q3,Cidade A,Residencial,Fio Algodão,23,13984,111
+2020,Q3,Cidade A,Residencial,Cimento,49,31850,93
+2020,Q3,Cidade A,Residencial,Tecido,75,54975,81
+2020,Q3,Cidade A,Residencial,Papel,75,37725,173
+2020,Q3,Cidade A,Residencial,Poliéster,57,32262,54
+2020,Q3,Cidade A,Residencial,Couro,81,11340,198
+2020,Q3,Cidade A,Residencial,Areia,81,20088,61
+2020,Q3,Cidade A,Comercial,Barra Metal,91,23387,196
+2020,Q3,Cidade A,Comercial,Madeira,52,10036,100
+2020,Q3,Cidade A,Comercial,Pedra Britada,74,54982,76
+2020,Q3,Cidade A,Comercial,Fio Algodão,69,41952,68
+2020,Q3,Cidade A,Comercial,Cimento,27,14715,193
+2020,Q3,Cidade A,Comercial,Tecido,60,31260,124
+2020,Q3,Cidade A,Comercial,Papel,54,41688,56
+2020,Q3,Cidade A,Comercial,Poliéster,95,94715,119
+2020,Q3,Cidade A,Comercial,Couro,29,23548,157
+2020,Q3,Cidade A,Comercial,Areia,60,36660,81
+2020,Q3,Cidade A,Industrial,Barra Metal,38,13262,62
+2020,Q3,Cidade A,Industrial,Madeira,21,14805,140
+2020,Q3,Cidade A,Industrial,Pedra Britada,53,26765,57
+2020,Q3,Cidade A,Industrial,Fio Algodão,21,16464,159
+2020,Q3,Cidade A,Industrial,Cimento,50,8400,153
+2020,Q3,Cidade A,Industrial,Tecido,99,86229,149
+2020,Q3,Cidade A,Industrial,Papel,51,44625,177
+2020,Q3,Cidade A,Industrial,Poliéster,23,21091,86
+2020,Q3,Cidade A,Industrial,Couro,14,12138,184
+2020,Q3,Cidade A,Industrial,Areia,25,20300,90
+2020,Q3,Cidade B,Residencial,Barra Metal,38,19874,69
+2020,Q3,Cidade B,Residencial,Madeira,61,39528,124
+2020,Q3,Cidade B,Residencial,Pedra Britada,53,39750,120
+2020,Q3,Cidade B,Residencial,Fio Algodão,81,68202,148
+2020,Q3,Cidade B,Residencial,Cimento,16,15616,167
+2020,Q3,Cidade B,Residencial,Tecido,70,13650,133
+2020,Q3,Cidade B,Residencial,Papel,95,24605,162
+2020,Q3,Cidade B,Residencial,Poliéster,25,20475,79
+2020,Q3,Cidade B,Residencial,Couro,43,7525,67
+2020,Q3,Cidade B,Residencial,Areia,10,3250,88
+2020,Q3,Cidade B,Comercial,Barra Metal,28,22064,185
+2020,Q3,Cidade B,Comercial,Madeira,33,27687,172
+2020,Q3,Cidade B,Comercial,Pedra Britada,96,87072,166
+2020,Q3,Cidade B,Comercial,Fio Algodão,100,24000,174
+2020,Q3,Cidade B,Comercial,Cimento,83,61669,153
+2020,Q3,Cidade B,Comercial,Tecido,55,40260,169
+2020,Q3,Cidade B,Comercial,Papel,55,46640,148
+2020,Q3,Cidade B,Comercial,Poliéster,19,3895,89
+2020,Q3,Cidade B,Comercial,Couro,86,61576,95
+2020,Q3,Cidade B,Comercial,Areia,58,33698,62
+2020,Q3,Cidade B,Industrial,Barra Metal,35,31290,155
+2020,Q3,Cidade B,Industrial,Madeira,49,18914,66
+2020,Q3,Cidade B,Industrial,Pedra Britada,80,67440,181
+2020,Q3,Cidade B,Industrial,Fio Algodão,45,7560,93
+2020,Q3,Cidade B,Industrial,Cimento,52,20696,192
+2020,Q3,Cidade B,Industrial,Tecido,10,2290,194
+2020,Q3,Cidade B,Industrial,Papel,21,18963,58
+2020,Q3,Cidade B,Industrial,Poliéster,78,31200,176
+2020,Q3,Cidade B,Industrial,Couro,67,60568,86
+2020,Q3,Cidade B,Industrial,Areia,21,12096,92
+2020,Q3,Cidade C,Residencial,Barra Metal,69,48369,132
+2020,Q3,Cidade C,Residencial,Madeira,10,7740,89
+2020,Q3,Cidade C,Residencial,Pedra Britada,32,20160,53
+2020,Q3,Cidade C,Residencial,Fio Algodão,30,6960,109
+2020,Q3,Cidade C,Residencial,Cimento,45,31950,130
+2020,Q3,Cidade C,Residencial,Tecido,83,8549,172
+2020,Q3,Cidade C,Residencial,Papel,76,67488,93
+2020,Q3,Cidade C,Residencial,Poliéster,60,30480,167
+2020,Q3,Cidade C,Residencial,Couro,85,42925,138
+2020,Q3,Cidade C,Residencial,Areia,32,8768,112
+2020,Q3,Cidade C,Comercial,Barra Metal,73,68985,62
+2020,Q3,Cidade C,Comercial,Madeira,78,34554,127
+2020,Q3,Cidade C,Comercial,Pedra Britada,20,2080,156
+2020,Q3,Cidade C,Comercial,Fio Algodão,40,17880,97
+2020,Q3,Cidade C,Comercial,Cimento,11,5731,63
+2020,Q3,Cidade C,Comercial,Tecido,11,1254,171
+2020,Q3,Cidade C,Comercial,Papel,59,48675,128
+2020,Q3,Cidade C,Comercial,Poliéster,12,9864,171
+2020,Q3,Cidade C,Comercial,Couro,60,36600,195
+2020,Q3,Cidade C,Comercial,Areia,43,25800,96
+2020,Q3,Cidade C,Industrial,Barra Metal,20,15820,190
+2020,Q3,Cidade C,Industrial,Madeira,19,16226,156
+2020,Q3,Cidade C,Industrial,Pedra Britada,30,14490,147
+2020,Q3,Cidade C,Industrial,Fio Algodão,15,5070,95
+2020,Q3,Cidade C,Industrial,Cimento,88,49896,84
+2020,Q3,Cidade C,Industrial,Tecido,92,84732,91
+2020,Q3,Cidade C,Industrial,Papel,90,57150,73
+2020,Q3,Cidade C,Industrial,Poliéster,71,48138,54
+2020,Q3,Cidade C,Industrial,Couro,37,16909,87
+2020,Q3,Cidade C,Industrial,Areia,44,15532,193
+2020,Q3,Cidade D,Residencial,Barra Metal,77,65989,122
+2020,Q3,Cidade D,Residencial,Madeira,51,43860,193
+2020,Q3,Cidade D,Residencial,Pedra Britada,40,7000,147
+2020,Q3,Cidade D,Residencial,Fio Algodão,77,21791,99
+2020,Q3,Cidade D,Residencial,Cimento,22,6446,197
+2020,Q3,Cidade D,Residencial,Tecido,14,1764,125
+2020,Q3,Cidade D,Residencial,Papel,94,58656,93
+2020,Q3,Cidade D,Residencial,Poliéster,21,15603,137
+2020,Q3,Cidade D,Residencial,Couro,16,8464,110
+2020,Q3,Cidade D,Residencial,Areia,67,49513,180
+2020,Q3,Cidade D,Comercial,Barra Metal,54,27702,186
+2020,Q3,Cidade D,Comercial,Madeira,33,19107,161
+2020,Q3,Cidade D,Comercial,Pedra Britada,13,8359,76
+2020,Q3,Cidade D,Comercial,Fio Algodão,29,16124,51
+2020,Q3,Cidade D,Comercial,Cimento,35,27300,183
+2020,Q3,Cidade D,Comercial,Tecido,17,8041,141
+2020,Q3,Cidade D,Comercial,Papel,12,3084,66
+2020,Q3,Cidade D,Comercial,Poliéster,49,36113,137
+2020,Q3,Cidade D,Comercial,Couro,61,23241,125
+2020,Q3,Cidade D,Comercial,Areia,91,21021,166
+2020,Q3,Cidade D,Industrial,Barra Metal,95,56240,118
+2020,Q3,Cidade D,Industrial,Madeira,78,33618,182
+2020,Q3,Cidade D,Industrial,Pedra Britada,59,40356,87
+2020,Q3,Cidade D,Industrial,Fio Algodão,61,56913,60
+2020,Q3,Cidade D,Industrial,Cimento,65,60320,172
+2020,Q3,Cidade D,Industrial,Tecido,18,9774,111
+2020,Q3,Cidade D,Industrial,Papel,84,52584,100
+2020,Q3,Cidade D,Industrial,Poliéster,14,10948,186
+2020,Q3,Cidade D,Industrial,Couro,89,88555,198
+2020,Q3,Cidade D,Industrial,Areia,62,18600,133
+2020,Q3,Cidade E,Residencial,Barra Metal,41,11931,138
+2020,Q3,Cidade E,Residencial,Madeira,73,71248,107
+2020,Q3,Cidade E,Residencial,Pedra Britada,11,7843,200
+2020,Q3,Cidade E,Residencial,Fio Algodão,66,42702,146
+2020,Q3,Cidade E,Residencial,Cimento,94,79054,100
+2020,Q3,Cidade E,Residencial,Tecido,65,26325,102
+2020,Q3,Cidade E,Residencial,Papel,83,56689,65
+2020,Q3,Cidade E,Residencial,Poliéster,33,15114,100
+2020,Q3,Cidade E,Residencial,Couro,23,15640,99
+2020,Q3,Cidade E,Residencial,Areia,31,22320,53
+2020,Q3,Cidade E,Comercial,Barra Metal,82,14104,78
+2020,Q3,Cidade E,Comercial,Madeira,32,25440,94
+2020,Q3,Cidade E,Comercial,Pedra Britada,74,65564,170
+2020,Q3,Cidade E,Comercial,Fio Algodão,91,68432,94
+2020,Q3,Cidade E,Comercial,Cimento,92,17020,175
+2020,Q3,Cidade E,Comercial,Tecido,77,19404,192
+2020,Q3,Cidade E,Comercial,Papel,53,7261,189
+2020,Q3,Cidade E,Comercial,Poliéster,91,77350,149
+2020,Q3,Cidade E,Comercial,Couro,72,7344,197
+2020,Q3,Cidade E,Comercial,Areia,34,8092,194
+2020,Q3,Cidade E,Industrial,Barra Metal,77,60368,123
+2020,Q3,Cidade E,Industrial,Madeira,40,39280,186
+2020,Q3,Cidade E,Industrial,Pedra Britada,47,30879,137
+2020,Q3,Cidade E,Industrial,Fio Algodão,64,15232,146
+2020,Q3,Cidade E,Industrial,Cimento,76,59128,56
+2020,Q3,Cidade E,Industrial,Tecido,31,24304,143
+2020,Q3,Cidade E,Industrial,Papel,36,24084,92
+2020,Q3,Cidade E,Industrial,Poliéster,93,14043,87
+2020,Q3,Cidade E,Industrial,Couro,24,16224,140
+2020,Q3,Cidade E,Industrial,Areia,79,42265,61
+2020,Q4,Cidade A,Residencial,Barra Metal,95,66405,153
+2020,Q4,Cidade A,Residencial,Madeira,83,75945,160
+2020,Q4,Cidade A,Residencial,Pedra Britada,45,22590,114
+2020,Q4,Cidade A,Residencial,Fio Algodão,80,59520,87
+2020,Q4,Cidade A,Residencial,Cimento,25,11800,161
+2020,Q4,Cidade A,Residencial,Tecido,90,59850,120
+2020,Q4,Cidade A,Residencial,Papel,95,9595,143
+2020,Q4,Cidade A,Residencial,Poliéster,91,11921,84
+2020,Q4,Cidade A,Residencial,Couro,81,28350,65
+2020,Q4,Cidade A,Residencial,Areia,19,15542,187
+2020,Q4,Cidade A,Comercial,Barra Metal,59,9322,200
+2020,Q4,Cidade A,Comercial,Madeira,86,51772,192
+2020,Q4,Cidade A,Comercial,Pedra Britada,64,8128,141
+2020,Q4,Cidade A,Comercial,Fio Algodão,78,66846,197
+2020,Q4,Cidade A,Comercial,Cimento,39,14703,158
+2020,Q4,Cidade A,Comercial,Tecido,25,24825,186
+2020,Q4,Cidade A,Comercial,Papel,27,18981,152
+2020,Q4,Cidade A,Comercial,Poliéster,27,21708,166
+2020,Q4,Cidade A,Comercial,Couro,87,22881,90
+2020,Q4,Cidade A,Comercial,Areia,34,4624,73
+2020,Q4,Cidade A,Industrial,Barra Metal,89,10947,51
+2020,Q4,Cidade A,Industrial,Madeira,60,44580,64
+2020,Q4,Cidade A,Industrial,Pedra Britada,22,6490,131
+2020,Q4,Cidade A,Industrial,Fio Algodão,63,35532,104
+2020,Q4,Cidade A,Industrial,Cimento,26,10296,165
+2020,Q4,Cidade A,Industrial,Tecido,64,50240,96
+2020,Q4,Cidade A,Industrial,Papel,20,4220,163
+2020,Q4,Cidade A,Industrial,Poliéster,24,21696,104
+2020,Q4,Cidade A,Industrial,Couro,71,70858,115
+2020,Q4,Cidade A,Industrial,Areia,43,12169,200
+2020,Q4,Cidade B,Residencial,Barra Metal,23,16560,107
+2020,Q4,Cidade B,Residencial,Madeira,76,53732,197
+2020,Q4,Cidade B,Residencial,Pedra Britada,79,39974,163
+2020,Q4,Cidade B,Residencial,Fio Algodão,83,69886,139
+2020,Q4,Cidade B,Residencial,Cimento,10,2640,65
+2020,Q4,Cidade B,Residencial,Tecido,48,18528,64
+2020,Q4,Cidade B,Residencial,Papel,50,31100,148
+2020,Q4,Cidade B,Residencial,Poliéster,47,17672,161
+2020,Q4,Cidade B,Residencial,Couro,67,64320,59
+2020,Q4,Cidade B,Residencial,Areia,64,23360,113
+2020,Q4,Cidade B,Comercial,Barra Metal,100,31300,93
+2020,Q4,Cidade B,Comercial,Madeira,26,6786,194
+2020,Q4,Cidade B,Comercial,Pedra Britada,68,65620,194
+2020,Q4,Cidade B,Comercial,Fio Algodão,37,23643,90
+2020,Q4,Cidade B,Comercial,Cimento,98,43022,186
+2020,Q4,Cidade B,Comercial,Tecido,64,7872,180
+2020,Q4,Cidade B,Comercial,Papel,98,69482,134
+2020,Q4,Cidade B,Comercial,Poliéster,59,41831,174
+2020,Q4,Cidade B,Comercial,Couro,16,10336,105
+2020,Q4,Cidade B,Comercial,Areia,34,18734,158
+2020,Q4,Cidade B,Industrial,Barra Metal,43,21715,100
+2020,Q4,Cidade B,Industrial,Madeira,40,21200,186
+2020,Q4,Cidade B,Industrial,Pedra Britada,24,11592,109
+2020,Q4,Cidade B,Industrial,Fio Algodão,96,59424,176
+2020,Q4,Cidade B,Industrial,Cimento,14,8512,160
+2020,Q4,Cidade B,Industrial,Tecido,93,30876,130
+2020,Q4,Cidade B,Industrial,Papel,52,42484,80
+2020,Q4,Cidade B,Industrial,Poliéster,79,65570,52
+2020,Q4,Cidade B,Industrial,Couro,20,5920,133
+2020,Q4,Cidade B,Industrial,Areia,77,44429,139
+2020,Q4,Cidade C,Residencial,Barra Metal,59,45017,193
+2020,Q4,Cidade C,Residencial,Madeira,20,14760,174
+2020,Q4,Cidade C,Residencial,Pedra Britada,61,60634,182
+2020,Q4,Cidade C,Residencial,Fio Algodão,58,7482,50
+2020,Q4,Cidade C,Residencial,Cimento,40,36920,57
+2020,Q4,Cidade C,Residencial,Tecido,71,70787,76
+2020,Q4,Cidade C,Residencial,Papel,57,35283,70
+2020,Q4,Cidade C,Residencial,Poliéster,18,12474,190
+2020,Q4,Cidade C,Residencial,Couro,32,14880,103
+2020,Q4,Cidade C,Residencial,Areia,99,59301,155
+2020,Q4,Cidade C,Comercial,Barra Metal,53,7579,132
+2020,Q4,Cidade C,Comercial,Madeira,53,20140,83
+2020,Q4,Cidade C,Comercial,Pedra Britada,10,5880,131
+2020,Q4,Cidade C,Comercial,Fio Algodão,100,48800,181
+2020,Q4,Cidade C,Comercial,Cimento,60,14940,186
+2020,Q4,Cidade C,Comercial,Tecido,34,25772,171
+2020,Q4,Cidade C,Comercial,Papel,59,52333,144
+2020,Q4,Cidade C,Comercial,Poliéster,49,48020,110
+2020,Q4,Cidade C,Comercial,Couro,47,46248,168
+2020,Q4,Cidade C,Comercial,Areia,61,16714,119
+2020,Q4,Cidade C,Industrial,Barra Metal,23,21735,168
+2020,Q4,Cidade C,Industrial,Madeira,20,19420,106
+2020,Q4,Cidade C,Industrial,Pedra Britada,19,18354,150
+2020,Q4,Cidade C,Industrial,Fio Algodão,26,21060,79
+2020,Q4,Cidade C,Industrial,Cimento,33,8118,73
+2020,Q4,Cidade C,Industrial,Tecido,52,5512,102
+2020,Q4,Cidade C,Industrial,Papel,69,25875,176
+2020,Q4,Cidade C,Industrial,Poliéster,91,12649,155
+2020,Q4,Cidade C,Industrial,Couro,41,24723,83
+2020,Q4,Cidade C,Industrial,Areia,67,26130,181
+2020,Q4,Cidade D,Residencial,Barra Metal,98,22442,111
+2020,Q4,Cidade D,Residencial,Madeira,83,57685,182
+2020,Q4,Cidade D,Residencial,Pedra Britada,11,4576,85
+2020,Q4,Cidade D,Residencial,Fio Algodão,64,7680,180
+2020,Q4,Cidade D,Residencial,Cimento,92,22908,165
+2020,Q4,Cidade D,Residencial,Tecido,53,38107,167
+2020,Q4,Cidade D,Residencial,Papel,75,43425,118
+2020,Q4,Cidade D,Residencial,Poliéster,17,12563,112
+2020,Q4,Cidade D,Residencial,Couro,38,25840,122
+2020,Q4,Cidade D,Residencial,Areia,43,12728,55
+2020,Q4,Cidade D,Comercial,Barra Metal,57,17955,128
+2020,Q4,Cidade D,Comercial,Madeira,72,56088,68
+2020,Q4,Cidade D,Comercial,Pedra Britada,13,8346,89
+2020,Q4,Cidade D,Comercial,Fio Algodão,28,5712,160
+2020,Q4,Cidade D,Comercial,Cimento,35,22820,105
+2020,Q4,Cidade D,Comercial,Tecido,22,4334,71
+2020,Q4,Cidade D,Comercial,Papel,46,30820,195
+2020,Q4,Cidade D,Comercial,Poliéster,40,22120,190
+2020,Q4,Cidade D,Comercial,Couro,33,13101,156
+2020,Q4,Cidade D,Comercial,Areia,50,16650,138
+2020,Q4,Cidade D,Industrial,Barra Metal,95,59090,159
+2020,Q4,Cidade D,Industrial,Madeira,27,13041,117
+2020,Q4,Cidade D,Industrial,Pedra Britada,32,15168,193
+2020,Q4,Cidade D,Industrial,Fio Algodão,85,12325,80
+2020,Q4,Cidade D,Industrial,Cimento,10,8100,85
+2020,Q4,Cidade D,Industrial,Tecido,76,23028,193
+2020,Q4,Cidade D,Industrial,Papel,88,48664,120
+2020,Q4,Cidade D,Industrial,Poliéster,84,52332,55
+2020,Q4,Cidade D,Industrial,Couro,54,38502,194
+2020,Q4,Cidade D,Industrial,Areia,19,5757,200
+2020,Q4,Cidade E,Residencial,Barra Metal,38,23712,199
+2020,Q4,Cidade E,Residencial,Madeira,17,6290,71
+2020,Q4,Cidade E,Residencial,Pedra Britada,21,19782,143
+2020,Q4,Cidade E,Residencial,Fio Algodão,99,77418,177
+2020,Q4,Cidade E,Residencial,Cimento,63,37737,98
+2020,Q4,Cidade E,Residencial,Tecido,43,29971,86
+2020,Q4,Cidade E,Residencial,Papel,71,24282,113
+2020,Q4,Cidade E,Residencial,Poliéster,14,9800,153
+2020,Q4,Cidade E,Residencial,Couro,12,8568,63
+2020,Q4,Cidade E,Residencial,Areia,30,24810,99
+2020,Q4,Cidade E,Comercial,Barra Metal,34,23732,179
+2020,Q4,Cidade E,Comercial,Madeira,88,63976,120
+2020,Q4,Cidade E,Comercial,Pedra Britada,13,9958,67
+2020,Q4,Cidade E,Comercial,Fio Algodão,46,29670,107
+2020,Q4,Cidade E,Comercial,Cimento,84,63000,72
+2020,Q4,Cidade E,Comercial,Tecido,81,38394,104
+2020,Q4,Cidade E,Comercial,Papel,67,33031,121
+2020,Q4,Cidade E,Comercial,Poliéster,72,15552,55
+2020,Q4,Cidade E,Comercial,Couro,99,77418,161
+2020,Q4,Cidade E,Comercial,Areia,66,11418,99
+2020,Q4,Cidade E,Industrial,Barra Metal,76,34808,146
+2020,Q4,Cidade E,Industrial,Madeira,46,45494,85
+2020,Q4,Cidade E,Industrial,Pedra Britada,53,10017,79
+2020,Q4,Cidade E,Industrial,Fio Algodão,86,64844,184
+2020,Q4,Cidade E,Industrial,Cimento,19,16492,184
+2020,Q4,Cidade E,Industrial,Tecido,74,54168,57
+2020,Q4,Cidade E,Industrial,Papel,79,44161,85
+2020,Q4,Cidade E,Industrial,Poliéster,40,33680,51
+2020,Q4,Cidade E,Industrial,Couro,71,48138,151
+2020,Q4,Cidade E,Industrial,Areia,21,2247,113
+2021,Q1,Cidade A,Residencial,Barra Metal,34,33116,69
+2021,Q1,Cidade A,Residencial,Madeira,46,38824,124
+2021,Q1,Cidade A,Residencial,Pedra Britada,15,6810,55
+2021,Q1,Cidade A,Residencial,Fio Algodão,63,46179,60
+2021,Q1,Cidade A,Residencial,Cimento,76,43700,195
+2021,Q1,Cidade A,Residencial,Tecido,84,13944,104
+2021,Q1,Cidade A,Residencial,Papel,56,17584,54
+2021,Q1,Cidade A,Residencial,Poliéster,81,72738,170
+2021,Q1,Cidade A,Residencial,Couro,14,11116,73
+2021,Q1,Cidade A,Residencial,Areia,54,32130,79
+2021,Q1,Cidade A,Comercial,Barra Metal,81,39204,144
+2021,Q1,Cidade A,Comercial,Madeira,99,96327,157
+2021,Q1,Cidade A,Comercial,Pedra Britada,82,58056,93
+2021,Q1,Cidade A,Comercial,Fio Algodão,12,2376,98
+2021,Q1,Cidade A,Comercial,Cimento,65,19500,55
+2021,Q1,Cidade A,Comercial,Tecido,16,12208,144
+2021,Q1,Cidade A,Comercial,Papel,11,2519,148
+2021,Q1,Cidade A,Comercial,Poliéster,91,88725,161
+2021,Q1,Cidade A,Comercial,Couro,95,11115,103
+2021,Q1,Cidade A,Comercial,Areia,64,41280,73
+2021,Q1,Cidade A,Industrial,Barra Metal,81,38313,106
+2021,Q1,Cidade A,Industrial,Madeira,11,1188,110
+2021,Q1,Cidade A,Industrial,Pedra Britada,24,3792,124
+2021,Q1,Cidade A,Industrial,Fio Algodão,100,13700,131
+2021,Q1,Cidade A,Industrial,Cimento,25,9600,81
+2021,Q1,Cidade A,Industrial,Tecido,21,17367,161
+2021,Q1,Cidade A,Industrial,Papel,69,14559,113
+2021,Q1,Cidade A,Industrial,Poliéster,72,41040,131
+2021,Q1,Cidade A,Industrial,Couro,65,59605,168
+2021,Q1,Cidade A,Industrial,Areia,100,10500,155
+2021,Q1,Cidade B,Residencial,Barra Metal,20,5140,123
+2021,Q1,Cidade B,Residencial,Madeira,69,23529,55
+2021,Q1,Cidade B,Residencial,Pedra Britada,82,19270,82
+2021,Q1,Cidade B,Residencial,Fio Algodão,68,63716,197
+2021,Q1,Cidade B,Residencial,Cimento,14,7266,85
+2021,Q1,Cidade B,Residencial,Tecido,58,14442,120
+2021,Q1,Cidade B,Residencial,Papel,93,67425,171
+2021,Q1,Cidade B,Residencial,Poliéster,11,5467,59
+2021,Q1,Cidade B,Residencial,Couro,77,14630,50
+2021,Q1,Cidade B,Residencial,Areia,83,16019,98
+2021,Q1,Cidade B,Comercial,Barra Metal,49,26656,128
+2021,Q1,Cidade B,Comercial,Madeira,58,26680,191
+2021,Q1,Cidade B,Comercial,Pedra Britada,35,6895,147
+2021,Q1,Cidade B,Comercial,Fio Algodão,22,18128,117
+2021,Q1,Cidade B,Comercial,Cimento,69,17940,85
+2021,Q1,Cidade B,Comercial,Tecido,64,33152,126
+2021,Q1,Cidade B,Comercial,Papel,79,70389,155
+2021,Q1,Cidade B,Comercial,Poliéster,22,18040,168
+2021,Q1,Cidade B,Comercial,Couro,95,45220,132
+2021,Q1,Cidade B,Comercial,Areia,75,54975,166
+2021,Q1,Cidade B,Industrial,Barra Metal,98,67718,83
+2021,Q1,Cidade B,Industrial,Madeira,55,18040,125
+2021,Q1,Cidade B,Industrial,Pedra Britada,86,18662,98
+2021,Q1,Cidade B,Industrial,Fio Algodão,83,36603,81
+2021,Q1,Cidade B,Industrial,Cimento,64,43712,136
+2021,Q1,Cidade B,Industrial,Tecido,98,60956,120
+2021,Q1,Cidade B,Industrial,Papel,95,93860,51
+2021,Q1,Cidade B,Industrial,Poliéster,61,9638,99
+2021,Q1,Cidade B,Industrial,Couro,63,47439,188
+2021,Q1,Cidade B,Industrial,Areia,46,8556,171
+2021,Q1,Cidade C,Residencial,Barra Metal,78,22776,161
+2021,Q1,Cidade C,Residencial,Madeira,89,50552,200
+2021,Q1,Cidade C,Residencial,Pedra Britada,35,22015,61
+2021,Q1,Cidade C,Residencial,Fio Algodão,54,45468,174
+2021,Q1,Cidade C,Residencial,Cimento,64,33408,80
+2021,Q1,Cidade C,Residencial,Tecido,24,21936,127
+2021,Q1,Cidade C,Residencial,Papel,32,17984,175
+2021,Q1,Cidade C,Residencial,Poliéster,71,59853,82
+2021,Q1,Cidade C,Residencial,Couro,14,8778,120
+2021,Q1,Cidade C,Residencial,Areia,26,14040,138
+2021,Q1,Cidade C,Comercial,Barra Metal,78,39936,148
+2021,Q1,Cidade C,Comercial,Madeira,48,16896,182
+2021,Q1,Cidade C,Comercial,Pedra Britada,27,15093,82
+2021,Q1,Cidade C,Comercial,Fio Algodão,92,34316,118
+2021,Q1,Cidade C,Comercial,Cimento,46,8878,81
+2021,Q1,Cidade C,Comercial,Tecido,95,41040,81
+2021,Q1,Cidade C,Comercial,Papel,62,6200,185
+2021,Q1,Cidade C,Comercial,Poliéster,39,28587,103
+2021,Q1,Cidade C,Comercial,Couro,23,16583,107
+2021,Q1,Cidade C,Comercial,Areia,10,8970,143
+2021,Q1,Cidade C,Industrial,Barra Metal,69,68931,118
+2021,Q1,Cidade C,Industrial,Madeira,96,64608,168
+2021,Q1,Cidade C,Industrial,Pedra Britada,42,12558,150
+2021,Q1,Cidade C,Industrial,Fio Algodão,75,71100,187
+2021,Q1,Cidade C,Industrial,Cimento,97,43747,157
+2021,Q1,Cidade C,Industrial,Tecido,69,33258,123
+2021,Q1,Cidade C,Industrial,Papel,90,66870,68
+2021,Q1,Cidade C,Industrial,Poliéster,32,28064,61
+2021,Q1,Cidade C,Industrial,Couro,37,7067,165
+2021,Q1,Cidade C,Industrial,Areia,27,7128,105
+2021,Q1,Cidade D,Residencial,Barra Metal,91,50869,129
+2021,Q1,Cidade D,Residencial,Madeira,49,7448,199
+2021,Q1,Cidade D,Residencial,Pedra Britada,29,23635,92
+2021,Q1,Cidade D,Residencial,Fio Algodão,52,44460,195
+2021,Q1,Cidade D,Residencial,Cimento,100,93900,56
+2021,Q1,Cidade D,Residencial,Tecido,19,7467,141
+2021,Q1,Cidade D,Residencial,Papel,39,22269,78
+2021,Q1,Cidade D,Residencial,Poliéster,34,21862,60
+2021,Q1,Cidade D,Residencial,Couro,78,46488,96
+2021,Q1,Cidade D,Residencial,Areia,91,88725,150
+2021,Q1,Cidade D,Comercial,Barra Metal,93,15996,149
+2021,Q1,Cidade D,Comercial,Madeira,62,38874,64
+2021,Q1,Cidade D,Comercial,Pedra Britada,98,88592,125
+2021,Q1,Cidade D,Comercial,Fio Algodão,52,12064,164
+2021,Q1,Cidade D,Comercial,Cimento,83,59013,145
+2021,Q1,Cidade D,Comercial,Tecido,55,27940,198
+2021,Q1,Cidade D,Comercial,Papel,88,81928,161
+2021,Q1,Cidade D,Comercial,Poliéster,58,30102,109
+2021,Q1,Cidade D,Comercial,Couro,24,18072,189
+2021,Q1,Cidade D,Comercial,Areia,23,19573,113
+2021,Q1,Cidade D,Industrial,Barra Metal,68,26860,68
+2021,Q1,Cidade D,Industrial,Madeira,38,31198,185
+2021,Q1,Cidade D,Industrial,Pedra Britada,22,10670,194
+2021,Q1,Cidade D,Industrial,Fio Algodão,54,47412,115
+2021,Q1,Cidade D,Industrial,Cimento,94,89112,148
+2021,Q1,Cidade D,Industrial,Tecido,99,55440,128
+2021,Q1,Cidade D,Industrial,Papel,47,19975,147
+2021,Q1,Cidade D,Industrial,Poliéster,94,38446,163
+2021,Q1,Cidade D,Industrial,Couro,60,29280,107
+2021,Q1,Cidade D,Industrial,Areia,73,11826,158
+2021,Q1,Cidade E,Residencial,Barra Metal,80,75840,189
+2021,Q1,Cidade E,Residencial,Madeira,35,30135,124
+2021,Q1,Cidade E,Residencial,Pedra Britada,70,26530,55
+2021,Q1,Cidade E,Residencial,Fio Algodão,74,15984,136
+2021,Q1,Cidade E,Residencial,Cimento,20,4300,68
+2021,Q1,Cidade E,Residencial,Tecido,95,12160,72
+2021,Q1,Cidade E,Residencial,Papel,82,58876,195
+2021,Q1,Cidade E,Residencial,Poliéster,94,79618,159
+2021,Q1,Cidade E,Residencial,Couro,92,25944,192
+2021,Q1,Cidade E,Residencial,Areia,33,32241,155
+2021,Q1,Cidade E,Comercial,Barra Metal,61,25315,151
+2021,Q1,Cidade E,Comercial,Madeira,70,31080,135
+2021,Q1,Cidade E,Comercial,Pedra Britada,97,70422,73
+2021,Q1,Cidade E,Comercial,Fio Algodão,80,42320,123
+2021,Q1,Cidade E,Comercial,Cimento,70,46130,148
+2021,Q1,Cidade E,Comercial,Tecido,23,11707,128
+2021,Q1,Cidade E,Comercial,Papel,26,16328,62
+2021,Q1,Cidade E,Comercial,Poliéster,29,11426,171
+2021,Q1,Cidade E,Comercial,Couro,34,22814,66
+2021,Q1,Cidade E,Comercial,Areia,62,29698,132
+2021,Q1,Cidade E,Industrial,Barra Metal,53,9010,173
+2021,Q1,Cidade E,Industrial,Madeira,21,6153,114
+2021,Q1,Cidade E,Industrial,Pedra Britada,13,9438,115
+2021,Q1,Cidade E,Industrial,Fio Algodão,36,22536,51
+2021,Q1,Cidade E,Industrial,Cimento,56,17080,123
+2021,Q1,Cidade E,Industrial,Tecido,17,5474,75
+2021,Q1,Cidade E,Industrial,Papel,10,8720,164
+2021,Q1,Cidade E,Industrial,Poliéster,60,36900,131
+2021,Q1,Cidade E,Industrial,Couro,39,24765,133
+2021,Q1,Cidade E,Industrial,Areia,34,21012,138
+2021,Q2,Cidade A,Residencial,Barra Metal,48,29712,106
+2021,Q2,Cidade A,Residencial,Madeira,44,26752,59
+2021,Q2,Cidade A,Residencial,Pedra Britada,87,10962,200
+2021,Q2,Cidade A,Residencial,Fio Algodão,88,77176,174
+2021,Q2,Cidade A,Residencial,Cimento,22,9482,76
+2021,Q2,Cidade A,Residencial,Tecido,58,34336,69
+2021,Q2,Cidade A,Residencial,Papel,84,57036,85
+2021,Q2,Cidade A,Residencial,Poliéster,86,26058,155
+2021,Q2,Cidade A,Residencial,Couro,43,17888,136
+2021,Q2,Cidade A,Residencial,Areia,13,8814,166
+2021,Q2,Cidade A,Comercial,Barra Metal,72,36432,133
+2021,Q2,Cidade A,Comercial,Madeira,49,29057,103
+2021,Q2,Cidade A,Comercial,Pedra Britada,88,83160,90
+2021,Q2,Cidade A,Comercial,Fio Algodão,100,98400,156
+2021,Q2,Cidade A,Comercial,Cimento,45,6885,71
+2021,Q2,Cidade A,Comercial,Tecido,66,29898,82
+2021,Q2,Cidade A,Comercial,Papel,42,25368,145
+2021,Q2,Cidade A,Comercial,Poliéster,41,13407,94
+2021,Q2,Cidade A,Comercial,Couro,48,16176,80
+2021,Q2,Cidade A,Comercial,Areia,42,39312,146
+2021,Q2,Cidade A,Industrial,Barra Metal,43,7912,53
+2021,Q2,Cidade A,Industrial,Madeira,19,3249,55
+2021,Q2,Cidade A,Industrial,Pedra Britada,24,23544,76
+2021,Q2,Cidade A,Industrial,Fio Algodão,12,9180,139
+2021,Q2,Cidade A,Industrial,Cimento,29,21663,101
+2021,Q2,Cidade A,Industrial,Tecido,86,16254,128
+2021,Q2,Cidade A,Industrial,Papel,32,17888,149
+2021,Q2,Cidade A,Industrial,Poliéster,66,26136,92
+2021,Q2,Cidade A,Industrial,Couro,23,22333,143
+2021,Q2,Cidade A,Industrial,Areia,68,22916,187
+2021,Q2,Cidade B,Residencial,Barra Metal,23,22264,129
+2021,Q2,Cidade B,Residencial,Madeira,29,17139,131
+2021,Q2,Cidade B,Residencial,Pedra Britada,59,58764,66
+2021,Q2,Cidade B,Residencial,Fio Algodão,60,13440,166
+2021,Q2,Cidade B,Residencial,Cimento,56,49952,193
+2021,Q2,Cidade B,Residencial,Tecido,35,10675,50
+2021,Q2,Cidade B,Residencial,Papel,26,2860,139
+2021,Q2,Cidade B,Residencial,Poliéster,45,9855,96
+2021,Q2,Cidade B,Residencial,Couro,57,48678,118
+2021,Q2,Cidade B,Residencial,Areia,100,13000,72
+2021,Q2,Cidade B,Comercial,Barra Metal,100,91300,97
+2021,Q2,Cidade B,Comercial,Madeira,24,8544,122
+2021,Q2,Cidade B,Comercial,Pedra Britada,28,20720,200
+2021,Q2,Cidade B,Comercial,Fio Algodão,50,38050,96
+2021,Q2,Cidade B,Comercial,Cimento,65,46475,93
+2021,Q2,Cidade B,Comercial,Tecido,88,33088,82
+2021,Q2,Cidade B,Comercial,Papel,17,9129,66
+2021,Q2,Cidade B,Comercial,Poliéster,36,17460,176
+2021,Q2,Cidade B,Comercial,Couro,14,13426,139
+2021,Q2,Cidade B,Comercial,Areia,37,18574,92
+2021,Q2,Cidade B,Industrial,Barra Metal,28,11648,65
+2021,Q2,Cidade B,Industrial,Madeira,36,8928,177
+2021,Q2,Cidade B,Industrial,Pedra Britada,90,63090,158
+2021,Q2,Cidade B,Industrial,Fio Algodão,55,45100,110
+2021,Q2,Cidade B,Industrial,Cimento,86,84624,135
+2021,Q2,Cidade B,Industrial,Tecido,98,81928,178
+2021,Q2,Cidade B,Industrial,Papel,26,22906,110
+2021,Q2,Cidade B,Industrial,Poliéster,29,23722,51
+2021,Q2,Cidade B,Industrial,Couro,77,15169,195
+2021,Q2,Cidade B,Industrial,Areia,22,16434,154
+2021,Q2,Cidade C,Residencial,Barra Metal,57,48279,113
+2021,Q2,Cidade C,Residencial,Madeira,21,17619,154
+2021,Q2,Cidade C,Residencial,Pedra Britada,98,18522,96
+2021,Q2,Cidade C,Residencial,Fio Algodão,91,15288,132
+2021,Q2,Cidade C,Residencial,Cimento,37,16391,83
+2021,Q2,Cidade C,Residencial,Tecido,74,73852,93
+2021,Q2,Cidade C,Residencial,Papel,70,27860,147
+2021,Q2,Cidade C,Residencial,Poliéster,12,2916,108
+2021,Q2,Cidade C,Residencial,Couro,74,9324,93
+2021,Q2,Cidade C,Residencial,Areia,44,7612,135
+2021,Q2,Cidade C,Comercial,Barra Metal,66,39336,142
+2021,Q2,Cidade C,Comercial,Madeira,26,22334,182
+2021,Q2,Cidade C,Comercial,Pedra Britada,52,16120,116
+2021,Q2,Cidade C,Comercial,Fio Algodão,98,73108,51
+2021,Q2,Cidade C,Comercial,Cimento,91,49504,99
+2021,Q2,Cidade C,Comercial,Tecido,23,7222,159
+2021,Q2,Cidade C,Comercial,Papel,78,8970,190
+2021,Q2,Cidade C,Comercial,Poliéster,73,34018,93
+2021,Q2,Cidade C,Comercial,Couro,28,16688,126
+2021,Q2,Cidade C,Comercial,Areia,80,56160,175
+2021,Q2,Cidade C,Industrial,Barra Metal,91,78988,99
+2021,Q2,Cidade C,Industrial,Madeira,12,9624,140
+2021,Q2,Cidade C,Industrial,Pedra Britada,72,17856,189
+2021,Q2,Cidade C,Industrial,Fio Algodão,93,16089,50
+2021,Q2,Cidade C,Industrial,Cimento,81,35802,79
+2021,Q2,Cidade C,Industrial,Tecido,62,45942,149
+2021,Q2,Cidade C,Industrial,Papel,67,52193,109
+2021,Q2,Cidade C,Industrial,Poliéster,93,69564,143
+2021,Q2,Cidade C,Industrial,Couro,34,20842,134
+2021,Q2,Cidade C,Industrial,Areia,59,18290,67
+2021,Q2,Cidade D,Residencial,Barra Metal,69,59409,129
+2021,Q2,Cidade D,Residencial,Madeira,27,5670,118
+2021,Q2,Cidade D,Residencial,Pedra Britada,14,5390,199
+2021,Q2,Cidade D,Residencial,Fio Algodão,70,29260,188
+2021,Q2,Cidade D,Residencial,Cimento,51,47583,141
+2021,Q2,Cidade D,Residencial,Tecido,49,39151,75
+2021,Q2,Cidade D,Residencial,Papel,90,88830,200
+2021,Q2,Cidade D,Residencial,Poliéster,16,12368,129
+2021,Q2,Cidade D,Residencial,Couro,34,25568,197
+2021,Q2,Cidade D,Residencial,Areia,42,28434,112
+2021,Q2,Cidade D,Comercial,Barra Metal,37,28712,133
+2021,Q2,Cidade D,Comercial,Madeira,96,68256,73
+2021,Q2,Cidade D,Comercial,Pedra Britada,44,26532,97
+2021,Q2,Cidade D,Comercial,Fio Algodão,63,13041,153
+2021,Q2,Cidade D,Comercial,Cimento,58,52548,83
+2021,Q2,Cidade D,Comercial,Tecido,27,12771,99
+2021,Q2,Cidade D,Comercial,Papel,47,20586,57
+2021,Q2,Cidade D,Comercial,Poliéster,11,9185,165
+2021,Q2,Cidade D,Comercial,Couro,46,4600,136
+2021,Q2,Cidade D,Comercial,Areia,57,15390,170
+2021,Q2,Cidade D,Industrial,Barra Metal,72,54504,172
+2021,Q2,Cidade D,Industrial,Madeira,38,18658,112
+2021,Q2,Cidade D,Industrial,Pedra Britada,76,30096,124
+2021,Q2,Cidade D,Industrial,Fio Algodão,36,20916,129
+2021,Q2,Cidade D,Industrial,Cimento,77,48433,99
+2021,Q2,Cidade D,Industrial,Tecido,92,79396,97
+2021,Q2,Cidade D,Industrial,Papel,16,3248,153
+2021,Q2,Cidade D,Industrial,Poliéster,96,94656,191
+2021,Q2,Cidade D,Industrial,Couro,91,83356,53
+2021,Q2,Cidade D,Industrial,Areia,75,30000,92
+2021,Q2,Cidade E,Residencial,Barra Metal,61,36417,86
+2021,Q2,Cidade E,Residencial,Madeira,55,54890,176
+2021,Q2,Cidade E,Residencial,Pedra Britada,19,9709,135
+2021,Q2,Cidade E,Residencial,Fio Algodão,73,12702,186
+2021,Q2,Cidade E,Residencial,Cimento,92,85468,156
+2021,Q2,Cidade E,Residencial,Tecido,75,25200,147
+2021,Q2,Cidade E,Residencial,Papel,68,36516,171
+2021,Q2,Cidade E,Residencial,Poliéster,79,22594,89
+2021,Q2,Cidade E,Residencial,Couro,64,15808,186
+2021,Q2,Cidade E,Residencial,Areia,29,23780,167
+2021,Q2,Cidade E,Comercial,Barra Metal,14,11998,120
+2021,Q2,Cidade E,Comercial,Madeira,84,38136,106
+2021,Q2,Cidade E,Comercial,Pedra Britada,96,64320,68
+2021,Q2,Cidade E,Comercial,Fio Algodão,63,20160,85
+2021,Q2,Cidade E,Comercial,Cimento,45,37800,153
+2021,Q2,Cidade E,Comercial,Tecido,75,48000,139
+2021,Q2,Cidade E,Comercial,Papel,41,14473,90
+2021,Q2,Cidade E,Comercial,Poliéster,84,54432,71
+2021,Q2,Cidade E,Comercial,Couro,34,30702,147
+2021,Q2,Cidade E,Comercial,Areia,81,79947,136
+2021,Q2,Cidade E,Industrial,Barra Metal,97,57133,58
+2021,Q2,Cidade E,Industrial,Madeira,100,99500,124
+2021,Q2,Cidade E,Industrial,Pedra Britada,66,33066,132
+2021,Q2,Cidade E,Industrial,Fio Algodão,47,46107,197
+2021,Q2,Cidade E,Industrial,Cimento,78,73086,178
+2021,Q2,Cidade E,Industrial,Tecido,33,27324,133
+2021,Q2,Cidade E,Industrial,Papel,67,33969,115
+2021,Q2,Cidade E,Industrial,Poliéster,30,8520,167
+2021,Q2,Cidade E,Industrial,Couro,72,26928,114
+2021,Q2,Cidade E,Industrial,Areia,76,65892,139
+2021,Q3,Cidade A,Residencial,Barra Metal,26,3536,146
+2021,Q3,Cidade A,Residencial,Madeira,53,51834,118
+2021,Q3,Cidade A,Residencial,Pedra Britada,99,48312,147
+2021,Q3,Cidade A,Residencial,Fio Algodão,67,35644,149
+2021,Q3,Cidade A,Residencial,Cimento,61,43432,180
+2021,Q3,Cidade A,Residencial,Tecido,91,59059,128
+2021,Q3,Cidade A,Residencial,Papel,75,65325,153
+2021,Q3,Cidade A,Residencial,Poliéster,83,58681,131
+2021,Q3,Cidade A,Residencial,Couro,48,22080,181
+2021,Q3,Cidade A,Residencial,Areia,97,25608,78
+2021,Q3,Cidade A,Comercial,Barra Metal,77,43505,94
+2021,Q3,Cidade A,Comercial,Madeira,26,19162,146
+2021,Q3,Cidade A,Comercial,Pedra Britada,33,7260,66
+2021,Q3,Cidade A,Comercial,Fio Algodão,50,29550,131
+2021,Q3,Cidade A,Comercial,Cimento,42,18774,172
+2021,Q3,Cidade A,Comercial,Tecido,26,12688,100
+2021,Q3,Cidade A,Comercial,Papel,65,55315,61
+2021,Q3,Cidade A,Comercial,Poliéster,24,10008,138
+2021,Q3,Cidade A,Comercial,Couro,82,71258,167
+2021,Q3,Cidade A,Comercial,Areia,12,5916,164
+2021,Q3,Cidade A,Industrial,Barra Metal,42,35574,89
+2021,Q3,Cidade A,Industrial,Madeira,80,76000,73
+2021,Q3,Cidade A,Industrial,Pedra Britada,74,20202,195
+2021,Q3,Cidade A,Industrial,Fio Algodão,54,26514,180
+2021,Q3,Cidade A,Industrial,Cimento,61,29707,95
+2021,Q3,Cidade A,Industrial,Tecido,54,51138,51
+2021,Q3,Cidade A,Industrial,Papel,29,8613,162
+2021,Q3,Cidade A,Industrial,Poliéster,64,10432,55
+2021,Q3,Cidade A,Industrial,Couro,55,49390,134
+2021,Q3,Cidade A,Industrial,Areia,10,8760,85
+2021,Q3,Cidade B,Residencial,Barra Metal,17,9945,129
+2021,Q3,Cidade B,Residencial,Madeira,25,22800,51
+2021,Q3,Cidade B,Residencial,Pedra Britada,23,16836,72
+2021,Q3,Cidade B,Residencial,Fio Algodão,97,89531,118
+2021,Q3,Cidade B,Residencial,Cimento,41,23206,66
+2021,Q3,Cidade B,Residencial,Tecido,36,32112,78
+2021,Q3,Cidade B,Residencial,Papel,89,33820,67
+2021,Q3,Cidade B,Residencial,Poliéster,84,37968,137
+2021,Q3,Cidade B,Residencial,Couro,12,4788,132
+2021,Q3,Cidade B,Residencial,Areia,21,13587,177
+2021,Q3,Cidade B,Comercial,Barra Metal,74,14356,111
+2021,Q3,Cidade B,Comercial,Madeira,20,19260,75
+2021,Q3,Cidade B,Comercial,Pedra Britada,86,76110,108
+2021,Q3,Cidade B,Comercial,Fio Algodão,88,53064,83
+2021,Q3,Cidade B,Comercial,Cimento,62,23188,172
+2021,Q3,Cidade B,Comercial,Tecido,36,14616,180
+2021,Q3,Cidade B,Comercial,Papel,28,18816,131
+2021,Q3,Cidade B,Comercial,Poliéster,70,53830,66
+2021,Q3,Cidade B,Comercial,Couro,67,14874,124
+2021,Q3,Cidade B,Comercial,Areia,27,12960,78
+2021,Q3,Cidade B,Industrial,Barra Metal,80,18080,200
+2021,Q3,Cidade B,Industrial,Madeira,49,38122,167
+2021,Q3,Cidade B,Industrial,Pedra Britada,21,11151,50
+2021,Q3,Cidade B,Industrial,Fio Algodão,39,26754,138
+2021,Q3,Cidade B,Industrial,Cimento,65,23985,139
+2021,Q3,Cidade B,Industrial,Tecido,16,6416,175
+2021,Q3,Cidade B,Industrial,Papel,68,67456,190
+2021,Q3,Cidade B,Industrial,Poliéster,93,27156,180
+2021,Q3,Cidade B,Industrial,Couro,93,49848,156
+2021,Q3,Cidade B,Industrial,Areia,29,12093,102
+2021,Q3,Cidade C,Residencial,Barra Metal,39,18720,169
+2021,Q3,Cidade C,Residencial,Madeira,26,7228,87
+2021,Q3,Cidade C,Residencial,Pedra Britada,29,27028,181
+2021,Q3,Cidade C,Residencial,Fio Algodão,23,7659,80
+2021,Q3,Cidade C,Residencial,Cimento,79,38710,102
+2021,Q3,Cidade C,Residencial,Tecido,53,47965,159
+2021,Q3,Cidade C,Residencial,Papel,61,50569,93
+2021,Q3,Cidade C,Residencial,Poliéster,31,14818,150
+2021,Q3,Cidade C,Residencial,Couro,39,29991,159
+2021,Q3,Cidade C,Residencial,Areia,16,9664,107
+2021,Q3,Cidade C,Comercial,Barra Metal,15,9495,200
+2021,Q3,Cidade C,Comercial,Madeira,81,10044,134
+2021,Q3,Cidade C,Comercial,Pedra Britada,74,24420,54
+2021,Q3,Cidade C,Comercial,Fio Algodão,11,2332,61
+2021,Q3,Cidade C,Comercial,Cimento,76,8208,128
+2021,Q3,Cidade C,Comercial,Tecido,23,21712,101
+2021,Q3,Cidade C,Comercial,Papel,39,33501,54
+2021,Q3,Cidade C,Comercial,Poliéster,42,41076,130
+2021,Q3,Cidade C,Comercial,Couro,27,4401,98
+2021,Q3,Cidade C,Comercial,Areia,58,38744,70
+2021,Q3,Cidade C,Industrial,Barra Metal,96,28032,134
+2021,Q3,Cidade C,Industrial,Madeira,68,11764,88
+2021,Q3,Cidade C,Industrial,Pedra Britada,70,26950,67
+2021,Q3,Cidade C,Industrial,Fio Algodão,64,44160,151
+2021,Q3,Cidade C,Industrial,Cimento,33,31515,181
+2021,Q3,Cidade C,Industrial,Tecido,27,14175,93
+2021,Q3,Cidade C,Industrial,Papel,20,17860,53
+2021,Q3,Cidade C,Industrial,Poliéster,38,34846,179
+2021,Q3,Cidade C,Industrial,Couro,98,83692,73
+2021,Q3,Cidade C,Industrial,Areia,65,33735,140
+2021,Q3,Cidade D,Residencial,Barra Metal,21,2940,52
+2021,Q3,Cidade D,Residencial,Madeira,20,9520,67
+2021,Q3,Cidade D,Residencial,Pedra Britada,56,55832,146
+2021,Q3,Cidade D,Residencial,Fio Algodão,48,36192,103
+2021,Q3,Cidade D,Residencial,Cimento,76,57456,111
+2021,Q3,Cidade D,Residencial,Tecido,30,3690,134
+2021,Q3,Cidade D,Residencial,Papel,100,90200,112
+2021,Q3,Cidade D,Residencial,Poliéster,81,13284,61
+2021,Q3,Cidade D,Residencial,Couro,94,55272,124
+2021,Q3,Cidade D,Residencial,Areia,73,56575,88
+2021,Q3,Cidade D,Comercial,Barra Metal,28,9772,125
+2021,Q3,Cidade D,Comercial,Madeira,40,11480,179
+2021,Q3,Cidade D,Comercial,Pedra Britada,90,39420,58
+2021,Q3,Cidade D,Comercial,Fio Algodão,86,54352,183
+2021,Q3,Cidade D,Comercial,Cimento,29,17864,61
+2021,Q3,Cidade D,Comercial,Tecido,40,14840,126
+2021,Q3,Cidade D,Comercial,Papel,94,40984,198
+2021,Q3,Cidade D,Comercial,Poliéster,13,2457,195
+2021,Q3,Cidade D,Comercial,Couro,92,69000,127
+2021,Q3,Cidade D,Comercial,Areia,88,67144,198
+2021,Q3,Cidade D,Industrial,Barra Metal,22,6776,172
+2021,Q3,Cidade D,Industrial,Madeira,51,25755,109
+2021,Q3,Cidade D,Industrial,Pedra Britada,96,84096,164
+2021,Q3,Cidade D,Industrial,Fio Algodão,61,49349,184
+2021,Q3,Cidade D,Industrial,Cimento,74,42846,180
+2021,Q3,Cidade D,Industrial,Tecido,19,9614,115
+2021,Q3,Cidade D,Industrial,Papel,14,10808,65
+2021,Q3,Cidade D,Industrial,Poliéster,81,30699,183
+2021,Q3,Cidade D,Industrial,Couro,96,62592,153
+2021,Q3,Cidade D,Industrial,Areia,93,60171,109
+2021,Q3,Cidade E,Residencial,Barra Metal,20,7460,55
+2021,Q3,Cidade E,Residencial,Madeira,45,6435,131
+2021,Q3,Cidade E,Residencial,Pedra Britada,84,46368,66
+2021,Q3,Cidade E,Residencial,Fio Algodão,49,40474,75
+2021,Q3,Cidade E,Residencial,Cimento,71,51830,78
+2021,Q3,Cidade E,Residencial,Tecido,45,14940,192
+2021,Q3,Cidade E,Residencial,Papel,43,39345,119
+2021,Q3,Cidade E,Residencial,Poliéster,48,8016,178
+2021,Q3,Cidade E,Residencial,Couro,63,45108,159
+2021,Q3,Cidade E,Residencial,Areia,54,39798,120
+2021,Q3,Cidade E,Comercial,Barra Metal,87,12702,56
+2021,Q3,Cidade E,Comercial,Madeira,46,22862,128
+2021,Q3,Cidade E,Comercial,Pedra Britada,61,30195,59
+2021,Q3,Cidade E,Comercial,Fio Algodão,75,59100,164
+2021,Q3,Cidade E,Comercial,Cimento,40,8280,79
+2021,Q3,Cidade E,Comercial,Tecido,15,4530,107
+2021,Q3,Cidade E,Comercial,Papel,79,53562,51
+2021,Q3,Cidade E,Comercial,Poliéster,36,6264,195
+2021,Q3,Cidade E,Comercial,Couro,60,27120,183
+2021,Q3,Cidade E,Comercial,Areia,95,65835,179
+2021,Q3,Cidade E,Industrial,Barra Metal,57,10488,114
+2021,Q3,Cidade E,Industrial,Madeira,14,10080,121
+2021,Q3,Cidade E,Industrial,Pedra Britada,12,3348,145
+2021,Q3,Cidade E,Industrial,Fio Algodão,45,37845,60
+2021,Q3,Cidade E,Industrial,Cimento,21,5271,97
+2021,Q3,Cidade E,Industrial,Tecido,63,36288,96
+2021,Q3,Cidade E,Industrial,Papel,40,5440,118
+2021,Q3,Cidade E,Industrial,Poliéster,24,6816,138
+2021,Q3,Cidade E,Industrial,Couro,88,46552,180
+2021,Q3,Cidade E,Industrial,Areia,75,12075,135
+2021,Q4,Cidade A,Residencial,Barra Metal,48,45792,75
+2021,Q4,Cidade A,Residencial,Madeira,58,46516,80
+2021,Q4,Cidade A,Residencial,Pedra Britada,71,24495,134
+2021,Q4,Cidade A,Residencial,Fio Algodão,52,28236,190
+2021,Q4,Cidade A,Residencial,Cimento,78,12480,58
+2021,Q4,Cidade A,Residencial,Tecido,42,8862,151
+2021,Q4,Cidade A,Residencial,Papel,65,22490,62
+2021,Q4,Cidade A,Residencial,Poliéster,58,50866,176
+2021,Q4,Cidade A,Residencial,Couro,47,39433,125
+2021,Q4,Cidade A,Residencial,Areia,78,26208,141
+2021,Q4,Cidade A,Comercial,Barra Metal,73,60809,175
+2021,Q4,Cidade A,Comercial,Madeira,63,37737,141
+2021,Q4,Cidade A,Comercial,Pedra Britada,34,8194,151
+2021,Q4,Cidade A,Comercial,Fio Algodão,58,26854,198
+2021,Q4,Cidade A,Comercial,Cimento,59,16402,150
+2021,Q4,Cidade A,Comercial,Tecido,27,23139,89
+2021,Q4,Cidade A,Comercial,Papel,98,90356,71
+2021,Q4,Cidade A,Comercial,Poliéster,22,5346,56
+2021,Q4,Cidade A,Comercial,Couro,28,18956,186
+2021,Q4,Cidade A,Comercial,Areia,97,65960,129
+2021,Q4,Cidade A,Industrial,Barra Metal,55,32120,110
+2021,Q4,Cidade A,Industrial,Madeira,49,30282,152
+2021,Q4,Cidade A,Industrial,Pedra Britada,39,35607,187
+2021,Q4,Cidade A,Industrial,Fio Algodão,87,42456,190
+2021,Q4,Cidade A,Industrial,Cimento,83,33864,120
+2021,Q4,Cidade A,Industrial,Tecido,32,12736,51
+2021,Q4,Cidade A,Industrial,Papel,59,24131,174
+2021,Q4,Cidade A,Industrial,Poliéster,92,15456,140
+2021,Q4,Cidade A,Industrial,Couro,15,2955,92
+2021,Q4,Cidade A,Industrial,Areia,96,90240,110
+2021,Q4,Cidade B,Residencial,Barra Metal,40,21240,109
+2021,Q4,Cidade B,Residencial,Madeira,42,33852,173
+2021,Q4,Cidade B,Residencial,Pedra Britada,38,21204,52
+2021,Q4,Cidade B,Residencial,Fio Algodão,81,72576,185
+2021,Q4,Cidade B,Residencial,Cimento,43,26660,71
+2021,Q4,Cidade B,Residencial,Tecido,37,26973,98
+2021,Q4,Cidade B,Residencial,Papel,43,23994,78
+2021,Q4,Cidade B,Residencial,Poliéster,94,30644,122
+2021,Q4,Cidade B,Residencial,Couro,62,30504,148
+2021,Q4,Cidade B,Residencial,Areia,25,13000,139
+2021,Q4,Cidade B,Comercial,Barra Metal,64,32064,76
+2021,Q4,Cidade B,Comercial,Madeira,78,66534,65
+2021,Q4,Cidade B,Comercial,Pedra Britada,46,39882,115
+2021,Q4,Cidade B,Comercial,Fio Algodão,24,7680,194
+2021,Q4,Cidade B,Comercial,Cimento,58,16646,181
+2021,Q4,Cidade B,Comercial,Tecido,60,56460,54
+2021,Q4,Cidade B,Comercial,Papel,36,24624,168
+2021,Q4,Cidade B,Comercial,Poliéster,65,27950,97
+2021,Q4,Cidade B,Comercial,Couro,47,15980,125
+2021,Q4,Cidade B,Comercial,Areia,41,5863,59
+2021,Q4,Cidade B,Industrial,Barra Metal,72,9144,129
+2021,Q4,Cidade B,Industrial,Madeira,12,3516,105
+2021,Q4,Cidade B,Industrial,Pedra Britada,39,20943,131
+2021,Q4,Cidade B,Industrial,Fio Algodão,48,46560,191
+2021,Q4,Cidade B,Industrial,Cimento,24,16440,191
+2021,Q4,Cidade B,Industrial,Tecido,65,22620,124
+2021,Q4,Cidade B,Industrial,Papel,97,53253,120
+2021,Q4,Cidade B,Industrial,Poliéster,91,34216,199
+2021,Q4,Cidade B,Industrial,Couro,10,4590,111
+2021,Q4,Cidade B,Industrial,Areia,53,34079,103
+2021,Q4,Cidade C,Residencial,Barra Metal,59,34102,136
+2021,Q4,Cidade C,Residencial,Madeira,48,29136,52
+2021,Q4,Cidade C,Residencial,Pedra Britada,90,25020,95
+2021,Q4,Cidade C,Residencial,Fio Algodão,89,38359,128
+2021,Q4,Cidade C,Residencial,Cimento,55,34760,122
+2021,Q4,Cidade C,Residencial,Tecido,92,41032,51
+2021,Q4,Cidade C,Residencial,Papel,86,78948,179
+2021,Q4,Cidade C,Residencial,Poliéster,10,7620,73
+2021,Q4,Cidade C,Residencial,Couro,54,27486,119
+2021,Q4,Cidade C,Residencial,Areia,13,7930,175
+2021,Q4,Cidade C,Comercial,Barra Metal,90,9180,120
+2021,Q4,Cidade C,Comercial,Madeira,83,36686,78
+2021,Q4,Cidade C,Comercial,Pedra Britada,18,4536,77
+2021,Q4,Cidade C,Comercial,Fio Algodão,43,38313,198
+2021,Q4,Cidade C,Comercial,Cimento,86,64500,87
+2021,Q4,Cidade C,Comercial,Tecido,41,6068,52
+2021,Q4,Cidade C,Comercial,Papel,31,16771,200
+2021,Q4,Cidade C,Comercial,Poliéster,77,75614,67
+2021,Q4,Cidade C,Comercial,Couro,88,16104,65
+2021,Q4,Cidade C,Comercial,Areia,77,42966,125
+2021,Q4,Cidade C,Industrial,Barra Metal,85,49980,140
+2021,Q4,Cidade C,Industrial,Madeira,65,63635,88
+2021,Q4,Cidade C,Industrial,Pedra Britada,30,13560,155
+2021,Q4,Cidade C,Industrial,Fio Algodão,26,17784,120
+2021,Q4,Cidade C,Industrial,Cimento,95,31540,83
+2021,Q4,Cidade C,Industrial,Tecido,61,26108,132
+2021,Q4,Cidade C,Industrial,Papel,75,43350,60
+2021,Q4,Cidade C,Industrial,Poliéster,20,4500,51
+2021,Q4,Cidade C,Industrial,Couro,99,82170,78
+2021,Q4,Cidade C,Industrial,Areia,85,18530,126
+2021,Q4,Cidade D,Residencial,Barra Metal,50,13150,171
+2021,Q4,Cidade D,Residencial,Madeira,37,9731,110
+2021,Q4,Cidade D,Residencial,Pedra Britada,44,43164,160
+2021,Q4,Cidade D,Residencial,Fio Algodão,67,60501,101
+2021,Q4,Cidade D,Residencial,Cimento,68,47804,141
+2021,Q4,Cidade D,Residencial,Tecido,51,48858,89
+2021,Q4,Cidade D,Residencial,Papel,97,88464,136
+2021,Q4,Cidade D,Residencial,Poliéster,46,44436,60
+2021,Q4,Cidade D,Residencial,Couro,47,19881,67
+2021,Q4,Cidade D,Residencial,Areia,61,6832,113
+2021,Q4,Cidade D,Comercial,Barra Metal,60,54780,82
+2021,Q4,Cidade D,Comercial,Madeira,100,59700,123
+2021,Q4,Cidade D,Comercial,Pedra Britada,72,23112,88
+2021,Q4,Cidade D,Comercial,Fio Algodão,92,79764,65
+2021,Q4,Cidade D,Comercial,Cimento,12,5760,127
+2021,Q4,Cidade D,Comercial,Tecido,68,51884,104
+2021,Q4,Cidade D,Comercial,Papel,53,30316,147
+2021,Q4,Cidade D,Comercial,Poliéster,100,75000,68
+2021,Q4,Cidade D,Comercial,Couro,46,21114,62
+2021,Q4,Cidade D,Comercial,Areia,45,36450,136
+2021,Q4,Cidade D,Industrial,Barra Metal,20,11620,104
+2021,Q4,Cidade D,Industrial,Madeira,62,53630,137
+2021,Q4,Cidade D,Industrial,Pedra Britada,22,19360,93
+2021,Q4,Cidade D,Industrial,Fio Algodão,12,2244,155
+2021,Q4,Cidade D,Industrial,Cimento,84,28140,85
+2021,Q4,Cidade D,Industrial,Tecido,58,14964,200
+2021,Q4,Cidade D,Industrial,Papel,54,35370,56
+2021,Q4,Cidade D,Industrial,Poliéster,76,73036,136
+2021,Q4,Cidade D,Industrial,Couro,78,8892,138
+2021,Q4,Cidade D,Industrial,Areia,26,15574,71
+2021,Q4,Cidade E,Residencial,Barra Metal,56,53312,163
+2021,Q4,Cidade E,Residencial,Madeira,72,13824,65
+2021,Q4,Cidade E,Residencial,Pedra Britada,46,15502,145
+2021,Q4,Cidade E,Residencial,Fio Algodão,44,41184,158
+2021,Q4,Cidade E,Residencial,Cimento,13,7293,179
+2021,Q4,Cidade E,Residencial,Tecido,80,75360,169
+2021,Q4,Cidade E,Residencial,Papel,97,19982,71
+2021,Q4,Cidade E,Residencial,Poliéster,57,39501,146
+2021,Q4,Cidade E,Residencial,Couro,63,29358,132
+2021,Q4,Cidade E,Residencial,Areia,95,11970,187
+2021,Q4,Cidade E,Comercial,Barra Metal,40,23160,105
+2021,Q4,Cidade E,Comercial,Madeira,94,25756,175
+2021,Q4,Cidade E,Comercial,Pedra Britada,18,16452,82
+2021,Q4,Cidade E,Comercial,Fio Algodão,48,7392,159
+2021,Q4,Cidade E,Comercial,Cimento,77,50589,139
+2021,Q4,Cidade E,Comercial,Tecido,26,12610,97
+2021,Q4,Cidade E,Comercial,Papel,73,21243,185
+2021,Q4,Cidade E,Comercial,Poliéster,49,45080,142
+2021,Q4,Cidade E,Comercial,Couro,32,13728,145
+2021,Q4,Cidade E,Comercial,Areia,25,15925,97
+2021,Q4,Cidade E,Industrial,Barra Metal,71,7739,107
+2021,Q4,Cidade E,Industrial,Madeira,15,10560,60
+2021,Q4,Cidade E,Industrial,Pedra Britada,40,37720,121
+2021,Q4,Cidade E,Industrial,Fio Algodão,30,19860,121
+2021,Q4,Cidade E,Industrial,Cimento,80,50000,110
+2021,Q4,Cidade E,Industrial,Tecido,18,16992,56
+2021,Q4,Cidade E,Industrial,Papel,97,64699,188
+2021,Q4,Cidade E,Industrial,Poliéster,30,21840,109
+2021,Q4,Cidade E,Industrial,Couro,23,19136,84
+2021,Q4,Cidade E,Industrial,Areia,96,58368,162
+2022,Q1,Cidade A,Residencial,Barra Metal,56,43512,151
+2022,Q1,Cidade A,Residencial,Madeira,86,48074,76
+2022,Q1,Cidade A,Residencial,Pedra Britada,26,19370,173
+2022,Q1,Cidade A,Residencial,Fio Algodão,54,25110,155
+2022,Q1,Cidade A,Residencial,Cimento,72,67896,143
+2022,Q1,Cidade A,Residencial,Tecido,74,16354,176
+2022,Q1,Cidade A,Residencial,Papel,26,25454,160
+2022,Q1,Cidade A,Residencial,Poliéster,64,56384,90
+2022,Q1,Cidade A,Residencial,Couro,84,10836,198
+2022,Q1,Cidade A,Residencial,Areia,96,36096,185
+2022,Q1,Cidade A,Comercial,Barra Metal,91,72163,193
+2022,Q1,Cidade A,Comercial,Madeira,48,5952,117
+2022,Q1,Cidade A,Comercial,Pedra Britada,21,12558,194
+2022,Q1,Cidade A,Comercial,Fio Algodão,48,17280,148
+2022,Q1,Cidade A,Comercial,Cimento,19,13186,51
+2022,Q1,Cidade A,Comercial,Tecido,95,20235,160
+2022,Q1,Cidade A,Comercial,Papel,77,10626,192
+2022,Q1,Cidade A,Comercial,Poliéster,69,62514,82
+2022,Q1,Cidade A,Comercial,Couro,11,2090,168
+2022,Q1,Cidade A,Comercial,Areia,23,6900,62
+2022,Q1,Cidade A,Industrial,Barra Metal,91,48776,79
+2022,Q1,Cidade A,Industrial,Madeira,55,45925,102
+2022,Q1,Cidade A,Industrial,Pedra Britada,85,61455,85
+2022,Q1,Cidade A,Industrial,Fio Algodão,20,7920,111
+2022,Q1,Cidade A,Industrial,Cimento,29,27173,84
+2022,Q1,Cidade A,Industrial,Tecido,28,18256,173
+2022,Q1,Cidade A,Industrial,Papel,44,43384,111
+2022,Q1,Cidade A,Industrial,Poliéster,56,53760,167
+2022,Q1,Cidade A,Industrial,Couro,28,7952,125
+2022,Q1,Cidade A,Industrial,Areia,13,12012,56
+2022,Q1,Cidade B,Residencial,Barra Metal,54,34128,112
+2022,Q1,Cidade B,Residencial,Madeira,30,3060,106
+2022,Q1,Cidade B,Residencial,Pedra Britada,15,1635,195
+2022,Q1,Cidade B,Residencial,Fio Algodão,33,11055,190
+2022,Q1,Cidade B,Residencial,Cimento,100,30300,138
+2022,Q1,Cidade B,Residencial,Tecido,71,14200,166
+2022,Q1,Cidade B,Residencial,Papel,61,53802,180
+2022,Q1,Cidade B,Residencial,Poliéster,88,30360,181
+2022,Q1,Cidade B,Residencial,Couro,16,6576,121
+2022,Q1,Cidade B,Residencial,Areia,52,46956,59
+2022,Q1,Cidade B,Comercial,Barra Metal,22,4576,100
+2022,Q1,Cidade B,Comercial,Madeira,81,9720,158
+2022,Q1,Cidade B,Comercial,Pedra Britada,14,2324,96
+2022,Q1,Cidade B,Comercial,Fio Algodão,66,49170,183
+2022,Q1,Cidade B,Comercial,Cimento,14,7238,60
+2022,Q1,Cidade B,Comercial,Tecido,81,54108,158
+2022,Q1,Cidade B,Comercial,Papel,43,21586,136
+2022,Q1,Cidade B,Comercial,Poliéster,89,12282,83
+2022,Q1,Cidade B,Comercial,Couro,47,32195,194
+2022,Q1,Cidade B,Comercial,Areia,70,60340,154
+2022,Q1,Cidade B,Industrial,Barra Metal,80,19280,124
+2022,Q1,Cidade B,Industrial,Madeira,90,68670,180
+2022,Q1,Cidade B,Industrial,Pedra Britada,47,26508,82
+2022,Q1,Cidade B,Industrial,Fio Algodão,69,23253,74
+2022,Q1,Cidade B,Industrial,Cimento,25,15475,137
+2022,Q1,Cidade B,Industrial,Tecido,98,50568,96
+2022,Q1,Cidade B,Industrial,Papel,99,30492,167
+2022,Q1,Cidade B,Industrial,Poliéster,34,22950,127
+2022,Q1,Cidade B,Industrial,Couro,72,60048,50
+2022,Q1,Cidade B,Industrial,Areia,44,26004,144
+2022,Q1,Cidade C,Residencial,Barra Metal,34,4454,74
+2022,Q1,Cidade C,Residencial,Madeira,13,7878,56
+2022,Q1,Cidade C,Residencial,Pedra Britada,41,7544,71
+2022,Q1,Cidade C,Residencial,Fio Algodão,15,3480,103
+2022,Q1,Cidade C,Residencial,Cimento,12,11208,113
+2022,Q1,Cidade C,Residencial,Tecido,95,64030,173
+2022,Q1,Cidade C,Residencial,Papel,99,23661,185
+2022,Q1,Cidade C,Residencial,Poliéster,74,33226,50
+2022,Q1,Cidade C,Residencial,Couro,82,29438,76
+2022,Q1,Cidade C,Residencial,Areia,97,82838,127
+2022,Q1,Cidade C,Comercial,Barra Metal,88,44880,81
+2022,Q1,Cidade C,Comercial,Madeira,10,5460,122
+2022,Q1,Cidade C,Comercial,Pedra Britada,59,49619,195
+2022,Q1,Cidade C,Comercial,Fio Algodão,22,7414,147
+2022,Q1,Cidade C,Comercial,Cimento,87,8787,81
+2022,Q1,Cidade C,Comercial,Tecido,93,20553,116
+2022,Q1,Cidade C,Comercial,Papel,77,26488,82
+2022,Q1,Cidade C,Comercial,Poliéster,58,6148,121
+2022,Q1,Cidade C,Comercial,Couro,74,67562,119
+2022,Q1,Cidade C,Comercial,Areia,71,64681,186
+2022,Q1,Cidade C,Industrial,Barra Metal,93,76632,111
+2022,Q1,Cidade C,Industrial,Madeira,74,30266,54
+2022,Q1,Cidade C,Industrial,Pedra Britada,86,20382,156
+2022,Q1,Cidade C,Industrial,Fio Algodão,32,7584,57
+2022,Q1,Cidade C,Industrial,Cimento,84,75432,164
+2022,Q1,Cidade C,Industrial,Tecido,24,11088,136
+2022,Q1,Cidade C,Industrial,Papel,55,42515,118
+2022,Q1,Cidade C,Industrial,Poliéster,21,17787,90
+2022,Q1,Cidade C,Industrial,Couro,80,36320,146
+2022,Q1,Cidade C,Industrial,Areia,11,5863,110
+2022,Q1,Cidade D,Residencial,Barra Metal,50,45400,192
+2022,Q1,Cidade D,Residencial,Madeira,99,56727,68
+2022,Q1,Cidade D,Residencial,Pedra Britada,36,34992,199
+2022,Q1,Cidade D,Residencial,Fio Algodão,12,8040,56
+2022,Q1,Cidade D,Residencial,Cimento,86,57964,51
+2022,Q1,Cidade D,Residencial,Tecido,46,21712,117
+2022,Q1,Cidade D,Residencial,Papel,89,86330,72
+2022,Q1,Cidade D,Residencial,Poliéster,66,21186,143
+2022,Q1,Cidade D,Residencial,Couro,32,30016,87
+2022,Q1,Cidade D,Residencial,Areia,24,9384,97
+2022,Q1,Cidade D,Comercial,Barra Metal,84,29400,100
+2022,Q1,Cidade D,Comercial,Madeira,87,55680,54
+2022,Q1,Cidade D,Comercial,Pedra Britada,58,28188,71
+2022,Q1,Cidade D,Comercial,Fio Algodão,55,8525,190
+2022,Q1,Cidade D,Comercial,Cimento,46,34454,113
+2022,Q1,Cidade D,Comercial,Tecido,44,39644,141
+2022,Q1,Cidade D,Comercial,Papel,84,70560,100
+2022,Q1,Cidade D,Comercial,Poliéster,18,11340,99
+2022,Q1,Cidade D,Comercial,Couro,59,11977,122
+2022,Q1,Cidade D,Comercial,Areia,88,19536,198
+2022,Q1,Cidade D,Industrial,Barra Metal,27,13149,82
+2022,Q1,Cidade D,Industrial,Madeira,68,60860,166
+2022,Q1,Cidade D,Industrial,Pedra Britada,100,76200,80
+2022,Q1,Cidade D,Industrial,Fio Algodão,99,66429,198
+2022,Q1,Cidade D,Industrial,Cimento,44,35816,119
+2022,Q1,Cidade D,Industrial,Tecido,64,55616,169
+2022,Q1,Cidade D,Industrial,Papel,92,16376,95
+2022,Q1,Cidade D,Industrial,Poliéster,57,32148,152
+2022,Q1,Cidade D,Industrial,Couro,74,38776,51
+2022,Q1,Cidade D,Industrial,Areia,26,20670,164
+2022,Q1,Cidade E,Residencial,Barra Metal,40,28880,60
+2022,Q1,Cidade E,Residencial,Madeira,66,49566,114
+2022,Q1,Cidade E,Residencial,Pedra Britada,95,57190,151
+2022,Q1,Cidade E,Residencial,Fio Algodão,36,31608,112
+2022,Q1,Cidade E,Residencial,Cimento,51,39678,156
+2022,Q1,Cidade E,Residencial,Tecido,63,55566,103
+2022,Q1,Cidade E,Residencial,Papel,49,47775,110
+2022,Q1,Cidade E,Residencial,Poliéster,30,7860,158
+2022,Q1,Cidade E,Residencial,Couro,71,53960,70
+2022,Q1,Cidade E,Residencial,Areia,71,69225,72
+2022,Q1,Cidade E,Comercial,Barra Metal,68,28560,64
+2022,Q1,Cidade E,Comercial,Madeira,66,11088,81
+2022,Q1,Cidade E,Comercial,Pedra Britada,78,73008,70
+2022,Q1,Cidade E,Comercial,Fio Algodão,11,7260,52
+2022,Q1,Cidade E,Comercial,Cimento,89,27412,57
+2022,Q1,Cidade E,Comercial,Tecido,22,2992,80
+2022,Q1,Cidade E,Comercial,Papel,58,6206,178
+2022,Q1,Cidade E,Comercial,Poliéster,50,6900,153
+2022,Q1,Cidade E,Comercial,Couro,92,78844,115
+2022,Q1,Cidade E,Comercial,Areia,62,52638,189
+2022,Q1,Cidade E,Industrial,Barra Metal,52,40300,125
+2022,Q1,Cidade E,Industrial,Madeira,91,41132,132
+2022,Q1,Cidade E,Industrial,Pedra Britada,54,24516,85
+2022,Q1,Cidade E,Industrial,Fio Algodão,29,12354,199
+2022,Q1,Cidade E,Industrial,Cimento,80,52480,151
+2022,Q1,Cidade E,Industrial,Tecido,18,8118,61
+2022,Q1,Cidade E,Industrial,Papel,40,7480,157
+2022,Q1,Cidade E,Industrial,Poliéster,78,39858,85
+2022,Q1,Cidade E,Industrial,Couro,83,27307,164
+2022,Q1,Cidade E,Industrial,Areia,59,40710,169
+2022,Q2,Cidade A,Residencial,Barra Metal,98,57134,199
+2022,Q2,Cidade A,Residencial,Madeira,39,37674,99
+2022,Q2,Cidade A,Residencial,Pedra Britada,42,39018,155
+2022,Q2,Cidade A,Residencial,Fio Algodão,17,4777,179
+2022,Q2,Cidade A,Residencial,Cimento,98,29008,114
+2022,Q2,Cidade A,Residencial,Tecido,57,24396,120
+2022,Q2,Cidade A,Residencial,Papel,98,34888,121
+2022,Q2,Cidade A,Residencial,Poliéster,72,23328,156
+2022,Q2,Cidade A,Residencial,Couro,40,36760,123
+2022,Q2,Cidade A,Residencial,Areia,81,66663,61
+2022,Q2,Cidade A,Comercial,Barra Metal,85,57460,133
+2022,Q2,Cidade A,Comercial,Madeira,39,22308,50
+2022,Q2,Cidade A,Comercial,Pedra Britada,39,7527,153
+2022,Q2,Cidade A,Comercial,Fio Algodão,97,49955,188
+2022,Q2,Cidade A,Comercial,Cimento,56,36008,54
+2022,Q2,Cidade A,Comercial,Tecido,95,11970,96
+2022,Q2,Cidade A,Comercial,Papel,40,11440,174
+2022,Q2,Cidade A,Comercial,Poliéster,44,43912,112
+2022,Q2,Cidade A,Comercial,Couro,19,7714,108
+2022,Q2,Cidade A,Comercial,Areia,49,11662,51
+2022,Q2,Cidade A,Industrial,Barra Metal,25,6550,116
+2022,Q2,Cidade A,Industrial,Madeira,68,7820,129
+2022,Q2,Cidade A,Industrial,Pedra Britada,87,40020,199
+2022,Q2,Cidade A,Industrial,Fio Algodão,39,16614,69
+2022,Q2,Cidade A,Industrial,Cimento,39,9945,170
+2022,Q2,Cidade A,Industrial,Tecido,36,10080,115
+2022,Q2,Cidade A,Industrial,Papel,96,26592,167
+2022,Q2,Cidade A,Industrial,Poliéster,98,14700,187
+2022,Q2,Cidade A,Industrial,Couro,45,22725,164
+2022,Q2,Cidade A,Industrial,Areia,76,15428,73
+2022,Q2,Cidade B,Residencial,Barra Metal,55,25630,157
+2022,Q2,Cidade B,Residencial,Madeira,32,30304,91
+2022,Q2,Cidade B,Residencial,Pedra Britada,38,32186,65
+2022,Q2,Cidade B,Residencial,Fio Algodão,31,26195,140
+2022,Q2,Cidade B,Residencial,Cimento,87,62292,129
+2022,Q2,Cidade B,Residencial,Tecido,78,28314,80
+2022,Q2,Cidade B,Residencial,Papel,61,41175,185
+2022,Q2,Cidade B,Residencial,Poliéster,18,8910,97
+2022,Q2,Cidade B,Residencial,Couro,25,24475,81
+2022,Q2,Cidade B,Residencial,Areia,86,81786,112
+2022,Q2,Cidade B,Comercial,Barra Metal,15,12060,71
+2022,Q2,Cidade B,Comercial,Madeira,48,12864,177
+2022,Q2,Cidade B,Comercial,Pedra Britada,84,8736,183
+2022,Q2,Cidade B,Comercial,Fio Algodão,25,23900,67
+2022,Q2,Cidade B,Comercial,Cimento,51,40698,124
+2022,Q2,Cidade B,Comercial,Tecido,40,23720,92
+2022,Q2,Cidade B,Comercial,Papel,95,16530,87
+2022,Q2,Cidade B,Comercial,Poliéster,60,10800,61
+2022,Q2,Cidade B,Comercial,Couro,23,17986,113
+2022,Q2,Cidade B,Comercial,Areia,59,7198,67
+2022,Q2,Cidade B,Industrial,Barra Metal,88,85096,128
+2022,Q2,Cidade B,Industrial,Madeira,98,13524,199
+2022,Q2,Cidade B,Industrial,Pedra Britada,68,42092,101
+2022,Q2,Cidade B,Industrial,Fio Algodão,19,15048,75
+2022,Q2,Cidade B,Industrial,Cimento,39,6279,160
+2022,Q2,Cidade B,Industrial,Tecido,98,10584,123
+2022,Q2,Cidade B,Industrial,Papel,94,25474,190
+2022,Q2,Cidade B,Industrial,Poliéster,55,54560,108
+2022,Q2,Cidade B,Industrial,Couro,19,17898,171
+2022,Q2,Cidade B,Industrial,Areia,40,25040,154
+2022,Q2,Cidade C,Residencial,Barra Metal,60,7380,113
+2022,Q2,Cidade C,Residencial,Madeira,49,34300,71
+2022,Q2,Cidade C,Residencial,Pedra Britada,82,30422,168
+2022,Q2,Cidade C,Residencial,Fio Algodão,51,24021,80
+2022,Q2,Cidade C,Residencial,Cimento,92,26496,193
+2022,Q2,Cidade C,Residencial,Tecido,75,51150,117
+2022,Q2,Cidade C,Residencial,Papel,82,64780,82
+2022,Q2,Cidade C,Residencial,Poliéster,36,17388,67
+2022,Q2,Cidade C,Residencial,Couro,93,78492,183
+2022,Q2,Cidade C,Residencial,Areia,76,42712,191
+2022,Q2,Cidade C,Comercial,Barra Metal,89,78943,181
+2022,Q2,Cidade C,Comercial,Madeira,12,10284,67
+2022,Q2,Cidade C,Comercial,Pedra Britada,15,8835,129
+2022,Q2,Cidade C,Comercial,Fio Algodão,13,11700,50
+2022,Q2,Cidade C,Comercial,Cimento,66,53922,113
+2022,Q2,Cidade C,Comercial,Tecido,20,17240,60
+2022,Q2,Cidade C,Comercial,Papel,21,16128,153
+2022,Q2,Cidade C,Comercial,Poliéster,58,21634,99
+2022,Q2,Cidade C,Comercial,Couro,42,17934,84
+2022,Q2,Cidade C,Comercial,Areia,20,16240,88
+2022,Q2,Cidade C,Industrial,Barra Metal,61,42395,139
+2022,Q2,Cidade C,Industrial,Madeira,34,15946,120
+2022,Q2,Cidade C,Industrial,Pedra Britada,62,13144,198
+2022,Q2,Cidade C,Industrial,Fio Algodão,11,2178,162
+2022,Q2,Cidade C,Industrial,Cimento,55,45815,193
+2022,Q2,Cidade C,Industrial,Tecido,40,25880,71
+2022,Q2,Cidade C,Industrial,Papel,60,26820,175
+2022,Q2,Cidade C,Industrial,Poliéster,54,29052,191
+2022,Q2,Cidade C,Industrial,Couro,15,6510,145
+2022,Q2,Cidade C,Industrial,Areia,59,32804,157
+2022,Q2,Cidade D,Residencial,Barra Metal,15,9075,159
+2022,Q2,Cidade D,Residencial,Madeira,70,67200,98
+2022,Q2,Cidade D,Residencial,Pedra Britada,54,11448,143
+2022,Q2,Cidade D,Residencial,Fio Algodão,22,10318,186
+2022,Q2,Cidade D,Residencial,Cimento,78,45396,121
+2022,Q2,Cidade D,Residencial,Tecido,40,10000,172
+2022,Q2,Cidade D,Residencial,Papel,33,16467,128
+2022,Q2,Cidade D,Residencial,Poliéster,69,56925,142
+2022,Q2,Cidade D,Residencial,Couro,82,28454,109
+2022,Q2,Cidade D,Residencial,Areia,83,82502,149
+2022,Q2,Cidade D,Comercial,Barra Metal,90,51660,105
+2022,Q2,Cidade D,Comercial,Madeira,41,11480,168
+2022,Q2,Cidade D,Comercial,Pedra Britada,73,14016,161
+2022,Q2,Cidade D,Comercial,Fio Algodão,70,51310,93
+2022,Q2,Cidade D,Comercial,Cimento,23,20309,76
+2022,Q2,Cidade D,Comercial,Tecido,48,39264,140
+2022,Q2,Cidade D,Comercial,Papel,21,7056,61
+2022,Q2,Cidade D,Comercial,Poliéster,76,73036,168
+2022,Q2,Cidade D,Comercial,Couro,88,46464,126
+2022,Q2,Cidade D,Comercial,Areia,44,25124,184
+2022,Q2,Cidade D,Industrial,Barra Metal,33,12078,179
+2022,Q2,Cidade D,Industrial,Madeira,32,25376,196
+2022,Q2,Cidade D,Industrial,Pedra Britada,42,27762,148
+2022,Q2,Cidade D,Industrial,Fio Algodão,21,14196,110
+2022,Q2,Cidade D,Industrial,Cimento,30,10710,99
+2022,Q2,Cidade D,Industrial,Tecido,23,15778,160
+2022,Q2,Cidade D,Industrial,Papel,90,54450,181
+2022,Q2,Cidade D,Industrial,Poliéster,99,93753,106
+2022,Q2,Cidade D,Industrial,Couro,78,74646,153
+2022,Q2,Cidade D,Industrial,Areia,39,12129,89
+2022,Q2,Cidade E,Residencial,Barra Metal,86,52976,198
+2022,Q2,Cidade E,Residencial,Madeira,70,60550,144
+2022,Q2,Cidade E,Residencial,Pedra Britada,54,30618,150
+2022,Q2,Cidade E,Residencial,Fio Algodão,100,99800,84
+2022,Q2,Cidade E,Residencial,Cimento,67,47369,105
+2022,Q2,Cidade E,Residencial,Tecido,38,36936,50
+2022,Q2,Cidade E,Residencial,Papel,88,15840,174
+2022,Q2,Cidade E,Residencial,Poliéster,74,37518,155
+2022,Q2,Cidade E,Residencial,Couro,82,74948,87
+2022,Q2,Cidade E,Residencial,Areia,100,16200,173
+2022,Q2,Cidade E,Comercial,Barra Metal,32,23264,97
+2022,Q2,Cidade E,Comercial,Madeira,29,19662,106
+2022,Q2,Cidade E,Comercial,Pedra Britada,27,10422,86
+2022,Q2,Cidade E,Comercial,Fio Algodão,40,6880,166
+2022,Q2,Cidade E,Comercial,Cimento,22,4070,139
+2022,Q2,Cidade E,Comercial,Tecido,43,21672,185
+2022,Q2,Cidade E,Comercial,Papel,30,17550,105
+2022,Q2,Cidade E,Comercial,Poliéster,46,43286,60
+2022,Q2,Cidade E,Comercial,Couro,70,25480,152
+2022,Q2,Cidade E,Comercial,Areia,84,13608,64
+2022,Q2,Cidade E,Industrial,Barra Metal,85,70295,143
+2022,Q2,Cidade E,Industrial,Madeira,60,12780,67
+2022,Q2,Cidade E,Industrial,Pedra Britada,38,27056,113
+2022,Q2,Cidade E,Industrial,Fio Algodão,81,31590,83
+2022,Q2,Cidade E,Industrial,Cimento,39,35958,154
+2022,Q2,Cidade E,Industrial,Tecido,55,8745,50
+2022,Q2,Cidade E,Industrial,Papel,73,13213,95
+2022,Q2,Cidade E,Industrial,Poliéster,41,7380,95
+2022,Q2,Cidade E,Industrial,Couro,36,35820,75
+2022,Q2,Cidade E,Industrial,Areia,96,10848,200
+2022,Q3,Cidade A,Residencial,Barra Metal,67,12663,128
+2022,Q3,Cidade A,Residencial,Madeira,52,35100,187
+2022,Q3,Cidade A,Residencial,Pedra Britada,38,22800,199
+2022,Q3,Cidade A,Residencial,Fio Algodão,41,38499,156
+2022,Q3,Cidade A,Residencial,Cimento,19,18525,159
+2022,Q3,Cidade A,Residencial,Tecido,21,12642,134
+2022,Q3,Cidade A,Residencial,Papel,89,17266,157
+2022,Q3,Cidade A,Residencial,Poliéster,81,65529,96
+2022,Q3,Cidade A,Residencial,Couro,16,14384,101
+2022,Q3,Cidade A,Residencial,Areia,96,16416,92
+2022,Q3,Cidade A,Comercial,Barra Metal,12,6708,142
+2022,Q3,Cidade A,Comercial,Madeira,86,59340,58
+2022,Q3,Cidade A,Comercial,Pedra Britada,46,30084,68
+2022,Q3,Cidade A,Comercial,Fio Algodão,40,29280,86
+2022,Q3,Cidade A,Comercial,Cimento,89,10324,73
+2022,Q3,Cidade A,Comercial,Tecido,47,40608,68
+2022,Q3,Cidade A,Comercial,Papel,49,15680,98
+2022,Q3,Cidade A,Comercial,Poliéster,29,15196,150
+2022,Q3,Cidade A,Comercial,Couro,46,37858,91
+2022,Q3,Cidade A,Comercial,Areia,81,51354,94
+2022,Q3,Cidade A,Industrial,Barra Metal,20,17700,150
+2022,Q3,Cidade A,Industrial,Madeira,30,19710,119
+2022,Q3,Cidade A,Industrial,Pedra Britada,27,17847,106
+2022,Q3,Cidade A,Industrial,Fio Algodão,49,30233,56
+2022,Q3,Cidade A,Industrial,Cimento,65,31460,89
+2022,Q3,Cidade A,Industrial,Tecido,87,56028,111
+2022,Q3,Cidade A,Industrial,Papel,85,9010,148
+2022,Q3,Cidade A,Industrial,Poliéster,74,14578,132
+2022,Q3,Cidade A,Industrial,Couro,28,26936,154
+2022,Q3,Cidade A,Industrial,Areia,44,4972,84
+2022,Q3,Cidade B,Residencial,Barra Metal,68,15028,132
+2022,Q3,Cidade B,Residencial,Madeira,58,19836,164
+2022,Q3,Cidade B,Residencial,Pedra Britada,95,71915,200
+2022,Q3,Cidade B,Residencial,Fio Algodão,92,48208,66
+2022,Q3,Cidade B,Residencial,Cimento,32,11680,195
+2022,Q3,Cidade B,Residencial,Tecido,56,25312,141
+2022,Q3,Cidade B,Residencial,Papel,44,8140,189
+2022,Q3,Cidade B,Residencial,Poliéster,80,43200,75
+2022,Q3,Cidade B,Residencial,Couro,92,85376,152
+2022,Q3,Cidade B,Residencial,Areia,41,38991,127
+2022,Q3,Cidade B,Comercial,Barra Metal,96,78816,179
+2022,Q3,Cidade B,Comercial,Madeira,97,44717,142
+2022,Q3,Cidade B,Comercial,Pedra Britada,28,11760,110
+2022,Q3,Cidade B,Comercial,Fio Algodão,25,15975,153
+2022,Q3,Cidade B,Comercial,Cimento,34,31280,100
+2022,Q3,Cidade B,Comercial,Tecido,28,27832,162
+2022,Q3,Cidade B,Comercial,Papel,32,3392,91
+2022,Q3,Cidade B,Comercial,Poliéster,76,71820,183
+2022,Q3,Cidade B,Comercial,Couro,57,45543,175
+2022,Q3,Cidade B,Comercial,Areia,62,58094,163
+2022,Q3,Cidade B,Industrial,Barra Metal,29,24621,187
+2022,Q3,Cidade B,Industrial,Madeira,13,12402,176
+2022,Q3,Cidade B,Industrial,Pedra Britada,84,81312,63
+2022,Q3,Cidade B,Industrial,Fio Algodão,86,71036,118
+2022,Q3,Cidade B,Industrial,Cimento,41,27429,73
+2022,Q3,Cidade B,Industrial,Tecido,31,5735,164
+2022,Q3,Cidade B,Industrial,Papel,13,9282,177
+2022,Q3,Cidade B,Industrial,Poliéster,68,18156,155
+2022,Q3,Cidade B,Industrial,Couro,76,51832,154
+2022,Q3,Cidade B,Industrial,Areia,14,1946,196
+2022,Q3,Cidade C,Residencial,Barra Metal,46,11546,52
+2022,Q3,Cidade C,Residencial,Madeira,56,46368,82
+2022,Q3,Cidade C,Residencial,Pedra Britada,43,42226,55
+2022,Q3,Cidade C,Residencial,Fio Algodão,33,7788,64
+2022,Q3,Cidade C,Residencial,Cimento,86,15222,146
+2022,Q3,Cidade C,Residencial,Tecido,75,22650,193
+2022,Q3,Cidade C,Residencial,Papel,65,26975,130
+2022,Q3,Cidade C,Residencial,Poliéster,33,21450,188
+2022,Q3,Cidade C,Residencial,Couro,83,82253,106
+2022,Q3,Cidade C,Residencial,Areia,96,12192,161
+2022,Q3,Cidade C,Comercial,Barra Metal,61,10553,171
+2022,Q3,Cidade C,Comercial,Madeira,79,45346,131
+2022,Q3,Cidade C,Comercial,Pedra Britada,22,16544,93
+2022,Q3,Cidade C,Comercial,Fio Algodão,37,9768,189
+2022,Q3,Cidade C,Comercial,Cimento,82,8364,148
+2022,Q3,Cidade C,Comercial,Tecido,71,46505,121
+2022,Q3,Cidade C,Comercial,Papel,32,16512,55
+2022,Q3,Cidade C,Comercial,Poliéster,44,18656,164
+2022,Q3,Cidade C,Comercial,Couro,15,14400,179
+2022,Q3,Cidade C,Comercial,Areia,26,10478,111
+2022,Q3,Cidade C,Industrial,Barra Metal,61,37088,103
+2022,Q3,Cidade C,Industrial,Madeira,33,5412,161
+2022,Q3,Cidade C,Industrial,Pedra Britada,93,29202,134
+2022,Q3,Cidade C,Industrial,Fio Algodão,29,18531,141
+2022,Q3,Cidade C,Industrial,Cimento,83,42247,169
+2022,Q3,Cidade C,Industrial,Tecido,41,9881,120
+2022,Q3,Cidade C,Industrial,Papel,15,11925,81
+2022,Q3,Cidade C,Industrial,Poliéster,93,23529,169
+2022,Q3,Cidade C,Industrial,Couro,100,89400,57
+2022,Q3,Cidade C,Industrial,Areia,81,49248,155
+2022,Q3,Cidade D,Residencial,Barra Metal,13,10101,68
+2022,Q3,Cidade D,Residencial,Madeira,94,22748,90
+2022,Q3,Cidade D,Residencial,Pedra Britada,88,76472,186
+2022,Q3,Cidade D,Residencial,Fio Algodão,73,13797,195
+2022,Q3,Cidade D,Residencial,Cimento,68,8976,193
+2022,Q3,Cidade D,Residencial,Tecido,14,9198,79
+2022,Q3,Cidade D,Residencial,Papel,69,13524,183
+2022,Q3,Cidade D,Residencial,Poliéster,89,45212,152
+2022,Q3,Cidade D,Residencial,Couro,62,36394,123
+2022,Q3,Cidade D,Residencial,Areia,98,74872,121
+2022,Q3,Cidade D,Comercial,Barra Metal,74,59940,182
+2022,Q3,Cidade D,Comercial,Madeira,86,78604,192
+2022,Q3,Cidade D,Comercial,Pedra Britada,97,20661,167
+2022,Q3,Cidade D,Comercial,Fio Algodão,65,18200,152
+2022,Q3,Cidade D,Comercial,Cimento,47,43287,173
+2022,Q3,Cidade D,Comercial,Tecido,92,40756,174
+2022,Q3,Cidade D,Comercial,Papel,47,21949,196
+2022,Q3,Cidade D,Comercial,Poliéster,40,22240,161
+2022,Q3,Cidade D,Comercial,Couro,30,8010,76
+2022,Q3,Cidade D,Comercial,Areia,13,4407,96
+2022,Q3,Cidade D,Industrial,Barra Metal,27,22194,83
+2022,Q3,Cidade D,Industrial,Madeira,92,86112,114
+2022,Q3,Cidade D,Industrial,Pedra Britada,15,11205,186
+2022,Q3,Cidade D,Industrial,Fio Algodão,83,13446,181
+2022,Q3,Cidade D,Industrial,Cimento,85,8755,128
+2022,Q3,Cidade D,Industrial,Tecido,80,28400,169
+2022,Q3,Cidade D,Industrial,Papel,67,15477,95
+2022,Q3,Cidade D,Industrial,Poliéster,67,43617,160
+2022,Q3,Cidade D,Industrial,Couro,28,12880,151
+2022,Q3,Cidade D,Industrial,Areia,78,38610,188
+2022,Q3,Cidade E,Residencial,Barra Metal,77,46816,142
+2022,Q3,Cidade E,Residencial,Madeira,10,2500,149
+2022,Q3,Cidade E,Residencial,Pedra Britada,87,41412,145
+2022,Q3,Cidade E,Residencial,Fio Algodão,35,3710,191
+2022,Q3,Cidade E,Residencial,Cimento,62,27342,167
+2022,Q3,Cidade E,Residencial,Tecido,31,12462,178
+2022,Q3,Cidade E,Residencial,Papel,92,83812,67
+2022,Q3,Cidade E,Residencial,Poliéster,93,44082,180
+2022,Q3,Cidade E,Residencial,Couro,76,40432,95
+2022,Q3,Cidade E,Residencial,Areia,72,46512,128
+2022,Q3,Cidade E,Comercial,Barra Metal,49,40082,181
+2022,Q3,Cidade E,Comercial,Madeira,16,14000,64
+2022,Q3,Cidade E,Comercial,Pedra Britada,51,20706,140
+2022,Q3,Cidade E,Comercial,Fio Algodão,56,7448,119
+2022,Q3,Cidade E,Comercial,Cimento,97,64990,186
+2022,Q3,Cidade E,Comercial,Tecido,42,14196,132
+2022,Q3,Cidade E,Comercial,Papel,70,37800,109
+2022,Q3,Cidade E,Comercial,Poliéster,28,24724,149
+2022,Q3,Cidade E,Comercial,Couro,41,38663,168
+2022,Q3,Cidade E,Comercial,Areia,81,76707,161
+2022,Q3,Cidade E,Industrial,Barra Metal,73,63583,130
+2022,Q3,Cidade E,Industrial,Madeira,73,8249,51
+2022,Q3,Cidade E,Industrial,Pedra Britada,90,70650,198
+2022,Q3,Cidade E,Industrial,Fio Algodão,15,8520,76
+2022,Q3,Cidade E,Industrial,Cimento,26,13832,106
+2022,Q3,Cidade E,Industrial,Tecido,29,20039,154
+2022,Q3,Cidade E,Industrial,Papel,30,18990,120
+2022,Q3,Cidade E,Industrial,Poliéster,49,11809,180
+2022,Q3,Cidade E,Industrial,Couro,65,18330,65
+2022,Q3,Cidade E,Industrial,Areia,42,11802,139
+2022,Q4,Cidade A,Residencial,Barra Metal,44,16280,161
+2022,Q4,Cidade A,Residencial,Madeira,36,29664,102
+2022,Q4,Cidade A,Residencial,Pedra Britada,22,13002,105
+2022,Q4,Cidade A,Residencial,Fio Algodão,23,3289,64
+2022,Q4,Cidade A,Residencial,Cimento,78,67392,55
+2022,Q4,Cidade A,Residencial,Tecido,90,67140,176
+2022,Q4,Cidade A,Residencial,Papel,86,75078,161
+2022,Q4,Cidade A,Residencial,Poliéster,75,14775,64
+2022,Q4,Cidade A,Residencial,Couro,63,45927,95
+2022,Q4,Cidade A,Residencial,Areia,43,33970,85
+2022,Q4,Cidade A,Comercial,Barra Metal,15,6615,63
+2022,Q4,Cidade A,Comercial,Madeira,95,28120,105
+2022,Q4,Cidade A,Comercial,Pedra Britada,64,47168,98
+2022,Q4,Cidade A,Comercial,Fio Algodão,97,90695,200
+2022,Q4,Cidade A,Comercial,Cimento,31,4650,171
+2022,Q4,Cidade A,Comercial,Tecido,86,46440,154
+2022,Q4,Cidade A,Comercial,Papel,74,8658,103
+2022,Q4,Cidade A,Comercial,Poliéster,52,17264,90
+2022,Q4,Cidade A,Comercial,Couro,52,35256,156
+2022,Q4,Cidade A,Comercial,Areia,56,52864,200
+2022,Q4,Cidade A,Industrial,Barra Metal,94,9400,144
+2022,Q4,Cidade A,Industrial,Madeira,45,21825,72
+2022,Q4,Cidade A,Industrial,Pedra Britada,70,48510,104
+2022,Q4,Cidade A,Industrial,Fio Algodão,43,34486,145
+2022,Q4,Cidade A,Industrial,Cimento,44,26048,177
+2022,Q4,Cidade A,Industrial,Tecido,90,53550,141
+2022,Q4,Cidade A,Industrial,Papel,98,86240,57
+2022,Q4,Cidade A,Industrial,Poliéster,98,93982,83
+2022,Q4,Cidade A,Industrial,Couro,46,31924,151
+2022,Q4,Cidade A,Industrial,Areia,27,11205,87
+2022,Q4,Cidade B,Residencial,Barra Metal,52,12584,197
+2022,Q4,Cidade B,Residencial,Madeira,13,6162,69
+2022,Q4,Cidade B,Residencial,Pedra Britada,54,19386,109
+2022,Q4,Cidade B,Residencial,Fio Algodão,93,66681,180
+2022,Q4,Cidade B,Residencial,Cimento,44,11088,147
+2022,Q4,Cidade B,Residencial,Tecido,76,10032,93
+2022,Q4,Cidade B,Residencial,Papel,61,19337,70
+2022,Q4,Cidade B,Residencial,Poliéster,12,8292,68
+2022,Q4,Cidade B,Residencial,Couro,52,51376,135
+2022,Q4,Cidade B,Residencial,Areia,10,9190,125
+2022,Q4,Cidade B,Comercial,Barra Metal,26,21320,163
+2022,Q4,Cidade B,Comercial,Madeira,30,26730,98
+2022,Q4,Cidade B,Comercial,Pedra Britada,22,7304,153
+2022,Q4,Cidade B,Comercial,Fio Algodão,98,60662,88
+2022,Q4,Cidade B,Comercial,Cimento,54,18738,107
+2022,Q4,Cidade B,Comercial,Tecido,13,12142,111
+2022,Q4,Cidade B,Comercial,Papel,97,83323,142
+2022,Q4,Cidade B,Comercial,Poliéster,34,33898,169
+2022,Q4,Cidade B,Comercial,Couro,72,54864,196
+2022,Q4,Cidade B,Comercial,Areia,89,53400,162
+2022,Q4,Cidade B,Industrial,Barra Metal,81,79380,106
+2022,Q4,Cidade B,Industrial,Madeira,60,17520,58
+2022,Q4,Cidade B,Industrial,Pedra Britada,60,13860,61
+2022,Q4,Cidade B,Industrial,Fio Algodão,60,56640,178
+2022,Q4,Cidade B,Industrial,Cimento,66,21450,57
+2022,Q4,Cidade B,Industrial,Tecido,76,50996,193
+2022,Q4,Cidade B,Industrial,Papel,16,6656,135
+2022,Q4,Cidade B,Industrial,Poliéster,16,10432,76
+2022,Q4,Cidade B,Industrial,Couro,60,10020,113
+2022,Q4,Cidade B,Industrial,Areia,59,12272,178
+2022,Q4,Cidade C,Residencial,Barra Metal,61,32940,99
+2022,Q4,Cidade C,Residencial,Madeira,97,89822,161
+2022,Q4,Cidade C,Residencial,Pedra Britada,88,69872,116
+2022,Q4,Cidade C,Residencial,Fio Algodão,85,26010,148
+2022,Q4,Cidade C,Residencial,Cimento,90,68760,156
+2022,Q4,Cidade C,Residencial,Tecido,48,11568,189
+2022,Q4,Cidade C,Residencial,Papel,62,42408,152
+2022,Q4,Cidade C,Residencial,Poliéster,14,5460,79
+2022,Q4,Cidade C,Residencial,Couro,92,17296,172
+2022,Q4,Cidade C,Residencial,Areia,68,66028,126
+2022,Q4,Cidade C,Comercial,Barra Metal,53,22101,73
+2022,Q4,Cidade C,Comercial,Madeira,96,49632,175
+2022,Q4,Cidade C,Comercial,Pedra Britada,71,45227,117
+2022,Q4,Cidade C,Comercial,Fio Algodão,44,43472,162
+2022,Q4,Cidade C,Comercial,Cimento,24,21360,131
+2022,Q4,Cidade C,Comercial,Tecido,20,8500,99
+2022,Q4,Cidade C,Comercial,Papel,91,90181,190
+2022,Q4,Cidade C,Comercial,Poliéster,78,63492,119
+2022,Q4,Cidade C,Comercial,Couro,78,24882,85
+2022,Q4,Cidade C,Comercial,Areia,35,15995,124
+2022,Q4,Cidade C,Industrial,Barra Metal,90,20520,152
+2022,Q4,Cidade C,Industrial,Madeira,78,64740,196
+2022,Q4,Cidade C,Industrial,Pedra Britada,60,15300,190
+2022,Q4,Cidade C,Industrial,Fio Algodão,27,22599,52
+2022,Q4,Cidade C,Industrial,Cimento,84,22092,192
+2022,Q4,Cidade C,Industrial,Tecido,87,25143,177
+2022,Q4,Cidade C,Industrial,Papel,79,19434,77
+2022,Q4,Cidade C,Industrial,Poliéster,59,55519,103
+2022,Q4,Cidade C,Industrial,Couro,89,11214,75
+2022,Q4,Cidade C,Industrial,Areia,37,21978,104
+2022,Q4,Cidade D,Residencial,Barra Metal,20,15260,133
+2022,Q4,Cidade D,Residencial,Madeira,74,63640,197
+2022,Q4,Cidade D,Residencial,Pedra Britada,11,5291,62
+2022,Q4,Cidade D,Residencial,Fio Algodão,45,5175,158
+2022,Q4,Cidade D,Residencial,Cimento,89,84728,145
+2022,Q4,Cidade D,Residencial,Tecido,53,37842,98
+2022,Q4,Cidade D,Residencial,Papel,34,15198,189
+2022,Q4,Cidade D,Residencial,Poliéster,28,20580,187
+2022,Q4,Cidade D,Residencial,Couro,28,5600,169
+2022,Q4,Cidade D,Residencial,Areia,54,43254,98
+2022,Q4,Cidade D,Comercial,Barra Metal,90,35100,194
+2022,Q4,Cidade D,Comercial,Madeira,64,53248,123
+2022,Q4,Cidade D,Comercial,Pedra Britada,22,15796,159
+2022,Q4,Cidade D,Comercial,Fio Algodão,95,62225,179
+2022,Q4,Cidade D,Comercial,Cimento,59,8732,112
+2022,Q4,Cidade D,Comercial,Tecido,23,10120,181
+2022,Q4,Cidade D,Comercial,Papel,81,15228,181
+2022,Q4,Cidade D,Comercial,Poliéster,36,24696,101
+2022,Q4,Cidade D,Comercial,Couro,74,9842,162
+2022,Q4,Cidade D,Comercial,Areia,53,8851,193
+2022,Q4,Cidade D,Industrial,Barra Metal,50,39550,108
+2022,Q4,Cidade D,Industrial,Madeira,66,22572,59
+2022,Q4,Cidade D,Industrial,Pedra Britada,55,37895,131
+2022,Q4,Cidade D,Industrial,Fio Algodão,53,31270,99
+2022,Q4,Cidade D,Industrial,Cimento,64,12672,128
+2022,Q4,Cidade D,Industrial,Tecido,34,28832,173
+2022,Q4,Cidade D,Industrial,Papel,27,6237,53
+2022,Q4,Cidade D,Industrial,Poliéster,64,7680,84
+2022,Q4,Cidade D,Industrial,Couro,40,4880,106
+2022,Q4,Cidade D,Industrial,Areia,28,7980,113
+2022,Q4,Cidade E,Residencial,Barra Metal,74,37814,146
+2022,Q4,Cidade E,Residencial,Madeira,40,15000,180
+2022,Q4,Cidade E,Residencial,Pedra Britada,19,7467,69
+2022,Q4,Cidade E,Residencial,Fio Algodão,83,53950,117
+2022,Q4,Cidade E,Residencial,Cimento,44,10516,111
+2022,Q4,Cidade E,Residencial,Tecido,64,31872,142
+2022,Q4,Cidade E,Residencial,Papel,52,29224,58
+2022,Q4,Cidade E,Residencial,Poliéster,38,12996,110
+2022,Q4,Cidade E,Residencial,Couro,94,78114,181
+2022,Q4,Cidade E,Residencial,Areia,22,7480,161
+2022,Q4,Cidade E,Comercial,Barra Metal,95,78850,171
+2022,Q4,Cidade E,Comercial,Madeira,46,25622,133
+2022,Q4,Cidade E,Comercial,Pedra Britada,51,23817,181
+2022,Q4,Cidade E,Comercial,Fio Algodão,36,28584,133
+2022,Q4,Cidade E,Comercial,Cimento,44,9284,82
+2022,Q4,Cidade E,Comercial,Tecido,18,12096,78
+2022,Q4,Cidade E,Comercial,Papel,31,19561,93
+2022,Q4,Cidade E,Comercial,Poliéster,37,30155,194
+2022,Q4,Cidade E,Comercial,Couro,40,9560,78
+2022,Q4,Cidade E,Comercial,Areia,21,4452,106
+2022,Q4,Cidade E,Industrial,Barra Metal,57,30666,97
+2022,Q4,Cidade E,Industrial,Madeira,41,19680,78
+2022,Q4,Cidade E,Industrial,Pedra Britada,54,53784,183
+2022,Q4,Cidade E,Industrial,Fio Algodão,45,41175,74
+2022,Q4,Cidade E,Industrial,Cimento,68,45084,70
+2022,Q4,Cidade E,Industrial,Tecido,45,15480,178
+2022,Q4,Cidade E,Industrial,Papel,63,62496,198
+2022,Q4,Cidade E,Industrial,Poliéster,70,32340,107
+2022,Q4,Cidade E,Industrial,Couro,27,26622,162
+2022,Q4,Cidade E,Industrial,Areia,79,24885,150
