@@ -12,16 +12,15 @@ WHERE  pocom.id_polcom IN ( 3005, 3015, 3004, 3003 )
        AND pocom.dat_termino > Getdate () 
 
 /*
-SELECT
-	ES.Cod_Estabe,
-	COUNT(PR.Codigo)
-	--PR.Codigo
-FROM PRODU PR
-	JOIN PRXES ES ON PR.Codigo = ES.Cod_Produt
-	JOIN PCXPR PP ON ES.Cod_Produt = PP.Cod_Produt
-	JOIN POCOM PC ON PP.Id_PolCom = PC.Id_PolCom
+--PRODUCT_BRANCH
+SELECT DISTINCT prxes.cod_estabe AS "branchId",
+                prxes.cod_produt AS "productId",
+                prxes.cod_produt AS "sku"
+FROM PRODU 
+	JOIN PRXES ON PRODU.Codigo = PRXES.Cod_Produt
+	JOIN PCXPR ON PRXES.Cod_Produt = PCXPR.Cod_Produt
+	JOIN POCOM ON PCXPR.Id_PolCom = POCOM.Id_PolCom
 WHERE Tipo = 00
-AND PC.Id_PolCom IN (3005, 3015, 3004, 3003)
-AND PC.Dat_Termino > GETDATE ()
-GROUP BY ES.Cod_Estabe
+AND POCOM.Id_PolCom IN (3005, 3015, 3004, 3003)
+AND POCOM.Dat_Termino > GETDATE ()
 */

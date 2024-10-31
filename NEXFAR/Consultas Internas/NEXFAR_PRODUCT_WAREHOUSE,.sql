@@ -23,19 +23,27 @@ WHERE  pocom.id_polcom IN ( 3005, 3015, 3004, 3003 )
        AND prlot.dat_vencim > Getdate () + 180 
 
 /*
-SELECT
-	ES.Cod_Estabe,
-	COUNT(PR.Codigo)
-	--PR.Codigo
-FROM PRODU PR
-	JOIN PRXES ES ON PR.Codigo = ES.Cod_Produt
-	JOIN PRLOT LT ON ES.Cod_Produt = LT.Cod_Produt and es.Cod_Estabe = lt.Cod_Estabe
-	JOIN PCXPR PP ON LT.Cod_Produt = PP.Cod_Produt
-	JOIN POCOM PC ON PP.Id_PolCom = PC.Id_PolCom
+--PRODUCT_WAREHOUSE
+
+SELECT DISTINCT prxes.cod_produt                    AS "productId",
+                prxes.cod_estabe                    AS "warehouseId",
+                prxes.cod_produt                    AS "sku",
+                prxes.qtd_dispon - prxes.qtd_quaren AS "quantityAvailable",
+                (SELECT Min(pr1.dat_vencim)
+                 FROM   prlot pr1
+                 WHERE  pr1.cod_estabe = prxes.cod_estabe
+                        AND prxes.cod_produt = pr1.cod_produt
+                        AND pr1.dat_vencim >= Getdate () + 180
+                        AND pr1.qtd_fisico > 0)     AS "validUntil"
+FROM PRODU 
+	JOIN PRXES ON PRODU.Codigo = PRXES.Cod_Produt
+	JOIN PRLOT ON PRXES.Cod_Produt = PRLOT.Cod_Produt and PRXES.Cod_Estabe = PRLOT.Cod_Estabe
+	JOIN PCXPR ON PRLOT.Cod_Produt = PCXPR.Cod_Produt
+	JOIN POCOM ON PCXPR.Id_PolCom = POCOM.Id_PolCom
 WHERE  Tipo = 00
-AND PC.id_polcom IN ( 3005, 3015, 3004, 3003 )
-AND PC.dat_termino > Getdate ()
-AND ES.qtd_dispon > 0
-AND LT.dat_vencim > Getdate () + 180 
-GROUP BY ES.Cod_Estabe
+AND POCOM.id_polcom IN ( 3005, 3015, 3004, 3003 )
+AND POCOM.dat_termino > Getdate ()
+AND PRXES.qtd_dispon > 0
+AND PRLOT.dat_vencim > Getdate () + 180 
+
 */
