@@ -1,16 +1,34 @@
-SELECT 
-    DB_NAME() AS DatabaseName, 
-    SCHEMA_NAME(this.schema_id) AS SchemaName, 
-    this.name AS ViewName, 
-    last_user_lookups = MAX(ISNULL(views_stats.last_user_lookup, 0))
-FROM sys.views AS this
-LEFT JOIN sys.dm_db_index_usage_stats AS views_stats
-    ON views_stats.object_id = this.object_id
-    AND views_stats.database_id = DB_ID()
-GROUP BY SCHEMA_NAME(this.schema_id), this.name
-ORDER BY last_user_lookups;
+DECLARE 
+    @IdView INT,
+    @dat_lookup DATETIME,
+    @nome VARCHAR(50);
 
+-- Cursor para listar views
+DECLARE nom_view CURSOR FOR
+    SELECT
+        v.object_id,
+        v.name
+    FROM sys.views AS v
+OPEN nom_view;
 
-select  top 10 * from sys.dm_db_index_usage_stats
+FETCH NEXT FROM nom_view INTO @IdView, @nome;
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    -- Pega a última data de lookup de cada view na tabela de stats
+    SELECT TOP 1 
+        @dat_lookup = MAX(d.last_user_lookup)
+    FROM sys.dm_db_index_usage_stats AS d
+    WHERE d.object_id = @IdView
+		--and last_user_lookup is not null
+    GROUP BY d.object_id;
 
-select top 10 * from sys.views
+    -- Imprime o resultado
+    PRINT CAST(@IdView AS NVARCHAR(255)) + ';' + CAST(@nome AS NVARCHAR(255)) + ';' + COALESCE(CAST(@dat_lookup AS NVARCHAR(255)), 'Sem dados');
+
+    -- Próxima view
+    FETCH NEXT FROM nom_view INTO @IdView, @nome;
+END
+
+-- Fecha e deleta o cursor
+CLOSE nom_view;
+DEALLOCATE nom_view;
