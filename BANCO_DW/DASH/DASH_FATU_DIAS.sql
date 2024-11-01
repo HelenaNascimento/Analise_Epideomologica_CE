@@ -1,4 +1,4 @@
-USE [DW_PROD]
+USE [BD_DW]
 GO
 
 /****** Object:  View [dbo].[DASH_FATU_DIAS]    Script Date: 11/04/2024 17:06:38 ******/
@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-CREATE VIEW [dbo].[DASH_FATU_DIAS] AS
+CREATE VIEW [dbo].[VW_FATU_DIAS] AS
 SELECT
 VLR_F_30 = (SELECT 
 	VlrBasDscVen = Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0))

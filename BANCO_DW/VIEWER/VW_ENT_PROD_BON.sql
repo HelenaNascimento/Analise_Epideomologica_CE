@@ -1,4 +1,4 @@
-USE [DW_PROD]
+USE [BD_DW]
 GO
 
 /****** Object:  View [dbo].[ENT_PROD_BON]    Script Date: 11/04/2024 17:17:33 ******/

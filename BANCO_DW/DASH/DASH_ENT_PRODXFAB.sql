@@ -1,4 +1,4 @@
-USE [DW_PROD]
+USE [BD_DW]
 GO
 
 /****** Object:  View [dbo].[DASH_ENT_PRODXFAB]    Script Date: 11/04/2024 17:06:23 ******/
@@ -14,7 +14,7 @@ GO
 
 
 
-ALTER VIEW [dbo].[DASH_ENT_PRODXFAB] AS
+ALTER VIEW [dbo].[VW_ENT_PRODXFAB] AS
 SELECT
 	Cod_Fabricante as Codigo,
 	FB.Fantasia as Fantasia,

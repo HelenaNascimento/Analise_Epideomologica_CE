@@ -1,4 +1,4 @@
-USE [DW_PROD]
+USE [BD_DW]
 GO
 
 /****** Object:  View [dbo].[DASH_DADOS_VENDAS_CE]    Script Date: 11/04/2024 17:06:03 ******/
@@ -12,7 +12,7 @@ GO
 
 
 
-CREATE view [dbo].[DASH_DADOS_VENDAS_CE] as 
+CREATE view [dbo].[VW_DADOS_VENDAS_CE] as 
 			SELECT 
 			DISTINCT
 				fb.Fantasia,

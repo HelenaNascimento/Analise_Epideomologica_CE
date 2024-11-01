@@ -1,4 +1,4 @@
-USE [DW_PROD]
+USE [BD_DW]
 GO
 
 /****** Object:  View [dbo].[VW_CD1_PR]    Script Date: 15/04/2024 17:26:54 ******/

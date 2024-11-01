@@ -1,4 +1,4 @@
-USE [DW_PROD]
+USE [BD_DW]
 GO
 
 /****** Object:  View [dbo].[VW_NFECB]    Script Date: 13/04/2024 16:28:45 ******/

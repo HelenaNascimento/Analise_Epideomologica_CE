@@ -1,4 +1,4 @@
-USE [DW_PROD]
+USE [BD_DW]
 GO
 
 /****** Object:  View [dbo].[DASH_FIN_FREQ_CLIEN_INAD]    Script Date: 11/04/2024 17:07:13 ******/
@@ -12,7 +12,7 @@ GO
 
 
 
-CREATE VIEW [dbo].[DASH_FIN_FREQ_CLIEN_INAD] AS
+CREATE VIEW [dbo].[VW_FIN_FREQ_CLIEN_INAD] AS
 SELECT 
 	'Um' = (select count(distinct codigo) from VW_FIN_CLIEN_INAD where mes = '2' and Dias_Atraso >= 1	and  Dias_Atraso < 50 ),
 	'Cinquenta' = (select count(distinct codigo) from VW_FIN_CLIEN_INAD where mes = '2' and Dias_Atraso >= 50	and  Dias_Atraso < 100 ),

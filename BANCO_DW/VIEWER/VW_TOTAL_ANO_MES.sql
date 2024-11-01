@@ -1,4 +1,4 @@
-USE [DW_PROD]
+USE [BD_DW]
 GO
 
 /****** Object:  View [dbo].[TOTAL_ANO_MES]    Script Date: 11/04/2024 17:18:15 ******/
