@@ -1,9 +1,9 @@
 declare 
 	@ANO varchar(4) = '2024',
 	@MES varchar(2) = '10',
-	@FB int = 588,
+	@FB int = 134,
 	@CEst int = 1,
-	@OP int = 2
+	@OP int = 1
 if @OP = 1 (
 			SELECT
 				PR.CODIGO,
