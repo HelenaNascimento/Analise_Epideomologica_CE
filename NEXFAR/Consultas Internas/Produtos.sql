@@ -30,3 +30,20 @@ FROM   pcxpr
        INNER JOIN pocom
                ON pcxpr.id_polcom = pocom.id_polcom
 WHERE  pocom.id_polcom IN ( 3005, 3015, 3004, 3003 ) 
+
+/*SELECT
+	distinct
+	--POCOM.Id_PolCom,
+	prxes.cod_produt AS "sku"
+FROM PRODU
+JOIN PRXES ON PRODU.Codigo = PRXES.Cod_Produt
+JOIN PCXPR ON PRXES.Cod_Produt = PCXPR.Cod_Produt
+JOIN POCOM ON PCXPR.Id_PolCom = POCOM.Id_PolCom
+WHERE Tipo = 00	
+AND PRODU.Flag_ImprClassif1 = 'N'
+AND POCOM.Id_PolCom IN(3005,
+                        3015,
+                        3004,
+                        3003)
+AND POCOM.Dat_Termino > GETDATE ()
+order by 1*/
