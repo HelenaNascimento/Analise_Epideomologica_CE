@@ -1,6 +1,6 @@
 declare 
 	@codEstab int = 1,
-	@CodFab int = 158,
+	@CodFab int = 123,
 	@DatIn smalldatetime = '20200101',
 	@DatFim smalldatetime = '20241130',
 	@CodProd int, --= 16210,
@@ -31,7 +31,7 @@ declare
 					inner join NFECB cb0 on it.cod_estabe = cb0.Cod_Estabe and it.Protocolo = cb0.Protocolo
 					where 
 						it.Cod_Estabe = @codEstab
-						and Tip_NF <> 'D' 
+						and Tip_NF = 'C' 
 						and cb0.Dat_Entrada >= @DatIn
 						and cb0.Dat_Entrada <= @DatFim
 						and it.Cod_Produto = @CodProd
