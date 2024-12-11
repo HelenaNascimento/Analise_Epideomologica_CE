@@ -3,9 +3,9 @@
 declare 
 	@ANO varchar(4) = '2024',
 	@MES varchar(2) = '11',
-	@FB int = 17,
+	@FB int = 164,
 	@CEst int = 1,
-	@OP int = 2
+	@OP int = 3
 
 
 IF @OP = 1 (
