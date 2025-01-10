@@ -1,8 +1,7 @@
 --Inadiplência por período
 
 SELECT 
-  sum(IsNull(((ct.Vlr_Documento - ct.Vlr_DescConced) + Isnull(bx.Vlr_Juros, 0)), 0))
-          
+    format(sum(IsNull(((ct.Vlr_Documento - ct.Vlr_DescConced) + Isnull(bx.Vlr_Juros, 0)), 0)), 'c', 'pt-br') as Inadiplencia        
 from CTREC ct
 	left outer join CLIEN cl on ct.Cod_Cliente = cl.Codigo
 	left outer join (select 
@@ -21,7 +20,7 @@ where ct.cod_estabe = 1
 -- Qtd (UND) Faturado
 
 SELECT 
-	Sum(it.Qtd_Produto+it.Qtd_Bonificacao)
+	Sum(it.Qtd_Produto+it.Qtd_Bonificacao) as UND_FATURADO
 	FROM NFSIT IT
 		JOIN NFSCB CB ON IT.COD_ESTABE = CB.COD_ESTABE AND IT.SER_NOTA = CB.SER_NOTA AND IT.NUM_NOTA = CB.NUM_NOTA
 WHERE cb.Cod_Estabe = 1
@@ -41,14 +40,14 @@ Cod_OrigemPdv =
 		ELSE 'TOTAL'
 	END,
 
-format(SUM(C_VlrPedido), 'c', 'pt-br') as VLR_PEDI
+FORMAT(SUM(IT.Vlr_LiqItem), 'c', 'pt-br') AS Vlr_LiqItem
 FROM PDVCB  CB
 	JOIN VENDE VE on CB.Cod_Vendedor = VE.codigo
 	JOIN NFSCB NF ON CB.Cod_Estabe = NF.Cod_Estabe AND CB.Numero = NF.Cod_Pedido
 	JOIN NFSIT IT ON NF.Cod_Estabe = IT.Cod_Estabe AND NF.Ser_Nota = IT.Ser_Nota AND NF.Num_Nota = IT.Num_Nota
 WHERE CB.Cod_Estabe = 1
-    AND Dat_Pedido >= '20241101'
-    AND Dat_Pedido <= '20241130'
+    AND Dat_Pedido >= '20241201'
+    AND Dat_Pedido <= '20241231'
     AND (NF.Status = 'F' and NF.Tip_Saida = 'V') 
     AND NF.Ret_CStat = 100
     AND VE.Codigo NOT IN (464, 472)
