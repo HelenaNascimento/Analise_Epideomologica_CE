@@ -1,3 +1,5 @@
+CREATE VIEW VIEW_NEXFAR_PRODUCT AS
+
 SELECT 
 	DISTINCT 
 	produ.descricao AS "name", 
@@ -26,3 +28,4 @@ WHERE
 	produ.TIPO = 00 
 	AND produ.Flag_ImprClassif1 <> 'N'	
 	AND pocom.id_polcom IN(3005, 3015, 3004, 3003)
+	AND class.descricao <> 'PRODUTOS P/EXPOSIÇÃO '
