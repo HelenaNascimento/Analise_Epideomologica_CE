@@ -39,3 +39,54 @@ AND NF.Ret_CStat = 100
 AND VE.Codigo NOT IN (464, 472)
 AND CB.ID_POLCOM = 3015
 GROUP BY rollup (Cod_OrigemPdv)
+
+
+SELECT 
+	MONTH([dat_entrada]) AS MES, format(sum(custo), 'c', 'pt-br') as Custo,
+	AVG(SUM(CUSTO)) OVER (ORDER BY MONTH([dat_entrada]) ROWS BETWEEN 3 PRECEDING AND CURRENT ROW ) AS Media_Movel
+	
+  FROM [DMD].[dbo].[vw_AnaEntFabABC]
+  WHERE 
+	YEAR([dat_entrada]) = 2023
+GROUP BY 
+	MONTH([dat_entrada])
+ORDER BY 1
+
+SELECT 
+	MONTH([dat_entrada]) AS MES, format(sum(custo), 'c', 'pt-br')  as Custo,
+	AVG(SUM(CUSTO)) OVER (ORDER BY MONTH([dat_entrada]) ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS Media_Centralizada
+	
+  FROM [DMD].[dbo].[vw_AnaEntFabABC]
+  WHERE 
+	YEAR([dat_entrada]) = 2023
+GROUP BY 
+	MONTH([dat_entrada])
+ORDER BY 1
+
+SELECT 
+	MONTH([dat_entrada]) AS MES, format(sum(custo), 'c', 'pt-br')  as Custo,
+	sum(custo) / FIRST_VALUE (SUM(CUSTO)) OVER (ORDER BY MONTH([dat_entrada]) ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS Antes,
+	sum(custo) / LAST_VALUE (SUM(CUSTO)) OVER (ORDER BY MONTH([dat_entrada]) ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS Depois
+  FROM [DMD].[dbo].[vw_AnaEntFabABC]
+  WHERE 
+	YEAR([dat_entrada]) = 2023
+GROUP BY 
+	MONTH([dat_entrada])
+ORDER BY 1
+
+
+SELECT * 
+FROM [DMD].[dbo].[vw_AnaEntFabABC] 
+
+
+--TOP (1000) [Cod_Fabricante]
+--      ,[Fantasia]
+--      ,[cod_ean]
+--      ,[Codigo]
+--      ,[descricao]
+--      ,[dat_entrada]
+--      ,[Prc_Unitario]
+--      ,[Qtd_Comp]
+--      ,[protocolo]
+--      ,[prc_venda]
+--      ,[Custo]
