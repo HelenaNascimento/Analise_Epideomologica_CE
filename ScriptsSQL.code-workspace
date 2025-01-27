@@ -4,17 +4,6 @@
 			"path": "."
 		},
 		{
-			"name": "BI",
-			"path": "../BI/BI"
-		},
-		{
-			"path": "../HelpDesk"
-		},
-		{
-			"name": "SisPat-1",
-			"path": "../../../../media/technical/Elements/Workspace/SisPat/SisPat-1"
-		},
-		{
 			"path": "../ControleBrind"
 		}
 	],
