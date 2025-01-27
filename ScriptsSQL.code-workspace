@@ -13,6 +13,9 @@
 		{
 			"name": "SisPat-1",
 			"path": "../../../../media/technical/Elements/Workspace/SisPat/SisPat-1"
+		},
+		{
+			"path": "../ControleBrind"
 		}
 	],
 	"settings": {}
