@@ -1,7 +1,7 @@
 declare 
 	@ANO varchar(4) = '2025',
 	@MES varchar(2) = '01',
-	@FB int = 636,
+	@FB int = 69,
 	@CEst int = 1,
 	@OP int = 2
 

@@ -14,7 +14,7 @@ Declare Cod_Produ Cursor for
 		FROM PRODU PR
 			INNER JOIN PRXES ES on PR.CODIGO = ES.COD_PRODUT  
 	WHERE ES.Cod_Estabe = @Cod_Estabe
-		AND PR.Cod_Fabricante = 636
+		AND PR.Cod_Fabricante = 69
 	order by 1
 
 OPEN Cod_Produ
@@ -34,11 +34,11 @@ OPEN Cod_Produ
 			WHERE hs.Cod_Estabe = @Cod_Estabe
 			and Dat_Alteracao <= @Dat_fim
 			and Cod_Produto = @CodProd
-			GROUP BY 
-				Vlr_PrcVen,
-				Vlr_CusMedCom,
-				Dat_Alteracao
-			HAVING (Vlr_CusMedCom > 0)
+			--GROUP BY 
+			--	Vlr_PrcVen,
+			--	Vlr_CusMedCom,
+			--	Dat_Alteracao
+			--HAVING (Vlr_CusMedCom > 0)
 			order by 4 desc
 		OPEN HSPRC;
 		FETCH NEXT FROM HSPRC INTO @CodProd, @Prc_Pr, @CM, @Dt_Alt;
