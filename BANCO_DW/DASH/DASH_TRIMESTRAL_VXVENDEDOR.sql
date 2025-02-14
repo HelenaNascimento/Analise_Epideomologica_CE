@@ -27,5 +27,3 @@ group by
 	Ano,
 	Mes
 GO
-
-
