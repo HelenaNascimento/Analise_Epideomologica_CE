@@ -3,7 +3,7 @@ GO
 
 declare 
 	@codEstab int = 1,
-	@CodFab int = 348,
+	@CodFab int = 772,
 	@DatIn smalldatetime = '20200101',
 	@DatFim smalldatetime = '20250131',
 	@CodProd int, --= 16210,
