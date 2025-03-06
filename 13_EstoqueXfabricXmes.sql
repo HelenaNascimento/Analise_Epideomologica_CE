@@ -3,8 +3,8 @@ GO
 
 declare 
 	@ANO varchar(4) = '2025',
-	@MES varchar(2) = '01',
-	@FB int = 772,
+	@MES varchar(2) = '02',
+	@FB int = 321,
 	@CEst int = 1,
 	@OP int = 2
 
