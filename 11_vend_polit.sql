@@ -5,7 +5,7 @@ GO
 declare 
 	@ANO varchar(4) = '2025',
 	@MES varchar(2) = '02',
-	@FB int = 321,
+	@FB int = 1022,
 	@CEst int = 1,
 	@OP int = 3
 
