@@ -4,9 +4,9 @@ GO
 declare 
 	@ANO varchar(4) = '2025',
 	@MES varchar(2) = '02',
-	@FB int = 96,
+	@FB int = 192,
 	@CEst int = 1,
-	@OP int = 1
+	@OP int = 2
 
 if @OP = 1 (
 			SELECT
