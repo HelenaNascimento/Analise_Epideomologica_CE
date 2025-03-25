@@ -1,0 +1,35 @@
+DECLARE 
+@COD_VEND INT = 731, -- Código do Vendedor
+@COD_CLIENT INT
+
+DECLARE Cur_Cliente CURSOR FOR
+	SELECT  
+		CODIGO
+	FROM CLIEN
+	WHERE CODIGO IN (
+15454	,
+15519	,
+14632	,
+15434	,
+15629	,
+15566	,
+15458	,
+13676	,
+16384	
+) -- Código do Cliente
+
+
+	OPEN Cur_Cliente
+
+	FETCH NEXT FROM Cur_Cliente INTO @COD_CLIENT
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		INSERT INTO CLXVE (Cod_Client, Cod_Vended, Dia_SemMesVis, Hor_Vis, Min_Vis, Cod_RotVis)
+		VALUES (@COD_CLIENT, @COD_VEND, 0, 0, 0, 0)
+
+
+		FETCH NEXT FROM Cur_Cliente INTO @COD_CLIENT
+
+	END;
+CLOSE Cur_Cliente
+DEALLOCATE Cur_Cliente
