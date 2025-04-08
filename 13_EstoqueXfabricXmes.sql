@@ -1,10 +1,8 @@
-use PROD_2023
-GO
 
 declare 
 	@ANO varchar(4) = '2025',
-	@MES varchar(2) = '02',
-	@FB int = 192,
+	@MES varchar(2) = '03',
+	@FB int = 33,
 	@CEst int = 1,
 	@OP int = 2
 
