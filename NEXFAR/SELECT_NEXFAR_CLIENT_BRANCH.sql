@@ -1,29 +1,42 @@
-USE DMD
-GO
+WITH PaymentConditions AS (
+		SELECT 
+			PCXPZ.Id_PolCom, 
+			STRING_AGG(CONVERT(VARCHAR, PRZCB.Cod_Prz), '/') AS Payment
+		FROM PCXPZ 
+		JOIN PRZCB ON PCXPZ.Cod_TabPrz = PRZCB.Cod_Prz
+		WHERE PCXPZ.Id_PolCom IN (3005, 3015, 3004, 3003)
+		GROUP BY PCXPZ.Id_PolCom
+	),
+	CLIENTE AS (SELECT [CODIGO], [ID_POLCOM], [COD_ESTADO], [COD_ESTABE]
+					FROM  DMD.dbo.VIEW_NEXFAR_CLIENTE)
+	SELECT DISTINCT 
+		CLIEN.Codigo AS 'clientId',
+		ENXES.Cod_Estabe AS 'branchId',
+		ENXES.Cod_Estabe AS 'warehouseId',
+		POCOM.Id_PolCom AS 'priceGroupId',
+		ENXES.Cod_Vendedor AS 'sellerId',
+		'0' AS 'mainSeller',
+		'NEXON' AS 'module',
+		CLIEN.Cgc_Cpf AS 'cnpj',
+ 
+		PC.Payment AS 'paymentConditions',
 
-SELECT DISTINCT CLIEN.Codigo AS 'clientId'
-	,PCXES.Cod_Estabe AS 'branchID'
-	,PCXES.Cod_Estabe AS 'warehouseId'
-	,POCOM.Id_PolCom AS 'priceGroupId'
-	,PCXVE.Cod_Vended AS 'sellerId'
-	,'0' AS 'mainSeller'
-	,'NEXON' AS 'module'
-	,CLIEN.Cgc_Cpf AS 'cnpj'
-	,'30, 30/60, 40/60/75, 60, 7, 45/60/75' AS 'paymentConditions'
-	,POCOM.Vlr_Minimo AS 'orderMinValue'
-FROM CLIEN
-INNER JOIN PCXCL ON PCXCL.Cod_Client = CLIEN.Codigo
-INNER JOIN POCOM ON PCXCL.Id_PolCom = POCOM.Id_PolCom
-INNER JOIN PCXES ON PCXCL.Id_PolCom = PCXES.Id_PolCom
-INNER JOIN PCXPZ ON PCXCL.Id_PolCom = PCXPZ.Id_PolCom
-INNER JOIN PRZCB ON PCXPZ.Cod_TabPrz = PRZCB.Cod_Prz
-INNER JOIN PCXVE ON PCXPZ.Id_PolCom = PCXVE.Id_PolCom
-WHERE POCOM.Flg_Web = 1
-	AND POCOM.Dat_Termino > GETDATE()
-	ORDER BY clientId ASC
+		POCOM.Vlr_Minimo AS 'orderMinValue',
+    
+		CASE 
+			WHEN CLIEN.Inscricao_Municipal = 'ISENTO' THEN 1
+			ELSE 0
+		END AS 'taxFree',
 
-
-
-
-
-
+		Cod_RegTri AS 'clientTaxCode',
+		CONVERT(VARCHAR, ENXES.Cod_Transp) AS 'ep_CodTransportadora',
+		CONVERT(VARCHAR, ENXES.Cod_Rota) AS 'ep_CodRota',
+		CONVERT(VARCHAR, ENXES.Cod_AgeCob) AS 'ep_CodAgente'
+    
+	FROM 
+		CLIENTE
+		JOIN ENXES ON CLIENTE.COD_ESTABE = ENXES.Cod_Estabe
+		JOIN CLIEN ON ENXES.Cod_Client = CLIEN.Codigo
+		JOIN VENDE ON VENDE.Codigo = ENXES.Cod_Vendedor		
+		JOIN POCOM ON CLIENTE.ID_POLCOM = POCOM.Id_PolCom
+		LEFT JOIN PaymentConditions AS PC ON PC.Id_PolCom = POCOM.Id_PolCom
