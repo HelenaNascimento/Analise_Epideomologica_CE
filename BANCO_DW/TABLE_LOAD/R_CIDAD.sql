@@ -1,18 +1,2 @@
-/****** Script do comando SelectTopNRows de SSMS  ******/
-INSERT INTO [R_CIDAD] ([Cod_Estado]
-      ,[Codigo]
-      ,[Descricao]
-      ,[Codigo_BMS]
-      ,[Nivel_ComVen]
-      ,[Cod_CidIbge]
-      ,[Flg_Excluido]
-      ,[Versao])
- SELECT [Cod_Estado]
-      ,[Codigo]
-      ,[Descricao]
-      ,[Codigo_BMS]
-      ,[Nivel_ComVen]
-      ,[Cod_CidIbge]
-      ,[Flg_Excluido]
-      ,[Versao]
- FROM PROD_2023.[dbo].[CIDAD]
+INSERT INTO [DW_PROD].[dbo].[R_CIDAD](Cod_Estado, Codigo, Descricao, Codigo_BMS, Nivel_ComVen, Cod_CidIbge, Flg_Excluido)
+SELECT Cod_Estado, Codigo, Descricao, Codigo_BMS, Nivel_ComVen, Cod_CidIbge, Flg_Excluido FROM PROD_2023.DBO.CIDAD

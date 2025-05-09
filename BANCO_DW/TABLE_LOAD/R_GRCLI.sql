@@ -1,5 +1,5 @@
 /****** Script do comando SelectTopNRows de SSMS  ******/
-INSERT INTO R_GRCLI ([Cod_GrpCli]
+INSERT INTO [R_GRCLI] ([Cod_GrpCli]
       ,[Des_GrpCli]
       ,[Qtd_PrzMax]
       ,[Per_Descon]

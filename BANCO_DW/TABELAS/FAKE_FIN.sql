@@ -8,7 +8,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[FAKE_FIN](
+CREATE TABLE [dbo].[C_FIN](
 	[CODCLI] [int] NULL,
 	[RZ_SC] [varchar](80) NULL,
 	[GRPCL] [int] NULL,
