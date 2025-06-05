@@ -42,7 +42,7 @@ BEGIN
 		Dat_Registro = getdate(), 
 		Dat_Caixa = getdate() , 
 		Tip_Baixa = 'P', 
-		Tip_Doc = 'E', 
+		Tip_Doc = 'E',  
 		Qtd_DiasAtraso = 0 , 
 		Vlr_Principal = Vlr_Documento, 
 		Vlr_Desconto = Vlr_DescConced, 
