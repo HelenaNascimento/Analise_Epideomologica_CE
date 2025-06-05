@@ -21,6 +21,16 @@ dados_sih_2023 <- fetch_datasus(
 )
 
 # Baixando dados SIH-RD para o CE em 2024
+dados_sih_2024 <- fetch_datasus(
+  year_start = 2024, 
+  month_start = 1,
+  year_end = 2024,
+  month_end = 12,
+  uf = "CE",
+  information_system = "SIH-RD"
+)
+
+# Baixando dados SIH-RD para o CE em 2024
 dados_sih_2025 <- fetch_datasus(
   year_start = 2025, 
   month_start = 1,
@@ -31,7 +41,7 @@ dados_sih_2025 <- fetch_datasus(
 )
 
 # Juntando os dados
-dados_sih <- bind_rows(dados_sih_2025)
+dados_sih <- bind_rows(dados_sih_2023,dados_sih_2024 , dados_sih_2025)
 
 # Processando os dados
 dados_sih_proc <- process_sih(dados_sih)

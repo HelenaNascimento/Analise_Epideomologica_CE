@@ -18,7 +18,7 @@ dados_2025 <- dados_influenza %>%
 gerar_mapa_mes <- function(mes) {
   
   # Filtrar para o mês
-  dados_mes <- dados_2025 %>%
+  dado s_mes <- dados_2025 %>%
     filter(MES_CMPT == mes)
   
   # Contar número de casos por município
