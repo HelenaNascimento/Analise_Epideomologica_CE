@@ -2,8 +2,8 @@
 
 declare 
 	@ANO varchar(4) = '2025',
-	@MES varchar(2) = '05',
-	@FB int = 498,
+	@MES varchar(2) = '06',
+	@FB int = 348,
 	@CEst int = 1,
 	@OP int = 2
 
