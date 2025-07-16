@@ -3,7 +3,7 @@
 
 declare 
 	@codEstab int = 1,
-	@CodFab int = 348,
+	@CodFab int = 286,
 	@DatIn smalldatetime = '20200101',
 	@DatFim smalldatetime = '20250630',
 	@CodProd int, --= 16210,
