@@ -3,9 +3,9 @@
 
 declare 
 	@codEstab int = 1,
-	@CodFab int = 286,
+	@CodFab int = 636,
 	@DatIn smalldatetime = '20200101',
-	@DatFim smalldatetime = '20250630',
+	@DatFim smalldatetime = '20250731',
 	@CodProd int, --= 16210,
 	@CodEAN varchar(14),
 	@Fabri varchar(50),
