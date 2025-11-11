@@ -539,3 +539,11 @@ ORDER BY
     T.name ASC
 	
 exec PR_RetornaItensNF 1, 423741,'1', 'S'
+
+
+BEGIN TRAN
+INSERT INTO PEXRO (Cod_Perfil, Isn_Rotina, Flg_Ativa)
+SELECT Cod_Perfil = 38, ISN_ROTINA, FLG_ATIVA FROM PEXRO
+WHERE Cod_Perfil = 8
+
+COMMIT
