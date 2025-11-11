@@ -2,8 +2,8 @@
 --Variáveis Globais:
 declare 
 	@ANO varchar(4) = '2025',
-	@MES varchar(2) = '09',
-	@FB int = 222,
+	@MES varchar(2) = '10',
+	@FB int = 1022,
 	@CEst int = 1,
 	@OP int = 3
 
