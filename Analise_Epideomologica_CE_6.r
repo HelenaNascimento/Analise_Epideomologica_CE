@@ -7,6 +7,11 @@ if(!require(sf)) install.packages("sf")
 if(!require(readr)) install.packages("readr")
 if(!require(microdatasus)) remotes::install_github("rfsaldanha/microdatasus")
 
+pkgbuild::check_build_tools(debug = TRUE)
+
+install.packages("microdatasus")
+
+
 library(remotes)
 library(dplyr)
 library(stringr)
@@ -83,3 +88,7 @@ print(casos_muni_mes_nome)
 
 # Exportando para CSV
 write_csv(casos_muni_mes_nome, "casos_influenza_por_municipio_mes.csv")
+
+
+
+pkgbuild::check_build_tools(debug = TRUE)
