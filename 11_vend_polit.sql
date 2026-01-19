@@ -2,8 +2,8 @@
 --Variáveis Globais:
 declare 
 	@ANO varchar(4) = '2025',
-	@MES varchar(2) = '11',
-	@FB int = 1363,
+	@MES varchar(2) = '12',
+	@FB int = 164,
 	@CEst int = 1,
 	@OP int = 3
 
@@ -40,9 +40,8 @@ IF @OP = 2 (
 				pr.cod_ean,
 				pr.descricao,
 				pc.Cod_PolCom,
-				--Auxiliar = concat(pc.Cod_PolCom, '-', pr.codigo),
 				QtdVen = Sum(it.Qtd_Produto+it.Qtd_Bonificacao),    
-				VlrBasDscVen = Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0))
+				VlrBasDscVen = REPLACE(Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0)), '.', ',')
 			FROM NFSCB cb 
 				INNER JOIN NFSIT it ON ((cb.Cod_Estabe = it.Cod_Estabe) AND 
 																		(cb.Ser_Nota = it.Ser_Nota) AND 
@@ -69,7 +68,7 @@ IF @OP = 3 (
 			DISTINCT
 				pc.Cod_PolCom,
 				QtdVen = Sum(it.Qtd_Produto+it.Qtd_Bonificacao),    
-				VlrBasDscVen = Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0))
+				VlrBasDscVen = REPLACE(Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0)), '.', ',')
 			FROM NFSCB cb 
 				INNER JOIN NFSIT it ON ((cb.Cod_Estabe = it.Cod_Estabe) AND 
 																		(cb.Ser_Nota = it.Ser_Nota) AND 
@@ -93,7 +92,7 @@ IF @OP = 4 (
 			SELECT 
 			DISTINCT
 				QtdVen = Sum(it.Qtd_Produto+it.Qtd_Bonificacao),    
-				VlrBasDscVen = Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0))
+				VlrBasDscVen = REPLACE(Sum(it.Vlr_LiqItem-it.Vlr_SubsTrib-it.Vlr_SbtRes-it.Vlr_RecSbt-it.Vlr_SubsTribEmb-it.Vlr_DespRateada-IsNull(it.Vlr_DspExt,0)), '.', ',')
 			FROM NFSCB cb 
 				INNER JOIN NFSIT it ON ((cb.Cod_Estabe = it.Cod_Estabe) AND 
 																		(cb.Ser_Nota = it.Ser_Nota) AND 

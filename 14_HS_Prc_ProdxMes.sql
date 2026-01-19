@@ -2,10 +2,10 @@ DECLARE
 	@CodProd INT, 
 	@Cod_Estabe int = 1,
 	@Dat_Ini smalldatetime  = '20230101',
-	@Dat_fim smalldatetime = '20251130',
+	@Dat_fim smalldatetime = '20251231',
 	@Dt_Alt smalldatetime,
-	@Prc_Pr numeric (20,2),
-	@CM numeric (20,2)
+	@Prc_Pr varchar (20),
+	@CM varchar (20)
 
 Declare Cod_Produ Cursor for 
 	SELECT 
@@ -14,7 +14,7 @@ Declare Cod_Produ Cursor for
 		FROM PRODU PR
 			INNER JOIN PRXES ES on PR.CODIGO = ES.COD_PRODUT  
 	WHERE ES.Cod_Estabe = @Cod_Estabe
-		AND PR.Cod_Fabricante = 1363
+		AND PR.Cod_Fabricante = 164
 	order by 1
 
 OPEN Cod_Produ
@@ -26,8 +26,8 @@ OPEN Cod_Produ
 			SELECT 
 				top 1
 				@CodProd,
-				Vlr_PrcVen,
-				Vlr_CusMedCom,
+				replace(Vlr_PrcVen, '.', ',') as Vlr_PrcVen,
+				replace(Vlr_CusMedCom, '.', ',') as Vlr_CusMedCom,
 				Dat_Alteracao				
 			FROM HSPRC HS
 					INNER JOIN PRXES ES ON HS.Cod_Estabe = ES.Cod_Estabe AND HS.Cod_Produto = ES.Cod_Produt

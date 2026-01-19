@@ -1,9 +1,9 @@
 declare 
 	@ANO varchar(4) = '2025',
-	@MES varchar(2) = '11',
-	@FB int = 1363,
+	@MES varchar(2) = '12',
+	@FB int = 164,
 	@CEst int = 1,
-	@OP int = 1
+	@OP int = 2
 
 
 if @OP = 1 (

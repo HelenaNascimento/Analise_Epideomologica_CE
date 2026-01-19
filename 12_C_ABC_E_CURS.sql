@@ -1,12 +1,12 @@
 declare 
 	@codEstab int = 1,
-	@CodFab int = 1363,
+	@CodFab int = 164,
 	@DatIn smalldatetime = '20200101',
-	@DatFim smalldatetime = '20251130',
+	@DatFim smalldatetime = '20251231',
 	@CodProd int, --= 16210,
 	@CodEAN varchar(14),
 	@Fabri varchar(50),
-	@PrcUnit decimal(20,2),
+	@PrcUnit VARCHAR(20),
 	@DatComp smalldatetime
 
 	Declare CursorProd CURSOR FOR 
@@ -25,7 +25,7 @@ declare
 				SELECT top 1
 					IT.Cod_Estabe, 
 					it.Cod_Produto, 
-					Prc_Unitario,
+					REPLACE(Prc_Unitario, '.', ',') AS Prc_Unitario,
 					Dat_Entrada
 				from NFEIT IT
 					inner join NFECB cb0 on it.cod_estabe = cb0.Cod_Estabe and it.Protocolo = cb0.Protocolo
