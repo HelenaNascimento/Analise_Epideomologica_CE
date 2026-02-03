@@ -1,50 +1,131 @@
-MUNIC_RES;name_muni;n_casos
-231050;Pedra Branca;53
-230850;Momba�a;31
-230690;Jaguaribe;23
-230440;Fortaleza;17
-231160;Reden��o;15
-231370;Umari;8
-230240;Boa Viagem;4
-231130;Quixad�;4
-230015;Acarape;3
-230430;Farias Brito;3
-230495;Guai�ba;3
-230590;Ipueiras;3
-230730;Juazeiro do Norte;3
-231140;Quixeramobim;3
-231170;Reriutaba;3
-231290;Sobral;3
-230190;Barbalha;2
-230210;Baturit�;2
-230270;Campos Sales;2
-230330;Cari�s;2
-230370;Caucaia;2
-230410;Crate�s;2
-230427;Erer�;2
-230445;Fortim;2
-230530;Ibiapina;2
-230770;Maranguape;2
-231025;Paraipaba;2
-231270;Senador Pompeu;2
-231395;Varjota;2
-231400;V�rzea Alegre;2
-220202;NA;1
-230150;Arneiroz;1
-230185;Banabui�;1
-230220;Beberibe;1
-230420;Crato;1
-230450;Frecheirinha;1
-230560;Independ�ncia;1
-230580;Ipu;1
-230640;Itapipoca;1
-230700;Jaguaruana;1
-230750;Lavras da Mangabeira;1
-230800;Massap�;1
-230830;Milagres;1
-230930;Nova Russas;1
-231030;Parambu;1
-231040;Paramoti;1
-231110;Porteiras;1
-231320;Tamboril;1
-352390;NA;1
+MUNIC_RES,name_muni,n_casos
+230850,Mombaça,224
+231050,Pedra Branca,187
+230690,Jaguaribe,141
+231370,Umari,75
+230440,Fortaleza,70
+231360,Ubajara,57
+231160,Redenção,52
+230730,Juazeiro do Norte,38
+230530,Ibiapina,28
+230830,Milagres,22
+230410,Crateús,21
+231230,São Benedito,21
+230240,Boa Viagem,18
+230760,Limoeiro do Norte,18
+231400,Várzea Alegre,18
+231130,Quixadá,16
+230640,Itapipoca,11
+231030,Parambu,11
+231140,Quixeramobim,11
+230590,Ipueiras,10
+231330,Tauá,10
+230495,Guaiúba,9
+230427,Ereré,8
+230840,Missão Velha,8
+230860,Monsenhor Tabosa,8
+230900,Mucambo,8
+231290,Sobral,8
+230340,Carnaubal,7
+230370,Caucaia,7
+230330,Cariús,6
+230350,Cascavel,6
+230420,Crato,6
+230445,Fortim,6
+230550,Iguatu,6
+231170,Reriutaba,6
+231310,Tabuleiro do Norte,6
+230190,Barbalha,5
+230426,Deputado Irapuan Pinheiro,5
+230430,Farias Brito,5
+230450,Frecheirinha,5
+230725,Jijoca de Jericoacoara,5
+230750,Lavras da Mangabeira,5
+230765,Maracanaú,5
+230930,Nova Russas,5
+230960,Pacajus,5
+231025,Paraipaba,5
+231085,Pindoretama,5
+230040,Aiuaba,4
+230250,Brejo Santo,4
+230970,Pacatuba,4
+231100,Poranga,4
+230015,Acarape,3
+230185,Banabuiú,3
+230210,Baturité,3
+230220,Beberibe,3
+230270,Campos Sales,3
+230423,Croatá,3
+230465,Graça,3
+230500,Guaraciaba do Norte,3
+230526,Ibaretama,3
+230540,Icó,3
+230560,Independência,3
+230680,Jaguaribara,3
+230770,Maranguape,3
+230800,Massapê,3
+230870,Morada Nova,3
+231190,Saboeiro,3
+231270,Senador Pompeu,3
+231320,Tamboril,3
+231340,Tianguá,3
+231350,Trairi,3
+230020,Acaraú,2
+230030,Acopiara,2
+230075,Amontada,2
+230130,Araripe,2
+230170,Aurora,2
+230280,Canindé,2
+230300,Caridade,2
+230700,Jaguaruana,2
+230720,Jati,2
+230740,Jucás,2
+230837,Miraíma,2
+230910,Mulungu,2
+231040,Paramoti,2
+231300,Solonópole,2
+231380,Uruburetama,2
+231395,Varjota,2
+231410,Viçosa do Ceará,2
+220202,NA,1
+230070,Alto Santo,1
+230110,Aracati,1
+230120,Aracoiaba,1
+230125,Ararendá,1
+230150,Arneiroz,1
+230160,Assaré,1
+230290,Capistrano,1
+230310,Cariré,1
+230320,Caririaçu,1
+230400,Coreaú,1
+230425,Cruz,1
+230428,Eusébio,1
+230460,General Sampaio,1
+230580,Ipu,1
+230620,Itaiçaba,1
+230630,Itapajé,1
+230655,Itarema,1
+230670,Jaguaretama,1
+230710,Jardim,1
+230763,Madalena,1
+230890,Morrinhos,1
+230920,Nova Olinda,1
+230940,Novo Oriente,1
+230950,Orós,1
+230980,Pacoti,1
+230990,Pacujá,1
+231010,Palmácia,1
+231060,Penaforte,1
+231070,Pentecoste,1
+231080,Pereiro,1
+231110,Porteiras,1
+231120,Potengi,1
+231126,Quiterianópolis,1
+231135,Quixelô,1
+231180,Russas,1
+231195,Salitre,1
+231210,Santana do Cariri,1
+231220,Santa Quitéria,1
+231335,Tejuçuoca,1
+231390,Uruoca,1
+352390,NA,1

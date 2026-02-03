@@ -12,6 +12,18 @@
 # Carregando bibliotecas
 # ========================================================
 
+install.packages(c(
+  "remotes",
+  "dplyr",
+  "readr",
+  "stringr",
+  "geobr"
+))
+
+remotes::install_github("rfsaldanha/microdatasus")
+
+
+
 library(remotes)       # Instalação de pacotes a partir do GitHub
 library(dplyr)         # Manipulação de dados
 library(readr)         # Importação e exportação de dados
@@ -23,38 +35,38 @@ library(geobr)
 # Instalação da versão mais recente do microdatasus via GitHub
 # ========================================================
 
-remotes::install_github("rfsaldanha/microdatasus")
+
 
 # ========================================================
 # Coleta de dados SIH-RD (Sistema de Informações Hospitalares - RD)
 # ========================================================
 
-# Baixando dados para o Ceará no ano de 2023
+# Baixando dados para o Ceará no ano de 2025
 dados_sih_2023 <- fetch_datasus(
-  year_start = 2023, 
+  year_start = 2025, 
   month_start = 1,
-  year_end = 2023,
+  year_end = 2025,
   month_end = 12,
   uf = "CE",
   information_system = "SIH-RD"
 )
 
-# Baixando dados para o Ceará no ano de 2024
+# Baixando dados para o Ceará no ano de 2025
 dados_sih_2024 <- fetch_datasus(
-  year_start = 2024, 
+  year_start = 2025, 
   month_start = 1,
-  year_end = 2024,
+  year_end = 2025,
   month_end = 12,
   uf = "CE",
   information_system = "SIH-RD"
 )
 
-# Baixando dados para o Ceará no ano de 2025 (até abril)
+# Baixando dados para o Ceará no ano de 2025 (até Novembro)
 dados_sih_2025 <- fetch_datasus(
   year_start = 2025, 
   month_start = 1,
   year_end = 2025,
-  month_end = 4,
+  month_end = 11,
   uf = "CE",
   information_system = "SIH-RD"
 )
@@ -63,7 +75,7 @@ dados_sih_2025 <- fetch_datasus(
 # Consolidação dos dados de todos os anos
 # ========================================================
 
-dados_sih <- bind_rows(dados_sih_2023, dados_sih_2024, dados_sih_2025)
+dados_sih <- bind_rows(dados_sih_2025)
 
 # ========================================================
 # Processamento dos dados para padronização
@@ -81,7 +93,7 @@ dados_influenza <- dados_sih_2025 %>%
   filter(str_detect(DIAG_PRINC, "^J09|^J10|^J11"))
 
 # ========================================================
-# Filtragem específica: casos do Ceará em 2023
+# Filtragem específica: casos do Ceará em 2025
 # ========================================================
 
 dados_CE_2025 <- dados_influenza %>%
@@ -101,7 +113,7 @@ casos_por_municipio <- dados_CE_2025 %>%
 # Preparação do shapefile dos municípios
 # ========================================================
 # Baixando o shapefile dos municípios do Ceará
-mapa_CE <- read_municipality(code_muni = "CE", year = 2025)
+mapa_CE <- read_municipality(code_muni = "CE", year = 2024)
 
 # Criando variável com código de 6 dígitos para compatibilização
 mapa_CE$cod6 <- substr(mapa_CE$code_muni, 1, 6)
