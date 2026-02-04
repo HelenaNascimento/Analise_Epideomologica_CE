@@ -1,6 +1,6 @@
 declare 
-	@ANO varchar(4) = '2025',
-	@MES varchar(2) = '12',
+	@ANO varchar(4) = '2026',
+	@MES varchar(2) = '01',
 	@FB int = 164,
 	@CEst int = 1,
 	@OP int = 2
