@@ -12,15 +12,15 @@ select
     end,
     ct.Par_Documento,
     ct.[Status],
-    CONVERT(DECIMAL(10,2), ct.Vlr_Documento) as VlrDocumento,
-    CONVERT(DECIMAL(10,2),ct.Vlr_DescConced) as Desconto_Financeiro,
+    REPLACE(CONVERT(DECIMAL(10,2), ct.Vlr_Documento), '.', ',') as VlrDocumento,
+    REPLACE(CONVERT(DECIMAL(10,2),ct.Vlr_DescConced), '.', ',')  as Desconto_Financeiro,
 	ISNULL(CONVERT(DECIMAL(10,2), ct.Per_DescFinanc), 0) as Desconto_Comercial,
-	IsNull(bx.Vlr_Juros, 0) as VlrJuros,
+	REPLACE(IsNull(bx.Vlr_Juros, 0), '.', ',') as VlrJuros,
     IsNull(bx.Qtd_DiasAtraso, 0) as Qtd_DiasAtraso,
     '(Vlr_Doc - Vlr_DescCon)' =
                         CASE
-                            WHEN IsNull(bx.Qtd_DiasAtraso, 0) > 0 THEN ISNULL((ct.Vlr_Documento - ct.Vlr_DescConced), 0)
-                        	WHEN IsNull(bx.Qtd_DiasAtraso, 0) = 0 THEN ISNULL((ct.Vlr_Documento - ct.Vlr_DescConced)-((ct.Vlr_Documento - ct.Vlr_DescConced) * (ct.Per_DescFinanc/100) ), 0)
+                            WHEN IsNull(bx.Qtd_DiasAtraso, 0) > 0 THEN REPLACE(ISNULL((ct.Vlr_Documento - ct.Vlr_DescConced), 0), '.', ',')
+                        	WHEN IsNull(bx.Qtd_DiasAtraso, 0) = 0 THEN REPLACE(ISNULL((ct.Vlr_Documento - ct.Vlr_DescConced)-((ct.Vlr_Documento - ct.Vlr_DescConced) * (ct.Per_DescFinanc/100) ), 0), '.', ',')
                         END,
 	ValorFinal =
                         CASE
@@ -36,6 +36,7 @@ select
 							Qtd_DiasAtraso
 						from bxrec where cod_Estabe = 1) bx on ct.cod_estabe = bx.Cod_Estabe and ct.cod_Documento = bx.cod_Documento
 where ct.cod_estabe = 1
+    --and ct.Transacao = DATEADD(month, -1, getdate())
     and year(ct.Transacao) = '2026' 
     --and MONTH(ct.Transacao) = '01' 
 	and month(ct.Transacao) <= month(getdate()) -1

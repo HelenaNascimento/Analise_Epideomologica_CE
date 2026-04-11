@@ -1,9 +1,11 @@
+use DMD
+GO 
 
 --Variáveis Globais:
 declare 
 	@ANO varchar(4) = '2026',
-	@MES varchar(2) = '02',
-	@FB int = 1022,
+	@MES varchar(2) = '03',
+	@FB int = 319,
 	@CEst int = 1,
 	@OP int = 3
 
