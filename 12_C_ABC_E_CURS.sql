@@ -4,9 +4,9 @@ GO
 
 declare 
 	@codEstab int = 1,
-	@CodFab int = 1146,
+	@CodFab int = 33,
 	@DatIn smalldatetime = '20200101',
-	@DatFim smalldatetime = '20260331',
+	@DatFim smalldatetime = '20260430',
 	@CodProd int, --= 16210,
 	@CodEAN varchar(14),
 	@Fabri varchar(50),

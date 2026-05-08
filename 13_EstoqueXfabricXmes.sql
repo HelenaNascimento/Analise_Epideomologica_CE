@@ -4,10 +4,10 @@ GO
 
 declare 
 	@ANO varchar(4) = '2026',
-	@MES varchar(2) = '03',
-	@FB int = 1146,
+	@MES varchar(2) = '04',
+	@FB int = 33,
 	@CEst int = 1,
-	@OP int = 1
+	@OP int = 2
 
 
 if @OP = 1 (
