@@ -18,7 +18,7 @@ Declare Cod_Produ Cursor for
 		FROM PRODU PR
 			INNER JOIN PRXES ES on PR.CODIGO = ES.COD_PRODUT  
 	WHERE ES.Cod_Estabe = @Cod_Estabe
-		AND PR.Cod_Fabricante = 33
+		AND PR.Cod_Fabricante = 134
 	order by 1
 
 OPEN Cod_Produ
