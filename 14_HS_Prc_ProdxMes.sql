@@ -6,7 +6,7 @@ DECLARE
 	@CodProd INT, 
 	@Cod_Estabe int = 1,
 	@Dat_Ini smalldatetime  = '20230101',
-	@Dat_fim smalldatetime = '20260430',
+	@Dat_fim smalldatetime = '20260531',
 	@Dt_Alt smalldatetime,
 	@Prc_Pr varchar (20),
 	@CM varchar (20)
