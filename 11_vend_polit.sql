@@ -4,10 +4,10 @@ GO
 --Variáveis Globais:
 declare 
 	@ANO varchar(4) = '2026',
-	@MES varchar(2) = '05',
+	@MES varchar(2) = '06',
 	@FB int = 1022,
 	@CEst int = 1,
-	@OP int = 3
+	@OP int = 1
 
 
 IF @OP = 1 (
