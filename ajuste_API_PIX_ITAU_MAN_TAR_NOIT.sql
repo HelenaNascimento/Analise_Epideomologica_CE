@@ -31,3 +31,14 @@ order by dat_regist desc
 --09/07/2026
 update INIDB_GLOBAL set Des_Valor = concat(replicate('0',2-len(day(getdate()-1))), day(getdate()-1),'/',replicate('0',2-len(month(getdate()))), month(getdate()),'/',year(getdate()))
 where Cod_Regist = 944
+
+
+update nfecb
+set
+flg_importado=0, Arquivo=''
+where Cod_Estabe = 4
+and protocolo=413280
+
+
+
+select * from NFECB where Protocolo = 413238
