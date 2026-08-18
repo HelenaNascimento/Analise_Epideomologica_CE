@@ -1,5 +1,5 @@
 DECLARE
-  @Cest int = 3,
+  @Cest int = 0,
   @CDoc int,
   @codlanc int,
   @Status varchar(1),
@@ -14,7 +14,7 @@ DECLARE
   @Vlr_Deduc float,
   @Vlr_Jur float,
   @Vlr_Acr float,
-  @Cod_Rec int = 145593,
+  @Cod_Rec int = 189210,
   @Usuar varchar(35),
   @Transac datetime,
   @Cod_CtrOr varchar(1),
@@ -58,14 +58,15 @@ BEGIN
 		Vlr_DscDev = 0 
 	from CTREC
 	where Cod_Estabe = @Cest
-	and Status <> 'Q'
-	and Par_Documento = 'E'
-	and Num_Documento in (
-'355038'
-,'351729'
-
-)
-
+	and Status = 'A'
+	and Par_Documento = 'D'
+	and Num_Documento in 
+(1888953
+,1914561
+,1918058
+,1918063
+,1918088
+,1918104)
 OPEN SELC_REC;
 FETCH NEXT FROM SELC_REC INTO  @Cest, @CDoc, @codlanc, @Status, @D_Lan, @D_Reg, @D_Cai, @Tip_Ba, @Tip_Doc, @Qtd_DAtr, @Vlr_Prin , @Vlr_Desc, @Vlr_Deduc, @Vlr_Jur, @Vlr_Acr, @Cod_Rec , @Usuar , @Transac, @Cod_CtrOr, @Isn_Cta, @Cod_CntC ,@Vlr_DscD;
 WHILE @@FETCH_STATUS = 0

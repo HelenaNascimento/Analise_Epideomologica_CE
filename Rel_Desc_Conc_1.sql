@@ -1,6 +1,13 @@
-
-select 
+--alter VIEW llm.VW_Rel_DescConce AS
+SELECT  
 	distinct
+    Estabe = 
+        case    
+            when ct.Cod_Estabe = 0 then 'NovaPE'
+            when ct.Cod_Estabe = 1 then 'NovaCE'
+            when ct.Cod_Estabe = 3 then 'NovaMult'
+            when ct.Cod_Estabe = 4 then 'NovaBA'
+        end,
 	cl.Razao_Social,
     cl.Cgc_Cpf,
     ct.Num_Documento,
@@ -12,10 +19,10 @@ select
     end,
     ct.Par_Documento,
     ct.[Status],
-    REPLACE(CONVERT(DECIMAL(10,2), ct.Vlr_Documento), '.', ',') as VlrDocumento,
-    REPLACE(CONVERT(DECIMAL(10,2),ct.Vlr_DescConced), '.', ',')  as Desconto_Financeiro,
-	ISNULL(CONVERT(DECIMAL(10,2), ct.Per_DescFinanc), 0) as Desconto_Comercial,
-	REPLACE(IsNull(bx.Vlr_Juros, 0), '.', ',') as VlrJuros,
+    Format(ct.Vlr_Documento, 'c', 'pt-br') as VlrDocumento,
+    Format(ct.Vlr_DescConced, 'c', 'pt-br') as Desconto_Financeiro,
+	Format(ct.Per_DescFinanc, 'c', 'pt-br') as Desconto_Comercial,
+	Format(Isnull(bx.Vlr_Juros, '0'), 'c', 'pt-br') as VlrJuros,
     IsNull(bx.Qtd_DiasAtraso, 0) as Qtd_DiasAtraso,
     '(Vlr_Doc - Vlr_DescCon)' =
                         CASE
@@ -27,7 +34,7 @@ select
                             WHEN IsNull(bx.Qtd_DiasAtraso, 0) > 0 THEN  IsNull(format(((ct.Vlr_Documento - ct.Vlr_DescConced) + Isnull(bx.Vlr_Juros, 0)), 'c', 'pt-br'), 0)
                             WHEN IsNull(bx.Qtd_DiasAtraso, 0) = 0 THEN  IsNull(format(((((ct.Vlr_Documento - ct.Vlr_DescConced)-((ct.Vlr_Documento - ct.Vlr_DescConced) * (ct.Per_DescFinanc/100) )) + Isnull(bx.Vlr_Juros, 0)) ), 'c', 'pt-br'), 0)
                         END
-	from CTREC ct
+	FROM CTREC ct
 		left outer join CLIEN cl on ct.Cod_Cliente = cl.Codigo
 		left outer join (select 
 							Cod_Estabe, 
@@ -35,12 +42,6 @@ select
 							Vlr_Juros,
 							Qtd_DiasAtraso
 						from bxrec where cod_Estabe = 1) bx on ct.cod_estabe = bx.Cod_Estabe and ct.cod_Documento = bx.cod_Documento
-where ct.cod_estabe = 1
-    --and ct.Transacao = DATEADD(month, -1, getdate())
-    and year(ct.Transacao) = '2026' 
-    --and MONTH(ct.Transacao) = '01' 
-	and month(ct.Transacao) <= month(getdate()) -1
+where ct.Transacao >= DATEADD(month, -2, getdate()) 
     and (Vlr_DescConced > 0 or ct.Per_DescFinanc > 0)
     and ct.[Status] <> 'C'
-
-order by Data_Transacao
